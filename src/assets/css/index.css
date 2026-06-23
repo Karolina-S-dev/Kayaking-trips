@@ -1,0 +1,227 @@
+/* --------------------------- */
+/* ------------ NAV --------- */
+/* --------------------------- */
+
+.hero-section {
+  background-image: url(../img/river-kayaking.png);
+  width: 100vw;
+  height: 70vh;
+  background-size: cover;
+  background-position: center 10%;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-header {
+  width: 93vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 1rem;
+}
+
+.hero-logo {
+  gap: 2rem;
+}
+
+.hero-logo {
+  max-width: 23rem;
+  max-height: auto;
+}
+
+nav ion-icon[name="reorder-three"] {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  align-items: center;
+}
+.nav-button {
+  padding: 1.5rem 2.5rem;
+  font-size: 1.7rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.5px;
+  position: relative;
+  transition: all 0.5s ease;
+  background: transparent;
+  font-weight: 600;
+}
+
+.nav-button:hover {
+  transform: scale(1.035);
+}
+
+.nav-button::after {
+  content: "";
+  position: absolute;
+  background: #fcca00;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 75%;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.nav-button:hover::after {
+  opacity: 1;
+}
+
+.nav-button--contact {
+  background-color: #fcca00;
+  color: #000;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 1rem 2.8rem;
+  gap: 0.8rem;
+}
+
+.nav-button--contact:hover {
+  background-color: #ffd633;
+}
+
+.nav-button--contact ion-icon {
+  font-size: 2.2rem;
+}
+
+/* --------------------------- */
+/* ------------ HERO --------- */
+/* --------------------------- */
+
+.hero-section {
+  color: #fff;
+}
+
+.hero-title-dancing-script {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 8rem;
+  transform: rotate(-4deg);
+}
+
+.hero-title {
+  font-size: 6rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.hero-description {
+  font-size: 1.9rem;
+  max-width: 35rem;
+  line-height: 3.3rem;
+  margin-bottom: 3rem;
+}
+
+.hero-content {
+  padding-left: 13rem;
+  justify-content: flex-start;
+  max-height: 35rem;
+  height: 100%;
+  max-width: 65rem;
+  padding-top: 4rem;
+}
+
+.home-hero-buttons {
+  gap: 1.5rem;
+}
+
+.home-hero-buttons ion-icon {
+  font-size: 2.2rem;
+}
+
+.btn {
+  padding: 1.4rem 2rem;
+  width: 100%;
+  font-size: 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.4s ease;
+  gap: 0.8rem;
+}
+
+.btn-primary {
+  background: #fcca00;
+  color: #000;
+  max-width: 25rem;
+}
+
+.btn-primary:hover {
+  background: #ffd633;
+  transform: scale(1.02);
+}
+
+.btn-secondary {
+  max-width: 17rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2px);
+}
+
+.btn-secondary:hover {
+  transform: scale(1.02);
+}
+
+/* ---------- HERO-WAVE ---------*/
+
+.hero-wave {
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+  width: 100%;
+  height: 120px;
+}
+
+.hero-wave svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero-wave path {
+  fill: #ffffff;
+}
+
+/* --------------------------- */
+/* ---------- FEATURES ------- */
+/* --------------------------- */
+
+.features-section {
+  margin: 0 auto;
+  max-width: 55vw;
+  justify-content: space-between;
+  padding-top: 5rem;
+  align-items: stretch;
+}
+
+.features-card {
+  align-items: center;
+  max-width: 18rem;
+}
+
+.features-card img {
+  max-width: 12rem;
+  max-height: 10rem;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+
+.features-card h4 {
+  font-size: 1.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.features-card p {
+  font-size: 1.5rem;
+  text-align: center;
+}
