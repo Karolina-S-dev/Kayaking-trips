@@ -7,10 +7,23 @@
   width: 100vw;
   height: 70vh;
   background-size: cover;
-  background-position: center 10%;
+  background-position: center 210%;
   background-attachment: fixed;
   position: relative;
   overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(32, 32, 32, 0.339) 0%,
+    rgba(0, 0, 0, 0.178) 25%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .hero-header {
@@ -101,12 +114,14 @@ nav ion-icon[name="reorder-three"] {
   font-family: "Dancing Script", sans-serif;
   font-size: 8rem;
   transform: rotate(-4deg);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.709);
 }
 
 .hero-title {
   font-size: 6rem;
   font-weight: 500;
   margin-bottom: 2rem;
+  text-shadow: 0 2px 8px rgb(0, 0, 0.709);
 }
 
 .hero-description {
@@ -114,6 +129,7 @@ nav ion-icon[name="reorder-three"] {
   max-width: 35rem;
   line-height: 3.3rem;
   margin-bottom: 3rem;
+  text-shadow: 0 2px 8px rgb(0, 0, 0.709);
 }
 
 .hero-content {
@@ -224,4 +240,76 @@ nav ion-icon[name="reorder-three"] {
 .features-card p {
   font-size: 1.5rem;
   text-align: center;
+}
+
+/* --------------------------- */
+/* ---------- FOOTER --------- */
+/* --------------------------- */
+
+.footer-section {
+  width: 100%;
+  height: 35vh;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(../img/lake-sunset.png);
+  background-position: center 61%;
+  background-size: cover;
+  filter: blur(1px);
+  transform: scale(1.03);
+  z-index: 0;
+}
+
+.footer-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.footer-col {
+  position: relative;
+  z-index: 2;
+  width: 40vw;
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-left: 10rem;
+}
+
+.footer-title {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 7.5rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.709);
+}
+
+.footer-subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-group ion-icon {
+  font-size: 2.5rem;
+  backdrop-filter: blur(15px);
+  padding: 1.3rem;
+  border-radius: 50%;
+}
+
+.footer-data {
+  font-size: 2.5rem;
+}
+.footer-contact-all {
+  gap: 5rem;
+  justify-content: flex-start;
+}
+
+.footer-group {
+  gap: 1rem;
+  align-items: center;
 }
