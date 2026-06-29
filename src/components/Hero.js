@@ -1,47 +1,17 @@
-import kayakLogo from "../assets/icons/kayaking-logo.png";
+import kayakingMovie from "../assets/movies/movie_kayaking.mp4";
 
 const Hero = () => {
   return (
     <section className="hero-section flex-col">
-      <header className="hero-header flex-row">
-        <img className="hero-logo" src={kayakLogo} alt="Kayak Logo" />
-        <nav>
-          <ul class="nav-links flex-row">
-            <li>
-              <a href="" class="nav-button">
-                Strona główna
-              </a>
-            </li>
-            <li>
-              <a href="" class="nav-button">
-                O nas
-              </a>
-            </li>
-            <li>
-              <a href="" class="nav-button">
-                Oferta
-              </a>
-            </li>
-            <li>
-              <a href="" class="nav-button">
-                Galeria
-              </a>
-            </li>
-            <li>
-              <a href="" class="nav-button">
-                FAQ
-              </a>
-            </li>
-            <li>
-              <a href="" class="nav-button nav-button--contact">
-                <ion-icon name="mail-outline"></ion-icon>
-                Kontakt
-              </a>
-            </li>
-          </ul>
-          <ion-icon id="nav-burger" name="reorder-three"></ion-icon>
-        </nav>
-      </header>
+      <video
+        src={kayakingMovie}
+        autoPlay
+        muted
+        loop
+        playsInline
+        type="video/mp4"
+        className="hero-video"
+      ></video>
       <div className="hero-content flex-col">
         <h1 className="hero-title-dancing-script">Przeżyj przygodę</h1>
         <h1 className="hero-title">na rzece Nidzie</h1>
@@ -49,12 +19,12 @@ const Hero = () => {
         <p className="hero-description">
           Niezapomniane spływy kajakowe dla Ciebie, Twojej rodziny i przyjaciół
         </p>
-        <div class="home-hero-buttons flex-row">
-          <a href="" class="btn btn-primary">
+        <div className="home-hero-buttons flex-row">
+          <a className="btn btn-primary">
             <ion-icon name="newspaper-outline"></ion-icon>
-            Zobacz naszą ofertę
+            Zobacz dostępne terminy
           </a>
-          <a href="" class="btn btn-secondary">
+          <a className="btn btn-secondary">
             <ion-icon name="call"></ion-icon>
             Zadzwoń
           </a>

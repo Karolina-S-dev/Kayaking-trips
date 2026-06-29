@@ -23,6 +23,11 @@ a {
   color: #fff;
 }
 
+input {
+  outline: none;
+  border: none;
+}
+
 /* --------------------------- */
 /* REUSABLE */
 /* --------------------------- */
