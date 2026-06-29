@@ -1,8 +1,10 @@
 import kayakingMovie from "../assets/movies/movie_kayaking.mp4";
+import Header from "../components/Header";
 
 const Hero = () => {
   return (
     <section className="hero-section flex-col">
+      <Header />
       <video
         src={kayakingMovie}
         autoPlay
@@ -17,12 +19,13 @@ const Hero = () => {
         <h1 className="hero-title">na rzece Nidzie</h1>
 
         <p className="hero-description">
-          Niezapomniane spływy kajakowe dla Ciebie, Twojej rodziny i przyjaciół
+          Organizujemy spływy kajakowe dla rodzin, grup znajomych, firm, szkół i każdego, kto chce aktywnie spędzić czas na świeżym powietrzu. Natura, relaks i niezapomniane wspomnienia!
         </p>
+
         <div className="home-hero-buttons flex-row">
           <a className="btn btn-primary">
             <ion-icon name="newspaper-outline"></ion-icon>
-            Zobacz dostępne terminy
+            Zobacz ofertę spływów
           </a>
           <a className="btn btn-secondary">
             <ion-icon name="call"></ion-icon>

@@ -1,4 +1,4 @@
-import kayakIcon from "../assets/icons/kayak-icon.png";
+import kayakIcon from "../assets/icons/canoe-icon.png";
 import peopleIcon from "../assets/icons/people-icon.png";
 import transportIcon from "../assets/icons/transport-icon.png";
 import viewsIcon from "../assets/icons/views-icon.png";

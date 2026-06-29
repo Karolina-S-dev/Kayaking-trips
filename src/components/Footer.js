@@ -42,17 +42,7 @@ const Comp = () => {
             </div>
           </div>
         </div>
-        <div className="newsletter-box flex-col">
-          <p className="newsletter-title">Zapisz się do newslettera</p>
-          <p className="newsletter-content">
-            Otrzymuj informacje o nowych spływach, promocjach i wydarzeniach.
-          </p>
-
-          <form className="newsletter-form flex-row">
-            <input type="email" placeholder="Twój adres e-mail" required />
-            <button type="submit">Zapisz się</button>
-          </form>
-        </div>
+       
       </section>
 
       <section className="footer-bottom">

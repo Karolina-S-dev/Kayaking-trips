@@ -4,6 +4,7 @@ const Header = () => {
   return (
     <header className="hero-header flex-row">
       <img className="hero-logo" src={kayakLogo} alt="Kayak Logo" />
+
       <nav>
         <ul className="nav-links flex-row">
           <li>
@@ -16,7 +17,7 @@ const Header = () => {
               <span>Spływy</span>
             </a>
           </li>
-         <li>
+          <li>
             <a className="nav-button">
               <span>Galeria</span>
             </a>
