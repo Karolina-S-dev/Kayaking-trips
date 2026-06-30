@@ -1,16 +1,20 @@
+import { Route, Routes } from "react-router-dom";
 import "./assets/css/App.css";
-import Features from "./components/Features";
-import Hero from "./components/Hero";
-import Footer from "./components/Footer";
-
+import HomeScreen from "./components/HomeScreen";
+import TripsScreen from "./components/TripsScreen";
+import GalleryScreen from "./components/GalleryScreen";
+import FaqScreen from "./components/FaqScreen";
+import ContactScreen from "./components/ContactScreen";
 
 function App() {
   return (
-    <>     
-      <Hero />
-      <Features />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<HomeScreen/>} />
+      <Route path="/trips" element={<TripsScreen />} />
+      <Route path="/gallery" element={<GalleryScreen />} />
+      <Route path="/faq" element={<FaqScreen />} />
+       <Route path="/contact" element={<ContactScreen />} />
+    </Routes>
   );
 }
 

@@ -11,7 +11,7 @@ body {
   font-style: normal;
   font-weight: 500;
   background-color: #fff;
-  color: #000;
+  color: #111827;
 }
 
 li {
@@ -20,7 +20,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #fff;
+  cursor: pointer;
 }
 
 input {
@@ -40,3 +40,21 @@ input {
   display: flex;
   flex-direction: row;
 }
+
+.white {
+  color: #fff;
+}
+
+.navy-blue {
+  color: #111827;
+}
+
+.green {
+  color: #23a757;
+}
+
+.dark-grey{
+  color: #374151;
+}
+
+

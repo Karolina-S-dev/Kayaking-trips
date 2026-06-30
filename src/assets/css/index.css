@@ -1,68 +1,36 @@
 /* --------------------------- */
-/* ------------ NAV --------- */
+/* -------- HOMESCREEN ------- */
 /* --------------------------- */
 
-.hero-section {
-  width: 100%;
-  height: 75vh;
-  position: relative;
-  overflow: hidden;
-  
-}
+/* --------------------------- */
+/* ---------- HEADER --------- */
+/* --------------------------- */
 
-.hero-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  filter: brightness(0.85) contrast(1.15) saturate(1.2);
-  
-}
-
-/* .hero-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    135deg,
-    #111111f2 0%,
-    #171717d9 25%,
-    #1717178d 50%,
-    #17171734 75%,
-    #1c1c1c1d 100%
-  );
-  z-index: 5;
-} */
-
-.hero-header {
+.header-section {
   padding: 0.8rem 5rem;
   justify-content: space-between;
   align-items: flex-start;
   margin: 0 auto;
   width: 100%;
   background-color: transparent;
-  z-index: 50;
-    backdrop-filter: blur(1px);
+  z-index: 999;
 }
 
-.hero-logo {
-  max-width: 10rem;
+.header-subpage {
+  background-color: #1b4130;
+}
+
+.header-logo {
+  max-width: 11rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
 }
 
-nav ion-icon[name="reorder-three"] {
+nav ion-icon[name="apps"] {
   display: none;
   cursor: pointer;
 }
 
-.nav-links {
-  align-items: center;
-  cursor: pointer;
-  
-}
 .nav-button {
   padding: 1.5rem 2.5rem;
   font-size: 1.7rem;
@@ -70,11 +38,11 @@ nav ion-icon[name="reorder-three"] {
   justify-content: center;
   align-items: center;
   letter-spacing: 1.5px;
-  position: relative;
   transition: all 0.5s ease;
   background: transparent;
   font-weight: 600;
-  
+  border: none;
+  cursor: pointer;
 }
 
 .nav-button:hover {
@@ -83,18 +51,12 @@ nav ion-icon[name="reorder-three"] {
 
 .nav-button span {
   position: relative;
-  display: inline-block;
-  color: #fff;
-}
-
-.nav-button--contact span{
-  color: #000;
 }
 
 .nav-button span::after {
   content: "";
   position: absolute;
-  background: #fcca00;
+  background: #f3c623;
   bottom: -6px;
   left: 0;
   height: 2px;
@@ -108,8 +70,7 @@ nav ion-icon[name="reorder-three"] {
 }
 
 .nav-button--contact {
-  background-color: #fcca00;
-  color: #000;
+  background-color: #f3c623;
   font-weight: 600;
   border-radius: 25px;
   padding: 1rem 2.8rem;
@@ -117,12 +78,11 @@ nav ion-icon[name="reorder-three"] {
 }
 
 .nav-button--contact:hover {
-  background-color: #ffd633;
+  background-color: #eab308;
 }
 
 .nav-button--contact ion-icon {
   font-size: 2.2rem;
-  color: #000;
 }
 
 /* --------------------------- */
@@ -130,7 +90,41 @@ nav ion-icon[name="reorder-three"] {
 /* --------------------------- */
 
 .hero-section {
-  color: #fff;
+  width: 100%;
+  min-height: 75vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9) contrast(1.15) saturate(1.2);
+  z-index: 1;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    #00000088 0%,
+    #0000004a 25%,
+    #00000022 50%,
+    #00000013 100%
+  );
+  z-index: 5;
+}
+
+.hero-content {
+  z-index: 999;
+  padding: 0rem 0 1rem 13rem;
+  justify-content: flex-start;
+  height: 100%;
 }
 
 .hero-title-dancing-script {
@@ -138,6 +132,7 @@ nav ion-icon[name="reorder-three"] {
   font-size: 8rem;
   transform: rotate(-4deg);
   text-shadow: 0 2px 8px #000000b5;
+  margin-bottom: 3rem;
 }
 
 .hero-title {
@@ -155,21 +150,11 @@ nav ion-icon[name="reorder-three"] {
   text-shadow: 0 2px 8px #000000b5;
 }
 
-.hero-content {
-  padding-left: 13rem;
-  justify-content: flex-start;
-  max-height: 35rem;
-  height: 100%;
-  max-width: 65rem;
-  padding-top: 3rem;
-  z-index: 999;
-}
-
-.home-hero-buttons {
+.hero-buttons {
   gap: 1.5rem;
 }
 
-.home-hero-buttons ion-icon {
+.hero-buttons ion-icon {
   font-size: 2.2rem;
 }
 
@@ -189,21 +174,19 @@ nav ion-icon[name="reorder-three"] {
 }
 
 .btn-primary {
-  background: #fcca00;
-  color: #000;
+  background: #f3c623;
   max-width: 28rem;
   opacity: 0.9;
 }
 
 .btn-primary:hover {
-  background: #ffd633;
+  background: #eab308;
   transform: scale(1.02);
 }
 
 .btn-secondary {
   max-width: 17rem;
   background: transparent;
-  color: #fff;
   border: 1px solid #fff;
   background: #ffffff14;
   backdrop-filter: blur(5px);
@@ -216,25 +199,261 @@ nav ion-icon[name="reorder-three"] {
 
 /* ---------- HERO-WAVE ---------  */
 
-
 .hero-wave {
   position: absolute;
   left: 0;
   bottom: -35px;
   width: 100%;
   height: 120px;
-  z-index:200;
+  z-index: 50;
 }
 
 .hero-wave svg {
   width: 100%;
   height: 100%;
   display: block;
-
 }
 
 .hero-wave path {
   fill: #ffffff;
+}
+
+/* --------------------------- */
+/* ----- ABOUT-US-SECTION ----- */
+/* --------------------------- */
+
+.about-us-section {
+  padding: 5rem 4rem;
+  max-width: 75%;
+  margin: 0 auto;
+  justify-content: space-between;
+  height: 38rem;
+}
+
+.about-us-label {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-us-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-us-description {
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+}
+
+.about-us-text-col {
+  flex: 0 0 35%;
+}
+
+.about-us-photo-col {
+  display: flex;
+  flex: 0 0 50%;
+}
+
+.about-us-photo-col img {
+  border-radius: 20px;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* --------------------------- */
+/* ---------- WORTH ------- */
+/* --------------------------- */
+
+.worth-section {
+  border-radius: 20px;
+  padding: 5rem 4rem;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.worth-label {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.worth-cards-row {
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.worth-card {
+  flex: 0 0 calc(20% - 1.5rem);
+  align-items: stretch;
+  border-radius: 12px;
+  align-items: center;
+  padding: 1.3rem;
+  box-shadow: 0 0 10px 4px #d2ccbe;
+  background-color: #fff;
+}
+
+.worth-card img {
+  max-width: 8rem;
+  aspect-ratio: 1/1;
+  margin-bottom: 0.8rem;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 3px #a4baa4;
+}
+
+.worth-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.worth-card-desc {
+  font-size: 1.2rem;
+  line-height: 2.3rem;
+  text-align: center;
+}
+
+/* --------------------------- */
+/* ----------- OFFER --------- */
+/* --------------------------- */
+
+.offer-section {
+  padding: 6rem 6rem;
+  max-width: 85%;
+  margin: 0 auto;
+}
+.offer-label {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.offer-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.offer-cards {
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.offer-card {
+  height: fit-content;
+  flex: 0 0 calc(25% - 1.125rem);
+  border-radius: 20px;
+  transition: all 0.6s ease;
+  overflow: hidden;
+  border: 1px solid #eaeaeb;
+  box-shadow: 0 0 10px 3px #dddfdf;
+}
+
+.offer-card:hover .offer-card-img img {
+  transform: scale(1.07);
+}
+
+.offer-card-img {
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16/10;
+  position: relative;
+}
+
+.additional-info {
+  position: absolute;
+  background-color: #f3c623;
+  z-index: 50;
+  padding: 0.5rem 1rem;
+  top: 5px;
+  left: 10px;
+  border-radius: 20px;
+  font-size: 1.15rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+ion-icon[name="star-outline"] {
+  font-size: 1.8rem !important;
+}
+
+.offer-card-img img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.6s ease;
+  object-fit: cover;
+  display: block;
+}
+
+.offer-card-content {
+  padding: 1.5rem 2.2rem;
+  flex: 1;
+  background-color: #fff;
+}
+
+.content-and-icon {
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-and-icon ion-icon {
+  font-size: 2rem;
+  color: #23a757;
+  flex-shrink: 0;
+}
+
+.offer-card-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+ion-icon[name="time"] {
+  font-size: 2.5rem !important;
+}
+
+.offer-card-duration {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.offer-card-desc {
+  font-size: 1.3rem;
+}
+
+.offer-card-feature {
+  font-size: 1.3rem;
+}
+
+.offer-card-longness {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.card-footer {
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.card-button {
+  padding: 0.8rem 2rem;
+  font-size: 1.6rem;
+  border: 1px solid #23a757;
+  border-radius: 15px;
+  background-color: #1f4d3a;
 }
 
 /* --------------------------- */
@@ -361,7 +580,7 @@ nav ion-icon[name="reorder-three"] {
   font-size: 1.2rem;
   color: #8b9097;
   letter-spacing: 1px;
-  background-color: #1F4D3A;
+  background-color: #1b4130;
   width: 100%;
 }
 
