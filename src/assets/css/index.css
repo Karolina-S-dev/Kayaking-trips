@@ -513,7 +513,7 @@ ion-icon[name="time"] {
 }
 
 .footer-col {
-  z-index: 2;
+  z-index: 10;
   width: fit-content;
 }
 
@@ -560,6 +560,7 @@ ion-icon[name="time"] {
   align-self: flex-start;
   justify-self: flex-start;
   margin-right: 15rem;
+  z-index: 10;
 }
 
 .socials-div ion-icon {
