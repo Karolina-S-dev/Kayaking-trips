@@ -61,11 +61,10 @@ const Offer = () => {
         <p className="green offer-label">Oferta</p>
         <p className="navy-blue offer-title">Nasze spływy</p>
         <div className="offer-cards flex-row">
-          {trips.map((trip, index) => (
-            <div className="offer-card flex-col">
+          {trips.map((trip) => (
+            <div key={trip.id} className="offer-card flex-col">
               <div className="offer-card-img">
                 <img src={trip.image} alt="Kajakowe zdjęcie" />
-
                 {trip.additionalInfo ? (
                   <div className="additional-info white flex-row">
                     <ion-icon name="star-outline"></ion-icon>
@@ -81,7 +80,6 @@ const Offer = () => {
                     {trip.duration}
                   </p>
                 </div>
-
                 <div className="content-and-icon flex-row">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
                   <p className="navy-blue offer-card-desc">{trip.desc}</p>
@@ -102,7 +100,6 @@ const Offer = () => {
                     {trip.feature3}
                   </p>
                 </div>
-
                 <div className="flex-row card-footer">
                   <p className="navy-blue offer-card-longness">
                     {trip.longness}
