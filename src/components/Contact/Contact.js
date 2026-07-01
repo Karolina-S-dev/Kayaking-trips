@@ -85,7 +85,7 @@ const Contact = () => {
             <div className="flex-row form-ion-row">
               <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
               <div className="form-group">
-                <label htmlFor="message">Wiadomość*</label>
+                <label htmlFor="message">Wiadomość</label>
                 <textarea
                   id="message"
                   placeholder="Napisz, w czym możemy Ci pomóc ..."

@@ -223,7 +223,7 @@ nav ion-icon[name="apps"] {
 /* --------------------------- */
 
 .about-us-section {
-  padding: 5rem 4rem;
+  padding: 4rem 4rem;
   max-width: 75%;
   margin: 0 auto;
   justify-content: space-between;
@@ -265,6 +265,40 @@ nav ion-icon[name="apps"] {
   overflow: hidden;
   width: 100%;
   height: 100%;
+}
+
+/* --------------------------- */
+/* ---------- FEATURES ------- */
+/* --------------------------- */
+
+.features-cards {
+  max-width: 60%;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.features-card {
+  flex: 0 0 calc(25% - 1rem);
+  justify-content: center;
+  align-items: center;
+}
+
+.features-card img {
+  max-width: 18rem;
+  height: 14rem;
+}
+
+.features-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.features-card-subtitle {
+  font-size: 1.15rem;
+  text-align: center;
+  line-height: 2rem;
+  max-width: 22rem;
 }
 
 /* --------------------------- */
@@ -325,8 +359,8 @@ nav ion-icon[name="apps"] {
 /* --------------------------- */
 
 .offer-section {
-  padding: 6rem 6rem;
-  max-width: 85%;
+  padding: 6rem 0;
+  max-width: 80%;
   margin: 0 auto;
 }
 .offer-label {
@@ -455,40 +489,65 @@ ion-icon[name="time"] {
   border-radius: 15px;
   background-color: #1f4d3a;
 }
-
 /* --------------------------- */
-/* ---------- FEATURES ------- */
+/* -------- GALLERY-HOME ------ */
 /* --------------------------- */
 
-.features-section {
+.gallery-home-section {
+  max-width: 85%;
   margin: 0 auto;
-  max-width: 55vw;
-  justify-content: space-between;
-  padding-top: 5rem;
-  align-items: stretch;
+  padding: 3rem;
+  background-color: #f2e7cc;
+  border-radius: 20px;
 }
 
-.features-card {
+.gallery-home-div {
+  gap: 1rem;
+}
+
+.gallery-home-div img {
+  height: 20rem;
+  border-radius: 20px;
+  object-fit: cover;
+  overflow: hidden;
+  width: 18%;
+}
+
+.width10 {
+  width: 13% !important;
+}
+
+.gallery-home-button {
+  padding: 0.8rem 2.2rem;
+  font-size: 1.6rem;
+  border: 1px solid #23a757;
+  border-radius: 15px;
+  background-color: #1f4d3a;
+  width: fit-content;
+  margin-left: auto;
+  margin-top: 2rem;
+  justify-self: flex-end;
+  gap: 1rem;
   align-items: center;
-  max-width: 18rem;
 }
 
-.features-card img {
-  max-width: 12rem;
-  max-height: 10rem;
-  height: 100%;
-  width: 100%;
-  margin-bottom: 0.8rem;
+.gallery-home-button ion-icon {
+  font-size: 2rem;
 }
 
-.features-card h4 {
-  font-size: 1.9rem;
-  margin-bottom: 0.8rem;
-}
-
-.features-card p {
-  font-size: 1.5rem;
+.gallery-home-label {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
   text-align: center;
+}
+
+.gallery-home-description {
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 /* --------------------------- */

@@ -69,11 +69,11 @@ const Worth = () => {
   return (
     <>
       <section className="worth-section flex-col">
-        <p className="green worth-label">Dlaczego warto wybrać nas?</p>
+        <p className="green worth-label">Dlaczego warto wybrać nasze spływy?</p>
         <div className="worth-cards-row flex-row">
           {worthData.map((data) => (
             <div key={data.id} className="worth-card flex-col">
-              <img src={data.image} alt="" />
+              <img src={data.image} alt="Ikony" />
               <p className="worth-card-title">{data.title}</p>
               <p className="worth-card-desc">{data.desc}</p>
             </div>

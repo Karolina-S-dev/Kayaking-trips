@@ -58,6 +58,10 @@ const Header = () => {
             </button>
           </li>
           <li>
+            <button className="nav-button light-grey">PL | ENG</button>
+          </li>
+
+          <li>
             <a
               href="/contact"
               className="nav-button nav-button--contact navy-blue"

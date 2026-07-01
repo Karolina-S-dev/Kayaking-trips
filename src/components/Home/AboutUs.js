@@ -9,7 +9,7 @@ const AboutUs = () => {
           <p className="navy-blue about-us-title">
             Pasja do natury <br />i aktywnego wypoczynku
           </p>
-          <p className="about-us-description">
+          <p className="about-us-description dark-grey">
             Jesteśmy miłośnikami kajaków i przyrody. Od lat organizujemy spływy,
             które łączą aktywny wypoczynek z bliskością natury. Dbamy o
             bezpieczeństwo, komfort i dobrą atmosferę.
@@ -17,7 +17,7 @@ const AboutUs = () => {
         </div>
 
         <div className="about-us-photo-col">
-          <img src={riverSunset} alt="" />
+          <img src={riverSunset} alt="Zachód słońca nad rzeką" />
         </div>
       </section>
     </>

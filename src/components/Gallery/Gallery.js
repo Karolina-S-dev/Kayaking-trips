@@ -62,7 +62,7 @@ const Gallery = () => {
             <img src={galleryPhoto13} alt="Zimorodek" />
           </div>
           <div className="gallery-content-img">
-            <img src={galleryPhoto6} alt="Świetna atmosfera na kajakach" />
+            <img src={galleryPhoto6} alt="Grupa przy brzegu" />
           </div>
           <div className="gallery-content-img">
             <img src={galleryPhoto12} alt="Bóbr" />

@@ -82,21 +82,21 @@ const Offer = () => {
                 </div>
                 <div className="content-and-icon flex-row">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
-                  <p className="navy-blue offer-card-desc">{trip.desc}</p>
+                  <p className="dark-grey offer-card-desc">{trip.desc}</p>
                 </div>
                 <div className="content-and-icon flex-row">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
-                  <p className="navy-blue offer-card-feature">{trip.feature}</p>
+                  <p className="dark-grey offer-card-feature">{trip.feature}</p>
                 </div>
                 <div className="content-and-icon flex-row">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
-                  <p className="navy-blue offer-card-feature">
+                  <p className="dark-grey offer-card-feature">
                     {trip.feature2}
                   </p>
                 </div>
                 <div className="content-and-icon flex-row">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
-                  <p className="navy-blue offer-card-feature">
+                  <p className="dark-grey offer-card-feature">
                     {trip.feature3}
                   </p>
                 </div>
