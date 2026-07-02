@@ -272,14 +272,14 @@ nav ion-icon[name="apps"] {
 /* --------------------------- */
 
 .features-cards {
-  max-width: 60%;
+  max-width: 65%;
   margin: 0 auto;
   gap: 1rem;
 }
 
 .features-card {
-  flex: 0 0 calc(25% - 1rem);
-  justify-content: center;
+  flex: 0 0 calc(20% - 1.25rem);
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -295,7 +295,7 @@ nav ion-icon[name="apps"] {
 }
 
 .features-card-subtitle {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   text-align: center;
   line-height: 2rem;
   max-width: 22rem;
@@ -368,7 +368,7 @@ nav ion-icon[name="apps"] {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  text-align: center;
+  padding-left: 8rem;
 }
 
 .offer-title {
@@ -376,7 +376,7 @@ nav ion-icon[name="apps"] {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 2rem;
-  text-align: center;
+  padding-left: 8rem;
 }
 
 .offer-cards {
@@ -489,6 +489,88 @@ ion-icon[name="time"] {
   border-radius: 15px;
   background-color: #1f4d3a;
 }
+
+/* --------------------------- */
+/* ------ WHY US SECTION ----- */
+/* --------------------------- */
+
+.why-us-section {
+  padding: 7rem 0;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.why-us-label {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.why-us-row {
+  gap: 5rem;
+}
+.why-us-cards-row {
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+.why-us-cards {
+  flex: 0 0 calc(65% - 2.5rem);
+}
+
+.pricelist {
+  flex: 0 0 calc(35% - 2.5rem);
+}
+
+.why-card {
+  flex: 0 0 calc(25% - 1.25rem);
+  align-items: stretch;
+  border-radius: 12px;
+  align-items: center;
+  padding: 1.3rem;
+  box-shadow: 0 0 10px 4px #d2ccbe;
+  background-color: #fff4d7de;
+}
+
+.why-card img {
+  max-width: 7rem;
+  aspect-ratio: 1/1;
+  margin-bottom: 1rem;
+}
+
+.why-card-title {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.why-card-desc {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.pricelist {
+  background-color: #fff4d7de;
+  padding: 2rem;
+  box-shadow: 0 0 10px 4px #d2ccbe;
+  border-radius: 12px;
+}
+
+.pricelist-content {
+  gap: 2rem;
+}
+
+.pricelist-card{
+  flex: 0 0 calc(50% - 1rem);
+  align-items: center;
+}
+
+.pricelist-card img{
+  max-width: 8rem;
+}
+
 /* --------------------------- */
 /* -------- GALLERY-HOME ------ */
 /* --------------------------- */
@@ -499,6 +581,7 @@ ion-icon[name="time"] {
   padding: 3rem;
   background-color: #f2e7cc;
   border-radius: 20px;
+  margin-bottom: 5rem;
 }
 
 .gallery-home-div {

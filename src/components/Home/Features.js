@@ -2,6 +2,7 @@ import viewsIcon2 from "../../assets/icons/views-icon2.png";
 import transportIcon2 from "../../assets/icons/transport-icon2.png";
 import canoeIcon2 from "../../assets/icons/canoe-icon2.png";
 import peopleIcon2 from "../../assets/icons/people-icon2.png";
+import fireIcon2 from "../../assets/icons/fire-icon2.png";
 
 const Features = () => {
   const featuresData = [
@@ -28,6 +29,12 @@ const Features = () => {
       title: "Dla każdego",
       desc: "Spływy dla rodzin z dziećmi, par, grup znajomych, firm i szkół.",
       image: peopleIcon2,
+    },
+    {
+      id: 5,
+      title: "Organizacja ognisk",
+      desc: "Zadbamy o ognisko, kiełbaski i świetną atmosferę po zakończonej wyprawie.",
+      image: fireIcon2,
     },
   ];
   return (

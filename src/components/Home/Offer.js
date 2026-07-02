@@ -36,7 +36,7 @@ const trips = [
     duration: "2 - 3 dni",
     longness: "29-43km",
     desc: "Pełna przygoda dla osób chcących spędzić więcej czasu na wodzie.",
-    feature: "3 trasy do wyboru",
+    feature: "4 trasy do wyboru",
     feature2: "Kompleksowa organizacja",
     feature3: "Piękne widoki",
     ctaText: "Zobacz trasy",
