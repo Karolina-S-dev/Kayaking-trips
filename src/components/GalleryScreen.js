@@ -1,6 +1,7 @@
 import Gallery from "./Gallery/Gallery";
 import Footer from "./Home/Footer";
 import Header from "./Home/Header";
+import ScrollToTop from "./Home/ScrollToTop";
 
 const GalleryScreen = () => {
   return (
@@ -8,6 +9,7 @@ const GalleryScreen = () => {
       <Header />
       <Gallery />
       <Footer />
+      <ScrollToTop/>
     </>
   );
 };

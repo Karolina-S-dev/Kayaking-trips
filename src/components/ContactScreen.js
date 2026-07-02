@@ -1,6 +1,7 @@
 import Footer from "./Home/Footer";
 import Header from "./Home/Header";
 import Contact from "./Contact/Contact";
+import ScrollToTop from "./Home/ScrollToTop";
 
 const ContactScreen = () => {
   return (
@@ -8,6 +9,7 @@ const ContactScreen = () => {
       <Header />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </>
   );
 };

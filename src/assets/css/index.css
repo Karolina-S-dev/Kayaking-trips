@@ -302,59 +302,6 @@ nav ion-icon[name="apps"] {
 }
 
 /* --------------------------- */
-/* ---------- WORTH ------- */
-/* --------------------------- */
-
-.worth-section {
-  border-radius: 20px;
-  padding: 5rem 4rem;
-  max-width: 75%;
-  margin: 0 auto;
-}
-
-.worth-label {
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 3rem;
-}
-.worth-cards-row {
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-}
-
-.worth-card {
-  flex: 0 0 calc(20% - 1.5rem);
-  align-items: stretch;
-  border-radius: 12px;
-  align-items: center;
-  padding: 1.3rem;
-  box-shadow: 0 0 10px 4px #d2ccbe;
-  background-color: #fff;
-}
-
-.worth-card img {
-  max-width: 8rem;
-  aspect-ratio: 1/1;
-  margin-bottom: 0.8rem;
-  border-radius: 50%;
-  box-shadow: 0 0 8px 3px #a4baa4;
-}
-
-.worth-card-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 0.8rem;
-}
-
-.worth-card-desc {
-  font-size: 1.2rem;
-  line-height: 2.3rem;
-  text-align: center;
-}
-
-/* --------------------------- */
 /* ----------- OFFER --------- */
 /* --------------------------- */
 
@@ -517,6 +464,7 @@ ion-icon[name="time"] {
 
 .why-us-cards {
   flex: 0 0 calc(65% - 2.5rem);
+  justify-content: space-between;
 }
 
 .pricelist {
@@ -562,12 +510,12 @@ ion-icon[name="time"] {
   gap: 2rem;
 }
 
-.pricelist-card{
+.pricelist-card {
   flex: 0 0 calc(50% - 1rem);
   align-items: center;
 }
 
-.pricelist-card img{
+.pricelist-card img {
   max-width: 8rem;
 }
 
@@ -759,4 +707,31 @@ ion-icon[name="logo-google"] {
 
 .privacy-policy li {
   font-size: 1.6rem;
+}
+
+/* --------------------------- */
+/* --------SCROLL-TO-TOP------ */
+/* --------------------------- */
+
+.scroll-to-top {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #143124, #2d6f51);
+  color: #f3c623;
+  display: block;
+  font-size: 2.5rem;
+  border: none;
+  transition: all 0.3s ease;
+  z-index: 999;
+  cursor: pointer;
+  
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-2px);
+  background-color: #1b2330;
 }
