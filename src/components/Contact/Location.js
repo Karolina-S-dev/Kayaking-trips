@@ -26,6 +26,7 @@ const Location = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="strict-origin-when-cross-origin"
+              title="google-map"
             ></iframe>
           </div>
         </div>
