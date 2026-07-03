@@ -4,7 +4,6 @@ import galleryPhoto11 from "../../assets/img/gallery/gallery-photo-11.png";
 import galleryPhoto14 from "../../assets/img/gallery/gallery-photo-14.png";
 import galleryPhoto1 from "../../assets/img/gallery/gallery-photo-1.png";
 import galleryPhoto9 from "../../assets/img/gallery/gallery-photo-9.png";
-import { Link } from "react-router-dom";
 
 const GalleryHome = () => {
   return (
