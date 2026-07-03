@@ -128,4 +128,128 @@ const whyUsData = [
   },
 ];
 
-export { featuresData, trips, whyUsData };
+const faqContentData = [
+  {
+    id: 1,
+    title: "Rezerwacja i płatność",
+    icon: <ion-icon name="calendar-outline"></ion-icon>,
+    arrowIcon: <ion-icon name="chevron-down-outline"></ion-icon>,
+    questions: [
+      {
+        question: "Jak zarezerwować spływ?",
+        answer:
+          "Rezerwacji możesz dokonać telefonicznie, przez formularz kontaktowy na stronie lub w wiadomości e-mail. Odpowiemy jak najszybciej, aby potwierdzić szczegóły.",
+      },
+      {
+        question: "Czy trzeba wpłacać zaliczkę?",
+        answer: "",
+      },
+      {
+        question: "Czy można zapłacić na miejscu?",
+        answer: "",
+      },
+      {
+        question: "Czy mogę zmienić termin rezerwacji?",
+        answer: "",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Przebieg spływu",
+    icon: <ion-icon name="git-merge-outline"></ion-icon>,
+    arrowIcon: <ion-icon name="chevron-down-outline"></ion-icon>,
+    questions: [
+      {
+        question: "",
+        answer: "",
+      },
+      {
+        question: "",
+        answer: "",
+      },
+      {
+        question: "",
+        answer: "",
+      },
+      {
+        question: "",
+        answer: "",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Dla kogo są spływy?",
+    icon: <ion-icon name="people"></ion-icon>,
+    arrowIcon: <ion-icon name="chevron-down-outline"></ion-icon>,
+    questions: [
+      {
+        question: "",
+        answer: "",
+      },
+      {
+        question: "",
+        answer: "",
+      },
+      {
+        question: "",
+        answer: "",
+      },
+      {
+        question: "",
+        answer: "",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Sprzęt i bezpieczeństwo",
+    icon: <ion-icon name="shield-checkmark-outline"></ion-icon>,
+    arrowIcon: <ion-icon name="chevron-down-outline"></ion-icon>,
+    questions: [
+      {
+        question: "",
+        answer: "",
+      },
+      {
+        question: "",
+        answer: "",
+      },
+      {
+        question: "",
+        answer: "",
+      },
+      {
+        question: "",
+        answer: "",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Pogoda i organizacja",
+    icon: <ion-icon name="cloudy"></ion-icon>,
+    arrowIcon: <ion-icon name="chevron-down-outline"></ion-icon>,
+    questions: [
+      {
+        question: "",
+        answer: "",
+      },
+      {
+        question: "",
+        answer: "",
+      },
+      {
+        question: "",
+        answer: "",
+      },
+      {
+        question: "",
+        answer: "",
+      },
+    ],
+  },
+];
+
+export { featuresData, trips, whyUsData, faqContentData };
