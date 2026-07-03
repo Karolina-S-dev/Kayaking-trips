@@ -132,7 +132,7 @@ nav ion-icon[name="apps"] {
   font-size: 8rem;
   transform: rotate(-4deg);
   text-shadow: 0 2px 8px #000000b5;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .hero-title {
@@ -722,7 +722,9 @@ ion-icon[name="logo-google"] {
   border-radius: 50%;
   background: linear-gradient(to bottom, #143124, #2d6f51);
   color: #f3c623;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 2.5rem;
   border: none;
   transition: all 0.3s ease;

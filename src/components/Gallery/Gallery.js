@@ -12,6 +12,9 @@ import galleryPhoto10 from "../../assets/img/gallery/gallery-photo-10.png";
 import galleryPhoto11 from "../../assets/img/gallery/gallery-photo-11.png";
 import galleryPhoto12 from "../../assets/img/gallery/gallery-photo-12.png";
 import galleryPhoto13 from "../../assets/img/gallery/gallery-photo-13.png";
+import galleryPhoto15 from "../../assets/img/gallery/gallery-photo-15.png";
+import galleryPhoto16 from "../../assets/img/gallery/gallery-photo-16.png";
+import galleryPhoto17 from "../../assets/img/gallery/gallery-photo-17.png";
 import { useNavigate } from "react-router-dom";
 
 const Gallery = () => {
@@ -58,6 +61,20 @@ const Gallery = () => {
           <div className="gallery-content-img">
             <img src={galleryPhoto8} alt="Uczestnicy wycieczki w kajakach" />
           </div>
+
+          <div className="gallery-content-img">
+            <img
+              src={galleryPhoto15}
+              alt="Spokojna rzeka z kajakarzami w słońcu"
+            />
+          </div>
+          <div className="gallery-content-img">
+            <img src={galleryPhoto16} alt="Kajakowanie na spokojnej rzece" />
+          </div>
+          <div className="gallery-content-img">
+            <img src={galleryPhoto17} alt="Kajakarze na spokojnej rzece" />
+          </div>
+
           <div className="gallery-content-img large">
             <img src={galleryPhoto13} alt="Zimorodek" />
           </div>

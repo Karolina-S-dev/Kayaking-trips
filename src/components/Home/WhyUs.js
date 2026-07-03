@@ -1,36 +1,6 @@
-import experienceIcon2 from "../../assets/icons/experience-icon2.png";
-import googleIcon2 from "../../assets/icons/google-icon2.png";
-import canoeIcon3 from "../../assets/icons/canoe-icon3.png";
-import routesIcon2 from "../../assets/icons/routes-icon2.png";
+import { whyUsData } from "../../utils/utils";
 import canoe1person from "../../assets/icons/canoe1person.png";
 import canoe2people from "../../assets/icons/canoe2people.png";
-
-const whyUsData = [
-  {
-    id: 1,
-    image: experienceIcon2,
-    title: "10 +",
-    desc: "lat doświadczenia",
-  },
-  {
-    id: 2,
-    title: "4.9",
-    desc: "średnia opinii Google",
-    image: googleIcon2,
-  },
-  {
-    id: 3,
-    title: "33",
-    desc: "nowoczesne kajaki",
-    image: canoeIcon3,
-  },
-  {
-    id: 4,
-    title: "14",
-    desc: "pieknych tras",
-    image: routesIcon2,
-  },
-];
 
 const WhyUs = () => {
   return (
@@ -62,7 +32,7 @@ const WhyUs = () => {
               <div className="flex-col pricelist-card">
                 <img src={canoe1person} alt="Ikona kajak jednoosobowy" />
                 <p className="why-card-title navy-blue ">80 zł</p>
-                <p className="why-card-desc">KAJAK DWUOSOBOWY</p>
+                <p className="why-card-desc">KAJAK JEDNOOSOBOWY</p>
               </div>
             </div>
           </div>

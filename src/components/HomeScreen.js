@@ -1,7 +1,7 @@
 import Hero from "./Home/Hero";
 import Footer from "./Home/Footer";
 import AboutUs from "./Home/AboutUs";
-import Offer from "./Home/Offer";
+import OfferList from "./Home/OfferList";
 import GalleryHome from "./Home/GalleryHome";
 import Features from "./Home/Features";
 import WhyUs from "./Home/WhyUs";
@@ -13,11 +13,11 @@ const HomeScreen = () => {
       <Hero />
       <AboutUs />
       <Features />
-       <Offer />
+      <OfferList />
       <WhyUs />
       <GalleryHome />
       <Footer />
-      <ScrollToTop/>
+      <ScrollToTop />
     </>
   );
 };

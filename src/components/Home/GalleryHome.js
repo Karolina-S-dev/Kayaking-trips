@@ -26,11 +26,9 @@ const GalleryHome = () => {
           <img className="width10" src={galleryPhoto14} alt="Ognisko" />
           <img src={galleryPhoto9} alt="Grupa wyruszająca na spływ kajakowy" />
         </div>
-        <Link to="/gallery">
-          Zobacz więcej zdjęć<ion-icon name="arrow-forward-outline"></ion-icon>
-        </Link>
         <a href="/gallery" className="gallery-home-button flex-row">
           Zobacz więcej zdjęć
+          <ion-icon name="arrow-forward-outline"></ion-icon>
         </a>
       </section>
     </>
