@@ -132,8 +132,7 @@ const faqContentData = [
   {
     id: 1,
     title: "Rezerwacja i płatność",
-    icon: <ion-icon name="calendar-outline"></ion-icon>,
-    arrowIcon: <ion-icon name="chevron-down-outline"></ion-icon>,
+    icon: <ion-icon name="calendar-outline"></ion-icon>,    
     questions: [
       {
         question: "Jak zarezerwować spływ?",
@@ -158,10 +157,9 @@ const faqContentData = [
     id: 2,
     title: "Przebieg spływu",
     icon: <ion-icon name="git-merge-outline"></ion-icon>,
-    arrowIcon: <ion-icon name="chevron-down-outline"></ion-icon>,
     questions: [
       {
-        question: "",
+        question: "Czy przed spływem odbywa się instruktaż?",
         answer: "",
       },
       {
@@ -182,22 +180,21 @@ const faqContentData = [
     id: 3,
     title: "Dla kogo są spływy?",
     icon: <ion-icon name="people"></ion-icon>,
-    arrowIcon: <ion-icon name="chevron-down-outline"></ion-icon>,
     questions: [
       {
-        question: "",
+        question: "Czy spływ jest odpowiedni dla dzieci?",
         answer: "",
       },
       {
-        question: "",
+        question: "Czy trzeba umieć pływać?",
         answer: "",
       },
       {
-        question: "",
+        question: "Czy osoby początkujące sobie poradzą?",
         answer: "",
       },
       {
-        question: "",
+        question: "Czy można zabrać psa na spływ?",
         answer: "",
       },
     ],
@@ -206,18 +203,17 @@ const faqContentData = [
     id: 4,
     title: "Sprzęt i bezpieczeństwo",
     icon: <ion-icon name="shield-checkmark-outline"></ion-icon>,
-    arrowIcon: <ion-icon name="chevron-down-outline"></ion-icon>,
     questions: [
       {
-        question: "",
+        question: "Czy otrzymamy kamizelki ratunkowe?",
         answer: "",
       },
       {
-        question: "",
+        question: "Co warto zabrać na spływ?",
         answer: "",
       },
       {
-        question: "",
+        question: "Gdzie przechowywać telefon i rzeczy osobiste?",
         answer: "",
       },
       {
@@ -230,26 +226,54 @@ const faqContentData = [
     id: 5,
     title: "Pogoda i organizacja",
     icon: <ion-icon name="cloudy"></ion-icon>,
-    arrowIcon: <ion-icon name="chevron-down-outline"></ion-icon>,
     questions: [
       {
-        question: "",
+        question: "Czy spływ odbywa się podczas deszczu?",
         answer: "",
       },
       {
-        question: "",
+        question: "Co w przypadku złej pogody?",
         answer: "",
       },
       {
-        question: "",
+        question: "Czy po spływie można zorganizować ognisko?",
         answer: "",
       },
       {
-        question: "",
+        question: "Jak wcześnie należy pojawić się na miejscu zbiórki?",
         answer: "",
       },
     ],
   },
 ];
 
-export { featuresData, trips, whyUsData, faqContentData };
+
+const faqHomeData = [
+  {
+    question: faqContentData[0].questions[0].question,
+    answer: faqContentData[0].questions[0].answer,
+    icon: <ion-icon name="calendar-outline"></ion-icon>,
+    arrowIcon: <ion-icon name="chevron-down-outline"></ion-icon>,
+    },{
+        question: faqContentData[0].questions[1].question,
+    answer: faqContentData[0].questions[1].answer,
+    icon: <ion-icon name="card-outline"></ion-icon>,
+    },{
+        question: faqContentData[2].questions[2].question,
+    answer: faqContentData[2].questions[2].answer,
+    icon: <ion-icon name="people-outline"></ion-icon>,
+    },
+    {
+        question: faqContentData[1].questions[0].question,
+    answer: faqContentData[1].questions[0].answer,
+    icon: <ion-icon name="accessibility-outline"></ion-icon>,
+    },
+    {
+        question: faqContentData[2].questions[0].question,
+    answer: faqContentData[2].questions[0].answer,
+    icon: <ion-icon name="happy-outline"></ion-icon>,
+    },
+];
+
+
+export { featuresData, trips, whyUsData, faqContentData,faqHomeData };

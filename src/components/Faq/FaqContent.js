@@ -1,5 +1,3 @@
-import { faqContentData } from "../../utils/utils";
-
 const FaqContent = ({ isFaqContentOpen, item }) => {
   return (
     <>
@@ -8,7 +6,7 @@ const FaqContent = ({ isFaqContentOpen, item }) => {
           {item.questions.map((question, index) => (
             <div key={index} className="flex-col question-and-answer">
               <p className="faq-question">{question.question}</p>
-              <p className="faq-answer">{question.answer}</p>
+              <p className="faq-answer mid-grey">{question.answer}</p>
             </div>
           ))}
         </div>

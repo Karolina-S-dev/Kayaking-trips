@@ -59,7 +59,7 @@ const Header = () => {
             </button>
           </li>
           <li>
-            <button className="nav-button light-grey">PL | ENG</button>
+            <button className="nav-button white">PL | ENG</button>
           </li>
 
           <li>

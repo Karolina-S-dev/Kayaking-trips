@@ -136,15 +136,16 @@ nav ion-icon[name="apps"] {
 }
 
 .hero-title {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 500;
   margin-bottom: 2rem;
   text-shadow: 0 2px 8px #000000b5;
+  color: #f3c623;
 }
 
 .hero-description {
-  font-size: 1.7rem;
-  max-width: 45rem;
+  font-size: 1.9rem;
+  max-width: 50rem;
   line-height: 3.3rem;
   margin-bottom: 3rem;
   text-shadow: 0 2px 8px #000000b5;
@@ -478,7 +479,8 @@ ion-icon[name="time"] {
   align-items: center;
   padding: 1.3rem;
   box-shadow: 0 0 10px 4px #d2ccbe;
-  background-color: #fff4d7de;
+  background-color: #fff;
+  border: 2px solid #f2e7cc;
 }
 
 .why-card img {
@@ -500,10 +502,11 @@ ion-icon[name="time"] {
 }
 
 .pricelist {
-  background-color: #fff4d7de;
+  background-color: #fff;
   padding: 2rem;
   box-shadow: 0 0 10px 4px #d2ccbe;
   border-radius: 12px;
+  border: 2px solid #f2e7cc;
 }
 
 .pricelist-content {
@@ -568,17 +571,73 @@ ion-icon[name="time"] {
 
 .gallery-home-label {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   text-align: center;
 }
 
 .gallery-home-description {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   line-height: 2.7rem;
   text-align: center;
   margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+/* --------------------------- */
+/* -------- FAQ-HOME ------ */
+/* --------------------------- */
+.faq-home-section {
+  padding: 3rem 0;
+  max-width: 65%;
+  margin: 0 auto;
+}
+
+.faq-home-label {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.faq-home-description {
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.faq-home-text {
+  padding: 2rem 10.5rem;
+  font-size: 1.5rem;
+}
+
+.faq-home-banner {
+  height: 7.5rem;
+  padding: 2rem 4rem;
+  background-color: #fff;
+  border-radius: 12px;
+  align-items: center;
+  box-shadow: 0 0 10px 3px #dddfdf;
+  margin-top: 1.5rem;
+}
+
+.faq-home-button {
+  padding: 0.8rem 2.2rem;
+  font-size: 1.6rem;
+  border: 1px solid #23a757;
+  border-radius: 15px;
+  background-color: #1f4d3a;
+  width: fit-content;
+  margin: 2rem auto 0 auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.faq-home-button ion-icon {
+  font-size: 2rem;
 }
 
 /* --------------------------- */
@@ -730,7 +789,6 @@ ion-icon[name="logo-google"] {
   transition: all 0.3s ease;
   z-index: 999;
   cursor: pointer;
-  
 }
 
 .scroll-to-top:hover {
