@@ -1,3 +1,11 @@
+/* klasa ktora jest zawsze
+rotate 0
+transition
+
+klasa dochadzaca
+rotate 180 */
+
+
 /* --------------------------- */
 /* -------- HOMESCREEN ------- */
 /* --------------------------- */
@@ -443,7 +451,7 @@ ion-icon[name="time"] {
 /* --------------------------- */
 
 .why-us-section {
-  padding: 7rem 0;
+  padding: 8rem 0;
   max-width: 80%;
   margin: 0 auto;
 }
@@ -478,9 +486,9 @@ ion-icon[name="time"] {
   border-radius: 12px;
   align-items: center;
   padding: 1.3rem;
-  box-shadow: 0 0 10px 4px #d2ccbe;
+ box-shadow: 0 0 10px 3px #dddfdf;
   background-color: #fff;
-  border: 2px solid #f2e7cc;
+  border: 2px solid #dddfdf;
 }
 
 .why-card img {
@@ -504,9 +512,9 @@ ion-icon[name="time"] {
 .pricelist {
   background-color: #fff;
   padding: 2rem;
-  box-shadow: 0 0 10px 4px #d2ccbe;
+  box-shadow: 0 0 10px 3px #dddfdf;
   border-radius: 12px;
-  border: 2px solid #f2e7cc;
+  border: 2px solid #dddfdf;
 }
 
 .pricelist-content {
@@ -537,6 +545,7 @@ ion-icon[name="time"] {
 
 .gallery-home-div {
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 .gallery-home-div img {
@@ -579,7 +588,7 @@ ion-icon[name="time"] {
   font-size: 1.9rem;
   line-height: 2.7rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 600;
 }
 

@@ -7,7 +7,7 @@ const FaqScreen = () => {
   return (
     <>
       <Header />
-      <FaqList/>
+      <FaqList />
       <Footer />
       <ScrollToTop />
     </>

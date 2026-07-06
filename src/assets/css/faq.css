@@ -48,14 +48,32 @@
   font-size: 2.5rem;
   margin-left: auto;
   cursor: pointer;
+  transform: rotate(0deg);
+  transition: transform 0.8s ease;
+    visibility: visible;
+}
+
+.banner-arrowicon-rotated {
+  transform: rotate(180deg);
+  transition: transform 0.8s ease;
+  font-size: 2.5rem;
+  margin-left: auto;
+  cursor: pointer;
+  visibility: visible;
+}
+
+.question-arrowicon {
+  font-size: 2.5rem;
+  margin-left: auto;
+  cursor: pointer;
 }
 
 .faq-content {
-  background-color: #f4f1ebde;
+  background-color: #fff;
   padding: 2rem 4rem;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  box-shadow: 0 0 5px 2px #cdc1a3;
+  box-shadow: 0 0 10px 3px #dddfdf;
 }
 
 .faq-question {
@@ -70,7 +88,7 @@
 }
 
 .question-and-answer {
-  padding: 1rem;
+  margin: 1rem 0 1rem 6.3rem;
   border-bottom: 1px solid #c39f577e;
 }
 

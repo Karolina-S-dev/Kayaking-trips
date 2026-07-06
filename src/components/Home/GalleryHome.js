@@ -13,6 +13,15 @@ const GalleryHome = () => {
         <p className="dark-grey gallery-home-description">
           Kadry z naszych spływów, ognisk i najpiękniejszych zakątków Nidy.
         </p>
+        <svg width="85" height="12" viewBox="0 0 70 10" className="mt-3">
+          <path
+            d="M2 6 Q10 2 18 6 T34 6 T50 6 T66 6 T78 6"
+            stroke="#F3C623"
+            strokeWidth="3"
+            fill="none"
+            strokeLinecap="round"
+          />
+        </svg>
         <div className="gallery-home-div flex-row">
           <img src={galleryPhoto3} alt="Zdjęcie ze spływu kajakowego" />
           <img

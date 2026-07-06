@@ -263,7 +263,6 @@ const faqHomeData = [
     question: faqContentData[0].questions[0].question,
     answer: faqContentData[0].questions[0].answer,
     icon: <ion-icon name="calendar-outline"></ion-icon>,
-    arrowIcon: <ion-icon name="chevron-down-outline"></ion-icon>,
   },
   {
     question: faqContentData[0].questions[1].question,
