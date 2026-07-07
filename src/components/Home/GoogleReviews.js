@@ -1,5 +1,6 @@
 import googleLogo from "../../assets/icons/google-icon-logo-svgrepo-com.svg";
 import { googleReviews } from "../../utils/googleReviewsUtils";
+import GoogleEmblaCarousel from "./GoogleEmblaCarousel";
 
 const GoogleReviews = () => {
   return (
@@ -7,7 +8,12 @@ const GoogleReviews = () => {
       <section className="reviews-home-section flex-col">
         <p className="green reviews-home-label">Opinie klientów</p>
         <p className="reviews-home-description">Co mówią o nas uczestnicy?</p>
-        <svg width="85" height="12" viewBox="0 0 70 10" className="wave align-center">
+        <svg
+          width="85"
+          height="12"
+          viewBox="0 0 70 10"
+          className="wave align-center"
+        >
           <path
             d="M2 6 Q10 2 18 6 T34 6 T50 6 T66 6 T78 6"
             stroke="#F3C623"
@@ -41,34 +47,8 @@ const GoogleReviews = () => {
             <ion-icon name="arrow-up-right-box-outline"></ion-icon>
           </a>
         </div>
+        <GoogleEmblaCarousel />
 
-        <div className="flex-row review-cards">
-          {googleReviews.map((review, index) => (
-            <div key={index} className="review-card">
-              <div className="flex-row review-card-banner">
-                <div className="flex-row">
-                  <img src={review.image} alt="" className="review-img" />
-                  <div className="flex-col">
-                    <p className="review-username">{review.userName}</p>
-                    <p className="review-userreviews mid-grey">
-                      {review.userReviews}
-                    </p>
-                  </div>
-                </div>
-                <img
-                  src={googleLogo}
-                  alt="Google Logo"
-                  className="google-logo"
-                />
-              </div>
-              <div className="flex-row card-stars-div">
-                <div className="card-star-rating">★★★★★</div>
-                <p className="review-date">{review.date}</p>
-              </div>
-              <p className="review-content">{review.content}</p>
-            </div>
-          ))}
-        </div>
         <a href="/contact" className="reviews-home-button flex-row">
           Zarezerwuj swój spływ
           <ion-icon name="arrow-forward-outline"></ion-icon>
