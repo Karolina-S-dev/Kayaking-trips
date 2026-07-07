@@ -9,7 +9,9 @@ const FaqCardHome = ({ card, index }) => {
         key={index}
         className={`flex-col faq-card-open ${isFaqCardHomeOpen ? " box-shadow" : ""}`}
       >
-        <div className={`faq-home-card flex-row box-shadow ${isFaqCardHomeOpen? "box-shadow-none":""}`}>
+        <div
+          className={`faq-home-card flex-row box-shadow ${isFaqCardHomeOpen ? "box-shadow-none" : ""}`}
+        >
           <div className="faq-home-card-icon">{card.icon} </div>
           <p
             className={`faq-home-card-title ${!isFaqCardHomeOpen ? "" : "open"}`}

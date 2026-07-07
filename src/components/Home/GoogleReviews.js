@@ -1,5 +1,4 @@
 import googleLogo from "../../assets/icons/google-icon-logo-svgrepo-com.svg";
-import { googleReviews } from "../../utils/googleReviewsUtils";
 import GoogleEmblaCarousel from "./GoogleEmblaCarousel";
 
 const GoogleReviews = () => {
