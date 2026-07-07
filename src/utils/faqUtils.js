@@ -21,6 +21,10 @@ const faqContentData = [
         question: "Czy mogę zmienić termin rezerwacji?",
         answer: "",
       },
+      {
+        question: "Co jest zawarte w cenie?",
+        answer: "",
+      },
     ],
   },
   {
@@ -33,11 +37,11 @@ const faqContentData = [
         answer: "",
       },
       {
-        question: "",
+        question: "Dla ilu osób minimum spływ się odbędzie?",
         answer: "",
       },
       {
-        question: "",
+        question: "Dla ilu osób max spływ się odbędzie?",
         answer: "",
       },
       {

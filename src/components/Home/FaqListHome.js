@@ -6,7 +6,7 @@ const FaqListHome = () => {
     <>
       <section className="faq-home-section flex-col">
         <p className="green faq-home-label">FAQ</p>
-        <p className="faq-home-description">Najczęściej zadawane pytania</p>
+        <p className="faq-home-title">Najczęściej zadawane pytania</p>
         <svg width="85" height="12" viewBox="0 0 70 10" className="wave align-center">
           <path
             d="M2 6 Q10 2 18 6 T34 6 T50 6 T66 6 T78 6"
@@ -18,7 +18,7 @@ const FaqListHome = () => {
         </svg>
 
         {faqHomeData.map((card, index) => (
-          <FaqCardHome card={card} index={index} />
+          <FaqCardHome card={card} key={index} />
         ))}
 
         <a href="/faq" className="faq-home-button flex-row">

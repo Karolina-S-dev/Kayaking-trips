@@ -240,21 +240,22 @@ nav ion-icon[name="apps"] {
 
 .about-us-label {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .about-us-title {
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   font-weight: 700;
   line-height: 3.2rem;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 
 .about-us-description {
   font-size: 1.5rem;
-  line-height: 2.7rem;
+  line-height: 3.2rem;
 }
 
 .about-us-text-col {
@@ -319,24 +320,23 @@ nav ion-icon[name="apps"] {
 }
 .offer-label {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  padding-left: 8rem;
   text-align: center;
 }
 
 .offer-title {
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: 600;
   margin-bottom: 2rem;
-  padding-left: 8rem;
   text-align: center;
 }
 
 .offer-cards {
   gap: 1.5rem;
   align-items: stretch;
+  margin-top: 1rem;
 }
 
 .offer-card {
@@ -443,6 +443,12 @@ ion-icon[name="time"] {
   border: 1px solid #23a757;
   border-radius: 15px;
   background-color: #1f4d3a;
+  transition: transform 0.4s ease;
+}
+
+.card-button:hover {
+  transform: scale(1.015);
+  background-color: #265b45;
 }
 
 /* EMBLA carousel */
@@ -487,7 +493,7 @@ ion-icon[name="time"] {
 }
 
 .embla__dots {
-  width: 5rem;
+  width: 6rem;
   display: flex;
   justify-content: space-between;
   margin: 2rem auto;
@@ -512,14 +518,14 @@ ion-icon[name="time"] {
 /* --------------------------- */
 
 .why-us-section {
-  padding: 8rem 0;
+  padding: 5rem 0 8rem 0;
   max-width: 80%;
   margin: 0 auto;
 }
 
 .why-us-label {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 3rem;
 }
@@ -631,6 +637,12 @@ ion-icon[name="time"] {
   margin: 2rem auto 0 auto;
   gap: 1rem;
   align-items: center;
+  transition: transform 0.4s ease;
+}
+
+.gallery-home-button:hover {
+  transform: scale(1.01);
+  background-color: #265b45;
 }
 
 .gallery-home-button ion-icon {
@@ -645,9 +657,8 @@ ion-icon[name="time"] {
   text-align: center;
 }
 
-.gallery-home-description {
+.gallery-home-title {
   font-size: 1.9rem;
-  line-height: 2.7rem;
   text-align: center;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -670,7 +681,7 @@ ion-icon[name="time"] {
   text-align: center;
 }
 
-.faq-home-description {
+.faq-home-title {
   font-size: 1.9rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -687,6 +698,12 @@ ion-icon[name="time"] {
   margin: 2rem auto 0 auto;
   gap: 1rem;
   align-items: center;
+  transition: transform 0.4s ease;
+}
+
+.faq-home-button:hover {
+  transform: scale(1.015);
+  background-color: #265b45;
 }
 
 .faq-home-button ion-icon {
@@ -704,6 +721,7 @@ ion-icon[name="time"] {
   background-color: #fff;
   border-radius: 12px;
   align-items: center;
+  cursor: pointer;
 }
 
 .faq-home-card-icon {
@@ -772,7 +790,7 @@ ion-icon[name="time"] {
   text-align: center;
 }
 
-.reviews-home-description {
+.reviews-home-title {
   font-size: 1.9rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -831,6 +849,11 @@ ion-icon[name="time"] {
   font-size: 1.6rem;
   border: 2px solid rgba(194, 192, 192, 0.175);
   border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.reviews-button:hover {
+  transform: scale(1.01);
 }
 
 .card-star-rating {
@@ -892,7 +915,7 @@ ion-icon[name="time"] {
 }
 
 .reviews-home-button {
-  padding: 1rem 2.3rem;
+  padding: 1.1rem 2.4rem;
   font-size: 1.6rem;
   color: #000;
   border-radius: 15px;
@@ -901,8 +924,14 @@ ion-icon[name="time"] {
   margin: 2rem auto 0 auto;
   gap: 1rem;
   align-items: center;
+  font-weight: 600;
+  transition: transform 0.4s ease;
 }
 
+.reviews-home-button:hover {
+  transform: scale(1.01);
+  background-color: #edbc2b;
+}
 /* --------------------------- */
 /* ---------- FOOTER --------- */
 /* --------------------------- */

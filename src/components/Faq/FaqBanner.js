@@ -7,7 +7,14 @@ const FaqBanner = ({ item }) => {
   return (
     <>
       <div className="flex-col">
-        <div className="faq-banner flex-row">
+        <div
+          onClick={() => {
+            isFaqBannerOpen
+              ? setIsFaqBannerOpen(false)
+              : setIsFaqBannerOpen(true);
+          }}
+          className="faq-banner flex-row box-shadow"
+        >
           <div className="banner-icon">{item.icon} </div>
           <p className="banner-title"> {item.title}</p>
 
@@ -16,11 +23,6 @@ const FaqBanner = ({ item }) => {
               !isFaqBannerOpen ? "banner-arrowicon" : "banner-arrowicon-rotated"
             }
             name="chevron-down-outline"
-            onClick={() => {
-              isFaqBannerOpen
-                ? setIsFaqBannerOpen(false)
-                : setIsFaqBannerOpen(true);
-            }}
           ></ion-icon>
         </div>
         {isFaqBannerOpen ? (

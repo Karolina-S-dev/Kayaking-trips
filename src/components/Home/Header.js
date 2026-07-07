@@ -38,11 +38,10 @@ const Header = () => {
             <button onClick={handleRedirectHomeScreen} className="nav-button">
               <span className="white">Strona główna</span>
             </button>
-            
           </li>
           <li>
             <button onClick={handleRedirectTripsScreen} className="nav-button">
-              <span className="white">Spływy</span>
+              <span className="white">Trasy spływów</span>
             </button>
           </li>
           <li>

@@ -10,7 +10,7 @@ const GalleryHome = () => {
     <>
       <section className="gallery-home-section flex-col">
         <p className="green gallery-home-label">Galeria</p>
-        <p className="dark-grey gallery-home-description">
+        <p className="dark-grey gallery-home-title">
           Kadry z naszych spływów, ognisk i najpiękniejszych zakątków Nidy.
         </p>
         <svg width="85" height="12" viewBox="0 0 70 10" className="wave align-center">

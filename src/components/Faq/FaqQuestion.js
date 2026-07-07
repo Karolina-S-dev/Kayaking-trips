@@ -5,17 +5,19 @@ const FaqQuestion = ({ question }) => {
 
   return (
     <>
-      <div className="flex-col question-and-answer">
+      <div
+        onClick={() => {
+          isFaqAnswearOpen
+            ? setIsFaqAnswearOpen(false)
+            : setIsFaqAnswearOpen(true);
+        }}
+        className="flex-col question-and-answer"
+      >
         <div className="flex-row">
           <p className="faq-question">{question.question}</p>
           <ion-icon
             name="chevron-down-outline"
             className="question-arrowicon"
-            onClick={() => {
-              isFaqAnswearOpen
-                ? setIsFaqAnswearOpen(false)
-                : setIsFaqAnswearOpen(true);
-            }}
           ></ion-icon>
         </div>
         {isFaqAnswearOpen ? (

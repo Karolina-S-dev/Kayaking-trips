@@ -6,7 +6,7 @@ const GoogleReviews = () => {
     <>
       <section className="reviews-home-section flex-col">
         <p className="green reviews-home-label">Opinie klientów</p>
-        <p className="reviews-home-description">Co mówią o nas uczestnicy?</p>
+        <p className="reviews-home-title">Co mówią o nas uczestnicy?</p>
         <svg
           width="85"
           height="12"
