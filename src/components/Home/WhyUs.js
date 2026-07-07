@@ -1,4 +1,4 @@
-import { whyUsData } from "../../utils/utils";
+import { whyUsData } from "../../utils/whyUsUtils";
 import canoe1person from "../../assets/icons/canoe1person.png";
 import canoe2people from "../../assets/icons/canoe2people.png";
 

@@ -6,7 +6,7 @@ const OfferCard = ({trip}) => {
         <img src={trip.image} alt="Kajakowe zdjęcie" />
         {trip.additionalInfo ? (
           <div className="additional-info white flex-row">
-            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star"></ion-icon>
             <p>{trip.additionalInfo}</p>
           </div>
         ) : null}

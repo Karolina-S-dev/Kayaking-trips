@@ -6,7 +6,7 @@ import GalleryHome from "./Home/GalleryHome";
 import Features from "./Home/Features";
 import WhyUs from "./Home/WhyUs";
 import ScrollToTop from "./Home/ScrollToTop";
-import FaqHome from "./Home/FaqHome";
+import FaqListHome from "./Home/FaqListHome";
 import GoogleReviews from "./Home/GoogleReviews";
 
 const HomeScreen = () => {
@@ -18,7 +18,7 @@ const HomeScreen = () => {
       <OfferList />
       <WhyUs />
       <GalleryHome />
-      <FaqHome />
+      <FaqListHome />
       <GoogleReviews />
       <Footer />
       <ScrollToTop />

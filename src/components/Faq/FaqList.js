@@ -1,5 +1,5 @@
 import "../../assets/css/faq.css";
-import { faqContentData } from "../../utils/utils";
+import { faqContentData } from "../../utils/faqUtils";
 import FaqBanner from "./FaqBanner";
 
 const FaqList = () => {

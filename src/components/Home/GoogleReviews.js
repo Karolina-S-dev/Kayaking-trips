@@ -1,5 +1,5 @@
 import googleLogo from "../../assets/icons/google-icon-logo-svgrepo-com.svg";
-import { googleReviews } from "../../utils/utils";
+import { googleReviews } from "../../utils/googleReviewsUtils";
 
 const GoogleReviews = () => {
   return (
@@ -7,7 +7,7 @@ const GoogleReviews = () => {
       <section className="reviews-home-section flex-col">
         <p className="green reviews-home-label">Opinie klientów</p>
         <p className="reviews-home-description">Co mówią o nas uczestnicy?</p>
-        <svg width="85" height="12" viewBox="0 0 70 10" className="mt-3">
+        <svg width="85" height="12" viewBox="0 0 70 10" className="wave align-center">
           <path
             d="M2 6 Q10 2 18 6 T34 6 T50 6 T66 6 T78 6"
             stroke="#F3C623"

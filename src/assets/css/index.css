@@ -5,7 +5,6 @@ transition
 klasa dochadzaca
 rotate 180 */
 
-
 /* --------------------------- */
 /* -------- HOMESCREEN ------- */
 /* --------------------------- */
@@ -324,7 +323,7 @@ nav ion-icon[name="apps"] {
   font-weight: 600;
   margin-bottom: 1rem;
   padding-left: 8rem;
-   text-align: center;
+  text-align: center;
 }
 
 .offer-title {
@@ -369,11 +368,11 @@ nav ion-icon[name="apps"] {
   top: 5px;
   left: 10px;
   border-radius: 20px;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   align-items: center;
   gap: 0.5rem;
 }
-ion-icon[name="star-outline"] {
+ion-icon[name="star"] {
   font-size: 1.8rem !important;
 }
 
@@ -486,7 +485,7 @@ ion-icon[name="time"] {
   border-radius: 12px;
   align-items: center;
   padding: 1.3rem;
- box-shadow: 0 0 10px 3px #dddfdf;
+  box-shadow: 0 0 10px 3px #dddfdf;
   background-color: #fff;
   border: 2px solid #dddfdf;
 }
@@ -616,21 +615,6 @@ ion-icon[name="time"] {
   font-weight: 600;
 }
 
-.faq-home-text {
-  padding: 2rem 10.5rem;
-  font-size: 1.5rem;
-}
-
-.faq-home-banner {
-  height: 7.5rem;
-  padding: 2rem 4rem;
-  background-color: #fff;
-  border-radius: 12px;
-  align-items: center;
-  box-shadow: 0 0 10px 3px #dddfdf;
-  margin-top: 1.5rem;
-}
-
 .faq-home-button {
   padding: 0.8rem 2.2rem;
   font-size: 1.6rem;
@@ -645,6 +629,67 @@ ion-icon[name="time"] {
 
 .faq-home-button ion-icon {
   font-size: 2rem;
+}
+
+.faq-card-open {
+  border-radius: 12px;
+  margin-top: 1.5rem;
+}
+
+.faq-home-card {
+  height: 7.5rem;
+  padding: 2rem 4rem;
+  background-color: #fff;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.faq-home-card-icon {
+  font-size: 2.4rem;
+  color: white;
+  background-color: #1b4130;
+  border-radius: 50%;
+  padding: 1.2rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.faq-home-card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.open {
+  border-bottom: 2px solid #f3c623;
+}
+
+.faq-home-card-arrowicon {
+  font-size: 2.5rem;
+  margin-left: auto;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: transform 0.4s ease;
+  visibility: visible;
+}
+
+.faq-home-card-arrowicon-rotated {
+  font-size: 2.5rem;
+  margin-left: auto;
+  cursor: pointer;
+  transform: rotate(180deg);
+  transition: transform 0.4s ease;
+  visibility: visible;
+}
+
+.faq-home-answer {
+  padding: 0rem 10.5rem 2rem 10.5rem;
+  font-size: 1.5rem;
 }
 
 /* ----------------------------------- */
@@ -732,7 +777,7 @@ ion-icon[name="time"] {
   margin-right: 1.1rem;
 }
 
-.review-date{
+.review-date {
   font-size: 1.2rem;
 }
 
