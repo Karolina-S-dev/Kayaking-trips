@@ -15,7 +15,7 @@
 
 .contact-section::before {
   position: absolute;
-  background-color: #f8f4e2e6;
+  background-color: #fff8ecdf;
   z-index: 10;
   content: "";
   width: 100%;
@@ -152,6 +152,7 @@
   border: 2px solid rgba(194, 192, 192, 0.175);
   border-radius: 12px;
   transition: transform 0.4s ease;
+  background-color: #fff;
 }
 
 .location-button ion-icon {
