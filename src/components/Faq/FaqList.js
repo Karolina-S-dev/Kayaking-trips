@@ -5,7 +5,8 @@ import FaqBanner from "./FaqBanner";
 const FaqList = () => {
   return (
     <>
-      <section className="faq-section flex-col">
+    
+      <section className="faq-list flex-col">
         <p className="faq-label green">FAQ</p>
         <p className="faq-title">
           Znajdź odpowiedzi na najczęściej zadawane pytania dotyczące
@@ -30,6 +31,7 @@ const FaqList = () => {
           <FaqBanner item={item} key={index} />
         ))}
       </section>
+   
     </>
   );
 };

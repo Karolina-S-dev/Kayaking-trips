@@ -8,8 +8,10 @@ const FaqScreen = () => {
   return (
     <>
       <Header />
+      <section className="faq-section">
       <FaqList />
       <FaqNotice/>
+      </section>
       <Footer />
       <ScrollToTop />
     </>

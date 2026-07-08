@@ -1,5 +1,5 @@
 import shallowRiver from "../../assets/img/shallow-river.jpeg";
-import greenLeaf from "../../assets/icons/green-leaf.png";
+
 
 const FaqNotice = () => {
   return (
@@ -10,7 +10,7 @@ const FaqNotice = () => {
           <svg width="90" height="12" viewBox="0 0 70 10" className="wave ">
             <path
               d="M2 6 Q10 2 18 6 T34 6 T50 6 T66 6 T78 6"
-              stroke="#ab9135"
+              stroke="#F3C623"
               strokeWidth="3"
               fill="none"
               strokeLinecap="round"
@@ -29,8 +29,7 @@ const FaqNotice = () => {
         <div className="faq-notice-photo">
           <img src={shallowRiver} alt="" />
         </div>
-        <img src={greenLeaf} alt="" className="green-leaf-icon"/>
-      </div>
+         </div>
     </>
   );
 };
