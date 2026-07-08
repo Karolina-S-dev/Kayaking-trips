@@ -13,7 +13,7 @@ const FaqBanner = ({ item }) => {
               ? setIsFaqBannerOpen(false)
               : setIsFaqBannerOpen(true);
           }}
-          className="faq-banner flex-row box-shadow"
+          className="faq-banner flex-row"
         >
           <div className="banner-icon">{item.icon} </div>
           <p className="banner-title"> {item.title}</p>

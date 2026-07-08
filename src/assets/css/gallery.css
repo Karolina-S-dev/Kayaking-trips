@@ -2,8 +2,6 @@
 /* ------ GALLERY-SCREEN ----- */
 /* --------------------------- */
 
-
-
 .gallery-section {
   width: 75%;
   margin: 0 auto;
@@ -16,24 +14,15 @@
   margin-bottom: 1.5rem;
   font-weight: 600;
   position: relative;
-  color: #224f3b;
-}
-
-.gallery-label::after {
-  position: absolute;
-  content: "";
-  width: 120px;
-  height: 2px;
-  background-color: #f3c623;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .gallery-description {
   font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+.wave-gallery {
+  margin: 0 auto 4rem auto;
 }
 
 .gallery-content {
@@ -61,7 +50,8 @@
 .share-div {
   padding: 2rem 5rem;
   background-color: #f2e7cc;
-  max-width: 80%;
+  max-width: 60%;
+  width: 100%;
   margin: 4rem auto 0 auto;
   border-radius: 8px;
   justify-content: space-between;
