@@ -15,7 +15,7 @@
 
 .contact-section::before {
   position: absolute;
-  background-color: #fff9efc6;
+  background-color: #fffbf5c6;
   z-index: 10;
   content: "";
   width: 100%;
