@@ -63,15 +63,15 @@ const Gallery = () => {
             <img src={galleryPhoto4} alt="Zdjęcie ze spływu kajakowego" />
           </div>
           <div className="gallery-content-img large">
-            <img src={galleryPhoto22} alt="" />
+            <img src={galleryPhoto22} alt="Zdjęcie kamienistej rzeki" />
           </div>
 
           <div className="gallery-content-img">
-            <img src={galleryPhoto19} alt="" />
+            <img src={galleryPhoto19} alt="Zdjęcie rzeki z pomostu" />
           </div>
 
           <div className="gallery-content-img">
-            <img src={galleryPhoto20} alt="" />
+            <img src={galleryPhoto20} alt="Zdjęcie pod wiaduktem" />
           </div>
 
           <div className="gallery-content-img">
@@ -98,13 +98,13 @@ const Gallery = () => {
             <img src={galleryPhoto8} alt="Uczestnicy wycieczki w kajakach" />
           </div>
           <div className="gallery-content-img large">
-            <img src={galleryPhoto21} alt="" />
+            <img src={galleryPhoto21} alt="Zdjęcie mężczyzny z kajakami" />
           </div>
           <div className="gallery-content-img large">
-            <img src={galleryPhoto18} alt="" />
+            <img src={galleryPhoto18} alt="Zdjęcie rzeki z brzegu" />
           </div>
           <div className="gallery-content-img large">
-            <img src={galleryPhoto24} alt="" />
+            <img src={galleryPhoto24} alt="Zdjęcie ruin zamku" />
           </div>
           <div className="gallery-content-img">
             <img
@@ -120,7 +120,10 @@ const Gallery = () => {
             <img src={galleryPhoto17} alt="Kajakarze na spokojnej rzece" />
           </div>
           <div className="gallery-content-img large">
-            <img src={galleryPhoto23} alt="" />
+            <img
+              src={galleryPhoto23}
+              alt="Zdjęcie drewnianego budynku na trasie"
+            />
           </div>
 
           <div className="gallery-content-img">
