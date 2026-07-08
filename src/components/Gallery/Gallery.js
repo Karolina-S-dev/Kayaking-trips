@@ -24,14 +24,23 @@ import galleryPhoto23 from "../../assets/img/gallery/galleryPhoto-23.jpeg";
 import galleryPhoto24 from "../../assets/img/gallery/gallery-photo-24.png";
 
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+
+// ------- LIGHTBOX -------
+import Lightbox from "yet-another-react-lightbox";
+import Counter from "yet-another-react-lightbox/plugins/counter";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/counter.css";
 
 const Gallery = () => {
   const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <section className="gallery-section flex-col">
         <p className="gallery-label green">GALERIA</p>
-        <p className="gallery-description dark-grey">
+        <p className="gallery-title dark-grey">
           Zobacz piękno rzek, którymi pływamy i atmosferę naszych spływów.
         </p>
         <svg
@@ -48,6 +57,49 @@ const Gallery = () => {
             strokeLinecap="round"
           />
         </svg>
+
+        <button
+          type="button"
+          onClick={() => {
+            setOpen(true);
+          }}
+        >
+          Open Lightbox
+        </button>
+
+        <Lightbox
+          plugins={[Counter]}
+          counter={{ container: { style: { top: "unset", bottom: 0 } } }}
+          open={open}
+          close={() => {
+            setOpen(false);
+          }}
+          slides={[
+            { src: galleryPhoto1 },
+            { src: galleryPhoto2 },
+            { src: galleryPhoto3 },
+            { src: galleryPhoto4 },
+            { src: galleryPhoto5 },
+            { src: galleryPhoto6 },
+            { src: galleryPhoto7 },
+            { src: galleryPhoto8 },
+            { src: galleryPhoto9 },
+            { src: galleryPhoto10 },
+            { src: galleryPhoto11 },
+            { src: galleryPhoto12 },
+            { src: galleryPhoto13 },
+            { src: galleryPhoto15 },
+            { src: galleryPhoto16 },
+            { src: galleryPhoto17 },
+            { src: galleryPhoto18 },
+            { src: galleryPhoto19 },
+            { src: galleryPhoto20 },
+            { src: galleryPhoto21 },
+            { src: galleryPhoto22 },
+            { src: galleryPhoto23 },
+            { src: galleryPhoto24 },
+          ]}
+        />
 
         <div className="gallery-content flex-row">
           <div className="gallery-content-img large">
