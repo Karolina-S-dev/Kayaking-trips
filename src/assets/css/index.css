@@ -44,7 +44,7 @@ nav ion-icon[name="apps"] {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.5px;
   transition: all 0.5s ease;
   background: transparent;
   font-weight: 600;
@@ -53,7 +53,7 @@ nav ion-icon[name="apps"] {
 }
 
 .nav-button:hover {
-  transform: scale(1.035);
+  transform: scale(1.025);
 }
 
 .nav-button span {

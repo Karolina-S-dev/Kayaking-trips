@@ -1,0 +1,231 @@
+/* --------------------------- */
+/* ------ TRIPSSCREEN -------- */
+/* --------------------------- */
+
+/* --------------------------- */
+/* -------- TRIPSHERO -------- */
+/* --------------------------- */
+
+.trips-hero-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.399), rgba(0, 0, 0, 0.371)),
+    url(../img/riverroutes.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center 8%;
+  min-height: 27rem;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  padding: 8rem 0;
+}
+
+.trips-hero-label {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.trips-hero-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ----------------------------- */
+/* -------- TRIPSCHOICE -------- */
+/* ----------------------------- */
+
+.trips-choice-section {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+.trips-choice-label {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.trips-choice-cards {
+  gap: 2rem;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.trips-choice-card {
+  flex: 0 0 calc(25% - 1rem);
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.trips-choice-card img {
+  width: 100%;
+  border-radius: 12px;
+  filter: brightness(0.85);
+  transition: transform 0.4s ease;
+}
+
+.trips-choice-card img:hover {
+  transform: scale(1.03);
+}
+
+.choice-card-text {
+  position: absolute;
+  left: 3rem;
+  bottom: 5rem;
+}
+
+.choice-card-title {
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.choice-card-duration {
+  font-size: 1.8rem;
+}
+
+/* ----------------------------- */
+/* -------- FAMILY TRIPS ------- */
+/* ----------------------------- */
+
+.family-trips-section {
+  margin: 0 auto;
+  padding: 5rem 0;
+  width: 80%;
+}
+
+.family-trips {
+  margin-top: 2rem;
+}
+
+.family-trips-label {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.trips-map {
+  flex: 0 0 calc(50% - 2rem);
+}
+
+.trips-content {
+  flex: 0 0 calc(50% - 2rem);
+  font-size: 1.5rem;
+}
+
+.trips-content p {
+  margin-bottom: 1rem;
+}
+
+.trips-map img {
+  width: 80%;
+  border-radius: 12px;
+}
+
+.trips-content-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* ----------------------------- */
+/* -------- ONEDAY TRIPS ------- */
+/* ----------------------------- */
+
+.oneday-trips-section {
+  margin: 0 auto;
+  padding: 5rem 0;
+  width: 80%;
+}
+
+.oneday-trips-label {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.oneday-trips {
+  margin-top: 2rem;
+}
+
+.oneday-trips-map {
+  flex: 0 0 calc(50% - 2rem);
+  margin: 0 auto;
+}
+
+.oneday-trips-map img {
+  width: 80%;
+  border-radius: 12px;
+}
+
+.oneday-trips-content {
+  flex: 0 0 calc(50% - 2rem);
+  font-size: 1.5rem;
+}
+
+.oneday-trips-content p {
+  margin-bottom: 1rem;
+}
+
+.oneday-trips-content-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+
+/* ----------------------------- */
+/* -------- LONG TRIPS ------- */
+/* ----------------------------- */
+
+.long-trips-section {
+  margin: 0 auto;
+  padding: 5rem 0;
+  width: 80%;
+}
+
+.long-trips-label {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.long-trips {
+  margin-top: 2rem;
+}
+
+.long-trips-map {
+  flex: 0 0 calc(50% - 2rem);
+  margin: 0 auto;
+}
+
+.long-trips-map img {
+  width: 80%;
+  border-radius: 12px;
+}
+
+.long-trips-content {
+  flex: 0 0 calc(50% - 2rem);
+  font-size: 1.5rem;
+}
+
+.long-trips-content p {
+  margin-bottom: 1rem;
+}
+
+.long-trips-content-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
