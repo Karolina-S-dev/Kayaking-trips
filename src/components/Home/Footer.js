@@ -54,10 +54,10 @@ const Footer = () => {
 
       <section className="footer-bottom">
         <p>
-          2026 © Spływy Kajakowe u Jakuba. Wszystkie prawa zastrzeżone.
+          2026 © Copyright. Spływy Kajakowe u Jakuba. 
           <span> | </span>
           <a href="/privacy-policy">Polityka prywatności</a>
-          <span> | </span>Projekt i wykonanie:&nbsp;
+          <span> | </span>Designed & developed by&nbsp;
           <a href="https://www.linkedin.com/in/karolina-s-123bb238b/">
             Karolina Szary
           </a>
