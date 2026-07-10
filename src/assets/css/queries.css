@@ -4,7 +4,7 @@
   }
 
   .hero-section {
-    min-height: 60vh;
+    min-height: 70vh;
   }
 
   .nav-button {
@@ -89,10 +89,6 @@
     font-size: 9px !important;
   }
 
-  .hero-section {
-    min-height: 60vh;
-  }
-
   .hero-title-dancing-script {
     margin-bottom: 3rem;
   }
@@ -140,7 +136,7 @@
 @media only screen and (max-width: 1023px) {
   html,
   body {
-    font-size: 7.5px !important;
+    font-size: 8px !important;
   }
 
   .header-logo {
@@ -245,12 +241,12 @@
     display: block;
     font-size: 4rem;
     position: absolute;
-    right: 4rem;
-    top: 2.5rem;
+    right: 40px;
+    top: 20px;
     z-index: 999;
   }
 
-  .nav-links {
+  .nav-links-mobile {
     flex-direction: column !important;
     background-color: #1b4130;
     padding: 1.5rem;
@@ -260,9 +256,12 @@
     top: 1.5rem;
     padding-top: 5rem;
     z-index: 999;
-    margin-right: 1rem;
+    margin-right: 20px;
   }
 
+  .hero-content {
+    padding: 1.5rem;
+  }
   .hero-wave svg {
     height: 80%;
   }

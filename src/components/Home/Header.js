@@ -1,8 +1,10 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import companyLogo from "../../assets/img/company-logo.png";
 import { usePageContext } from "../../context/pageContext";
+import { useState } from "react";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
   const { activePage } = usePageContext();
   const navigate = useNavigate();
   const handleRedirectHomeScreen = () => {
@@ -24,7 +26,12 @@ const Header = () => {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
-
+  const toggleMenu = () => {
+    <ion-icon name="mail-outline" onClick={toggleMenu}></ion-icon> &&
+    !isMenuOpen
+      ? setIsMenuOpen(true)
+      : setIsMenuOpen(false);
+  };
   return (
     <header
       className={
@@ -37,7 +44,9 @@ const Header = () => {
         <img className="header-logo" src={companyLogo} alt="Company Logo" />
       </a>
       <nav>
-        <ul className="nav-links flex-row">
+        <ul
+          className={`nav-links flex-row ${<ion-icon name="apps"></ion-icon> ? "nav-links-mobile" : ""}`}
+        >
           <li>
             <button
               onClick={handleRedirectHomeScreen}
@@ -79,7 +88,7 @@ const Header = () => {
               href="/contact"
               className="nav-button nav-button--contact navy-blue"
             >
-              <ion-icon name="mail-outline"></ion-icon>
+              <ion-icon name="mail-outline" onClick={toggleMenu}></ion-icon>
               <span>Kontakt</span>
             </a>
           </li>
