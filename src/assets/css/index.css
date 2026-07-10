@@ -39,7 +39,7 @@ rotate 180 */
 
 nav ion-icon[name="apps"] {
   display: none;
-  }
+}
 
 .nav-button {
   padding: 1.5rem 2.5rem;
@@ -96,13 +96,13 @@ nav ion-icon[name="apps"] {
 }
 
 .active-nav-button span {
-  color: #f0cd51;
+  color: #f3c623;
 }
 
 .active-nav-button span::after {
   content: "";
   position: absolute;
-  background: #f0cd51;
+  background: #f3c623;
   bottom: -6px;
   left: 0;
   height: 2px;
@@ -159,6 +159,7 @@ nav ion-icon[name="apps"] {
   transform: rotate(-4deg);
   text-shadow: 0 2px 8px #000000b5;
   margin-bottom: 5rem;
+  width: fit-content;
 }
 
 .hero-title {
@@ -167,6 +168,7 @@ nav ion-icon[name="apps"] {
   margin-bottom: 2rem;
   text-shadow: 0 2px 8px #000000b5;
   color: #f3c623;
+  width: fit-content;
 }
 
 .hero-description {
@@ -995,7 +997,7 @@ ion-icon[name="time"] {
   margin-bottom: 0.5rem;
   width: 20rem;
   font-style: normal;
- }
+}
 
 .footer-group ion-icon {
   font-size: 2.5rem;
