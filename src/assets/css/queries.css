@@ -3,11 +3,7 @@
     padding: 0.8rem 3rem;
   }
 
-  .hero-section {
-    min-height: 70vh;
-  }
-
-  .nav-button {
+   .nav-button {
     padding: 1rem 1.6rem;
   }
 
@@ -90,7 +86,7 @@
   }
 
   .hero-title-dancing-script {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
   .about-us-photo-col {
