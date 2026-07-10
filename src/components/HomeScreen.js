@@ -8,8 +8,16 @@ import WhyUs from "./Home/WhyUs";
 import ScrollToTop from "./Home/ScrollToTop";
 import FaqListHome from "./Home/FaqListHome";
 import GoogleReviews from "./Home/GoogleReviews";
+import { usePageContext } from "../context/pageContext";
+import { useEffect } from "react";
 
 const HomeScreen = () => {
+  const { setActivePage } = usePageContext();
+
+  useEffect(() => {
+    setActivePage("/");
+  }, [setActivePage]);
+
   return (
     <>
       <Hero />

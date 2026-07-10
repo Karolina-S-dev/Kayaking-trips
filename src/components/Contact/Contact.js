@@ -1,4 +1,3 @@
-import "../../assets/css/contact.css";
 import Location from "./Location";
 import Reservation from "./Reservation";
 

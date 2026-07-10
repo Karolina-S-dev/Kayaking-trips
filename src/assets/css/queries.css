@@ -1,0 +1,316 @@
+@media only screen and (max-width: 1500px) {
+  .header-section {
+    padding: 0.8rem 3rem;
+  }
+
+  .hero-section {
+    min-height: 60vh;
+  }
+
+  .nav-button {
+    padding: 1rem 1.6rem;
+  }
+
+  .nav-button--contact {
+    padding: 1rem 2.2rem;
+  }
+
+  .about-us-section {
+    max-width: 80%;
+  }
+  .features-cards {
+    max-width: 78%;
+  }
+
+  .offer-section {
+    padding: 4rem 0;
+    max-width: 90%;
+  }
+  .offer-card-title {
+    font-size: 2rem;
+  }
+  .offer-card-content {
+    padding: 1.5rem 1.7rem;
+  }
+
+  .why-us-section {
+    padding: 5rem 0 6rem 0;
+    max-width: 90%;
+  }
+  .card-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.4rem;
+  }
+  .pricelist-card img {
+    max-width: 7rem;
+  }
+  .why-card img {
+    max-width: 6rem;
+    margin-bottom: 0;
+  }
+
+  .why-us-label {
+    margin-bottom: 0rem;
+  }
+
+  .gallery-home-section {
+    max-width: 90%;
+    margin-bottom: 3rem;
+  }
+
+  .faq-home-section {
+    padding: 3rem 0;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .reviews-home-section {
+    max-width: 85%;
+  }
+
+  .review-cards {
+    gap: 1rem;
+  }
+
+  .review-card {
+    flex-basis: calc(33% - 0.4rem);
+    padding: 1.8rem;
+  }
+
+  .socials-div {
+    margin-right: 0rem;
+  }
+}
+
+/* laptops and big tablets - 1024px - 1200px */
+@media only screen and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 9px !important;
+  }
+
+  .hero-section {
+    min-height: 60vh;
+  }
+
+  .hero-title-dancing-script {
+    margin-bottom: 3rem;
+  }
+
+  .about-us-photo-col {
+    flex: 0 0 55%;
+  }
+  .about-us-text-col {
+    flex: 0 0 40%;
+  }
+
+  .about-us-section {
+    max-width: 85%;
+  }
+
+  .features-card img {
+    max-width: 15rem;
+    max-height: 12rem;
+  }
+
+  .offer-card-title {
+    font-size: 1.8rem;
+  }
+
+  .why-us-section {
+    padding: 3rem 0 6rem 0;
+  }
+  .gallery-home-div img {
+    height: 14rem;
+  }
+
+  .embla__prev {
+    left: -6rem;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+  }
+  .embla__next {
+    right: -6rem;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+  }
+}
+
+/* tablets 768px - 1023px */
+@media only screen and (max-width: 1023px) {
+  html,
+  body {
+    font-size: 7.5px !important;
+  }
+
+  .header-logo {
+    max-width: 10rem;
+  }
+
+  .hero-content {
+    padding: 0rem 0 1rem 3rem;
+  }
+
+  .about-us-section {
+    padding: 3rem 4rem;
+  }
+  .offer-section {
+    max-width: 95%;
+  }
+
+  .offer-cards {
+    gap: 1rem;
+  }
+
+  .offer-card {
+    flex-basis: calc(25% - 0.75rem);
+  }
+  .offer-card-content {
+    padding: 1.2rem;
+  }
+  .offer-card-duration {
+    font-size: 1.6rem;
+  }
+
+  .why-us-section {
+    max-width: 95%;
+    padding: 2rem 0 6rem 0;
+  }
+
+  .why-us-row {
+    gap: 2rem;
+  }
+
+  .pricelist {
+    flex-basis: calc(35% - 1rem);
+    padding: 1.5rem;
+  }
+
+  .why-us-cards {
+    flex-basis: calc(65% - 1rem);
+  }
+
+  .why-us-cards-row {
+    gap: 1rem;
+  }
+
+  .why-card {
+    flex-basis: calc(25% - 0.75rem);
+  }
+
+  .pricelist-content {
+    margin-top: 1rem;
+  }
+  .why-card-title {
+    margin: 0;
+    font-size: 3.5rem;
+  }
+  .gallery-home-section {
+    max-width: 95%;
+    padding: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .reviews-home-section {
+    max-width: 90%;
+  }
+
+  .footer-section {
+    gap: 0rem;
+  }
+
+  .embla__prev {
+    left: -4rem;
+    font-size: 2.3rem;
+    padding: 0.5rem;
+  }
+  .embla__next {
+    right: -4rem;
+    font-size: 2.3rem;
+    padding: 0.5rem;
+  }
+}
+
+/* mobile - phones */
+@media only screen and (max-width: 767px) {
+  .header-logo {
+    max-width: 9rem;
+  }
+
+  .header-section {
+    position: relative;
+  }
+
+  nav ion-icon[name="apps"] {
+    display: block;
+    font-size: 4rem;
+    position: absolute;
+    right: 4rem;
+    top: 2.5rem;
+    z-index: 999;
+  }
+
+  .nav-links {
+    flex-direction: column !important;
+    background-color: #1b4130;
+    padding: 1.5rem;
+    border-radius: 6px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    padding-top: 5rem;
+    z-index: 999;
+    margin-right: 1rem;
+  }
+
+  .hero-wave svg {
+    height: 80%;
+  }
+  .about-us-section {
+    flex-direction: column !important;
+    gap: 1rem;
+  }
+
+  .features-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .features-card {
+    flex-basis: calc(33% - 0.8rem);
+  }
+
+  .offer-cards {
+    flex-direction: column !important;
+  }
+
+  .why-us-row {
+    flex-direction: column !important;
+  }
+
+  .why-card img {
+    max-width: 5rem;
+    margin-bottom: 0;
+  }
+
+  .gallery-home-div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery-home-div img {
+    width: 30% !important;
+  }
+
+  .review-card {
+    flex-basis: calc(100%);
+  }
+}
+
+/* small mobile - phones*/
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+}

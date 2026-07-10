@@ -1,10 +1,13 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import companyLogo from "../../assets/img/company-logo.png";
+import { usePageContext } from "../../context/pageContext";
 
 const Header = () => {
+  const { activePage } = usePageContext();
   const navigate = useNavigate();
   const handleRedirectHomeScreen = () => {
     navigate("/");
+    console.log("activePage w Header:", activePage);
   };
 
   const handleRedirectTripsScreen = () => {
@@ -21,6 +24,7 @@ const Header = () => {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
+
   return (
     <header
       className={
@@ -35,25 +39,34 @@ const Header = () => {
       <nav>
         <ul className="nav-links flex-row">
           <li>
-            <button onClick={handleRedirectHomeScreen} className="nav-button">
+            <button
+              onClick={handleRedirectHomeScreen}
+              className={`nav-button ${activePage === "/" ? "active-nav-button" : ""}`}
+            >
               <span className="white">Strona główna</span>
             </button>
           </li>
           <li>
-            <button onClick={handleRedirectTripsScreen} className="nav-button">
+            <button
+              onClick={handleRedirectTripsScreen}
+              className={`nav-button ${activePage === "/trips" ? "active-nav-button" : ""}`}
+            >
               <span className="white">Trasy spływów</span>
             </button>
           </li>
           <li>
             <button
               onClick={handleRedirectGalleryScreen}
-              className="nav-button"
+              className={`nav-button ${activePage === "/gallery" ? "active-nav-button" : ""}`}
             >
               <span className="white">Galeria</span>
             </button>
           </li>
           <li>
-            <button onClick={handleRedirectFaqScreen} className="nav-button">
+            <button
+              onClick={handleRedirectFaqScreen}
+              className={`nav-button ${activePage === "/faq" ? "active-nav-button" : ""}`}
+            >
               <span className="white">FAQ</span>
             </button>
           </li>
@@ -71,7 +84,8 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <ion-icon id="nav-burger" name="apps"></ion-icon>
+
+        <ion-icon name="apps"></ion-icon>
       </nav>
     </header>
   );
