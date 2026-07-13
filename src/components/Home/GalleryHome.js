@@ -28,16 +28,27 @@ const GalleryHome = () => {
           />
         </svg>
         <div className="gallery-home-div flex-row">
-          <img src={galleryPhoto3} alt="Zdjęcie ze spływu kajakowego" />
-          <img
-            className="width10"
-            src={galleryPhoto1}
-            alt="Zachód słońca nad rzeką Nidą"
-          />
-          <img src={galleryPhoto25} alt="Zdjęcie zamku" />
-          <img src={galleryPhoto10} alt="Świetna atmosfera na kajakach" />
-          <img className="width10" src={galleryPhoto14} alt="Ognisko" />
-          <img src={galleryPhoto9} alt="Grupa wyruszająca na spływ kajakowy" />
+          <div className="gallery-home-div-img">
+            <img src={galleryPhoto3} alt="Zdjęcie ze spływu kajakowego" />
+          </div>
+          <div className="gallery-home-div-img width14">
+            <img src={galleryPhoto1} alt="Zachód słońca nad rzeką Nidą" />
+          </div>
+          <div className="gallery-home-div-img">
+            <img src={galleryPhoto25} alt="Zdjęcie zamku" />
+          </div>
+          <div className="gallery-home-div-img">
+            <img src={galleryPhoto10} alt="Świetna atmosfera na kajakach" />
+          </div>
+          <div className="gallery-home-div-img width14">
+            <img src={galleryPhoto14} alt="Ognisko" />
+          </div>
+          <div className="gallery-home-div-img">
+            <img
+              src={galleryPhoto9}
+              alt="Grupa wyruszająca na spływ kajakowy"
+            />
+          </div>
         </div>
         <a href="/gallery" className="gallery-home-button flex-row">
           Zobacz więcej zdjęć

@@ -8,6 +8,7 @@ const GoogleEmblaCarousel = () => {
     loop: true, //infinite effect
     align: "start",
     slidesToScroll: 3, //3 slides scrolling at once
+    breakpoints: { "(max-width: 767px)": { slidesToScroll: 1 } },
   });
   // 3 dots state
   const [scrollSnaps, setScrollSnaps] = useState([]);

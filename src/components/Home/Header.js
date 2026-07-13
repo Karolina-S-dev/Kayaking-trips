@@ -33,6 +33,9 @@ const Header = () => {
       : setIsMenuOpen(false);
   };
   return (
+    // <>{
+    //   ? <HeaderMobileCOntent/> : <HeaderDesktopContent/>
+    // }</>
     <header
       className={
         isHome

@@ -3,7 +3,7 @@
     padding: 0.8rem 3rem;
   }
 
-   .nav-button {
+  .nav-button {
     padding: 1rem 1.6rem;
   }
 
@@ -85,10 +85,6 @@
     font-size: 9px !important;
   }
 
-  .hero-title-dancing-script {
-    margin-bottom: 1rem;
-  }
-
   .about-us-photo-col {
     flex: 0 0 55%;
   }
@@ -140,7 +136,7 @@
   }
 
   .hero-content {
-    padding: 0rem 0 1rem 3rem;
+    padding: 2rem 0 1rem 3rem;
   }
 
   .about-us-section {
@@ -231,61 +227,98 @@
 
   .header-section {
     position: relative;
+    padding: 1rem 2rem;
   }
 
   nav ion-icon[name="apps"] {
     display: block;
     font-size: 4rem;
     position: absolute;
-    right: 40px;
+    right: 15px;
     top: 20px;
     z-index: 999;
   }
 
   .nav-links-mobile {
     flex-direction: column !important;
-    background-color: #1b4130;
+    background-color: #1b4130eb;
     padding: 1.5rem;
     border-radius: 6px;
     position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
+    right: -10px;
+    top: 10px;
     padding-top: 5rem;
     z-index: 999;
     margin-right: 20px;
   }
 
   .hero-content {
-    padding: 1.5rem;
+    padding: 2rem;
   }
   .hero-wave svg {
-    height: 80%;
+    height: 90px;
   }
   .about-us-section {
     flex-direction: column !important;
-    gap: 1rem;
+    gap: 1.5rem;
+    max-width: 100%;
+    padding: 0 3rem 1.5rem 3rem;
   }
 
   .features-cards {
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 100%;
+    padding: 1.5rem 3rem;
   }
 
   .features-card {
-    flex-basis: calc(33% - 0.8rem);
+    flex-basis: calc(33.3% - 0.7rem);
+  }
+  .offer-section {
+    max-width: 100%;
+    padding: 3rem;
   }
 
   .offer-cards {
     flex-direction: column !important;
   }
 
+  .why-us-section {
+    max-width: 100%;
+    padding: 3rem;
+  }
+
+  .why-us-label {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .why-card-desc {
+    font-size: 1.2rem;
+  }
+
+  .why-us-cards-row {
+    gap: 0.5rem;
+  }
+
+  .why-card {
+    padding: 1rem;
+    flex-basis: calc(25% - 0.375rem);
+  }
+
   .why-us-row {
     flex-direction: column !important;
   }
 
-  .why-card img {
-    max-width: 5rem;
-    margin-bottom: 0;
+  .pricelist {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .gallery-home-section {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 3rem;
   }
 
   .gallery-home-div {
@@ -293,12 +326,65 @@
     justify-content: center;
   }
 
-  .gallery-home-div img {
-    width: 30% !important;
+  .gallery-home-div-img {
+    flex: 0 0 calc(33% - 0.7rem);
+  }
+
+  .faq-home-section {
+    padding: 3rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .faq-home-card-title {
+    line-height: 3.2rem;
+    margin-right: 2rem;
+  }
+
+  .faq-home-card {
+    max-height: 9rem;
+    height: 100%;
+    padding: 2rem 3rem;
+  }
+
+  .reviews-banner {
+    flex-direction: column !important;
+    gap: 1.5rem;
+  }
+
+  .reviews-home-section {
+    max-width: 100%;
+    padding: 2rem 5rem;
   }
 
   .review-card {
     flex-basis: calc(100%);
+  }
+
+  .footer-section {
+    flex-direction: column !important;
+  }
+
+  .footer-data {
+    max-width: 17rem;
+  }
+
+  .footer-section {
+    background-position: 30% 60%;
+  }
+
+  .scroll-to-top {
+    right: 2rem;
+    bottom: 2rem;
+  }
+
+  .socials-div {
+    margin-left: auto;
+    margin-top: 1rem;
+  }
+
+  .embla__dots {
+    display: none;
   }
 }
 
@@ -307,5 +393,80 @@
   html,
   body {
     font-size: 7px;
+  }
+
+  .btn {
+    gap: 1.3rem;
+  }
+
+  .about-us-section {
+    padding: 0 2rem 1.5rem 2rem;
+  }
+
+  .features-cards {
+    padding: 1.5rem 2rem;
+  }
+
+  .offer-section {
+    padding: 2rem;
+  }
+
+  .why-us-section {
+    padding: 2rem;
+  }
+  .why-card-desc {
+    font-size: 1rem;
+  }
+
+  .pricelist-card img {
+    max-width: 6rem;
+  }
+
+  .pricelist {
+    padding: 1rem;
+  }
+
+  .gallery-home-section {
+    margin: 2rem;
+    padding: 2rem;
+  }
+
+  .gallery-home-div-img {
+    flex-basis: calc(50% - 0.5rem);
+  }
+
+  .faq-home-section {
+    padding: 2rem;
+  }
+
+  .faq-home-card {
+    max-height: 11rem;
+  }
+  .reviews-home-section {
+    max-width: 100%;
+    padding: 2rem 4.5rem;
+  }
+
+  .reviews-banner {
+    padding: 1.9rem 2rem;
+  }
+
+  .footer-contact-groups {
+    flex-direction: column !important;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-title {
+    font-size: 4.9rem;
+    text-align: center;
+  }
+
+  .footer-section {
+    padding: 2rem;
+  }
+
+  .footer-subtitle {
+  text-align: center;
   }
 }
