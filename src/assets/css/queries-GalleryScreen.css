@@ -1,0 +1,70 @@
+@media only screen and (max-width: 1500px) {
+  .share-div {
+    max-width: 80%;
+  }
+
+  .gallery-section {
+    width: 80%;
+  }
+}
+
+/* laptops and big tablets - 1024px - 1200px */
+@media only screen and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 9px !important;
+  }
+
+  .gallery-content {
+    grid-auto-rows: 22rem;
+  }
+}
+
+/* tablets 768px - 1023px */
+@media only screen and (max-width: 1023px) {
+  html,
+  body {
+    font-size: 8px !important;
+  }
+
+  .gallery-content {
+    grid-auto-rows: 18rem;
+  }
+
+  .share-div {
+    max-width: 90%;
+  }
+}
+
+/* mobile - phones */
+@media only screen and (max-width: 767px) {
+  .gallery-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery-section {
+    width: 100%;
+    padding: 3rem;
+  }
+  .share-div {
+    max-width: 100%;
+    padding: 2rem 3rem;
+  }
+}
+
+/* small mobile - phones*/
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+  .share-div {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .share-button {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

@@ -1,4 +1,6 @@
 import "../assets/css/gallery.css";
+import "../assets/css/queries.css";
+import "../assets/css/queries-GalleryScreen.css";
 import { useEffect } from "react";
 import { usePageContext } from "../context/pageContext";
 import Gallery from "./Gallery/Gallery";
