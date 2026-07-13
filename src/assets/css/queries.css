@@ -465,8 +465,8 @@
 
   .footer-contact-groups {
     flex-direction: column !important;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
   }
 
   .footer-title {
@@ -481,4 +481,5 @@
   .footer-subtitle {
     text-align: center;
   }
-}
+
+ }

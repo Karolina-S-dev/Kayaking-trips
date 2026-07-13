@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { galleryPhotos } from "../../utils/galleryUtils";
 
@@ -7,11 +6,10 @@ import Lightbox from "yet-another-react-lightbox";
 import Counter from "yet-another-react-lightbox/plugins/counter";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/counter.css";
-import { Thumbnails } from "yet-another-react-lightbox/plugins";
+import { Thumbnails, Zoom } from "yet-another-react-lightbox/plugins";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 const Gallery = () => {
-  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(null);
 
@@ -38,7 +36,7 @@ const Gallery = () => {
         </svg>
 
         <Lightbox
-          plugins={[Counter, Thumbnails]}
+          plugins={[Counter, Thumbnails, Zoom]}
           index={index}
           on={{ view: ({ index: currentIndex }) => setIndex(currentIndex) }}
           counter={{ container: { style: { top: "unset", bottom: 0 } } }}
@@ -78,14 +76,9 @@ const Gallery = () => {
               </p>
             </div>
           </div>
-          <button
-            className="share-button white"
-            onClick={() => {
-              navigate("/contact");
-            }}
-          >
+          <a href="/contact" className="share-button white flex-row">
             WYŚLIJ ZDJĘCIA
-          </button>
+          </a>
         </div>
       </section>
     </>
