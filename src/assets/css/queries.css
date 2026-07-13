@@ -394,6 +394,10 @@
   .embla__dots {
     display: none;
   }
+
+  .footer-section:after {
+    background-color: #00000068;
+  }
 }
 
 /* small mobile - phones*/

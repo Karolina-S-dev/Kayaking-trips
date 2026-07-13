@@ -20,22 +20,23 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="flex-row footer-group">
-              <ion-icon name="document-text-outline"></ion-icon>
-              <p className="footer-data">NIP: 9590694562</p>
-            </div>
-          </div>
-          <div className="flex-row footer-contact-groups">
+
             <div className="flex-row footer-group">
               <ion-icon name="mail-outline"></ion-icon>
               <p className="footer-data">xxxxxxxxx</p>
             </div>
+          </div>
+          <div className="flex-row footer-contact-groups">
             <div className="flex-row footer-group">
               <ion-icon name="location-outline"></ion-icon>
               <address>
                 <p className="footer-data">Sokołów Dolny 1A</p>
                 <p className="footer-data"> 28-305 Sokołów Dolny</p>
               </address>
+            </div>
+            <div className="flex-row footer-group">
+              <ion-icon name="document-text-outline"></ion-icon>
+              <p className="footer-data">NIP: 9590694562</p>
             </div>
           </div>
         </div>
@@ -54,7 +55,7 @@ const Footer = () => {
 
       <section className="footer-bottom">
         <p>
-          2026 © Copyright. Spływy Kajakowe u Jakuba. 
+          2026 © Copyright. Spływy Kajakowe u Jakuba.
           <span> | </span>
           <a href="/privacy-policy">Polityka prywatności</a>
           <span> | </span>Designed & developed by&nbsp;
