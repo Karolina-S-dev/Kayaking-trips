@@ -256,6 +256,10 @@
     min-height: 80vh;
   }
 
+  .hero-title-dancing-script {
+    font-size: 7.5rem;
+  }
+
   .hero-content {
     padding: 2rem;
   }
