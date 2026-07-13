@@ -1,4 +1,6 @@
 import "../assets/css/contact.css";
+import "../assets/css/queries.css";
+import "../assets/css/queries-ContactScreen.css";
 import Footer from "./Home/Footer";
 import Header from "./Home/Header";
 import Contact from "./Contact/Contact";

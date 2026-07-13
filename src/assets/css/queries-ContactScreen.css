@@ -1,0 +1,103 @@
+@media only screen and (max-width: 1500px) {
+  .contact-main-row {
+    gap: 4rem;
+  }
+
+  .form-contact-us-main {
+    flex-basis: calc(40% - 2rem);
+  }
+  .contact-text-column {
+    flex-basis: calc(60% - 2rem);
+  }
+}
+
+/* laptops and big tablets - 1024px - 1200px */
+@media only screen and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 9px !important;
+  }
+
+  .contact-main-row {
+    width: 90%;
+  }
+}
+
+/* tablets 768px - 1023px */
+@media only screen and (max-width: 1023px) {
+  html,
+  body {
+    font-size: 8px !important;
+  }
+
+  .contact-main-row {
+    flex-direction: column;
+  }
+
+  .form-contact-us-main {
+    width: 70%;
+  }
+
+  .reservation-image img {
+    width: 100%;
+    height: 23rem;
+  }
+
+  .reservation-cards {
+    max-width: 100%;
+  }
+}
+
+/* mobile - phones */
+@media only screen and (max-width: 767px) {
+  .contact-main-row {
+    width: 100%;
+    padding: 2.5rem;
+  }
+  .contact-buttons {
+    gap: 1rem;
+  }
+  .contact-button {
+    padding: 1.2rem 1rem;
+  }
+  .reservation-cards {
+    gap: 0.8rem;
+  }
+  .reservation-card {
+    flex-basis: calc(25% - 0.6rem);
+  }
+
+  .form-contact-us-main {
+    width: 100%;
+    padding: 2rem 2.5rem;
+  }
+}
+
+/* small mobile - phones*/
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .reservation-cards {
+    flex-direction: column;
+  }
+
+  .contact-main-row {
+    padding: 2rem;
+  }
+  .form-contact-us-main {
+    padding: 2rem;
+  }
+  .form-ion-row {
+    gap: 1.3rem;
+  }
+  .form-title {
+    margin-top: 1.3rem;
+  }
+}
