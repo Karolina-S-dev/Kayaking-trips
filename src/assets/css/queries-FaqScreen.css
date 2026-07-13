@@ -1,0 +1,110 @@
+@media only screen and (max-width: 1500px) {
+  .faq-list {
+    width: 60%;
+  }
+  .faq-notice {
+    max-width: 65%;
+  }
+}
+
+/* laptops and big tablets - 1024px - 1200px */
+@media only screen and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 9px !important;
+  }
+  .faq-list {
+    width: 65%;
+  }
+
+  .faq-notice {
+    max-width: 70%;
+    padding: 3rem 8rem;
+  }
+}
+
+/* tablets 768px - 1023px */
+@media only screen and (max-width: 1023px) {
+  html,
+  body {
+    font-size: 8px !important;
+  }
+
+  .faq-list {
+    width: 70%;
+  }
+
+  .faq-notice {
+    max-width: 75%;
+    padding: 3rem 4rem;
+    gap: 2rem;
+  }
+}
+
+/* mobile - phones */
+@media only screen and (max-width: 767px) {
+  .faq-list {
+    width: 100%;
+    padding: 2rem;
+    margin: 2rem auto 3rem auto;
+  }
+
+  .faq-banner {
+    height: 9rem;
+    padding: 2rem 4rem;
+    margin-top: 1.5rem;
+  }
+  .question-and-answer {
+    margin: 1rem 0 1rem 1rem;
+  }
+
+  .faq-notice {
+    margin: 2rem 2rem 5rem 2rem;
+    max-width: 100%;
+    padding: 2.5rem;
+  }
+}
+
+/* adjustment for faq-notice*/
+@media only screen and (max-width: 520px) {
+  .faq-notice {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .faq-notice-left {
+    align-items: center;
+  }
+
+  .faq-notice-content {
+    text-align: center;
+  }
+}
+
+/* small mobile - phones*/
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+
+  .faq-banner {
+    padding: 2rem 2rem;
+  }
+
+  .banner-title {
+    text-align: left;
+  }
+
+  .faq-content {
+    padding: 2rem;
+  }
+  .faq-question {
+    text-align: left;
+  }
+  .banner-icon {
+    margin-right: 1rem;
+  }
+  .faq-notice {
+    padding: 2rem 2rem 3rem 2rem;
+  }
+}

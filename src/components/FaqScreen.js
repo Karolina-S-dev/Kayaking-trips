@@ -1,4 +1,6 @@
 import "../assets/css/faq.css";
+import "../assets/css/queries.css";
+import "../assets/css/queries-FaqScreen.css";
 import { useEffect } from "react";
 import { usePageContext } from "../context/pageContext";
 import FaqList from "./Faq/FaqList";
