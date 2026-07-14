@@ -1,23 +1,22 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import companyLogo from "../../assets/img/company-logo.png";
 import { usePageContext } from "../../context/pageContext";
 import { useState } from "react";
+import DesktopNav from "./Nav.js/DesktopNav";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const[isOpen, setIsOpen]=useState(true);
   const { activePage } = usePageContext();
   const navigate = useNavigate();
   const handleRedirectHomeScreen = () => {
     navigate("/");
-    console.log("activePage w Header:", activePage);
   };
 
   const handleRedirectTripsScreen = () => {
-    navigate("/trips");
+    navigate("/trasy-splywow");
   };
 
   const handleRedirectGalleryScreen = () => {
-    navigate("/gallery");
+    navigate("/galeria");
   };
   const handleRedirectFaqScreen = () => {
     navigate("/faq");
@@ -26,12 +25,6 @@ const Header = () => {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
-  const toggleMenu = () => {
-    <ion-icon name="mail-outline" onClick={toggleMenu}></ion-icon> &&
-    !isMenuOpen
-      ? setIsMenuOpen(true)
-      : setIsMenuOpen(false);
-  };
   return (
     // <>{
     //   ? <HeaderMobileCOntent/> : <HeaderDesktopContent/>
@@ -43,62 +36,8 @@ const Header = () => {
           : "header-section flex-row header-subpage"
       }
     >
-      <a href="/">
-        <img className="header-logo" src={companyLogo} alt="Company Logo" />
-      </a>
-      <nav>
-        <ul
-          className={`nav-links flex-row ${<ion-icon name="apps"></ion-icon> ? "nav-links-mobile" : ""}`}
-        >
-          <li>
-            <button
-              onClick={handleRedirectHomeScreen}
-              className={`nav-button ${activePage === "/" ? "active-nav-button" : ""}`}
-            >
-              <span className="white">Strona główna</span>
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={handleRedirectTripsScreen}
-              className={`nav-button ${activePage === "/trips" ? "active-nav-button" : ""}`}
-            >
-              <span className="white">Trasy spływów</span>
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={handleRedirectGalleryScreen}
-              className={`nav-button ${activePage === "/gallery" ? "active-nav-button" : ""}`}
-            >
-              <span className="white">Galeria</span>
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={handleRedirectFaqScreen}
-              className={`nav-button ${activePage === "/faq" ? "active-nav-button" : ""}`}
-            >
-              <span className="white">FAQ</span>
-            </button>
-          </li>
-          <li>
-            <button className="nav-button white">PL | ENG</button>
-          </li>
-
-          <li>
-            <a
-              href="/contact"
-              className="nav-button nav-button--contact navy-blue"
-            >
-              <ion-icon name="mail-outline" onClick={toggleMenu}></ion-icon>
-              <span>Kontakt</span>
-            </a>
-          </li>
-        </ul>
-
-        <ion-icon name="apps"></ion-icon>
-      </nav>
+      <DesktopNav/>
+      
     </header>
   );
 };

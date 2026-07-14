@@ -7,7 +7,10 @@ const TripsChoice = () => {
   return (
     <>
       <section className="trips-choice-section flex-col">
-        <p className="trips-choice-label">Wybierz rodzaj spływu</p>
+        <p className="trips-choice-label green">Wybierz rodzaj spływu</p>
+        <p className="trips-choice-title dark-grey">Niezależnie od tego, czy szukasz krótkiej rodzinnej wycieczki,
+czy kilkudniowej przygody na Nidzie, znajdziesz trasę dopasowaną
+do swojego doświadczenia i czasu.</p>
         <svg
           width="90"
           height="12"
@@ -24,34 +27,46 @@ const TripsChoice = () => {
         </svg>
 
         <div className="flex-row trips-choice-cards">
-          <div className="trips-choice-card">
+          <a
+            href="/trasy-splywow/splywy-rodzinne"
+            className="trips-choice-card"
+          >
             <img src={familyKayaking} alt="Spływ rodzinny" />
             <div className="choice-card-text white">
               <p className="choice-card-title ">Rodzinny</p>
               <p className="choice-card-duration">2h - 4h</p>
-            </div>
-          </div>
-          <div className="trips-choice-card">
+            </div>{" "}
+          </a>
+          <a
+            href="/trasy-splywow/splywy-jednodniowe"
+            className="trips-choice-card"
+          >
             <img src={oneDayKayaking} alt="Spływ jednodniowy" />
             <div className="choice-card-text white">
               <p className="choice-card-title">Jednodniowy</p>
               <p className="choice-card-duration">5 - 30km</p>
             </div>
-          </div>
-          <div className="trips-choice-card">
+          </a>
+          <a
+            href="/trasy-splywow/splywy-kilkudniowe"
+            className="trips-choice-card"
+          >
             <img src={longKayaking} alt="Spływ 2-3 dniowy" />
             <div className="choice-card-text white">
               <p className="choice-card-title">Kilkudniowy</p>
               <p className="choice-card-duration">2 - 3 dni</p>
             </div>
-          </div>
-          <div className="trips-choice-card">
+          </a>
+          <a
+            href="/trasy-splywow/splywy-na-zyczenie"
+            className="trips-choice-card"
+          >
             <img src={wislaKayaking} alt="Spływ tygodniowy" />
             <div className="choice-card-text white">
               <p className="choice-card-title">Na życzenie</p>
               <p className="choice-card-duration">do 7 dni</p>
             </div>
-          </div>
+          </a>
         </div>
       </section>
     </>

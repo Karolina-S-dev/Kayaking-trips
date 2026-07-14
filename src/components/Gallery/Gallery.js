@@ -76,7 +76,7 @@ const Gallery = () => {
               </p>
             </div>
           </div>
-          <a href="/contact" className="share-button white flex-row">
+          <a href="/kontakt" className="share-button white flex-row">
             WYŚLIJ ZDJĘCIA
           </a>
         </div>

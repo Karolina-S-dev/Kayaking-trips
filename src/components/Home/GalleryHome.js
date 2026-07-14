@@ -50,7 +50,7 @@ const GalleryHome = () => {
             />
           </div>
         </div>
-        <a href="/gallery" className="gallery-home-button flex-row">
+        <a href="/galeria" className="gallery-home-button flex-row">
           Zobacz więcej zdjęć
           <ion-icon name="arrow-forward-outline"></ion-icon>
         </a>

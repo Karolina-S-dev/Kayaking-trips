@@ -21,7 +21,7 @@ const FaqNotice = () => {
             wszystkie pytania.
           </p>
 
-          <a href="/contact" className="faq-notice-button flex-row">
+          <a href="/kontakt" className="faq-notice-button flex-row">
             Skontaktuj się z nami
             <ion-icon name="arrow-forward-outline"></ion-icon>
           </a>

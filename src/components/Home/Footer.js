@@ -57,7 +57,7 @@ const Footer = () => {
         <p>
           2026 © Copyright. Spływy Kajakowe u Jakuba.
           <span> | </span>
-          <a href="/privacy-policy">Polityka prywatności</a>
+          <a href="/polityka-prywatnosci">Polityka prywatności</a>
           <span> | </span>Designed & developed by&nbsp;
           <a href="https://www.linkedin.com/in/karolina-s-123bb238b/">
             Karolina Szary

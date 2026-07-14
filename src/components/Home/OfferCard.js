@@ -35,7 +35,7 @@ const OfferCard = ({trip}) => {
         </div>
         <div className="flex-row card-footer">
           <p className="navy-blue offer-card-longness">{trip.longness}</p>
-          <a href="/trips" className="card-button white">
+          <a href="/trasy-splywow" className="card-button white">
             {trip.ctaText}
           </a>
         </div>

@@ -3,28 +3,22 @@ import Footer from "./Home/Footer";
 import Header from "./Home/Header";
 import ScrollToTop from "./Home/ScrollToTop";
 import TripsHero from "./Trips/TripsHero";
-import TripsChoice from "./Trips/TripsChoice";
-import FamilyTrips from "./Trips/FamilyTrips";
-import OneDayTrips from "./Trips/OneDayTrips";
-import LongTrips from "./Trips/LongTrips";
 import { useEffect } from "react";
 import { usePageContext } from "../context/pageContext";
+import TripsChoice from "./Trips/TripsChoice";
 
 const TripsScreen = () => {
   const { setActivePage } = usePageContext();
 
   useEffect(() => {
-    setActivePage("/trips");
+    setActivePage("/trasy-splywow");
   }, [setActivePage]);
 
   return (
     <>
       <Header />
       <TripsHero />
-      <TripsChoice />
-      <FamilyTrips />
-      <OneDayTrips />
-      <LongTrips />
+      <TripsChoice/>
       <Footer />
       <ScrollToTop />
     </>

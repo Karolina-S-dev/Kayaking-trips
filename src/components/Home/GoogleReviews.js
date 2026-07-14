@@ -48,7 +48,7 @@ const GoogleReviews = () => {
         </div>
         <GoogleEmblaCarousel />
 
-        <a href="/contact" className="reviews-home-button flex-row">
+        <a href="/kontakt" className="reviews-home-button flex-row">
           Zarezerwuj swój spływ
           <ion-icon name="arrow-forward-outline"></ion-icon>
         </a>

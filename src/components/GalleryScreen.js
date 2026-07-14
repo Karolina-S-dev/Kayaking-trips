@@ -12,7 +12,7 @@ const GalleryScreen = () => {
   const { setActivePage } = usePageContext();
 
   useEffect(() => {
-    setActivePage("/gallery");
+    setActivePage("/galeria");
   }, [setActivePage]);
 
   return (

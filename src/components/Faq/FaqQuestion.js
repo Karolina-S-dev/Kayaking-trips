@@ -17,12 +17,17 @@ const FaqQuestion = ({ question }) => {
           <p className="faq-question">{question.question}</p>
           <ion-icon
             name="chevron-down-outline"
-            className="question-arrowicon"
+            className={
+              !isFaqAnswearOpen
+                ? "banner-arrowicon"
+                : "banner-arrowicon-rotated"
+            }
           ></ion-icon>
         </div>
-        {isFaqAnswearOpen ? (
-          <p className="faq-answer mid-grey">{question.answer}</p>
-        ) : null}
+
+        <p className={`faq-answer mid-grey ${isFaqAnswearOpen ? "faq-answer-open" : ""}`}>
+          {question.answer}
+        </p>
       </div>
     </>
   );
