@@ -9,35 +9,65 @@ const MobileNav = ({ isMobile }) => {
   return (
     <>
       {isMobile ? (
-        <div
-          className={`header-section-mobile flex-row ${!isHome ? "header-subpage" : ""}`}
-        >
-          <a href="/">
-            <img className="header-logo" src={companyLogo} alt="Company Logo" />
-          </a>
-          <nav>
-            <ul className="nav-links-mobile flex-row">
-              <li>
-                <NavItem text={"Strona główna"} route={"/"} />
-              </li>
-              <li>
-                <NavItem text={"Trasy spływów"} route={"/trasy-splywow"} />
-              </li>
-              <li>
-                <NavItem text={"Galeria"} route={"/galeria"} />
-              </li>
-              <li>
-                <NavItem text={"FAQ"} route={"/faq"} />
-              </li>
-              <li>
-                <NavItem text={"PL | ENG"} route={""} />
-              </li>
+        <div className="header-mobile-wrapper">
+          <div
+            className={`header-section-mobile flex-row ${!isHome ? "header-subpage" : ""}`}
+          >
+            <a href="/">
+              <img
+                className="header-logo"
+                src={companyLogo}
+                alt="Company Logo"
+              />
+            </a>
+            <nav>
+              <ul className="nav-links-mobile flex-row">
+                <li>
+                  <NavItem
+                    text={"Strona główna"}
+                    route={"/"}
+                    icon={<ion-icon name="home-outline"></ion-icon>}
+                  />
+                </li>
+                <li>
+                  <NavItem
+                    text={"Trasy spływów"}
+                    route={"/trasy-splywow"}
+                    icon={<ion-icon name="git-branch-outline"></ion-icon>}
+                  />
+                </li>
+                <li>
+                  <NavItem
+                    text={"Galeria"}
+                    route={"/galeria"}
+                    icon={<ion-icon name="image-outline"></ion-icon>}
+                  />
+                </li>
+                <li>
+                  <NavItem
+                    text={"FAQ"}
+                    route={"/faq"}
+                    icon={<ion-icon name="help-circle-outline"></ion-icon>}
+                  />
+                </li>
+                <li>
+                  <NavItem
+                    text={"PL | ENG"}
+                    route={""}
+                    icon={<ion-icon name="globe-outline"></ion-icon>}
+                  />
+                </li>
 
-              <li>
-                <NavItem text={"Kontakt"} route={"/kontakt"} type={"contact"} />
-              </li>
-            </ul>
-          </nav>
+                <li>
+                  <NavItem
+                    text={"Kontakt"}
+                    route={"/kontakt"}
+                    type={"contact"}
+                  />
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       ) : null}
     </>

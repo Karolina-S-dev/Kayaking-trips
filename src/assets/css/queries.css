@@ -242,12 +242,13 @@
   /* ------------ MOBILE NAV ----------- */
 
   .header-section-mobile {
-    padding: 3rem;
+    padding: 3rem 5rem 5rem 5rem;
     justify-content: flex-start;
     align-items: flex-start;
     right: 0;
-    height: 90%;
-    width: 70%;
+    top: 0;
+    height: 80%;
+    width: 75%;
     background:
       radial-gradient(
         circle at top right,
@@ -257,10 +258,20 @@
       linear-gradient(135deg, #08251d 0%, #0f3d31 40%, #145c48 100%);
     box-shadow: 0 0 20px 10px #0909096b;
     z-index: 999;
-    position: absolute;
+    position: fixed;
     flex-direction: column !important;
     border-bottom-left-radius: 16px;
     border-top-left-radius: 16px;
+  }
+
+  .header-mobile-wrapper {
+    position: fixed;
+    background-color: #000000bf;
+    left: 0;
+    top: 0;
+    z-index: 900;
+    width: 100vw;
+    height: 100vh;
   }
 
   .nav-links-mobile {
@@ -268,6 +279,13 @@
     gap: 2rem;
     align-items: flex-start;
     margin-top: 3rem;
+    width: 100% !important;
+  }
+
+  .mobile-icon {
+    font-size: 2.8rem;
+    flex-shrink: 0;
+    margin-right: 1.5rem;
   }
 
   .active-nav-button span::after {
@@ -276,7 +294,8 @@
 
   .nav-button {
     border-bottom: 1px solid #22503b;
-  }
+    font-size: 1.9rem;
+    }
 
   .header-logo-hidden {
     opacity: 0;
