@@ -40,7 +40,7 @@
 
 .trips-choice-section {
   max-width: 90%;
-  margin: 10rem auto;
+  margin: 11rem auto;
 }
 
 .trips-choice-label {
@@ -96,4 +96,182 @@
 
 .choice-card-duration {
   font-size: 1.8rem;
+}
+
+/* ----------------------------- */
+/* -------- FAMILYTRIPS -------- */
+/* ----------------------------- */
+
+.family-trips-section {
+  max-width: 85%;
+  margin: 5rem auto;
+}
+
+.family-trips-label {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.family-trips-title {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 auto 1rem auto;
+  max-width: 90rem;
+  line-height: 2.8rem;
+}
+
+.family-trips-img {
+  flex: 0 0 calc(35% - 2.5rem);
+  aspect-ratio: 1/1;
+  border-radius: 12px;
+}
+
+.family-trips-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.family-trips-card {
+  width: 35rem;
+  height: 25rem;
+  border-radius: 12px;
+  padding: 3rem;
+  border: 2px solid #dcdedd;
+  position: relative;
+}
+
+.family-trips-card-number {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  font-size: 1.6rem;
+  background-color: #c21d1d;
+  border-radius: 50%;
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.family-trips-cards {
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
+.family-trips-card-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.family-trips-card-distance {
+  font-size: 1.7rem;
+}
+.family-trips-card-duration {
+  font-size: 1.7rem;
+}
+
+.family-trips-card-button {
+  font-size: 1.6rem;
+  padding: 0.8rem 2.2rem;
+  border-radius: 15px;
+  background-color: #1f4d3a;
+  transition: transform 0.4s ease;
+  font-weight: 600;
+  cursor: pointer;
+  margin: auto auto 0 auto;
+}
+
+.family-trips-card-button:hover {
+  transform: scale(1.01);
+  background-color: #265b45;
+}
+
+.family-trips-row {
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
+.routes-header {
+  gap: 1rem;
+}
+
+.routes-header ion-icon {
+  font-size: 2.8rem;
+}
+
+.routes-header-text {
+  font-size: 1.7rem;
+  font-weight: 600;
+  position: relative;
+  width: fit-content;
+}
+
+.routes-header-text::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 1px;
+  background-color: black;
+  bottom: 0;
+  right: -520px;
+}
+.routes-content {
+  padding: 1rem;
+  flex: 0 0 calc(55% - 2.5rem);
+}
+
+.family-trips-info {
+  border-radius: 12px;
+  height: 15rem;
+  margin-top: auto;
+  background-color: #eaedec;
+  padding: 1.5rem 2rem;
+}
+
+.family-trips-info ion-icon {
+  flex-shrink: 0;
+  font-size: 4rem;
+  color: #1f4d3a;
+  margin-right: 1.5rem;
+  padding: 1rem;
+}
+
+.family-trips-info img {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.family-trips-info-title {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.family-trips-info-content {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+/* ----------------------------- */
+/* -------- TRIPS-MODAL -------- */
+/* ----------------------------- */
+
+.trips-modal {
+  width: 90vw;
+  height: 80vh;
+  background-color: #fcfcfc;
+  position: fixed;
+  left: 5vw;
+  top: 5vw;
+  z-index: 10;
+  border-radius: 12px;
 }

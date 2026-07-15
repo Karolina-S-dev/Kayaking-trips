@@ -8,9 +8,11 @@ const TripsChoice = () => {
     <>
       <section className="trips-choice-section flex-col">
         <p className="trips-choice-label green">Wybierz rodzaj spływu</p>
-        <p className="trips-choice-title dark-grey">Niezależnie od tego, czy szukasz krótkiej rodzinnej wycieczki,
-czy kilkudniowej przygody na Nidzie, znajdziesz trasę dopasowaną
-do swojego doświadczenia i czasu.</p>
+        <p className="trips-choice-title dark-grey">
+          Niezależnie od tego, czy szukasz krótkiej rodzinnej wycieczki, czy
+          kilkudniowej przygody na Nidzie, znajdziesz trasę dopasowaną do
+          swojego doświadczenia i czasu.
+        </p>
         <svg
           width="90"
           height="12"

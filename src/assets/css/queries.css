@@ -221,38 +221,73 @@
 
 /* mobile - phones */
 @media only screen and (max-width: 767px) {
-  .header-logo {
-    max-width: 9rem;
-  }
-
-  .header-section {
-    position: relative;
-    padding: 1rem 2rem;
-  }
-
   .hamburger-button {
-    display: block;
+    display: flex;
     font-size: 4rem;
     position: absolute;
     right: 15px;
     top: 15px;
     z-index: 999;
-    background: transparent;
+    background: #1b4130;
+    border-radius: 5px;
+    padding: 0.7rem;
     border: none;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    opacity: 0;
+  }
+
+  /* ------------ MOBILE NAV ----------- */
+
+  .header-section-mobile {
+    padding: 3rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    right: 0;
+    height: 90%;
+    width: 70%;
+    background:
+      radial-gradient(
+        circle at top right,
+        rgba(255, 203, 33, 0.08),
+        transparent 30%
+      ),
+      linear-gradient(135deg, #08251d 0%, #0f3d31 40%, #145c48 100%);
+    box-shadow: 0 0 20px 10px #0909096b;
+    z-index: 999;
+    position: absolute;
+    flex-direction: column !important;
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
   }
 
   .nav-links-mobile {
     flex-direction: column !important;
-    background-color: #1b4130eb;
-    padding: 1.5rem;
-    border-radius: 6px;
-    position: absolute;
-    right: -10px;
-    top: 10px;
-    padding-top: 5rem;
-    z-index: 999;
-    margin-right: 20px;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-top: 3rem;
   }
+
+  .active-nav-button span::after {
+    display: none;
+  }
+
+  .nav-button {
+    border-bottom: 1px solid #22503b;
+  }
+
+  .header-logo-hidden {
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  .header-logo {
+    max-width: 9rem;
+  }
+
+  /*------------------------------------*/
 
   .hero-section {
     min-height: 80vh;
