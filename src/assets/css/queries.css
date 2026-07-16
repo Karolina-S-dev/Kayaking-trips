@@ -276,11 +276,8 @@
   .header-mobile-wrapper {
     position: fixed;
     background-color: #000000bf;
-    left: 0;
-    top: 0;
+    inset: 0;
     z-index: 900;
-    width: 100vw;
-    height: 100vh;
   }
 
   .nav-links-mobile {
