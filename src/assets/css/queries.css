@@ -235,7 +235,7 @@
     cursor: pointer;
   }
 
-  .header-section {
+  .nav-links {
     display: none !important;
   }
 
@@ -326,7 +326,6 @@
 
   .hero-section {
     min-height: 80vh;
-    justify-content: center;
   }
 
   .hero-title-dancing-script {
@@ -334,7 +333,7 @@
   }
 
   .hero-content {
-    padding: 2rem;
+    padding: 9rem 2rem;
   }
   .hero-wave svg {
     height: 90px;
