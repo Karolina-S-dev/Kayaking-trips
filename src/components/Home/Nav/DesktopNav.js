@@ -2,41 +2,72 @@ import { useLocation } from "react-router-dom";
 import companyLogo from "../../../assets/img/company-logo.png";
 import NavItem from "./NavItem";
 
-const DesktopNav = ({ isMobile = false }) => {
+const DesktopNav = ({ isMobile, isOpen }) => {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
   return (
     <>
       <div
-        className={`header-section flex-row ${!isHome ? "header-subpage" : ""} ${isMobile ? "" : ""}`}
+        className={`header-section flex-row ${!isHome ? "header-subpage" : ""}`}
       >
-        
-          <a href="/">
-            <img className={`header-logo ${isMobile? "header-logo-hidden" :null}`} src={companyLogo} alt="Company Logo" />
-          </a>
-       
+        <a href="/">
+          <img
+            className={`header-logo ${isOpen ? "header-logo-hidden" : null}`}
+            src={companyLogo}
+            alt="Company Logo"
+          />
+        </a>
 
         <nav>
           <ul className="nav-links flex-row">
             <li>
-              <NavItem text={"Strona główna"} route={"/"} />
+              <NavItem
+                text={"Strona główna"}
+                route={"/"}
+                type={"common"}
+                isMobile={isMobile}
+              />
             </li>
             <li>
-              <NavItem text={"Trasy spływów"} route={"/trasy-splywow"} />
+              <NavItem
+                text={"Trasy spływów"}
+                route={"/trasy-splywow"}
+                type={"common"}
+              />
             </li>
             <li>
-              <NavItem text={"Galeria"} route={"/galeria"} />
+              <NavItem
+                text={"Galeria"}
+                route={"/galeria"}
+                type={"common"}
+                isMobile={isMobile}
+              />
             </li>
             <li>
-              <NavItem text={"FAQ"} route={"/faq"} />
+              <NavItem
+                text={"FAQ"}
+                route={"/faq"}
+                type={"common"}
+                isMobile={isMobile}
+              />
             </li>
             <li>
-              <NavItem text={"PL | ENG"} route={""} />
+              <NavItem
+                text={"PL | ENG"}
+                route={""}
+                type={"common"}
+                isMobile={isMobile}
+              />
             </li>
 
             <li>
-              <NavItem text={"Kontakt"} route={"/kontakt"} type={"contact"} />
+              <NavItem
+                text={"Kontakt"}
+                route={"/kontakt"}
+                type={"contact"}
+                isMobile={isMobile}
+              />
             </li>
           </ul>
         </nav>

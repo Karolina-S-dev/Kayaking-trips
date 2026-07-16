@@ -14,42 +14,57 @@ const NavItem = ({ route, isMobile, text, type, icon }) => {
 
   return (
     <>
-      {!isMobile ? (
+      {isMobile ? (
         //navItem for mobile
-
-        type === "contact" ? (
-          <button
-            onClick={redirect}
-            className={`nav-button nav-button--contact navy-blue `}
-          >
-            <span>{text}</span>
-          </button>
-        ) : (
-          <button
-            onClick={redirect}
-            className={`nav-button ${activePage === route ? "active-nav-button" : ""}`}
-          >
-            <div className="mobile-icon white">{icon}</div>
-            <span className="white">{text}</span>
-          </button>
-        )
-      ) : //navItem for desktop
-
-      type === "contact" ? (
-        <button
-          onClick={redirect}
-          className={`nav-button nav-button--contact navy-blue `}
-        >
-          <ion-icon name="mail-outline"></ion-icon>
-          <span>{text}</span>
-        </button>
+        <>
+          {type === "contact" ? (
+            <button
+              onClick={redirect}
+              className={`nav-button nav-button--contact navy-blue `}
+            >
+              <div>
+                <ion-icon
+                  className="contact-mobile-icon"
+                  name="mail-outline"
+                ></ion-icon>
+              </div>
+              <span>{text}</span>
+            </button>
+          ) : null}
+          {type === "common" ? (
+            <button
+              onClick={redirect}
+              className={`nav-button ${activePage === route ? "active-nav-button" : ""}`}
+            >
+              <div className="mobile-icon white">{icon}</div>
+              <span className="white">{text}</span>
+            </button>
+          ) : null}
+        </>
       ) : (
-        <button
-          onClick={redirect}
-          className={`nav-button ${activePage === route ? "active-nav-button" : ""}`}
-        >
-          <span className="white">{text}</span>
-        </button>
+        //navItem for desktop
+        <>
+          {type === "contact" ? (
+            <button
+              onClick={redirect}
+              className="nav-button nav-button--contact navy-blue "
+            >
+              <div>
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <span>{text}</span>
+            </button>
+          ) : null}
+
+          {type === "common" ? (
+            <button
+              onClick={redirect}
+              className={`nav-button ${activePage === route ? "active-nav-button" : ""}`}
+            >
+              <span className="white">{text}</span>
+            </button>
+          ) : null}
+        </>
       )}
     </>
   );

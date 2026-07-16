@@ -2,31 +2,33 @@ import { useLocation } from "react-router-dom";
 import companyLogo from "../../../assets/img/company-logo.png";
 import NavItem from "./NavItem";
 
-const MobileNav = ({ isMobile }) => {
+const MobileNav = ({ isMobile, isOpen }) => {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
   return (
     <>
-      {isMobile ? (
+      {isOpen ? (
         <div className="header-mobile-wrapper">
           <div
-            className={`header-section-mobile flex-row ${!isHome ? "header-subpage" : ""}`}
+            className={`header-section-mobile flex-col ${!isHome ? "header-subpage" : ""} `}
           >
             <a href="/">
               <img
-                className="header-logo"
+                className="header-logo-mobile"
                 src={companyLogo}
                 alt="Company Logo"
               />
             </a>
             <nav>
-              <ul className="nav-links-mobile flex-row">
+              <ul className="nav-links-mobile flex-col">
                 <li>
                   <NavItem
                     text={"Strona główna"}
                     route={"/"}
                     icon={<ion-icon name="home-outline"></ion-icon>}
+                    type={"common"}
+                    isMobile={isMobile}
                   />
                 </li>
                 <li>
@@ -34,6 +36,8 @@ const MobileNav = ({ isMobile }) => {
                     text={"Trasy spływów"}
                     route={"/trasy-splywow"}
                     icon={<ion-icon name="git-branch-outline"></ion-icon>}
+                    type={"common"}
+                    isMobile={isMobile}
                   />
                 </li>
                 <li>
@@ -41,6 +45,8 @@ const MobileNav = ({ isMobile }) => {
                     text={"Galeria"}
                     route={"/galeria"}
                     icon={<ion-icon name="image-outline"></ion-icon>}
+                    type={"common"}
+                    isMobile={isMobile}
                   />
                 </li>
                 <li>
@@ -48,6 +54,8 @@ const MobileNav = ({ isMobile }) => {
                     text={"FAQ"}
                     route={"/faq"}
                     icon={<ion-icon name="help-circle-outline"></ion-icon>}
+                    type={"common"}
+                    isMobile={isMobile}
                   />
                 </li>
                 <li>
@@ -55,6 +63,8 @@ const MobileNav = ({ isMobile }) => {
                     text={"PL | ENG"}
                     route={""}
                     icon={<ion-icon name="globe-outline"></ion-icon>}
+                    type={"common"}
+                    isMobile={isMobile}
                   />
                 </li>
 
@@ -63,6 +73,7 @@ const MobileNav = ({ isMobile }) => {
                     text={"Kontakt"}
                     route={"/kontakt"}
                     type={"contact"}
+                    isMobile={isMobile}
                   />
                 </li>
               </ul>

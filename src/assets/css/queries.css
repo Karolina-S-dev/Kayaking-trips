@@ -242,13 +242,12 @@
   /* ------------ MOBILE NAV ----------- */
 
   .header-section-mobile {
-    padding: 3rem 5rem 5rem 5rem;
-    justify-content: flex-start;
-    align-items: flex-start;
+    padding: 5rem;
+    justify-content: space-between;
     right: 0;
     top: 0;
     height: 80%;
-    width: 75%;
+    width: 70%;
     background:
       radial-gradient(
         circle at top right,
@@ -259,9 +258,19 @@
     box-shadow: 0 0 20px 10px #0909096b;
     z-index: 999;
     position: fixed;
-    flex-direction: column !important;
     border-bottom-left-radius: 16px;
     border-top-left-radius: 16px;
+    animation: slideIn 0.4s ease forwards;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
   }
 
   .header-mobile-wrapper {
@@ -275,11 +284,9 @@
   }
 
   .nav-links-mobile {
-    flex-direction: column !important;
-    gap: 2rem;
-    align-items: flex-start;
-    margin-top: 3rem;
-    width: 100% !important;
+    align-items: stretch;
+    margin-top: 5rem;
+    height: 100%;
   }
 
   .mobile-icon {
@@ -294,16 +301,38 @@
 
   .nav-button {
     border-bottom: 1px solid #22503b;
-    font-size: 1.9rem;
-    }
+    font-size: 2rem !important;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 2rem 1.6rem;
+  }
+
+  .nav-button--contact {
+    padding: 2rem 4rem;
+    width: 100%;
+    margin-top: 10rem;
+    justify-content: center;
+    font-size: 2.1rem !important;
+  }
+  .contact-mobile-icon {
+    font-size: 3rem !important;
+  }
 
   .header-logo-hidden {
     opacity: 0;
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
   }
 
   .header-logo {
     max-width: 9rem;
+  }
+
+  .header-logo-mobile {
+    display: block;
+    margin: 0 auto;
+    max-width: 13rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
   }
 
   /*------------------------------------*/
@@ -461,6 +490,11 @@
   html,
   body {
     font-size: 7px;
+  }
+
+  .header-section-mobile {
+    height: 80%;
+    width: 80%;
   }
 
   .btn {

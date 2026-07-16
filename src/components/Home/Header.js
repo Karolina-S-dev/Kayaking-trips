@@ -3,19 +3,19 @@ import DesktopNav from "./Nav/DesktopNav";
 import { useState } from "react";
 
 const Header = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   //otwieranie mobilnej nawigacji
   const changeMobileState = () => {
-    setIsMobile((prev) => !prev);
+    setIsMobileNavOpen((prev) => !prev);
   };
 
   return (
     <>
-      <MobileNav isMobile={isMobile} />
-      <DesktopNav isMobile={isMobile} />
+      <MobileNav isMobile={true} isOpen={isMobileNavOpen}/>
+      <DesktopNav isMobile={false} isOpen={isMobileNavOpen} />
       <button onClick={changeMobileState} className="hamburger-button white">
-        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name={!isMobileNavOpen? "menu-outline":"close-outline"}></ion-icon>
       </button>
     </>
   );
