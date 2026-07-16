@@ -235,8 +235,8 @@
     cursor: pointer;
   }
 
-  .nav-links {
-    opacity: 0;
+  .header-section {
+    display: none !important;
   }
 
   /* ------------ MOBILE NAV ----------- */
@@ -260,7 +260,7 @@
     position: fixed;
     border-bottom-left-radius: 16px;
     border-top-left-radius: 16px;
-     }
+  }
 
   .header-mobile-wrapper {
     position: fixed;
@@ -326,6 +326,7 @@
 
   .hero-section {
     min-height: 80vh;
+    justify-content: center;
   }
 
   .hero-title-dancing-script {
