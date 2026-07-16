@@ -246,8 +246,8 @@
     justify-content: space-between;
     right: 0;
     top: 0;
-    height: 80%;
-    width: 70%;
+    min-height: 80%;
+    min-width: 70%;
     background:
       radial-gradient(
         circle at top right,
@@ -272,7 +272,6 @@
 
   .nav-links-mobile {
     align-items: stretch;
-    margin-top: 5rem;
     height: 100%;
   }
 
@@ -297,9 +296,9 @@
   .nav-button--contact {
     padding: 2rem 4rem;
     width: 100%;
-    margin-top: 10rem;
     justify-content: center;
     font-size: 2.1rem !important;
+    margin-top: 5rem;
   }
   .contact-mobile-icon {
     font-size: 3rem !important;
