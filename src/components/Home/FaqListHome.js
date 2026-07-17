@@ -1,4 +1,4 @@
-import { faqHomeData } from "../../utils/faqHomeUtils";
+import { faqHomeData } from "../../utils/Home/faqHomeUtils";
 import FaqCardHome from "./FaqCardHome";
 
 const FaqListHome = () => {

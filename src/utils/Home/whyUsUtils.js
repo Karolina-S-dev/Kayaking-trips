@@ -1,8 +1,8 @@
 //WHYUS component pictures
-import experienceIcon2 from ".././assets/icons/experience-icon2.png";
-import googleIcon2 from ".././assets/icons/google-icon2.png";
-import canoeIcon3 from ".././assets/icons/canoe-icon3.png";
-import routesIcon2 from ".././assets/icons/routes-icon2.png";
+import experienceIcon2 from "../../assets/icons/experience-icon2.png";
+import googleIcon2 from "../../assets/icons/google-icon2.png";
+import canoeIcon3 from "../../assets/icons/canoe-icon3.png";
+import routesIcon2 from "../../assets/icons/routes-icon2.png";
 
 const whyUsData = [
   {

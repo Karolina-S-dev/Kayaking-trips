@@ -5,17 +5,17 @@ import { useState } from "react";
 const Header = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
-  //otwieranie mobilnej nawigacji
-  const changeMobileState = () => {
+  //mobile nav opening
+  const handleMobileNavOpen = () => {
     setIsMobileNavOpen((prev) => !prev);
   };
 
   return (
     <>
-      <MobileNav isMobile={true} isOpen={isMobileNavOpen}/>
-      <DesktopNav isMobile={false} isOpen={isMobileNavOpen} />
-      <button onClick={changeMobileState} className="hamburger-button white">
-        <ion-icon name={!isMobileNavOpen? "menu-outline":"close-outline"}></ion-icon>
+      <MobileNav isMobileNavOpen={isMobileNavOpen}/>
+      <DesktopNav isMobileNavOpen={isMobileNavOpen} />
+      <button onClick={handleMobileNavOpen} className="hamburger-button white">
+        <ion-icon name={isMobileNavOpen? "close-outline":"menu-outline"}></ion-icon>
       </button>
     </>
   );

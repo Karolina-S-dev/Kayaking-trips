@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import companyLogo from "../../../assets/img/company-logo.png";
 import NavItem from "./NavItem";
 
-const DesktopNav = ({ isMobile, isOpen }) => {
+const DesktopNav = ({ isMobileNavOpen }) => {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
@@ -13,7 +13,7 @@ const DesktopNav = ({ isMobile, isOpen }) => {
       >
         <a href="/">
           <img
-            className={`header-logo ${isOpen ? "header-logo-hidden" : null}`}
+            className={`header-logo ${isMobileNavOpen ? "header-logo-hidden" : ""}`}
             src={companyLogo}
             alt="Company Logo"
           />
@@ -26,7 +26,7 @@ const DesktopNav = ({ isMobile, isOpen }) => {
                 text={"Strona główna"}
                 route={"/"}
                 type={"common"}
-                isMobile={isMobile}
+                isMobile={false}
               />
             </li>
             <li>
@@ -34,6 +34,7 @@ const DesktopNav = ({ isMobile, isOpen }) => {
                 text={"Trasy spływów"}
                 route={"/trasy-splywow"}
                 type={"common"}
+                isMobile={false}
               />
             </li>
             <li>
@@ -41,7 +42,7 @@ const DesktopNav = ({ isMobile, isOpen }) => {
                 text={"Galeria"}
                 route={"/galeria"}
                 type={"common"}
-                isMobile={isMobile}
+                isMobile={false}
               />
             </li>
             <li>
@@ -49,7 +50,7 @@ const DesktopNav = ({ isMobile, isOpen }) => {
                 text={"FAQ"}
                 route={"/faq"}
                 type={"common"}
-                isMobile={isMobile}
+                isMobile={false}
               />
             </li>
             <li>
@@ -57,7 +58,7 @@ const DesktopNav = ({ isMobile, isOpen }) => {
                 text={"PL | ENG"}
                 route={""}
                 type={"common"}
-                isMobile={isMobile}
+                isMobile={false}
               />
             </li>
 
@@ -66,7 +67,7 @@ const DesktopNav = ({ isMobile, isOpen }) => {
                 text={"Kontakt"}
                 route={"/kontakt"}
                 type={"contact"}
-                isMobile={isMobile}
+                isMobile={false}
               />
             </li>
           </ul>

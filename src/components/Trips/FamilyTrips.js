@@ -1,7 +1,8 @@
 import familyTrips from "../../assets/img/family-trips.png";
 import sobkowCastle from "../../assets/img/Sobkow-castle.png";
-import { familyTripsDesc } from "../../utils/tripsScreenUtils";
+import { familyTripsDesc } from "../../utils/Trips/tripsScreenUtils";
 import TripCard from "./TripCard";
+import KayakingIconGreen from "../../assets/icons/kayaking-icon-green.png";
 
 const FamilyTrips = () => {
   return (
@@ -38,7 +39,7 @@ const FamilyTrips = () => {
               <p className="routes-header-text">DOSTĘPNE TRASY</p>
             </div>
 
-            <div className="family-trips-cards flex-row">
+            <div className="family-trips-cards flex-col">
               {familyTripsDesc.map((item, index) => {
                 return (
                   <div key={index}>
@@ -48,10 +49,14 @@ const FamilyTrips = () => {
               })}
             </div>
             <div className="family-trips-info flex-row">
-              <ion-icon name="information-circle"></ion-icon>
-              <div className="flex-col">
+              <img
+                src={KayakingIconGreen}
+                alt="Kayaking icon"
+                className="family-info-icon"
+              />
+              <div className="flex-col family-trips-info-content">
                 <p className="family-trips-info-title">warto wiedzieć</p>
-                <p className="family-trips-info-content">
+                <p className="family-trips-info-desc">
                   Na trasie Brzegi - Mokrsko istnieje możliwość krótkiego
                   postoju, m.in. przy Zamku Rycerskim w Sobkowie. Przed każdym
                   spływem przekazujemy uczestnikom wskazówki dotyczące
@@ -59,7 +64,8 @@ const FamilyTrips = () => {
                   wymagających ostrożności.
                 </p>
               </div>
-              <img src={sobkowCastle} alt="Zamek rycerski w Sobkowie" />
+
+              <img className="sobkow-castle" src={sobkowCastle} alt="Zamek rycerski w Sobkowie" />
             </div>
           </div>
         </div>

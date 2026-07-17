@@ -1,4 +1,4 @@
-import { trips } from "../../utils/tripsUtils";
+import { offerTrips } from "../../utils/Home/offerTripsUtils";
 import OfferCard from "./OfferCard";
 
 const OfferList = () => {
@@ -22,7 +22,7 @@ const OfferList = () => {
           />
         </svg>
         <div className="offer-cards flex-row">
-          {trips.map((trip, index) => (
+          {offerTrips.map((trip, index) => (
             <OfferCard trip={trip} key={index} />
           ))}
         </div>

@@ -104,7 +104,8 @@
 
 .family-trips-section {
   max-width: 85%;
-  margin: 5rem auto;
+  margin: 0 auto;
+  padding: 5rem 0;
 }
 
 .family-trips-label {
@@ -123,80 +124,22 @@
   line-height: 2.8rem;
 }
 
+.family-trips-row {
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
 .family-trips-img {
   flex: 0 0 calc(35% - 2.5rem);
   aspect-ratio: 1/1;
   border-radius: 12px;
+  overflow: hidden;
 }
 
 .family-trips-img img {
   height: 100%;
   width: 100%;
   border-radius: 12px;
-}
-
-.family-trips-card {
-  width: 35rem;
-  height: 25rem;
-  border-radius: 12px;
-  padding: 3rem;
-  border: 2px solid #dcdedd;
-  position: relative;
-}
-
-.family-trips-card-number {
-  position: absolute;
-  right: 7px;
-  top: 7px;
-  font-size: 1.6rem;
-  background-color: #c21d1d;
-  border-radius: 50%;
-  width: 2.8rem;
-  height: 2.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-}
-
-.family-trips-cards {
-  margin-top: 3rem;
-  gap: 3rem;
-}
-
-.family-trips-card-name {
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.family-trips-card-distance {
-  font-size: 1.7rem;
-}
-.family-trips-card-duration {
-  font-size: 1.7rem;
-}
-
-.family-trips-card-button {
-  font-size: 1.6rem;
-  padding: 0.8rem 2.2rem;
-  border-radius: 15px;
-  background-color: #1f4d3a;
-  transition: transform 0.4s ease;
-  font-weight: 600;
-  cursor: pointer;
-  margin: auto auto 0 auto;
-}
-
-.family-trips-card-button:hover {
-  transform: scale(1.01);
-  background-color: #265b45;
-}
-
-.family-trips-row {
-  margin-top: 3rem;
-  gap: 5rem;
 }
 
 .routes-header {
@@ -228,50 +171,271 @@
   flex: 0 0 calc(55% - 2.5rem);
 }
 
+.family-trips-cards {
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
+.family-trips-card {
+  width: 100%;
+  height: 10rem;
+  padding: 2rem;
+  border-bottom: 2px solid #e7e7e5;
+}
+
+.family-trips-card-number {
+  flex: 0 0 calc(10%);
+  font-size: 5.3rem;
+  border-right: 2px solid #e7e7e5;
+  align-items: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  opacity: 0.9;
+}
+
+.family-trips-card-main-col {
+  flex: 0 0 calc(70%);
+  align-items: flex-start;
+  padding: 0 3rem;
+  justify-content: space-between;
+}
+
+.family-trips-card-info {
+  align-items: center;
+  gap: 0.7rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  border-right: 2px solid #e7e7e5;
+}
+
+.family-trips-card-info:first-child {
+  padding-left: 0;
+}
+.family-trips-card-info:last-child {
+  border-right: none;
+}
+
+.family-trips-card-info ion-icon {
+  flex-shrink: 0;
+  font-size: 1.8rem;
+}
+
+.family-trips-card-info p {
+  font-size: 1.4rem;
+}
+
+.family-trips-card-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.family-trips-card-button {
+  flex: 0 0 calc(20%);
+  align-items: flex-end;
+  font-size: 1.5rem;
+  transition: transform 0.4s ease;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  gap: 1rem;
+}
+
+.family-trips-card-button:hover {
+  color: #f3c623;
+  transform: translateY(-2px);
+}
+
+.family-trips-card-button ion-icon {
+  font-size: 1.7rem;
+  color: #f3c623;
+}
+
 .family-trips-info {
   border-radius: 12px;
-  height: 15rem;
+  min-height: 15rem;
   margin-top: auto;
-  background-color: #eaedec;
-  padding: 1.5rem 2rem;
+  background-color: #eef0f0;
 }
 
-.family-trips-info ion-icon {
-  flex-shrink: 0;
-  font-size: 4rem;
-  color: #1f4d3a;
-  margin-right: 1.5rem;
-  padding: 1rem;
+.family-info-icon {
+  max-width: 12rem;
+  max-height: 8rem;
+  margin: auto 0;
+  padding: 2rem;
 }
 
-.family-trips-info img {
+.sobkow-castle {
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
+  max-height: 15rem;
+  height: 100%;
+}
+.family-trips-info-content {
+  padding: 1.5rem 0;
 }
 
 .family-trips-info-title {
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
-.family-trips-info-content {
-  font-size: 1.2rem;
-  line-height: 2rem;
+.family-trips-info-desc {
+  font-size: 1.25rem;
+  line-height: 2.2rem;
 }
 
 /* ----------------------------- */
 /* -------- TRIPS-MODAL -------- */
 /* ----------------------------- */
 
+.modal-overlay {
+  position: fixed;
+  background-color: #000000a9;
+  inset: 0;
+  z-index: 900;
+  overflow: hidden;
+}
+
 .trips-modal {
-  width: 90vw;
-  height: 80vh;
+  width: 70%;
+  min-height: 70%;
   background-color: #fcfcfc;
   position: fixed;
-  left: 5vw;
-  top: 5vw;
+  left: 15%;
+  top: 10%;
   z-index: 10;
   border-radius: 12px;
+  padding: 4rem 6rem;
+  z-index: 999;
+}
+
+ion-icon[name="close-outline"] {
+  font-size: 3rem;
+  padding: 1rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
+}
+
+.modal-badge {
+  color: #155c3b;
+  background: #edf5ef;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  font-size: 1.25rem;
+  border-radius: 12px;
+  width: fit-content;
+  font-weight: 600;
+}
+
+.modal-badge ion-icon {
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+.modal-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.modal-recommended {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #155c3b;
+  margin-bottom: 1rem;
+}
+
+.modal-desc {
+  font-size: 1.45rem;
+  line-height: 2.3rem;
+}
+
+.modal-warning {
+  background-color: #f5ecce;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 0.5rem;
+}
+
+.modal-warning ion-icon {
+  font-size: 3.5rem;
+  flex-shrink: 0;
+  margin-right: 1.3rem;
+  color: #f3c623;
+}
+
+.modal-card-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.modal-card-text {
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+}
+
+.modal-attraction {
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 0.5rem;
+  max-width: 70%;
+}
+
+.modal-finish {
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 0.5rem;
+  max-width: 70%;
+}
+
+ion-icon[name="flag-outline"] {
+  font-size: 3.2rem;
+  flex-shrink: 0;
+  margin-right: 1.3rem;
+  color: #155c3b;
+  background: #edf5ef;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.modal-details {
+  padding: 1.3rem 0;
+  border-top: 2px solid #e7e7e5;
+  border-bottom: 2px solid #e7e7e5;
+  margin: 2rem 0;
+}
+.modal-detail {
+  flex: 0 0 calc(33%);
+  padding: 1rem 4rem;
+  align-items: center;
+  border-right: 2px solid #e7e7e5;
+}
+
+.modal-detail:last-child {
+  border-right: none;
+}
+
+.modal-detail ion-icon {
+  flex-shrink: 0;
+  font-size: 3rem;
+  margin-right: 1.5rem;
+}
+
+.modal-detail-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.modal-detail-text {
+  font-size: 1.3rem;
+  margin-top: 0.6rem;
 }

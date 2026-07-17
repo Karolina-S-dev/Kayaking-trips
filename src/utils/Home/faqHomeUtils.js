@@ -1,4 +1,4 @@
-import { faqContentData } from "./faqUtils";
+import { faqContentData } from "../FAQ/faqUtils";
 
 const faqHomeData = [
   {

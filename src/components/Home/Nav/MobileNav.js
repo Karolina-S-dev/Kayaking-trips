@@ -2,13 +2,13 @@ import { useLocation } from "react-router-dom";
 import companyLogo from "../../../assets/img/company-logo.png";
 import NavItem from "./NavItem";
 
-const MobileNav = ({ isMobile, isOpen }) => {
+const MobileNav = ({ isMobileNavOpen }) => {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
   return (
     <>
-      {isOpen ? (
+      {isMobileNavOpen ? (
         <div className="header-mobile-wrapper">
           <div
             className={`header-section-mobile flex-col ${!isHome ? "header-subpage" : ""} `}
@@ -28,7 +28,7 @@ const MobileNav = ({ isMobile, isOpen }) => {
                     route={"/"}
                     icon={<ion-icon name="home-outline"></ion-icon>}
                     type={"common"}
-                    isMobile={isMobile}
+                    isMobile={true}
                   />
                 </li>
                 <li>
@@ -37,7 +37,7 @@ const MobileNav = ({ isMobile, isOpen }) => {
                     route={"/trasy-splywow"}
                     icon={<ion-icon name="git-branch-outline"></ion-icon>}
                     type={"common"}
-                    isMobile={isMobile}
+                    isMobile={true}
                   />
                 </li>
                 <li>
@@ -46,7 +46,7 @@ const MobileNav = ({ isMobile, isOpen }) => {
                     route={"/galeria"}
                     icon={<ion-icon name="image-outline"></ion-icon>}
                     type={"common"}
-                    isMobile={isMobile}
+                    isMobile={true}
                   />
                 </li>
                 <li>
@@ -55,7 +55,7 @@ const MobileNav = ({ isMobile, isOpen }) => {
                     route={"/faq"}
                     icon={<ion-icon name="help-circle-outline"></ion-icon>}
                     type={"common"}
-                    isMobile={isMobile}
+                    isMobile={true}
                   />
                 </li>
                 <li>
@@ -64,7 +64,7 @@ const MobileNav = ({ isMobile, isOpen }) => {
                     route={""}
                     icon={<ion-icon name="globe-outline"></ion-icon>}
                     type={"common"}
-                    isMobile={isMobile}
+                    isMobile={true}
                   />
                 </li>
 
@@ -73,7 +73,7 @@ const MobileNav = ({ isMobile, isOpen }) => {
                     text={"Kontakt"}
                     route={"/kontakt"}
                     type={"contact"}
-                    isMobile={isMobile}
+                    isMobile={true}
                   />
                 </li>
               </ul>

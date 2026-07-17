@@ -1,10 +1,10 @@
 //OFFER component pictures
-import familyKayaking from ".././assets/img/family-kayaking.png";
-import oneDayKayaking from ".././assets/img/one-day-kayaking.png";
-import longKayaking from ".././assets/img/long-kayaking.png";
-import wislaKayaking from ".././assets/img/wisla-kayaking.png";
+import familyKayaking from "../../assets/img/family-kayaking.png";
+import oneDayKayaking from "../../assets/img/one-day-kayaking.png";
+import longKayaking from "../../assets/img/long-kayaking.png";
+import wislaKayaking from "../../assets/img/wisla-kayaking.png";
 
-const trips = [
+const offerTrips = [
   {
     id: 1,
     image: familyKayaking,
@@ -55,4 +55,4 @@ const trips = [
   },
 ];
 
-export { trips };
+export { offerTrips };

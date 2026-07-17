@@ -1,9 +1,9 @@
 // FEATURES component pictures
-import viewsIcon2 from ".././assets/icons/views-icon2.png";
-import transportIcon2 from ".././assets/icons/transport-icon2.png";
-import canoeIcon2 from ".././assets/icons/canoe-icon2.png";
-import peopleIcon2 from ".././assets/icons/people-icon2.png";
-import fireIcon2 from ".././assets/icons/fire-icon2.png";
+import viewsIcon2 from "../../assets/icons/views-icon2.png";
+import transportIcon2 from "../../assets/icons/transport-icon2.png";
+import canoeIcon2 from "../../assets/icons/canoe-icon2.png";
+import peopleIcon2 from "../../assets/icons/people-icon2.png";
+import fireIcon2 from "../../assets/icons/fire-icon2.png";
 
 const featuresData = [
   {

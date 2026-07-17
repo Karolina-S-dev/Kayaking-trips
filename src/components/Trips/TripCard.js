@@ -6,20 +6,39 @@ const TripCard = ({ item }) => {
 
   return (
     <>
-      <div className="family-trips-card flex-col">
-        <p className="family-trips-card-name">{item.name}</p>
-        <p className="family-trips-card-distance">{item.distance}</p>
-        <p className="family-trips-card-duration">{item.duration}</p>
-        <p className="family-trips-card-number white">{item.number}</p>
+      <div className="family-trips-card flex-row">
+        <div className="family-trips-card-number flex-row">
+          <p>{item.number}</p>
+        </div>
+        <div className="flex-col family-trips-card-main-col flex-col">
+          <p className="family-trips-card-name">{item.name}</p>
+          <div className="flex-row">
+            <div className="flex-row family-trips-card-info mid-grey">
+              <ion-icon name="location-outline"></ion-icon>
+              <p className="family-trips-card-distance">{item.distance}</p>
+            </div>
+            <div className="flex-row family-trips-card-info">
+              <ion-icon name="time-outline"></ion-icon>
+              <p className="family-trips-card-duration">{item.duration}</p>
+            </div>
+            <div className="flex-row family-trips-card-info">
+              <ion-icon name="leaf-outline"></ion-icon>
+              <p className="family-trips-card-degree">{item.degree}</p>
+            </div>
+          </div>
+        </div>
+
         <button
           onClick={() => {
             setIsModalOpen(true);
           }}
-          className="family-trips-card-button white"
+          className="family-trips-card-button flex-row mid-grey"
         >
-          Szczegóły trasy
+          Zobacz szczegóły
+          <ion-icon name="arrow-forward-outline"></ion-icon>
         </button>
-        <TripsModal isModalOpen={isModalOpen} />
+
+        <TripsModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} item={item}/>
       </div>
     </>
   );

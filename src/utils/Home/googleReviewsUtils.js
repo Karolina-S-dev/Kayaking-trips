@@ -1,13 +1,13 @@
 //GOOGLEREVIEWS component pictures
-import userPawel from ".././assets/img/GoogleReviews/userPaweł.png";
-import userMagdalena from ".././assets/img/GoogleReviews/userMagdalena.png";
-import userTomaszC from ".././assets/img/GoogleReviews/userTomaszC.png";
-import userJuliannaB from ".././assets/img/GoogleReviews/userJuliannaB.png";
-import userBasia from ".././assets/img/GoogleReviews/userBasia.png";
-import userAgataO from ".././assets/img/GoogleReviews/userAgataO.png";
-import userPawelL from ".././assets/img/GoogleReviews/userPawelL.png";
-import userPiotrB from ".././assets/img/GoogleReviews/userPiotrB.png";
-import userGrzegorzB from ".././assets/img/GoogleReviews/userGrzegorzB.png";
+import userPawel from "../../assets/img/GoogleReviews/userPaweł.png";
+import userMagdalena from "../../assets/img/GoogleReviews/userMagdalena.png";
+import userTomaszC from "../../assets/img/GoogleReviews/userTomaszC.png";
+import userJuliannaB from "../../assets/img/GoogleReviews/userJuliannaB.png";
+import userBasia from "../../assets/img/GoogleReviews/userBasia.png";
+import userAgataO from "../../assets/img/GoogleReviews/userAgataO.png";
+import userPawelL from "../../assets/img/GoogleReviews/userPawelL.png";
+import userPiotrB from "../../assets/img/GoogleReviews/userPiotrB.png";
+import userGrzegorzB from "../../assets/img/GoogleReviews/userGrzegorzB.png";
 
 const googleReviews = [
   {

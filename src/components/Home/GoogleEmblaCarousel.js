@@ -1,6 +1,6 @@
 import useEmblaCarousel from "embla-carousel-react";
 import googleLogo from "../../assets/icons/google-icon-logo-svgrepo-com.svg";
-import { googleReviews } from "../../utils/googleReviewsUtils";
+import { googleReviews } from "../../utils/Home/googleReviewsUtils";
 import { useEffect, useState } from "react";
 
 const GoogleEmblaCarousel = () => {
