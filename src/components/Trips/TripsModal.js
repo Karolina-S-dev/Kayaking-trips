@@ -56,6 +56,8 @@ const TripsModal = ({ isModalOpen, setIsModalOpen, item }) => {
               </div>
 
               <div className="modal-attraction flex-row">
+               <ion-icon name="compass-outline"></ion-icon>
+
                 <div className="flex-col">
                   <p className="modal-card-title"> {item.attractionTitle}</p>
                   <p className="modal-card-text"> {item.attraction}</p>
