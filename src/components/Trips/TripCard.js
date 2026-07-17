@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TripsModal from "./TripsModal";
 
-const TripCard = ({ item }) => {
+const TripCard = ({ item, multiDayTrips }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -28,17 +28,28 @@ const TripCard = ({ item }) => {
           </div>
         </div>
 
-        <button
-          onClick={() => {
-            setIsModalOpen(true);
-          }}
-          className="family-trips-card-button flex-row mid-grey"
-        >
-          Zobacz szczegóły
-          <ion-icon name="arrow-forward-outline"></ion-icon>
-        </button>
+        {item.button ? (
+          <button
+            onClick={() => {
+              setIsModalOpen(true);
+            }}
+            className="family-trips-card-button flex-row mid-grey"
+          >
+            Zobacz szczegóły
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </button>
+        ) : (
+          <button className="family-trips-button-disabled flex-row mid-grey">
+            Skontaktuj się z nami, aby poznać szczegóły wyprawy.
+          </button>
+        )}
 
-        <TripsModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} item={item}/>
+        <TripsModal
+          isModalOpen={isModalOpen}
+          setIsModalOpen={setIsModalOpen}
+          item={item}
+          multiDayTrips={true}
+        />
       </div>
     </>
   );

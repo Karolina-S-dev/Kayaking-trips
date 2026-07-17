@@ -1,4 +1,4 @@
-const TripsModal = ({ isModalOpen, setIsModalOpen, item }) => {
+const TripsModal = ({ isModalOpen, setIsModalOpen, item, multiDayTrips }) => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
@@ -7,7 +7,9 @@ const TripsModal = ({ isModalOpen, setIsModalOpen, item }) => {
     <>
       {isModalOpen ? (
         <div className="modal-overlay">
-          <div className="trips-modal">
+          <div
+            className={`trips-modal ${multiDayTrips ? "multiday-trips-modal" : ""}`}
+          >
             <div onClick={handleCloseModal}>
               <ion-icon name="close-outline"></ion-icon>
             </div>
@@ -47,6 +49,29 @@ const TripsModal = ({ isModalOpen, setIsModalOpen, item }) => {
 
               <p className="modal-desc"> {item.description}</p>
 
+              {/* multiday */}
+
+              {item.dayOneTitle ? (
+                <>
+                  <p className="multiday-title">{item.dayOneTitle}</p>
+                  <p className="multiday-desc">{item.dayOne}</p>
+                </>
+              ) : null}
+
+              {item.overnightTitle ? (
+                <>
+                  <p className="multiday-title">{item.overnightTitle}</p>
+                  <p className="multiday-desc">{item.overnight}</p>
+                </>
+              ) : null}
+
+              {item.dayTwoTitle ? (
+                <>
+                  <p className="multiday-title">{item.dayTwoTitle}</p>
+                  <p className="multiday-desc">{item.dayTwo}</p>
+                </>
+              ) : null}
+
               <div className="modal-warning flex-row">
                 <ion-icon name="warning"></ion-icon>
                 <div className="flex-col">
@@ -56,7 +81,7 @@ const TripsModal = ({ isModalOpen, setIsModalOpen, item }) => {
               </div>
 
               <div className="modal-attraction flex-row">
-               <ion-icon name="compass-outline"></ion-icon>
+                <ion-icon name="compass-outline"></ion-icon>
 
                 <div className="flex-col">
                   <p className="modal-card-title"> {item.attractionTitle}</p>

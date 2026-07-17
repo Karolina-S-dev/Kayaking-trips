@@ -173,7 +173,7 @@
 
 .family-trips-cards {
   margin-top: 3rem;
-  gap: 3rem;
+  gap: 1.5rem;
 }
 
 .family-trips-card {
@@ -303,7 +303,7 @@
 
 .trips-modal {
   width: 70%;
-  min-height: 70%;
+  height: 70%;
   background-color: #fcfcfc;
   position: fixed;
   left: 15%;
@@ -359,7 +359,7 @@ ion-icon[name="close-outline"] {
 
 .modal-warning {
   background-color: #f5ecce;
-  padding: 2rem;
+  padding: 1.5rem 3.5rem;
   border-radius: 12px;
   margin-top: 0.5rem;
 }
@@ -384,14 +384,14 @@ ion-icon[name="close-outline"] {
 }
 
 .modal-attraction {
-  padding: 2rem;
+  padding: 1.5rem 2.5rem;
   border-radius: 12px;
   margin-top: 0.5rem;
   max-width: 70%;
 }
 
 .modal-finish {
-  padding: 2rem;
+  padding: 1.5rem 2.5rem;
   border-radius: 12px;
   margin-top: 0.5rem;
   max-width: 70%;
@@ -448,4 +448,54 @@ ion-icon[name="compass-outline"] {
 .modal-detail-text {
   font-size: 1.4rem;
   margin-top: 0.6rem;
+}
+
+/* ------------------------------------- */
+/* -------- MULTIDAY TRIPS -------- */
+/* ------------------------------------- */
+
+.family-multiday-trips-title{
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 auto 1rem auto;
+  max-width: 70%;
+  line-height: 2.8rem;
+}
+
+/* ------------------------------------- */
+/* -------- MULTIDAYTRIPS-MODAL -------- */
+/* ------------------------------------- */
+
+.multiday-trips-modal {
+  width: 90%;
+  height: 95%;
+  left: 5%;
+  top: 2.5%;
+  padding: 3rem 5rem;
+}
+
+.multiday-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #edf5ef;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  margin-top: 0.5rem;
+}
+
+.multiday-desc {
+  font-size: 1.3rem;
+}
+
+.family-trips-button-disabled {
+  flex: 0 0 calc(20%);
+  align-items: flex-end;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  line-height: 1.8rem;
 }

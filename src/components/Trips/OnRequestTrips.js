@@ -1,14 +1,12 @@
 import familyTrips from "../../assets/img/family-trips.png";
-import sobkowCastle from "../../assets/img/Sobkow-castle.png";
-import { familyTripsDesc } from "../../utils/Trips/tripsScreenUtils__family";
+import { familyTripsDesc } from "../../utils/Trips/tripsScreenUtils";
 import TripCard from "./TripCard";
-import KayakingIconGreen from "../../assets/icons/kayaking-icon-green.png";
 
-const FamilyTrips = () => {
+const OnRequestTrips = () => {
   return (
     <>
       <section className="family-trips-section flex-col">
-        <p className="family-trips-label">Trasy spływów rodzinnych</p>
+        <p className="family-trips-label">Trasy spływów na życzenie</p>
         <svg
           width="90"
           height="12"
@@ -48,29 +46,7 @@ const FamilyTrips = () => {
                 );
               })}
             </div>
-            <div className="family-trips-info flex-row">
-              <img
-                src={KayakingIconGreen}
-                alt="Kayaking icon"
-                className="family-info-icon"
-              />
-              <div className="flex-col family-trips-info-content">
-                <p className="family-trips-info-title">warto wiedzieć</p>
-                <p className="family-trips-info-desc">
-                  Na trasie Brzegi - Mokrsko istnieje możliwość krótkiego
-                  postoju, m.in. przy Zamku Rycerskim w Sobkowie. Przed każdym
-                  spływem przekazujemy uczestnikom wskazówki dotyczące
-                  bezpieczeństwa oraz sposób pokonania ewentualnych miejsc
-                  wymagających ostrożności.
-                </p>
-              </div>
-
-              <img
-                className="sobkow-castle"
-                src={sobkowCastle}
-                alt="Zamek rycerski w Sobkowie"
-              />
-            </div>
+           
           </div>
         </div>
       </section>
@@ -78,4 +54,4 @@ const FamilyTrips = () => {
   );
 };
 
-export default FamilyTrips;
+export default OnRequestTrips;

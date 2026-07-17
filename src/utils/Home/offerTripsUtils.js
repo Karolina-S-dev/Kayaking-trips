@@ -16,6 +16,7 @@ const offerTrips = [
     feature2: "Bezpieczna trasa",
     feature3: "Dla całych rodzin",
     ctaText: "Zobacz trasę",
+    link: "/trasy-splywow/splywy-rodzinne",
   },
   {
     id: 2,
@@ -29,6 +30,7 @@ const offerTrips = [
     feature3: "Piękne widoki",
     ctaText: "Zobacz trasy",
     additionalInfo: "Najbardziej popularne",
+    link: "/trasy-splywow/splywy-jednodniowe",
   },
   {
     id: 3,
@@ -41,6 +43,7 @@ const offerTrips = [
     feature2: "Kompleksowa organizacja",
     feature3: "Piękne widoki",
     ctaText: "Zobacz trasy",
+    link: "/trasy-splywow/splywy-kilkudniowe",
   },
   {
     id: 4,
@@ -52,6 +55,7 @@ const offerTrips = [
     feature2: "Możliwość spływu Wisłą",
     feature3: "Piękne widoki",
     ctaText: "Zobacz trasy",
+    link: "/trasy-splywow/splywy-na-zyczenie",
   },
 ];
 
