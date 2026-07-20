@@ -30,7 +30,7 @@ const MultiDayTrips = () => {
 
         <div className="flex-row family-trips-row">
           <div className="multiday-trips-img box-shadow">
-            <img src={longTrips} alt="Mapa tras spływów rodzinnych" />
+            <img src={longTrips} alt="Mapa tras spływów wielodniowych" />
           </div>
           <div className="flex-col routes-content">
             <div className="flex-row routes-header">

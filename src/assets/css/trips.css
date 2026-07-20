@@ -506,7 +506,7 @@ ion-icon[name="compass-outline"] {
   overflow-y: auto;
   overflow-x: hidden;
   height: 60rem;
-  scrollbar-color: #f3c623 #f0f5ef;  
+  scrollbar-color: #f3c623 #f0f5ef;
 }
 
 /* ------------------------------------- */
@@ -569,4 +569,92 @@ ion-icon[name="compass-outline"] {
   text-align: left;
   line-height: 1.8rem;
   color: #949392;
+}
+
+/* ------------------------------------- */
+/* -------- ONREQUEST TRIPS -------- */
+/* ------------------------------------- */
+
+.oneday-trips-section {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.onrequest-trips-row {
+  margin-top: 3rem;
+  gap: 5rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.onrequest-trips-img {
+  flex: 0 0 calc(50% - 2.5rem);
+  aspect-ratio: 1/1;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 40rem;
+}
+
+.onrequest-trips-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.onrequest-routes-content {
+  padding: 1rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: calc(40% - 2.5rem);
+}
+
+.onrequest-trips-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 auto 1rem auto;
+  max-width: 35%;
+  line-height: 2.8rem;
+}
+
+.onrequest-trips-subtitle {
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.onrequest-desc {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.onrequest-cards {
+  gap: 2rem;
+  max-width: 90%;
+  margin: 2rem auto 0 auto;
+}
+
+.onrequest-card {
+  flex: 0 0 calc(20% - 1.6rem);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.onrequest-card img {
+  max-width: 10rem;
+  max-height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.onrequest-card-title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.onrequest-card-content {
+  font-size: 1.35rem;
+  line-height: 2.4rem;
 }
