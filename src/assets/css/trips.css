@@ -181,6 +181,11 @@
   height: 10rem;
   padding: 2rem;
   border-bottom: 2px solid #e7e7e5;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+.family-trips-card:hover {
+  transform: scale(1.01);
 }
 
 .family-trips-card-number {
@@ -245,7 +250,6 @@
 
 .family-trips-card-button:hover {
   color: #f3c623;
-  transform: translateY(-2px);
 }
 
 .family-trips-card-button ion-icon {
@@ -451,15 +455,81 @@ ion-icon[name="compass-outline"] {
 }
 
 /* ------------------------------------- */
-/* -------- MULTIDAY TRIPS -------- */
+/* ------------ ONEDAY TRIPS ----------- */
 /* ------------------------------------- */
 
-.family-multiday-trips-title{
+.oneday-trips-section {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.oneday-trips-title {
   font-size: 1.6rem;
   text-align: center;
   margin: 0 auto 1rem auto;
-  max-width: 70%;
+  max-width: 75%;
   line-height: 2.8rem;
+}
+
+.oneday-trips-img {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: calc(45% - 2.5rem);
+  border-radius: 12px;
+  overflow: hidden;
+  max-height: 63rem;
+}
+
+.oneday-trips-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.oneday-trips-row {
+  margin-top: 3rem;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.oneday-routes-content {
+  padding: 1rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: calc(55% - 2.5rem);
+}
+
+.oneday-trips-cards {
+  margin-top: 1rem;
+  gap: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 60rem;
+  scrollbar-color: #f3c623 #f0f5ef;  
+}
+
+/* ------------------------------------- */
+/* -------- MULTIDAY TRIPS -------- */
+/* ------------------------------------- */
+
+.multiday-trips-section {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.multiday-trips-img {
+  flex: 0 0 calc(40% - 2.5rem);
+  aspect-ratio: 1/1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.multiday-trips-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
 }
 
 /* ------------------------------------- */
@@ -498,4 +568,5 @@ ion-icon[name="compass-outline"] {
   background-color: transparent;
   text-align: left;
   line-height: 1.8rem;
+  color: #949392;
 }

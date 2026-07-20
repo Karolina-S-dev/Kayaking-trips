@@ -6,7 +6,7 @@ const TripCard = ({ item, multiDayTrips }) => {
 
   return (
     <>
-      <div className="family-trips-card flex-row">
+      <div className="family-trips-card flex-row ">
         <div className="family-trips-card-number flex-row">
           <p>{item.number}</p>
         </div>
@@ -43,14 +43,13 @@ const TripCard = ({ item, multiDayTrips }) => {
             Skontaktuj się z nami, aby poznać szczegóły wyprawy.
           </button>
         )}
-
-        <TripsModal
-          isModalOpen={isModalOpen}
-          setIsModalOpen={setIsModalOpen}
-          item={item}
-          multiDayTrips={true}
-        />
       </div>
+      <TripsModal
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+        item={item}
+        multiDayTrips={true}
+      />
     </>
   );
 };

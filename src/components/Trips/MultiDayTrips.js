@@ -5,7 +5,7 @@ import TripCard from "./TripCard";
 const MultiDayTrips = () => {
   return (
     <>
-      <section className="family-trips-section flex-col">
+      <section className="multiday-trips-section flex-col">
         <p className="family-trips-label">Trasy spływów kilkudniowych</p>
         <svg
           width="90"
@@ -29,7 +29,7 @@ const MultiDayTrips = () => {
         </p>
 
         <div className="flex-row family-trips-row">
-          <div className="family-trips-img box-shadow">
+          <div className="multiday-trips-img box-shadow">
             <img src={longTrips} alt="Mapa tras spływów rodzinnych" />
           </div>
           <div className="flex-col routes-content">
