@@ -7,6 +7,13 @@ const MultiDayTrips = () => {
     <>
       <section className="multiday-trips-section flex-col">
         <p className="family-trips-label">Trasy spływów kilkudniowych</p>
+
+        <p className="multiday-trips-title dark-grey">
+          Odkryj Nidę w jej najpiękniejszym wydaniu podczas kilkudniowych
+          spływów kajakowych. To propozycja dla osób, które chcą zwolnić tempo,
+          spędzić więcej czasu blisko natury i poznać malownicze zakątki rzeki
+          niedostępne podczas krótszych tras.
+        </p>
         <svg
           width="90"
           height="12"
@@ -21,14 +28,7 @@ const MultiDayTrips = () => {
             strokeLinecap="round"
           />
         </svg>
-        <p className="multiday-trips-title dark-grey">
-          Odkryj Nidę w jej najpiękniejszym wydaniu podczas kilkudniowych
-          spływów kajakowych. To propozycja dla osób, które chcą zwolnić tempo,
-          spędzić więcej czasu blisko natury i poznać malownicze zakątki rzeki
-          niedostępne podczas krótszych tras.
-        </p>
-
-        <div className="flex-row family-trips-row">
+        <div className="flex-row multiday-trips-row">
           <div className="multiday-trips-img box-shadow">
             <img src={longTrips} alt="Mapa tras spływów wielodniowych" />
           </div>

@@ -50,7 +50,7 @@ const TripCard = ({ item, multiDayTrips }) => {
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}
         item={item}
-        multiDayTrips={true}
+        multiDayTrips={multiDayTrips}
       />
     </>
   );

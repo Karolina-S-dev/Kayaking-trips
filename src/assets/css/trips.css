@@ -335,11 +335,18 @@
   background-color: #fcfcfc;
   position: fixed;
   left: 15%;
-  top: 10%;
+  top: 15rem;
   z-index: 10;
   border-radius: 12px;
   padding: 4rem 6rem;
   z-index: 999;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.trips-modal::-webkit-scrollbar {
+  display: none;
 }
 
 ion-icon[name="close-outline"] {
@@ -381,7 +388,7 @@ ion-icon[name="close-outline"] {
 }
 
 .modal-desc {
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   line-height: 2.3rem;
 }
 
@@ -389,7 +396,7 @@ ion-icon[name="close-outline"] {
   background-color: #f5ecce;
   padding: 1.5rem 3.5rem;
   border-radius: 12px;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 .modal-warning ion-icon {
@@ -414,14 +421,12 @@ ion-icon[name="close-outline"] {
 .modal-attraction {
   padding: 1.5rem 2.5rem;
   border-radius: 12px;
-  margin-top: 0.5rem;
   max-width: 70%;
 }
 
 .modal-finish {
-  padding: 1.5rem 2.5rem;
+  padding: 0.5rem 2.5rem 1.5rem 2.5rem;
   border-radius: 12px;
-  margin-top: 0.5rem;
   max-width: 70%;
 }
 
@@ -446,7 +451,7 @@ ion-icon[name="compass-outline"] {
 }
 
 .modal-details {
-  padding: 1.3rem 0;
+  padding: 0.5rem 0;
   border-top: 2px solid #e7e7e5;
   border-bottom: 2px solid #e7e7e5;
   margin: 2rem 0;
@@ -456,6 +461,7 @@ ion-icon[name="compass-outline"] {
   padding: 1rem 4rem;
   align-items: center;
   border-right: 2px solid #e7e7e5;
+  justify-content: center;
 }
 
 .modal-detail:last-child {
@@ -541,11 +547,16 @@ ion-icon[name="compass-outline"] {
   padding: 5rem 15rem;
 }
 
+.multiday-trips-row {
+  gap: 5rem;
+}
+
 .multiday-trips-img {
   flex: 0 0 calc(45% - 2.5rem);
   aspect-ratio: 1/1;
   border-radius: 12px;
   overflow: hidden;
+  height: 63rem;
 }
 
 .multiday-trips-title {
@@ -567,11 +578,17 @@ ion-icon[name="compass-outline"] {
 /* ------------------------------------- */
 
 .multiday-trips-modal {
-  width: 90%;
-  height: 95%;
-  left: 5%;
-  top: 2.5%;
+  width: 80%;
+  height: 75%;
+  left: 10%;
+  top: 15rem;
   padding: 3rem 5rem;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.multiday-trips-modal::-webkit-scrollbar {
+  display: none;
 }
 
 .multiday-title {
@@ -594,9 +611,8 @@ ion-icon[name="compass-outline"] {
 /* ------------------------------------- */
 
 .onrequest-section {
-  max-width: 75%;
   margin: 0 auto;
-  padding: 5rem 0;
+  padding: 5rem 15rem;
 }
 
 .onrequest-trips-row {
@@ -607,7 +623,7 @@ ion-icon[name="compass-outline"] {
 }
 
 .onrequest-trips-img {
-  flex: 0 0 calc(50% - 2.5rem);
+  flex: 0 0 calc(40% - 2.5rem);
   aspect-ratio: 1/1;
   border-radius: 12px;
   overflow: hidden;
@@ -625,6 +641,7 @@ ion-icon[name="compass-outline"] {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: calc(40% - 2.5rem);
+  width: 100%;
 }
 
 .onrequest-trips-title {

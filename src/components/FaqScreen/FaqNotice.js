@@ -1,4 +1,4 @@
-import shallowRiver from "../../assets/img/shallow-river.jpeg";
+import shallowRiver from "../../assets/img/shallow-river.jpg";
 
 
 const FaqNotice = () => {

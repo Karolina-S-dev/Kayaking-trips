@@ -9,6 +9,12 @@ const FamilyTrips = () => {
     <>
       <section className="family-trips-section flex-col">
         <p className="family-trips-label">Trasy spływów rodzinnych</p>
+
+        <p className="family-trips-title dark-grey">
+          Trasy rodzinne to najłatwiejsze i najspokojniejsze odcinki Nidy.
+          Polecane są rodzinom z dziećmi, osobom początkującym oraz wszystkim,
+          którzy chcą spędzić czas na wodzie bez większych wyzwań.
+        </p>
         <svg
           width="90"
           height="12"
@@ -23,15 +29,9 @@ const FamilyTrips = () => {
             strokeLinecap="round"
           />
         </svg>
-        <p className="family-trips-title dark-grey">
-          Trasy rodzinne to najłatwiejsze i najspokojniejsze odcinki Nidy.
-          Polecane są rodzinom z dziećmi, osobom początkującym oraz wszystkim,
-          którzy chcą spędzić czas na wodzie bez większych wyzwań.
-        </p>
-
-        <div className="flex-row multiday-trips-row">
+        <div className="flex-row family-trips-row">
           <div className="family-trips-img box-shadow">
-            <img src={familyTrips} alt="Mapa tras spływów rodzinnych" />
+            <img src={familyTrips} alt="Mapa tras spływów rodzinnych"  />
           </div>
           <div className="flex-col routes-content">
             <div className="flex-row routes-header">

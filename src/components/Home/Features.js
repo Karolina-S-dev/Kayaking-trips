@@ -7,7 +7,7 @@ const Features = () => {
       <div className="features-cards flex-row">
         {featuresData.map((item) => (
           <div key={item.id} className="features-card flex-col">
-            <img src={item.image} alt="Ikony" />
+            <img src={item.image} alt="Ikony" loading="lazy"/>
             <p className="features-card-title">{item.title}</p>
             <p className="features-card-subtitle">{item.desc}</p>
           </div>

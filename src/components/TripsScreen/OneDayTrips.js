@@ -6,6 +6,13 @@ const OneDayTrips = () => {
   return (
     <section className="oneday-trips-section flex-col">
       <p className="family-trips-label">Trasy spływów jednodniowych</p>
+
+      <p className="oneday-trips-title dark-grey">
+        Poznaj uroki Nidy podczas jednodniowych spływów kajakowych dopasowanych
+        do każdego poziomu zaawansowania. Od spokojnych tras rodzinnych po
+        bardziej wymagające odcinki - każda z nich pozwala cieszyć się pięknem
+        natury, aktywnym wypoczynkiem i wyjątkową atmosferą rzeki.
+      </p>
       <svg
         width="90"
         height="12"
@@ -20,13 +27,6 @@ const OneDayTrips = () => {
           strokeLinecap="round"
         />
       </svg>
-      <p className="oneday-trips-title dark-grey">
-        Poznaj uroki Nidy podczas jednodniowych spływów kajakowych dopasowanych
-        do każdego poziomu zaawansowania. Od spokojnych tras rodzinnych po
-        bardziej wymagające odcinki - każda z nich pozwala cieszyć się pięknem
-        natury, aktywnym wypoczynkiem i wyjątkową atmosferą rzeki.
-      </p>
-
       <div className="flex-row oneday-trips-row">
         <div className="oneday-trips-img ">
           <img
@@ -45,7 +45,7 @@ const OneDayTrips = () => {
             {oneDayTripsDesc.map((item, index) => {
               return (
                 <div key={index}>
-                  <TripCard item={item} multiDayTrips={true} />
+                  <TripCard item={item} multiDayTrips={false} />
                 </div>
               );
             })}

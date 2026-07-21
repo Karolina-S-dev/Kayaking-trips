@@ -19,7 +19,10 @@ const Reservation = () => {
           />
         </svg>
         <div className="reservation-image">
-          <img src={spotkanieKajakowe} alt="Spotkanie przy kajakach" />
+          <img
+            src={spotkanieKajakowe}
+            alt="Spotkanie przy kajakach"
+          />
         </div>
         <div className="reservation-cards flex-row">
           {reservation.map((item, index) => (

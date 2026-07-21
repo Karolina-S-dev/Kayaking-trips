@@ -3,7 +3,7 @@ const OfferCard = ({trip}) => {
     <>
     <div key={trip.id} className="offer-card flex-col">
       <div className="offer-card-img">
-        <img src={trip.image} alt="Kajakowe zdjęcie" />
+        <img src={trip.image} alt="Kajakowe zdjęcie" loading="lazy"/>
         {trip.additionalInfo ? (
           <div className="additional-info white flex-row">
             <ion-icon name="star"></ion-icon>

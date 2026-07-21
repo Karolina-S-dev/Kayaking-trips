@@ -363,6 +363,12 @@
     font-size: 1.55rem;
     text-align: left;
   }
+
+  .trips-modal {
+    width: 80%;
+    left: 10%;
+    padding: 3rem 4rem;
+  }
 }
 
 /* laptops and big tablets - 1024px - 1200px */
@@ -388,6 +394,9 @@
   }
   .family-trips-card {
     height: 9rem;
+  }
+  .trips-modal {
+    height: 60%;
   }
 }
 
@@ -418,6 +427,15 @@
   .info-short {
     width: 15rem;
   }
+
+  .multiday-trips-modal {
+    height: 80%;
+    padding: 3rem 4rem;
+  }
+
+  .trips-modal {
+    height: 80%;
+  }
 }
 
 /* mobile - phones */
@@ -437,6 +455,34 @@
   .family-trips-card {
     height: fit-content;
   }
+
+  .trips-modal {
+    width: 95%;
+    left: 2.5%;
+    padding: 2rem;
+  }
+
+  .modal-detail {
+    padding: 1rem;
+  }
+
+  .modal-warning {
+    padding: 1.5rem;
+  }
+
+  .modal-attraction {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+  .modal-finish {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  ion-icon[name="close-outline"] {
+    right: 1rem;
+    top: 1rem;
+  }
 }
 
 /* small mobile - phones*/
@@ -444,6 +490,24 @@
   html,
   body {
     font-size: 7px;
+  }
+
+  .trips-modal {
+    padding: 1.5rem;
+  }
+
+  .modal-detail ion-icon {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    align-self: center;
+  }
+
+  .modal-detail {
+    align-items: flex-start;
+  }
+
+  .modal-detail {
+    padding: 0.6rem;
   }
 }
 

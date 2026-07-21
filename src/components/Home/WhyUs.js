@@ -14,7 +14,7 @@ const WhyUs = () => {
             <div className="why-us-cards-row flex-row">
               {whyUsData.map((data) => (
                 <div key={data.id} className="why-card flex-col">
-                  <img src={data.image} alt="Ikony" />
+                  <img src={data.image} alt="Ikony" loading="lazy" />
                   <p className="why-card-title navy-blue ">{data.title}</p>
                   <p className="why-card-desc">{data.desc}</p>
                 </div>
@@ -25,12 +25,20 @@ const WhyUs = () => {
             <p className="green why-us-label">Cennik</p>
             <div className="pricelist-content flex-row">
               <div className="flex-col pricelist-card">
-                <img src={canoe2people} alt="Ikona kajak dwuosobowy" />
+                <img
+                  src={canoe2people}
+                  alt="Ikona kajak dwuosobowy"
+                  loading="lazy"
+                />
                 <p className="why-card-title navy-blue ">120 zł</p>
                 <p className="why-card-desc">KAJAK DWUOSOBOWY</p>
               </div>
               <div className="flex-col pricelist-card">
-                <img src={canoe1person} alt="Ikona kajak jednoosobowy" />
+                <img
+                  src={canoe1person}
+                  alt="Ikona kajak jednoosobowy"
+                  loading="lazy"
+                />
                 <p className="why-card-title navy-blue ">80 zł</p>
                 <p className="why-card-desc">KAJAK JEDNOOSOBOWY</p>
               </div>
