@@ -1,4 +1,4 @@
-import { offerTrips } from "../../utils/Home/offerTripsUtils";
+import { offerTrips } from "../../utils/HomeScreen/offerTripsUtils";
 import OfferCard from "./OfferCard";
 
 const OfferList = () => {

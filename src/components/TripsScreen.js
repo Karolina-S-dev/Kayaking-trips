@@ -1,11 +1,12 @@
 import "../assets/css/trips.css";
+import "../assets/css/queries-TripsScreen.css";
 import Footer from "./Home/Footer";
 import Header from "./Home/Header";
 import ScrollToTop from "./Home/ScrollToTop";
-import TripsHero from "./Trips/TripsHero";
+import TripsHero from "./TripsScreen/TripsHero";
 import { useEffect } from "react";
 import { usePageContext } from "../context/pageContext";
-import TripsChoice from "./Trips/TripsChoice";
+import TripsChoice from "./TripsScreen/TripsChoice";
 
 const TripsScreen = () => {
   const { setActivePage } = usePageContext();
@@ -18,7 +19,7 @@ const TripsScreen = () => {
     <>
       <Header />
       <TripsHero />
-      <TripsChoice/>
+      <TripsChoice />
       <Footer />
       <ScrollToTop />
     </>

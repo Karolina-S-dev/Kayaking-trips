@@ -1,5 +1,6 @@
 import Footer from "../Home/Footer";
 import Header from "../Home/Header";
+import ScrollToTop from "../Home/ScrollToTop";
 import OneDayTrips from "./OneDayTrips";
 
 const OneDayTripsScreen = () => {
@@ -8,6 +9,7 @@ const OneDayTripsScreen = () => {
       <Header />
       <OneDayTrips />
       <Footer />
+      <ScrollToTop />
     </>
   );
 };

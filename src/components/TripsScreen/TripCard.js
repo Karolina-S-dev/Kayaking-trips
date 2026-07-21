@@ -10,18 +10,19 @@ const TripCard = ({ item, multiDayTrips }) => {
         <div className="family-trips-card-number flex-row">
           <p>{item.number}</p>
         </div>
+
         <div className="flex-col family-trips-card-main-col flex-col">
           <p className="family-trips-card-name">{item.name}</p>
-          <div className="flex-row">
-            <div className="flex-row family-trips-card-info mid-grey">
+          <div className="flex-row family-card-specifics">
+            <div className="flex-row family-trips-card-info mid-grey info-short">
               <ion-icon name="location-outline"></ion-icon>
               <p className="family-trips-card-distance">{item.distance}</p>
             </div>
-            <div className="flex-row family-trips-card-info">
+            <div className="flex-row family-trips-card-info info-long">
               <ion-icon name="time-outline"></ion-icon>
               <p className="family-trips-card-duration">{item.duration}</p>
             </div>
-            <div className="flex-row family-trips-card-info">
+            <div className="flex-row family-trips-card-info info-short">
               <ion-icon name="leaf-outline"></ion-icon>
               <p className="family-trips-card-degree">{item.degree}</p>
             </div>
@@ -44,6 +45,7 @@ const TripCard = ({ item, multiDayTrips }) => {
           </button>
         )}
       </div>
+
       <TripsModal
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}

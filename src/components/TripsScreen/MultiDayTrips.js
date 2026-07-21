@@ -1,5 +1,5 @@
 import longTrips from "../../assets/img/long-trips.jpeg";
-import { multiDayTripsDesc } from "../../utils/Trips/tripsScreenUtils__multiday";
+import { multiDayTripsDesc } from "../../utils/TripsScreen/tripsScreenUtils__multiday";
 import TripCard from "./TripCard";
 
 const MultiDayTrips = () => {
@@ -21,7 +21,7 @@ const MultiDayTrips = () => {
             strokeLinecap="round"
           />
         </svg>
-        <p className="family-multiday-trips-title dark-grey">
+        <p className="multiday-trips-title dark-grey">
           Odkryj Nidę w jej najpiękniejszym wydaniu podczas kilkudniowych
           spływów kajakowych. To propozycja dla osób, które chcą zwolnić tempo,
           spędzić więcej czasu blisko natury i poznać malownicze zakątki rzeki
@@ -42,7 +42,7 @@ const MultiDayTrips = () => {
               {multiDayTripsDesc.map((item, index) => {
                 return (
                   <div key={index}>
-                    <TripCard item={item} multiDayTrips={true}/>
+                    <TripCard item={item} multiDayTrips={true} />
                   </div>
                 );
               })}

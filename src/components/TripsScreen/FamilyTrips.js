@@ -1,6 +1,6 @@
 import familyTrips from "../../assets/img/family-trips.png";
 import sobkowCastle from "../../assets/img/Sobkow-castle.png";
-import { familyTripsDesc } from "../../utils/Trips/tripsScreenUtils__family";
+import { familyTripsDesc } from "../../utils/TripsScreen/tripsScreenUtils__family";
 import TripCard from "./TripCard";
 import KayakingIconGreen from "../../assets/icons/kayaking-icon-green.png";
 
@@ -29,7 +29,7 @@ const FamilyTrips = () => {
           którzy chcą spędzić czas na wodzie bez większych wyzwań.
         </p>
 
-        <div className="flex-row family-trips-row">
+        <div className="flex-row multiday-trips-row">
           <div className="family-trips-img box-shadow">
             <img src={familyTrips} alt="Mapa tras spływów rodzinnych" />
           </div>

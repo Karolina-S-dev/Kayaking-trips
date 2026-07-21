@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { galleryPhotos } from "../../utils/Gallery/galleryUtils";
+import { galleryPhotos } from "../../utils/GalleryScreen/galleryUtils";
 
 // ------- YET ANOTHER REACT LIGHTBOX -------
 import Lightbox from "yet-another-react-lightbox";

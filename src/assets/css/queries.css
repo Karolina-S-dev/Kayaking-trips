@@ -270,7 +270,7 @@
     border-top-left-radius: 16px;
   }
 
-    .nav-links-mobile {
+  .nav-links-mobile {
     align-items: stretch;
     height: 100%;
   }
@@ -302,7 +302,7 @@
   }
   .contact-mobile-icon {
     font-size: 3rem !important;
-    }
+  }
 
   .header-logo-hidden {
     opacity: 0;
@@ -479,8 +479,8 @@
   }
 
   .header-section-mobile {
-    min-height: 90%;
-    min-width: 80%;
+    min-width: 60%;
+    padding: 4rem;
   }
 
   .btn {

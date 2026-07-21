@@ -46,7 +46,7 @@ const TripsChoice = () => {
             <img src={oneDayKayaking} alt="Spływ jednodniowy" />
             <div className="choice-card-text white">
               <p className="choice-card-title">Jednodniowy</p>
-              <p className="choice-card-duration">5 - 30km</p>
+              <p className="choice-card-duration">4h - 8h</p>
             </div>
           </a>
           <a

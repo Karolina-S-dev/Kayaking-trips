@@ -1,4 +1,4 @@
-import { reservation } from "../../utils/Contact/contactUtils";
+import { reservation } from "../../utils/ContactScreen/contactUtils";
 import ReservationCard from "./ReservationCard";
 import spotkanieKajakowe from "../../assets/img/canoe-meeting.png";
 

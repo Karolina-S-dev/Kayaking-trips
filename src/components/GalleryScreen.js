@@ -3,7 +3,7 @@ import "../assets/css/queries.css";
 import "../assets/css/queries-GalleryScreen.css";
 import { useEffect } from "react";
 import { usePageContext } from "../context/pageContext";
-import Gallery from "./Gallery/Gallery";
+import Gallery from "./GalleryScreen/Gallery";
 import Footer from "./Home/Footer";
 import Header from "./Home/Header";
 import ScrollToTop from "./Home/ScrollToTop";

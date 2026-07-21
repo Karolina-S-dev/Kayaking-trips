@@ -1,4 +1,4 @@
-import { faqContentData } from "../../utils/FAQ/faqUtils";
+import { faqContentData } from "../../utils/FaqScreen/faqUtils";
 import FaqBanner from "./FaqBanner";
 
 const FaqList = () => {

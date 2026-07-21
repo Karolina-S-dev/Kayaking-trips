@@ -1,4 +1,4 @@
-import { oneDayTripsDesc } from "../../utils/Trips/tripsScreenUtils__oneday";
+import { oneDayTripsDesc } from "../../utils/TripsScreen/tripsScreenUtils__oneday";
 import oneDayTrips from "../../assets/img/onedaytrips.jpeg";
 import TripCard from "./TripCard";
 

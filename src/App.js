@@ -6,10 +6,10 @@ import GalleryScreen from "./components/GalleryScreen";
 import FaqScreen from "./components/FaqScreen";
 import ContactScreen from "./components/ContactScreen";
 import PrivacyPolicy from "./components/Home/PrivacyPolicy";
-import FamilyTripsScreen from "./components/Trips/FamilyTripsScreen";
-import OneDayTripsScreen from "./components/Trips/OneDayTripsScreen";
-import MultiDayTripsScreen from "./components/Trips/MultiDayTripsScreen";
-import OnRequestTripsScreen from "./components/Trips/OnRequestTripsScreen";
+import FamilyTripsScreen from "./components/TripsScreen/FamilyTripsScreen";
+import OneDayTripsScreen from "./components/TripsScreen/OneDayTripsScreen";
+import MultiDayTripsScreen from "./components/TripsScreen/MultiDayTripsScreen";
+import OnRequestTripsScreen from "./components/TripsScreen/OnRequestTripsScreen";
 
 function App() {
   return (

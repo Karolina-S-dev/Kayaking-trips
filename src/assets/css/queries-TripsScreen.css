@@ -1,0 +1,509 @@
+@media only screen and (max-width: 1500px) {
+  .choice-card-text {
+    bottom: 2.5rem;
+  }
+}
+
+/* laptops and big tablets - 1024px - 1200px */
+@media only screen and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 9px !important;
+  }
+  .choice-card-title {
+    font-size: 1.9rem;
+  }
+
+  .choice-card-duration {
+    font-size: 1.6rem;
+  }
+
+  .trips-hero-section {
+    padding: 6rem 0;
+    background-position: center 12%;
+  }
+
+  .trips-choice-section {
+    max-width: 95%;
+  }
+
+  .trips-choice-cards {
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .trips-choice-card {
+    flex-basis: calc(25% - 0.75rem);
+  }
+}
+
+/* tablets 768px - 1023px */
+@media only screen and (max-width: 1023px) {
+  html,
+  body {
+    font-size: 8px !important;
+  }
+
+  .trips-choice-section {
+    margin: 8rem auto;
+    max-width: 70%;
+  }
+  .trips-choice-title {
+    font-size: 1.6rem;
+  }
+
+  .trips-choice-cards {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .trips-choice-card {
+    flex-basis: calc(50% - 0.5rem);
+  }
+}
+
+/* mobile - phones */
+@media only screen and (max-width: 767px) {
+  .trips-hero-section {
+    padding: 5rem 0;
+    background-position: center 35%;
+    min-height: 25rem;
+  }
+
+  .trips-choice-section {
+    margin: 5rem auto;
+    max-width: 95%;
+  }
+
+  .trips-choice-cards {
+    flex-direction: column;
+  }
+  .choice-card-title {
+    font-size: 2.8rem;
+  }
+
+  .choice-card-duration {
+    font-size: 2.2rem;
+  }
+}
+
+/* small mobile - phones*/
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+  .choice-card-title {
+    font-size: 2rem;
+  }
+
+  .choice-card-duration {
+    font-size: 1.7rem;
+  }
+}
+
+/* -------------------------------------- */
+/* ----------- FAMILY TRIPS ------------- */
+/* ------------------------------------- */
+
+@media only screen and (max-width: 1500px) {
+  .family-trips-row {
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .family-trips-section {
+    padding: 5rem 4rem;
+  }
+
+  .family-trips-card-number {
+    width: 6rem;
+  }
+  .family-trips-card-main-col {
+    padding: 0 0 0 2rem;
+  }
+  .family-trips-img {
+    flex-basis: calc(40% - 2.5rem);
+  }
+
+  .family-trips-cards {
+    margin-top: 1rem;
+    gap: 0;
+  }
+
+  .family-trips-card-info p {
+    font-size: 1.2rem;
+  }
+  .sobkow-castle {
+    max-width: 18rem;
+    margin: auto 0;
+  }
+  .family-info-icon {
+    max-width: 7rem;
+    max-height: 8rem;
+    padding: 1rem;
+  }
+  .family-trips-info-content {
+    padding: 1rem 0;
+  }
+  .routes-content {
+    padding: 0;
+  }
+  .routes-header-text::after {
+    width: 200px;
+    height: 1px;
+    background-color: black;
+    bottom: 0;
+    left: 160px;
+  }
+}
+
+/* laptops and big tablets - 1024px - 1200px */
+@media only screen and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 9px !important;
+  }
+}
+
+/* tablets 768px - 1023px */
+@media only screen and (max-width: 1023px) {
+  html,
+  body {
+    font-size: 8px !important;
+  }
+
+  .family-trips-row {
+    flex-direction: column;
+  }
+  .family-trips-img {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .family-trips-info {
+    margin-top: 3rem;
+  }
+
+  .family-trips-section {
+    padding: 3rem 4rem;
+  }
+}
+
+/* mobile - phones */
+@media only screen and (max-width: 767px) {
+  .routes-header-text::after {
+    width: 100px;
+    left: 140px;
+  }
+  .family-trips-section {
+    padding: 2rem;
+  }
+
+  .family-trips-img {
+    width: 100%;
+  }
+  .family-info-icon {
+    display: none;
+  }
+
+  .family-trips-info-content {
+    padding: 1.3rem 0 1.3rem 1.3rem;
+  }
+
+  .family-trips-card {
+    padding: 1rem 0;
+    margin-top: 1rem;
+    height: fit-content;
+    flex-direction: column;
+  }
+  .family-trips-card-number {
+    font-size: 4.5rem;
+    border-right: none;
+    padding: 0.7rem 3.5rem;
+    border-radius: 50%;
+    background-color: #eef;
+  }
+
+  .family-trips-card-name {
+    margin-bottom: 1rem;
+  }
+
+  .family-trips-card-button {
+    margin-top: 1rem;
+  }
+  .family-trips-button-disabled {
+    margin-top: 1rem;
+  }
+  .family-trips-card-info p {
+    font-weight: 600;
+  }
+}
+
+/* small mobile - phones*/
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+
+  .family-card-specifics {
+    flex-direction: column;
+  }
+
+  .family-trips-card-info {
+    border-right: none;
+    margin-bottom: 0.5rem;
+    padding: 0;
+  }
+
+  .family-trips-card-button {
+    margin-top: 0;
+  }
+
+  .family-trips-button-disabled {
+    margin-top: 0;
+  }
+  .family-trips-card-info {
+    justify-content: flex-start;
+  }
+}
+
+/* ------------------------------------- */
+/* ------------ ONEDAY TRIPS ----------- */
+/* ------------------------------------- */
+
+@media only screen and (max-width: 1500px) {
+  .oneday-trips-row {
+    gap: 3rem;
+  }
+
+  .oneday-trips-section {
+    padding: 5rem 4rem;
+  }
+
+  .oneday-trips-img {
+    flex-basis: calc(41% - 2.5rem);
+    height: 40rem;
+  }
+  .family-trips-card {
+    padding: 1.5rem;
+  }
+  .info-short {
+    width: 10rem;
+  }
+}
+
+/* laptops and big tablets - 1024px - 1200px */
+@media only screen and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 9px !important;
+  }
+}
+
+/* tablets 768px - 1023px */
+@media only screen and (max-width: 1023px) {
+  html,
+  body {
+    font-size: 8px !important;
+  }
+
+  .oneday-trips-row {
+    flex-direction: column;
+  }
+
+  .oneday-trips-img {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .oneday-trips-section {
+    padding: 3rem 4rem;
+  }
+}
+
+/* mobile - phones */
+@media only screen and (max-width: 767px) {
+  .oneday-trips-section {
+    padding: 2rem;
+  }
+
+  .oneday-trips-title {
+    max-width: 95%;
+  }
+
+  .oneday-trips-img {
+    width: 100%;
+  }
+}
+
+/* small mobile - phones*/
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+}
+
+/* ------------------------------------- */
+/* -------- MULTIDAY TRIPS -------- */
+/* ------------------------------------- */
+
+@media only screen and (max-width: 1500px) {
+  .multiday-trips-section {
+    padding: 5rem 7rem;
+  }
+  .info-short {
+    width: 11rem;
+  }
+  .info-long {
+    width: 10rem;
+  }
+  .family-trips-card-name {
+    font-size: 1.55rem;
+    text-align: left;
+  }
+}
+
+/* laptops and big tablets - 1024px - 1200px */
+@media only screen and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 9px !important;
+  }
+  .multiday-trips-title {
+    max-width: 75%;
+  }
+  .family-trips-row {
+    gap: 2rem;
+  }
+  .multiday-trips-img {
+    flex-basis: calc(45% - 1rem);
+  }
+  .routes-content {
+    flex-basis: calc(55% - 1rem);
+  }
+  .family-trips-card {
+    padding: 1.5rem 0;
+  }
+  .family-trips-card {
+    height: 9rem;
+  }
+}
+
+/* tablets 768px - 1023px */
+@media only screen and (max-width: 1023px) {
+  html,
+  body {
+    font-size: 8px !important;
+  }
+
+  .multiday-trips-row {
+    flex-direction: column;
+  }
+
+  .multiday-trips-img {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .multiday-trips-section {
+    padding: 3rem 4rem;
+  }
+
+  .info-long {
+    width: 15rem;
+  }
+
+  .info-short {
+    width: 15rem;
+  }
+}
+
+/* mobile - phones */
+@media only screen and (max-width: 767px) {
+  .multiday-trips-section {
+    padding: 2rem;
+  }
+
+  .multiday-trips-title {
+    max-width: 95%;
+  }
+
+  .multiday-trips-img {
+    width: 100%;
+  }
+
+  .family-trips-card {
+    height: fit-content;
+  }
+}
+
+/* small mobile - phones*/
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+}
+
+/* ------------------------------------- */
+/* ------------ ONREQUEST ----------- */
+/* ------------------------------------- */
+
+@media only screen and (max-width: 1500px) {
+  .onrequest-trips-title {
+    max-width: 60%;
+  }
+
+  .onrequest-trips-row {
+    gap: 2rem;
+  }
+
+  .onrequest-routes-content {
+    flex-basis: calc(50% - 1rem);
+  }
+  .onrequest-trips-img {
+    flex-basis: calc(50% - 1rem);
+  }
+}
+
+/* laptops and big tablets - 1024px - 1200px */
+@media only screen and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 9px !important;
+  }
+  .onrequest-routes-content {
+    padding: 0;
+  }
+}
+
+/* tablets 768px - 1023px */
+@media only screen and (max-width: 1023px) {
+  html,
+  body {
+    font-size: 8px !important;
+  }
+  .onrequest-trips-img {
+    height: 44rem;
+  }
+}
+
+/* mobile - phones */
+@media only screen and (max-width: 767px) {
+  .onrequest-trips-row {
+    flex-direction: column;
+  }
+  .onrequest-routes-content {
+    padding: 1.5rem;
+  }
+}
+
+/* small mobile - phones*/
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+}

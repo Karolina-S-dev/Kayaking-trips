@@ -1,4 +1,4 @@
-import { featuresData } from "../../utils/Home/featuresUtils";
+import { featuresData } from "../../utils/HomeScreen/featuresUtils";
 
 
 const Features = () => {

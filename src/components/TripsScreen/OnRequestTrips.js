@@ -8,7 +8,7 @@ import program from "../../assets/icons/program.png";
 const OnRequestTrips = () => {
   return (
     <>
-      <section className="oneday-trips-section flex-col">
+      <section className="onrequest-section flex-col">
         <p className="family-trips-label">SPŁYWY NA ŻYCZENIE</p>
         <svg
           width="90"
@@ -31,7 +31,7 @@ const OnRequestTrips = () => {
         </p>
 
         <div className="flex-row onrequest-trips-row">
-          <div className="onrequest-trips-img ">
+          <div className="onrequest-trips-img box-shadow ">
             <img
               src={onRequestTrips}
               alt="Mapa tras spływów na życzenie"
@@ -57,6 +57,7 @@ const OnRequestTrips = () => {
                 strokeLinecap="round"
               />
             </svg>
+            <div className="flex-col onrequest-descriptions ">
             <p className="onrequest-desc">
               Organizujemy indywidualne wyprawy kajakowe od kilku dni aż do
               około tygodnia.
@@ -82,6 +83,7 @@ const OnRequestTrips = () => {
               Szczegóły organizacji ustalamy wyłącznie podczas kontaktu
               telefonicznego.
             </p>
+            </div>
           </div>
         </div>
 
