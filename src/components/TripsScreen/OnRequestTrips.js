@@ -46,7 +46,7 @@ const OnRequestTrips = () => {
         </div>
       </section>
 
-      <section className="onrequest-description"></section>
+      <section className="onrequest-trips-section">
       <p className="onrequest-description-label dark-grey">Co organizujemy?</p>
       <p className="onrequest-description-title">
         Każdą wyprawę dopasowujemy do Twoich potrzeb i oczekiwań. Ty wybierasz -
@@ -54,7 +54,7 @@ const OnRequestTrips = () => {
       </p>
 
       <div className="flex-row onrequest-cards">
-        <div className="onrequest-card-wrapper">
+        <div className="onrequest-card-wrapper flex-col">
           <div className="onrequest-card flex-col move-top-left">
             <div className="flex-row">
               <ion-icon name="checkmark-circle"></ion-icon>
@@ -127,6 +127,7 @@ const OnRequestTrips = () => {
           ZAPLANUJ SWOJĄ WYPRAWĘ
         </a>
       </div>
+      </section>
     </>
   );
 };

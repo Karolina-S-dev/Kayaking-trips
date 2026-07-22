@@ -516,13 +516,9 @@
 /* ------------------------------------- */
 
 @media only screen and (max-width: 1500px) {
-  .onrequest-trips-title {
-    max-width: 60%;
+  .onrequest-cards {
+    width: 70%;
   }
-
- 
-
-
 }
 
 /* laptops and big tablets - 1024px - 1200px */
@@ -531,7 +527,22 @@
   body {
     font-size: 9px !important;
   }
+  .onrequest-hero {
+    min-height: 50vh;
+  }
+  .onrequest-card-title {
+    margin-bottom: 0;
+  }
 
+  .onrequest-cta-img::after {
+    width: 200px;
+    right: -210px;
+  }
+
+  .onrequest-cta-img::before {
+    width: 200px;
+    left: -210px;
+  }
 }
 
 /* tablets 768px - 1023px */
@@ -541,11 +552,52 @@
     font-size: 8px !important;
   }
 
+  .onrequest-routes-content {
+    padding: 6rem 8rem;
+  }
+  .onrequest-card {
+    padding: 1.5rem;
+  }
+  .onrequest-cards {
+    width: 75%;
+  }
 }
 
 /* mobile - phones */
 @media only screen and (max-width: 767px) {
+  .onrequest-routes-content {
+    padding: 2rem;
+  }
+  .onrequest-hero::after {
+    background: linear-gradient(
+      135deg,
+      #000000d0 0%,
+      #030303bd 25%,
+      #03030388 50%,
+      #03030353 75%,
+      #08080842 100%
+    );
+  }
+  .onrequest-cards {
+    width: 100%;
+  }
 
+  .onrequest-card {
+    padding: 1rem;
+  }
+  .onrequest-card-title {
+    margin-left: 0.5rem;
+  }
+
+  .onrequest-cta-img::after {
+    width: 100px;
+    right: -110px;
+  }
+
+  .onrequest-cta-img::before {
+    width: 100px;
+    left: -110px;
+  }
 }
 
 /* small mobile - phones*/
@@ -553,5 +605,10 @@
   html,
   body {
     font-size: 7px;
+  }
+
+  .onrequest-card-wrapper {
+    flex-basis: calc(50% - 0.5rem);
+    min-height: 14rem;
   }
 }
