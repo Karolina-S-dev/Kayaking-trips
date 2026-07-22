@@ -48,7 +48,6 @@
   margin-bottom: 1rem;
   font-weight: 600;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .trips-choice-title {
@@ -604,96 +603,222 @@ ion-icon[name="compass-outline"] {
 
 .multiday-desc {
   font-size: 1.3rem;
+  line-height: 2.3rem;
 }
 
 /* ------------------------------------- */
 /* ---------- ONREQUEST TRIPS ---------- */
 /* ------------------------------------- */
 
-.onrequest-section {
-  margin: 0 auto;
-  padding: 5rem 15rem;
-}
-
-.onrequest-trips-row {
-  margin-top: 3rem;
-  gap: 5rem;
-  justify-content: center;
-  margin-bottom: 4rem;
-}
-
-.onrequest-trips-img {
-  flex: 0 0 calc(40% - 2.5rem);
-  aspect-ratio: 1/1;
-  border-radius: 12px;
-  overflow: hidden;
-  height: 40rem;
-}
-
-.onrequest-trips-img img {
-  height: 100%;
+.onrequest-hero {
+  background-image: url(../img/onrequest-trips.png);
+  background-position: center 25%;
+  background-size: cover;
   width: 100%;
-  border-radius: 12px;
+  min-height: 60vh;
+  margin-bottom: 5rem;
+  z-index: 1;
+  position: relative;
+  justify-content: center;
+}
+
+.onrequest-hero::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(
+    135deg,
+    #000000d0 0%,
+    #030303c6 25%,
+    #0303038e 50%,
+    #03030353 75%,
+    #08080842 100%
+  );
+  inset: 0;
+  z-index: 2;
 }
 
 .onrequest-routes-content {
-  padding: 1rem;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: calc(40% - 2.5rem);
-  width: 100%;
-}
-
-.onrequest-trips-title {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 0 auto 1rem auto;
-  max-width: 35%;
-  line-height: 2.8rem;
+  padding: 6rem 12rem;
+  z-index: 5;
 }
 
 .onrequest-trips-subtitle {
-  font-size: 2.1rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
-  font-weight: 600;
-}
-
-.onrequest-descriptions {
-  margin-top: 0.5rem;
-}
-
-.onrequest-desc {
-  font-size: 1.4rem;
-  margin-bottom: 1.5rem;
-}
-
-.onrequest-cards {
-  gap: 2rem;
-  max-width: 90%;
-  margin: 2rem auto 0 auto;
-}
-
-.onrequest-card {
-  flex: 0 0 calc(20% - 1.6rem);
-  padding: 2rem;
-  border-radius: 12px;
-  text-align: center;
-}
-
-.onrequest-card img {
-  max-width: 10rem;
-  max-height: 5rem;
+  color: #f3c623;
   margin-bottom: 1rem;
 }
 
-.onrequest-card-title {
+.onrequest-trips-title {
+  font-size: 5rem;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-family: "Dancing Script", sans-serif;
   font-weight: 600;
-  margin-bottom: 0.8rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.onrequest-descriptions {
+  max-width: 60rem;
+}
+
+.onrequest-desc {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 2.5rem;
+}
+
+.onrequest-description-label {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.onrequest-description-title {
+  font-size: 1.6rem;
+  max-width: 53rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 2.8rem;
+}
+
+.onrequest-cards {
+  gap: 1rem;
+  width: 60%;
+  margin: 3rem auto 2rem auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.onrequest-card-wrapper {
+  flex: 0 0 calc(30% - 0.6rem);
+  align-items: stretch;
+  position: relative;
+  background-color: #cdb88b;
+  border-radius: 12px;
+}
+
+.onrequest-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  align-items: center;
+  gap: 1rem;
+  background-color: #e6dcc6;
+  transition: transform 0.4s ease;
+  border-radius: 12px;
+  justify-content: flex-start;
+}
+
+.onrequest-card-wrapper:hover .move-top-left {
+  transform: translate(-6px, -6px);
+}
+
+.onrequest-card-wrapper:hover .move-top {
+  transform: translate(0, -6px);
+}
+
+.onrequest-card-wrapper:hover .move-top-right {
+  transform: translate(6px, -6px);
+}
+
+.onrequest-card-wrapper:hover .move-bottom-left {
+  transform: translate(-6px, 6px);
+}
+.onrequest-card-wrapper:hover .move-bottom-right {
+  transform: translate(6px, 6px);
+}
+
+.onrequest-card-title {
+  font-weight: 600;
+  font-size: 1.55rem;
+  margin-left: 1rem;
 }
 
 .onrequest-card-content {
   font-size: 1.35rem;
   line-height: 2.4rem;
+  text-align: center;
+}
+
+.onrequest-card ion-icon {
+  font-size: 2.8rem;
+  color: #0e2319;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.onrequest-button {
+  padding: 1.5rem 2.6rem;
+  border-radius: 8px;
+  background-color: #1b4130;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 550;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.35rem;
+  margin: 1rem auto 6rem auto;
+  justify-content: center;
+  max-width: 30rem;
+  transition: transform 0.4s ease;
+}
+
+.onrequest-button:hover {
+  transform: translateY(-2px);
+  background-color: #22523c;
+}
+
+.onrequest-cta-title {
+  font-size: 2.85rem;
+  font-family: "Dancing Script", sans-serif;
+  text-align: center;
+}
+
+.onrequest-cta-text {
+  max-width: 50rem;
+  margin: 3rem auto;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+
+.onrequest-cta-img {
+  width: 10rem;
+  margin: 1rem auto;
+  position: relative;
+}
+
+.onrequest-cta-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.onrequest-cta-img::before {
+  content: "";
+  background-color: #bd9e6d;
+  height: 1px;
+  width: 300px;
+  position: absolute;
+  left: -310px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+}
+
+.onrequest-cta-img::after {
+  content: "";
+  background-color: #bd9e6d;
+  height: 1px;
+  width: 300px;
+  position: absolute;
+  right: -310px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
 }

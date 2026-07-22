@@ -7,7 +7,7 @@
 /* --------------------------- */
 
 .header-section {
-  padding: 0.8rem 5rem;
+  padding: 0.5rem 5rem;
   justify-content: space-between;
   align-items: flex-start;
   margin: 0 auto;
@@ -17,15 +17,16 @@
 }
 
 .header-subpage {
-  background-color: #1b4130;
+  background-color: #0e2319;
 }
 
 .header-logo {
-  max-width: 11rem;
+  max-width: 9rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
   transition: all 0.4s ease;
-  }
+  height: 100%;
+}
 
 .nav-links {
   align-items: center;
@@ -37,7 +38,7 @@
 
 .nav-button {
   padding: 1.5rem 2.5rem;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -47,6 +48,7 @@
   font-weight: 600;
   border: none;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .nav-button:hover {
@@ -981,7 +983,7 @@ ion-icon[name="time"] {
   position: absolute;
   inset: 0;
   content: "";
-  background-color: #0000003d;
+  background-color: #00000090;
   z-index: 2;
 }
 
@@ -1056,13 +1058,13 @@ ion-icon[name="logo-google"] {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.01);
   text-align: left;
   padding: 2rem;
   font-size: 1.2rem;
   color: #8b9097;
   letter-spacing: 1px;
-  background-color: #1b4130;
+  background-color: #0e2319;
   width: 100%;
 }
 

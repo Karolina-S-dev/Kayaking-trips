@@ -407,6 +407,7 @@
 
   .gallery-home-div-img {
     flex: 0 0 calc(33% - 0.7rem);
+    height: fit-content;
   }
 
   .faq-home-section {

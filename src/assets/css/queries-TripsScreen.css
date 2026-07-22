@@ -520,16 +520,9 @@
     max-width: 60%;
   }
 
-  .onrequest-trips-row {
-    gap: 2rem;
-  }
+ 
 
-  .onrequest-routes-content {
-    flex-basis: calc(50% - 1rem);
-  }
-  .onrequest-trips-img {
-    flex-basis: calc(50% - 1rem);
-  }
+
 }
 
 /* laptops and big tablets - 1024px - 1200px */
@@ -538,9 +531,7 @@
   body {
     font-size: 9px !important;
   }
-  .onrequest-routes-content {
-    padding: 0;
-  }
+
 }
 
 /* tablets 768px - 1023px */
@@ -549,19 +540,12 @@
   body {
     font-size: 8px !important;
   }
-  .onrequest-trips-img {
-    height: 44rem;
-  }
+
 }
 
 /* mobile - phones */
 @media only screen and (max-width: 767px) {
-  .onrequest-trips-row {
-    flex-direction: column;
-  }
-  .onrequest-routes-content {
-    padding: 1.5rem;
-  }
+
 }
 
 /* small mobile - phones*/
