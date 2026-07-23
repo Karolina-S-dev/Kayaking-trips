@@ -190,7 +190,7 @@
 .family-trips-card {
   width: 100%;
   height: fit-content;
-  padding: 2rem;
+  padding: 2rem 0.5rem;
   border-bottom: 2px solid #e7e7e5;
   cursor: pointer;
   transition: transform 0.4s ease;
@@ -220,7 +220,7 @@
 
 .family-trips-card-info {
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.5rem;
   padding: 0.7rem 1.2rem;
   border-radius: 20px;
   justify-content: center;
@@ -231,23 +231,28 @@
 }
 
 .background-grey {
-  background-color: #edecea;
+  background-color: #f4f0e2;
+  min-width: 11rem;
 }
 
 .background-blue {
-  background-color: #d8ecf7;
+  background-color: #f4f0e2;
+  min-width: 12rem;
 }
 
 .background-green {
-  background-color: #155c3b;
+  background-color: #e1f4e0;
+  min-width: 10rem;
 }
 
 .background-red {
-  background-color: #f9d9d5;
+  background-color:#f6d7d7 ;
+  min-width: 9rem;
 }
 
 .background-yellow {
-  background-color: #f7f1d0;
+  background-color:#f9f4c3;
+  min-width: 9rem;
 }
 
 .family-trips-card-info:last-child {
@@ -578,7 +583,7 @@ ion-icon[name="compass-outline"] {
 
 .multiday-trips-section {
   margin: 0 auto;
-  padding: 5rem 15rem;
+  padding: 5rem 13rem;
 }
 
 .multiday-trips-row {

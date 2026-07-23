@@ -4,7 +4,7 @@ const oneDayTripsDesc = [
     type: "TRASA JEDNODNIOWA",
     name: "Tokarnia - Mokrsko",
     distance: "ok. 13 km",
-    duration: "ok. 4 godziny",
+    duration: "ok. 4 godz.",
     number: "01",
     degree: "łatwy",
     backgroundColor: "background-green",
