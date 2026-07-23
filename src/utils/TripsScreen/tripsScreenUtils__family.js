@@ -8,6 +8,7 @@ const familyTripsDesc = [
     number: "01",
     degree: "łatwa",
     button: true,
+    backgroundColor: "background-green",
     recommendedFor: "początkujący, rodziny z dziećmi, grupy zorganizowane",
     intro: "Idealna trasa dla początkujących i rodzin z dziećmi.",
     description:
@@ -31,6 +32,7 @@ const familyTripsDesc = [
     number: "02",
     degree: "łatwa",
     button: false,
+    backgroundColor: "background-green",
   },
 ];
 

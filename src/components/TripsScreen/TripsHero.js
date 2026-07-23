@@ -6,7 +6,6 @@ const TripsHero = () => {
         <p className="trips-hero-title white">
           Od rodzinnych tras po tygodniowe wyprawy
         </p>
-        
       </section>
     </>
   );

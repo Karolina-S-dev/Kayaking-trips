@@ -213,7 +213,6 @@
   .family-trips-card {
     padding: 1rem 0;
     margin-top: 1rem;
-    height: fit-content;
     flex-direction: column;
   }
   .family-trips-card-number {
@@ -288,9 +287,7 @@
   .family-trips-card {
     padding: 1.5rem;
   }
-  .info-short {
-    width: 10rem;
-  }
+  
 }
 
 /* laptops and big tablets - 1024px - 1200px */
@@ -353,13 +350,8 @@
   .multiday-trips-section {
     padding: 5rem 7rem;
   }
-  .info-short {
-    width: 11rem;
-  }
-  .info-long {
-    width: 10rem;
-  }
-  .family-trips-card-name {
+ 
+    .family-trips-card-name {
     font-size: 1.55rem;
     text-align: left;
   }
@@ -392,9 +384,7 @@
   .family-trips-card {
     padding: 1.5rem 0;
   }
-  .family-trips-card {
-    height: 9rem;
-  }
+  
   .trips-modal {
     height: 60%;
   }
@@ -420,14 +410,6 @@
     padding: 3rem 4rem;
   }
 
-  .info-long {
-    width: 15rem;
-  }
-
-  .info-short {
-    width: 15rem;
-  }
-
   .multiday-trips-modal {
     height: 80%;
     padding: 3rem 4rem;
@@ -450,10 +432,6 @@
 
   .multiday-trips-img {
     width: 100%;
-  }
-
-  .family-trips-card {
-    height: fit-content;
   }
 
   .trips-modal {

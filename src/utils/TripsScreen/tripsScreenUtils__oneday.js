@@ -7,6 +7,7 @@ const oneDayTripsDesc = [
     duration: "ok. 4 godziny",
     number: "01",
     degree: "łatwy",
+    backgroundColor: "background-green",
     button: true,
     recommendedFor:
       "początkujących, rodzin z dziećmi oraz osób szukających spokojnego, malowniczego spływu.",
@@ -32,6 +33,7 @@ const oneDayTripsDesc = [
     number: "02",
     degree: "trudny",
     button: true,
+    backgroundColor: "background-red",
     recommendedFor:
       "osób z doświadczeniem, grup szukających większych wyzwań oraz miłośników dzikiej, nieskażonej natury.",
     intro: "Trasa wymagająca - dla miłośników dzikiej natury.",
@@ -55,6 +57,7 @@ const oneDayTripsDesc = [
     duration: "ok. 8 godz.",
     number: "03",
     degree: "trudny",
+    backgroundColor: "background-red",
     button: true,
     recommendedFor:
       "doświadczonych kajakarzy, grup szukających wyzwań oraz miłośników dzikiej przyrody.",

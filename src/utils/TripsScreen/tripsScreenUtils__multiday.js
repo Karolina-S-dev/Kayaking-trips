@@ -7,6 +7,7 @@ const multiDayTripsDesc = [
     duration: "2 dni",
     number: "01",
     degree: "średni",
+    backgroundColor: "background-yellow",
     button:true,
     recommendedFor:
       "rodzin, grup znajomych oraz osób, które chcą spróbować swojej pierwszej kilkudniowej wyprawy kajakowej.",
@@ -40,6 +41,7 @@ const multiDayTripsDesc = [
     duration: "2 dni",
     number: "02",
     degree: "trudny / średni",
+    backgroundColor: "background-red",
     button:true,
     recommendedFor:
       "osób szukających prawdziwej kajakowej wyprawy, miłośników biwakowania i dzikiej przyrody.",

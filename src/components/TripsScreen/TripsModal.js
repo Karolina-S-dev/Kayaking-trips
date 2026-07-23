@@ -1,3 +1,5 @@
+
+
 const TripsModal = ({ isModalOpen, setIsModalOpen, item, multiDayTrips }) => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
@@ -6,9 +8,10 @@ const TripsModal = ({ isModalOpen, setIsModalOpen, item, multiDayTrips }) => {
   return (
     <>
       {isModalOpen ? (
-        <div className="modal-overlay">
+        <div className="modal-overlay" onClick={handleCloseModal}>
           <div
             className={`trips-modal ${multiDayTrips ? "multiday-trips-modal" : ""}`}
+            onClick={(e) => e.stopPropagation()}
           >
             <div onClick={handleCloseModal}>
               <ion-icon name="close-outline"></ion-icon>

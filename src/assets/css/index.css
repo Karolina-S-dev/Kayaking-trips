@@ -9,7 +9,7 @@
 .header-section {
   padding: 0.5rem 5rem;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin: 0 auto;
   width: 100%;
   background-color: transparent;
@@ -966,7 +966,7 @@ ion-icon[name="time"] {
 
 .footer-section {
   width: 100%;
-  padding: 3rem;
+  padding: 2rem;
   background-image: url(../img/2canoes.png);
   background-position: center 60%;
   background-size: cover;
@@ -983,7 +983,7 @@ ion-icon[name="time"] {
   position: absolute;
   inset: 0;
   content: "";
-  background-color: #00000090;
+  background-color: #0000003a;
   z-index: 2;
 }
 
@@ -994,7 +994,7 @@ ion-icon[name="time"] {
 
 .footer-title {
   font-family: "Dancing Script", sans-serif;
-  font-size: 5.5rem;
+  font-size: 4.8rem;
   text-shadow: 0 2px 8px #000000b5;
   margin-bottom: 1rem;
 }
@@ -1039,10 +1039,10 @@ ion-icon[name="time"] {
 }
 
 .socials-div ion-icon {
-  font-size: 2.8rem !important;
+  font-size: 2.4rem !important;
   padding: 1rem;
   margin-right: 2rem;
-  background: linear-gradient(to bottom, #143124, #2d6f51);
+  background: linear-gradient(to bottom, #0e2319, #1b432f);
   border: 1px solid #ffffff1e;
   border-radius: 50%;
   transition: transform 0.4s ease;
@@ -1053,14 +1053,14 @@ ion-icon[name="time"] {
 }
 
 ion-icon[name="logo-google"] {
-  font-size: 2.6rem !important;
+  font-size: 2.2rem !important;
   padding: 1.1rem;
 }
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.01);
   text-align: left;
-  padding: 2rem;
+  padding: 1.3rem;
   font-size: 1.2rem;
   color: #8b9097;
   letter-spacing: 1px;
@@ -1105,7 +1105,7 @@ ion-icon[name="logo-google"] {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  background: linear-gradient(to bottom, #143124, #2d6f51);
+  background: linear-gradient(to bottom, #0e2319, #1d4834);
   color: #f3c623;
   display: flex;
   align-items: center;
