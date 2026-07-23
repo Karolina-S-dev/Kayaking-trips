@@ -101,12 +101,10 @@
 .choice-card-title {
   font-size: 2.1rem;
   margin-bottom: 0.5rem;
-  font-weight: 400;
 }
 
 .choice-card-duration {
   font-size: 1.8rem;
-  font-weight: 400;
 }
 
 /* ----------------------------- */
@@ -285,12 +283,12 @@
 }
 
 .family-trips-card-button:hover {
-  color: #F0D11F;
+  color: #f0d11f;
 }
 
 .family-trips-card-button ion-icon {
   font-size: 1.7rem;
-  color: #F0D11F;
+  color: #f0d11f;
 }
 
 .family-trips-info {
@@ -428,7 +426,7 @@ ion-icon[name="close-outline"] {
   font-size: 3.5rem;
   flex-shrink: 0;
   margin-right: 1.3rem;
-  color: #F0D11F;
+  color: #f0d11f;
 }
 
 .modal-card-title {
@@ -560,7 +558,7 @@ ion-icon[name="compass-outline"] {
   height: 60rem;
   overflow-y: auto;
   overflow-x: hidden;
-  scrollbar-color: #F0D11F;
+  scrollbar-color: #f0d11f;
   scrollbar-width: thin;
 }
 
@@ -570,7 +568,7 @@ ion-icon[name="compass-outline"] {
 }
 
 .oneday-trips-cards::-webkit-scrollbar-thumb {
-  background: #F0D11F;
+  background: #f0d11f;
 }
 
 /* ------------------------------------- */
@@ -681,7 +679,7 @@ ion-icon[name="compass-outline"] {
 .onrequest-trips-subtitle {
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: #F0D11F;
+  color: #f0d11f;
   margin-bottom: 1rem;
 }
 

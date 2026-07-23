@@ -967,7 +967,7 @@ ion-icon[name="time"] {
 
 .footer-section {
   width: 100%;
-  padding: 2rem;
+  padding: 1.6rem;
   background-image: url(../img/2canoes.png);
   background-position: center 60%;
   background-size: cover;
@@ -995,18 +995,19 @@ ion-icon[name="time"] {
 
 .footer-title {
   font-family: "Dancing Script", sans-serif;
-  font-size: 4.8rem;
+  font-size: 3.8rem;
   text-shadow: 0 2px 8px #000000b5;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 
 .footer-subtitle {
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   margin-bottom: 2rem;
+    font-weight: 400;
 }
 
 .footer-data {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
   width: 20rem;
   font-style: normal;
@@ -1025,6 +1026,8 @@ ion-icon[name="time"] {
   gap: 1rem;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
 }
 
 .footer-contact-groups {
@@ -1042,7 +1045,7 @@ ion-icon[name="time"] {
 .socials-div ion-icon {
   font-size: 2.4rem !important;
   padding: 1rem;
-  margin-right: 2rem;
+  margin-right: 1.3rem;
   background: linear-gradient(to bottom, #0e2319, #1b432f);
   border: 1px solid #ffffff1e;
   border-radius: 50%;
