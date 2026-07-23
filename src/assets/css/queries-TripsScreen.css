@@ -501,7 +501,7 @@
     font-size: 9px !important;
   }
   .onrequest-hero {
-    min-height: 50vh;
+    min-height: 50%;
   }
   .onrequest-card-title {
     margin-bottom: 0;
@@ -525,8 +525,12 @@
     font-size: 8px !important;
   }
 
+  .onrequest-hero {
+    min-height: 50%;
+  }
+
   .onrequest-routes-content {
-    padding: 6rem 8rem;
+    padding: 5rem 8rem;
   }
   .onrequest-card {
     padding: 1.5rem;

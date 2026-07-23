@@ -32,13 +32,18 @@
     font-size: 8px !important;
   }
 
+  .gallery-section {
+    width: 95%;
+  }
+
   .gallery-content {
     grid-auto-rows: 18rem;
   }
 
   .share-div {
-    max-width: 90%;
+    max-width: 100%;
   }
+
 }
 
 /* mobile - phones */

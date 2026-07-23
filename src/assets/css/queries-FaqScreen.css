@@ -31,13 +31,18 @@
   }
 
   .faq-list {
-    width: 70%;
+    width: 80%;
   }
 
   .faq-notice {
-    max-width: 75%;
-    padding: 3rem 4rem;
-    gap: 2rem;
+    max-width: 80%;
+    padding: 3rem 5rem;
+  }
+  .faq-notice-left {
+    flex-basis: calc(60% - 2rem);
+  }
+  .faq-notice-photo {
+    flex-basis: calc(40% - 2rem);
   }
 }
 
@@ -52,7 +57,6 @@
   .faq-banner {
     height: 9rem;
     padding: 2rem 4rem;
-   
   }
   .question-and-answer {
     margin: 1rem 0 1rem 1rem;
@@ -95,7 +99,7 @@
     text-align: left;
   }
 
-   .faq-question {
+  .faq-question {
     text-align: left;
   }
   .banner-icon {
