@@ -69,6 +69,10 @@
     min-height: 25rem;
   }
 
+  .trips-hero-title {
+    max-width: 60%;
+  }
+
   .trips-choice-section {
     margin: 5rem auto;
     max-width: 95%;
@@ -287,7 +291,6 @@
   .family-trips-card {
     padding: 1.5rem;
   }
-  
 }
 
 /* laptops and big tablets - 1024px - 1200px */
@@ -350,8 +353,8 @@
   .multiday-trips-section {
     padding: 5rem 7rem;
   }
- 
-    .family-trips-card-name {
+
+  .family-trips-card-name {
     font-size: 1.55rem;
     text-align: left;
   }
@@ -384,7 +387,7 @@
   .family-trips-card {
     padding: 1.5rem 0;
   }
-  
+
   .trips-modal {
     height: 60%;
   }

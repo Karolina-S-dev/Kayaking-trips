@@ -17,21 +17,21 @@
   position: relative;
   z-index: 1;
   justify-content: center;
+  align-items: center;
   padding: 8rem 0;
 }
 
 .trips-hero-label {
   font-size: 2.8rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   text-align: center;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-   }
+}
 
 .trips-hero-title {
-  transform: rotate(-3deg);
-transform: translateX(10%);
+  transform: rotate(-3deg) translateX(30%);
   font-size: 2.9rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -39,6 +39,7 @@ transform: translateX(10%);
   font-family: "Dancing Script", sans-serif;
   color: #d7cb9c;
   letter-spacing: 1px;
+  width: fit-content;
 }
 
 /* ----------------------------- */
