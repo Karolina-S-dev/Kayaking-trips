@@ -117,7 +117,7 @@
 
 .hero-section {
   width: 100%;
-  min-height: 75vh;
+  min-height: 70rem;
   position: relative;
   overflow: hidden;
 }
@@ -939,7 +939,7 @@ ion-icon[name="time"] {
 
 .review-card-banner img {
   width: 4rem;
-  aspect-ratio: 1/1;
+  height: 4rem;
 }
 
 .reviews-home-button {
@@ -997,12 +997,14 @@ ion-icon[name="time"] {
   font-size: 3.8rem;
   text-shadow: 0 2px 8px #000000b5;
   margin-bottom: 0.7rem;
+  width: fit-content;
 }
 
 .footer-subtitle {
   font-size: 1.55rem;
   margin-bottom: 2rem;
   font-weight: 400;
+  width: fit-content;
 }
 
 .footer-data {

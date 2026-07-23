@@ -140,11 +140,7 @@
     max-width: 10rem;
   }
 
-  .hero-section {
-    min-height: 50vh;
-  }
-
-  .hero-content {
+   .hero-content {
     padding: 2rem 0 1rem 3rem;
   }
 
@@ -337,7 +333,7 @@
   /*------------------------------------*/
 
   .hero-section {
-    min-height: 80vh;
+    min-height: 77rem;
   }
 
   .hero-title-dancing-script {
@@ -497,8 +493,8 @@
     padding: 4rem;
   }
 
-  .btn {
-    gap: 1.3rem;
+  .hero-content {
+    padding: 2rem 2rem 11rem 2rem;
   }
 
   .about-us-section {
