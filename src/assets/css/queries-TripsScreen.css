@@ -403,10 +403,10 @@
     padding: 3rem 4rem;
   }
   .trips-modal {
-    width: 95%;
-    left: 2.5%;
-    height: 95%;
-    top: 2.5%;
+    width: 90%;
+    left: 5%;
+    height: 80%;
+    top: 10%;
     padding: 1.5rem;
   }
 }
@@ -445,6 +445,14 @@
   ion-icon[name="close-outline"] {
     right: 1rem;
     top: 1rem;
+  }
+
+  .trips-modal {
+    width: 95%;
+    left: 2.5%;
+    height: 95%;
+    top: 2.5%;
+    padding: 1.5rem;
   }
 }
 
