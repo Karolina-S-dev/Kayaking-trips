@@ -409,6 +409,13 @@
     top: 20%;
     padding: 1.5rem;
   }
+
+  .multiday-trips-modal {
+    width: 90%;
+    left: 5%;
+    height: 80%;
+    top: 10%;
+  }
 }
 
 /* mobile - phones */
