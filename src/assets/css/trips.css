@@ -353,15 +353,15 @@
 }
 
 .trips-modal {
-  width: 70%;
-  left: 15%;
-  height: 75%;
-  top: 13%;
+  width: 90%;
+  left: 5%;
+  height: 80%;
+  top: 10%;
   background-color: #fcfcfc;
   position: fixed;
     z-index: 10;
   border-radius: 12px;
-  padding: 4rem 6rem;
+  padding: 4rem;
   z-index: 999;
   overflow-y: auto;
   -ms-overflow-style: none;

@@ -359,14 +359,7 @@
     text-align: left;
   }
 
-  .trips-modal {
-    height: 80%;
-    top: 10%;
-    width: 90%;
-    left: 5%;
-    padding: 3rem;
   }
-}
 
 /* laptops and big tablets - 1024px - 1200px */
 @media only screen and (max-width: 1200px) {
@@ -411,11 +404,7 @@
   .multiday-trips-section {
     padding: 3rem 4rem;
   }
-
-  .multiday-trips-modal {
-    height: 80%;
-    padding: 3rem 4rem;
-  }
+ 
 }
 
 /* mobile - phones */
