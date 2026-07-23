@@ -81,6 +81,7 @@
   border-radius: 25px;
   padding: 1rem 2.8rem !important;
   gap: 0.8rem;
+   font-size: 1.5rem !important;
 }
 
 .nav-button--contact:hover {
@@ -147,7 +148,7 @@
 
 .hero-content {
   z-index: 800;
-  padding: 2rem 0 9rem 13rem;
+  padding: 2rem 0 10rem 13rem;
   justify-content: flex-start;
   height: 100%;
 }
@@ -1101,8 +1102,8 @@ ion-icon[name="logo-google"] {
 
 .scroll-to-top {
   position: fixed;
-  right: 3rem;
-  bottom: 3rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
