@@ -359,7 +359,7 @@
   top: 5%;
   background-color: #fcfcfc;
   position: fixed;
-    z-index: 10;
+  z-index: 10;
   border-radius: 12px;
   padding: 4rem;
   z-index: 999;
@@ -611,11 +611,10 @@ ion-icon[name="compass-outline"] {
 /* ------------------------------------- */
 
 .multiday-trips-modal {
-  width: 80%;
-  height: 75%;
-  left: 10%;
-  top: 15rem;
-  padding: 3rem 5rem;
+  width: 85%;
+  left: 7.5%;
+  height: 90%;
+  top: 5%;
   overflow-y: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
