@@ -157,7 +157,8 @@
   font-size: 8rem;
   transform: rotate(-4deg);
   margin-bottom: 1.5rem;
-    width: fit-content;
+  text-shadow: 0 0 2px #080808da;
+  width: fit-content;
 }
 
 .hero-title {
@@ -166,6 +167,7 @@
   margin-bottom: 2rem;
   color: #f0d11f;
   width: fit-content;
+  text-shadow: 0 0 2px #080808da;
 }
 
 .hero-description {
