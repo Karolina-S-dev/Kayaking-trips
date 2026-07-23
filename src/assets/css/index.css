@@ -81,7 +81,7 @@
   border-radius: 25px;
   padding: 1rem 2.8rem !important;
   gap: 0.8rem;
-   font-size: 1.5rem !important;
+  font-size: 1.5rem !important;
 }
 
 .nav-button--contact:hover {
@@ -464,7 +464,6 @@ ion-icon[name="time"] {
 .card-button {
   padding: 0.8rem 2rem;
   font-size: 1.6rem;
-  border: 1px solid #23a757;
   border-radius: 15px;
   background-color: #1f4d3a;
   transition: transform 0.4s ease;
@@ -629,7 +628,7 @@ ion-icon[name="time"] {
   max-width: 85%;
   margin: 0 auto;
   padding: 3rem;
-  background-color: #f2e7cc;
+  background-color: #f2e5c5;
   border-radius: 20px;
   margin-bottom: 5rem;
 }
