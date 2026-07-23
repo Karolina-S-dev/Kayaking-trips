@@ -354,12 +354,12 @@
 
 .trips-modal {
   width: 70%;
-  height: 70%;
+  left: 15%;
+  height: 75%;
+  top: 13%;
   background-color: #fcfcfc;
   position: fixed;
-  left: 15%;
-  top: 15rem;
-  z-index: 10;
+    z-index: 10;
   border-radius: 12px;
   padding: 4rem 6rem;
   z-index: 999;

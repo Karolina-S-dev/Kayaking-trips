@@ -56,14 +56,6 @@
     max-width: 100%;
     padding: 2rem 3rem;
   }
-}
-
-/* small mobile - phones*/
-@media only screen and (max-width: 400px) {
-  html,
-  body {
-    font-size: 7px;
-  }
   .share-div {
     flex-direction: column;
     gap: 1.5rem;
@@ -72,5 +64,13 @@
     width: 100%;
     margin: 0 auto;
     justify-content: center;
+  }
+}
+
+/* small mobile - phones*/
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 7px;
   }
 }

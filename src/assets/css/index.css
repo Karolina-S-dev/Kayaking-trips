@@ -967,7 +967,7 @@ ion-icon[name="time"] {
 
 .footer-section {
   width: 100%;
-  padding: 1.6rem;
+  padding: 1.1rem;
   background-image: url(../img/2canoes.png);
   background-position: center 60%;
   background-size: cover;
@@ -984,7 +984,7 @@ ion-icon[name="time"] {
   position: absolute;
   inset: 0;
   content: "";
-  background-color: #0000003a;
+  background-color: #00000055;
   z-index: 2;
 }
 
