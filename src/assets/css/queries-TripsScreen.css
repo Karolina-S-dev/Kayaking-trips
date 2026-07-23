@@ -358,8 +358,7 @@
     font-size: 1.55rem;
     text-align: left;
   }
-
-  }
+}
 
 /* laptops and big tablets - 1024px - 1200px */
 @media only screen and (max-width: 1200px) {
@@ -382,7 +381,6 @@
   .family-trips-card {
     padding: 1.5rem 0;
   }
- 
 }
 
 /* tablets 768px - 1023px */
@@ -404,7 +402,13 @@
   .multiday-trips-section {
     padding: 3rem 4rem;
   }
- 
+  .trips-modal {
+    width: 95%;
+    left: 2.5%;
+    height: 95%;
+    top: 2.5%;
+    padding: 1.5rem;
+  }
 }
 
 /* mobile - phones */
@@ -419,14 +423,6 @@
 
   .multiday-trips-img {
     width: 100%;
-  }
-
-  .trips-modal {
-    width: 95%;
-    left: 2.5%;
-    height: 95%;
-    top: 2.5%;
-    padding: 2rem;
   }
 
   .modal-detail {
@@ -457,10 +453,6 @@
   html,
   body {
     font-size: 7px;
-  }
-
-  .trips-modal {
-    padding: 1.5rem;
   }
 
   .modal-detail ion-icon {
