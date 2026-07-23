@@ -62,7 +62,7 @@
 .nav-button span::after {
   content: "";
   position: absolute;
-  background: #f3c623;
+  background: #ead938;
   bottom: -6px;
   left: 0;
   height: 2px;
@@ -76,15 +76,15 @@
 }
 
 .nav-button--contact {
-  background-color: #f3c623;
+  background-color: #f0d11f;
   font-weight: 600;
   border-radius: 25px;
-  padding: 1rem 2.8rem;
+  padding: 1rem 2.8rem !important;
   gap: 0.8rem;
 }
 
 .nav-button--contact:hover {
-  background-color: #eab308;
+  background-color: #f5df52;
 }
 
 .nav-button--contact ion-icon {
@@ -92,16 +92,16 @@
 }
 
 .active-nav-button span {
-  color: #f3c623;
+  color: #f0d11f;
 }
 .active-nav-button div {
-  color: #f3c623;
+  color: #f0d11f;
 }
 
 .active-nav-button span::after {
   content: "";
   position: absolute;
-  background: #f3c623;
+  background: #f0d11f;
   bottom: -6px;
   left: 0;
   height: 2px;
@@ -156,8 +156,8 @@
   font-family: "Dancing Script", sans-serif;
   font-size: 8rem;
   transform: rotate(-4deg);
-  text-shadow: 0 2px 8px #000000b5;
   margin-bottom: 1.5rem;
+  text-shadow: 0 0 3px #ffffff8a;
   width: fit-content;
 }
 
@@ -165,9 +165,9 @@
   font-size: 5rem;
   font-weight: 500;
   margin-bottom: 2rem;
-  text-shadow: 0 2px 8px #000000b5;
-  color: #f3c623;
+  color: #f0d11f;
   width: fit-content;
+  text-shadow: 0 0 3px #ffffff8a;
 }
 
 .hero-description {
@@ -187,7 +187,7 @@
 }
 
 .btn {
-  padding: 1.4rem 2rem;
+  padding: 1.2rem 2rem;
   width: 100%;
   font-size: 1.5rem;
   display: inline-flex;
@@ -202,13 +202,14 @@
 }
 
 .btn-primary {
-  background: #f3c623;
+  background: #f0d11f;
   max-width: 28rem;
-  opacity: 0.9;
+  opacity: 0.95;
+  color: #000;
 }
 
 .btn-primary:hover {
-  background: #eab308;
+  background: #385c25;
   transform: scale(1.02);
 }
 
@@ -383,7 +384,7 @@
 
 .additional-info {
   position: absolute;
-  background-color: #f3c623;
+  background-color: #F0D11F;
   z-index: 50;
   padding: 0.5rem 1rem;
   top: 5px;
@@ -768,13 +769,13 @@ ion-icon[name="time"] {
 .faq-home-card-title {
   font-size: 2rem;
   font-weight: 600;
-  padding-bottom: 0.2rem;
+  padding: 0.2rem 0;
   transition: all 0.3s ease;
   border-bottom: 2px solid transparent;
 }
 
 .open {
-  border-bottom: 2px solid #f3c623;
+  border-bottom: 2px solid #F0D11F;
 }
 
 .faq-home-card-arrowicon {
@@ -841,7 +842,7 @@ ion-icon[name="time"] {
 }
 
 .star-rating {
-  color: #f3c623;
+  color: #F0D11F;
   font-size: 3rem;
 }
 
@@ -886,7 +887,7 @@ ion-icon[name="time"] {
 
 .card-star-rating {
   font-size: 2.5rem;
-  color: #f3c623;
+  color: #F0D11F;
   margin-right: 1.1rem;
 }
 
@@ -947,7 +948,7 @@ ion-icon[name="time"] {
   font-size: 1.6rem;
   color: #000;
   border-radius: 15px;
-  background-color: #f3c623;
+  background-color: #F0D11F;
   width: fit-content;
   margin: 2rem auto 0 auto;
   gap: 1rem;
@@ -1106,7 +1107,7 @@ ion-icon[name="logo-google"] {
   height: 5rem;
   border-radius: 50%;
   background: linear-gradient(to bottom, #0e2319, #1d4834);
-  color: #f3c623;
+  color: #F0D11F;
   display: flex;
   align-items: center;
   justify-content: center;

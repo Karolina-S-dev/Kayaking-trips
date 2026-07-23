@@ -24,7 +24,7 @@ const Hero = () => {
         </p>
 
         <div className="hero-buttons flex-row">
-          <a href="/trasy-splywow" className="btn btn-primary navy-blue">
+          <a href="/trasy-splywow" className="btn btn-primary">
             <ion-icon name="newspaper-outline"></ion-icon>
             Zobacz ofertę spływów
           </a>

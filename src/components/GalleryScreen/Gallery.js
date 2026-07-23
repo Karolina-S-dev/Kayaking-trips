@@ -28,7 +28,7 @@ const Gallery = () => {
         >
           <path
             d="M2 6 Q10 2 18 6 T34 6 T50 6 T66 6 T78 6"
-            stroke="#F3C623"
+            stroke="#F0D11F"
             strokeWidth="2.5"
             fill="none"
             strokeLinecap="round"
