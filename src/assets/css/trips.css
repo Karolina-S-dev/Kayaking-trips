@@ -560,7 +560,7 @@ ion-icon[name="compass-outline"] {
   height: 60rem;
   overflow-y: auto;
   overflow-x: hidden;
-  scrollbar-color: #F0D11F #f0f5ef;
+  scrollbar-color: #F0D11F;
   scrollbar-width: thin;
 }
 

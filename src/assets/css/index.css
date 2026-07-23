@@ -157,8 +157,7 @@
   font-size: 8rem;
   transform: rotate(-4deg);
   margin-bottom: 1.5rem;
-  text-shadow: 0 0 3px #ffffff8a;
-  width: fit-content;
+    width: fit-content;
 }
 
 .hero-title {
@@ -167,7 +166,6 @@
   margin-bottom: 2rem;
   color: #f0d11f;
   width: fit-content;
-  text-shadow: 0 0 3px #ffffff8a;
 }
 
 .hero-description {
@@ -384,7 +382,7 @@
 
 .additional-info {
   position: absolute;
-  background-color: #F0D11F;
+  background-color: #f0d11f;
   z-index: 50;
   padding: 0.5rem 1rem;
   top: 5px;
@@ -775,7 +773,7 @@ ion-icon[name="time"] {
 }
 
 .open {
-  border-bottom: 2px solid #F0D11F;
+  border-bottom: 2px solid #f0d11f;
 }
 
 .faq-home-card-arrowicon {
@@ -842,7 +840,7 @@ ion-icon[name="time"] {
 }
 
 .star-rating {
-  color: #F0D11F;
+  color: #f0d11f;
   font-size: 3rem;
 }
 
@@ -887,7 +885,7 @@ ion-icon[name="time"] {
 
 .card-star-rating {
   font-size: 2.5rem;
-  color: #F0D11F;
+  color: #f0d11f;
   margin-right: 1.1rem;
 }
 
@@ -948,7 +946,7 @@ ion-icon[name="time"] {
   font-size: 1.6rem;
   color: #000;
   border-radius: 15px;
-  background-color: #F0D11F;
+  background-color: #f0d11f;
   width: fit-content;
   margin: 2rem auto 0 auto;
   gap: 1rem;
@@ -1107,7 +1105,7 @@ ion-icon[name="logo-google"] {
   height: 5rem;
   border-radius: 50%;
   background: linear-gradient(to bottom, #0e2319, #1d4834);
-  color: #F0D11F;
+  color: #f0d11f;
   display: flex;
   align-items: center;
   justify-content: center;
