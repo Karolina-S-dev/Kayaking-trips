@@ -360,9 +360,11 @@
   }
 
   .trips-modal {
-    width: 80%;
-    left: 10%;
-    padding: 3rem 4rem;
+    height: 80%;
+    top: 10%;
+    width: 90%;
+    left: 5%;
+    padding: 3rem;
   }
 }
 
@@ -387,13 +389,7 @@
   .family-trips-card {
     padding: 1.5rem 0;
   }
-
-  .trips-modal {
-    height: 80%;
-    top: 10%;
-    width: 90%;
-    left: 5%;
-  }
+ 
 }
 
 /* tablets 768px - 1023px */
