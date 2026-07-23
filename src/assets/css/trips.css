@@ -355,8 +355,8 @@
 .trips-modal {
   width: 90%;
   left: 5%;
-  height: 80%;
-  top: 10%;
+  height: 90%;
+  top: 5%;
   background-color: #fcfcfc;
   position: fixed;
     z-index: 10;
