@@ -18,7 +18,7 @@ const Gallery = () => {
       <section className="gallery-section flex-col">
         <p className="gallery-label green">GALERIA</p>
         <p className="gallery-title dark-grey">
-          Zobacz piękno rzek, którymi pływamy i atmosferę naszych spływów.
+          Zobacz piękno rzek, którymi pływamy i atmosferę naszych spływów
         </p>
         <svg
           width="90"

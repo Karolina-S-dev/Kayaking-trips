@@ -4,12 +4,11 @@ import FaqBanner from "./FaqBanner";
 const FaqList = () => {
   return (
     <>
-    
       <section className="faq-list flex-col">
         <p className="faq-label green">FAQ</p>
         <p className="faq-title">
           Znajdź odpowiedzi na najczęściej zadawane pytania dotyczące
-          rezerwacji, przebiegu spływu i organizacji.
+          rezerwacji, przebiegu spływu i organizacji
         </p>
         <svg
           width="85"
@@ -30,7 +29,6 @@ const FaqList = () => {
           <FaqBanner item={item} key={index} />
         ))}
       </section>
-   
     </>
   );
 };
