@@ -21,7 +21,7 @@
 }
 
 .header-logo {
-  max-width: 9rem;
+  max-width: 10rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
   transition: all 0.4s ease;
@@ -147,7 +147,7 @@
 
 .hero-content {
   z-index: 800;
-  padding: 2rem 0 1rem 13rem;
+  padding: 2rem 0 9rem 13rem;
   justify-content: flex-start;
   height: 100%;
 }

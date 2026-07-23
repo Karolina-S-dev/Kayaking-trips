@@ -85,6 +85,10 @@
     font-size: 9px !important;
   }
 
+  .nav-button {
+    font-size: 1.3rem;
+  }
+
   .about-us-photo-col {
     flex: 0 0 55%;
   }
