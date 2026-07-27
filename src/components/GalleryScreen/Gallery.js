@@ -8,6 +8,7 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import { Thumbnails, Zoom } from "yet-another-react-lightbox/plugins";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
+import { Link } from "react-router-dom";
 
 const Gallery = () => {
   const [open, setOpen] = useState(false);
@@ -76,9 +77,9 @@ const Gallery = () => {
               </p>
             </div>
           </div>
-          <a href="/kontakt" className="share-button white flex-row">
+          <Link to="/kontakt" className="share-button white flex-row">
             WYŚLIJ ZDJĘCIA
-          </a>
+          </Link>
         </div>
       </section>
     </>

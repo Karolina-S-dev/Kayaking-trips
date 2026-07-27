@@ -500,9 +500,6 @@
 
   .modal-detail {
     align-items: flex-start;
-  }
-
-  .modal-detail {
     padding: 0.6rem;
   }
 }
@@ -546,10 +543,6 @@
   html,
   body {
     font-size: 8px !important;
-  }
-
-  .onrequest-hero {
-    min-height: 50%;
   }
 
   .onrequest-routes-content {

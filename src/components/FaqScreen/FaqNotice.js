@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import shallowRiver from "../../assets/img/shallow-river.jpg";
 
 
@@ -21,10 +22,10 @@ const FaqNotice = () => {
             wszystkie pytania.
           </p>
 
-          <a href="/kontakt" className="faq-notice-button flex-row">
+          <Link to="/kontakt" className="faq-notice-button flex-row">
             Skontaktuj się z nami
             <ion-icon name="arrow-forward-outline"></ion-icon>
-          </a>
+          </Link>
         </div>
         <div className="faq-notice-photo">
           <img src={shallowRiver} alt="" />

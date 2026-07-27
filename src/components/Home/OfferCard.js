@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const OfferCard = ({trip}) => {
   return (
     <>
@@ -35,9 +37,9 @@ const OfferCard = ({trip}) => {
         </div>
         <div className="flex-row card-footer">
           <p className="navy-blue offer-card-longness">{trip.longness}</p>
-          <a href={trip.link} className="card-button white">
+          <Link to={trip.link} className="card-button white">
             {trip.ctaText}
-          </a>
+          </Link>
         </div>
       </div>
     </div>

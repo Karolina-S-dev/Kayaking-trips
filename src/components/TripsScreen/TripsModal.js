@@ -1,11 +1,11 @@
-
+import { createPortal } from "react-dom";
 
 const TripsModal = ({ isModalOpen, setIsModalOpen, item, multiDayTrips }) => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
 
-  return (
+  return createPortal(
     <>
       {isModalOpen ? (
         <div className="modal-overlay" onClick={handleCloseModal}>
@@ -13,14 +13,18 @@ const TripsModal = ({ isModalOpen, setIsModalOpen, item, multiDayTrips }) => {
             className={`trips-modal ${multiDayTrips ? "multiday-trips-modal" : ""}`}
             onClick={(e) => e.stopPropagation()}
           >
-            <div onClick={handleCloseModal}>
-              <ion-icon name="close-outline"></ion-icon>
-            </div>
-            <div>
+            <div className="flex-row">
               <div className="flex-row modal-badge">
                 {item.icon}
                 <p>{item.type}</p>
               </div>
+              <ion-icon
+                onClick={handleCloseModal}
+                name="close-outline"
+              ></ion-icon>
+            </div>
+
+            <div>
               <p className="modal-title">{item.name}</p>
               <p className="modal-recommended">
                 Polecana dla: {item.recommendedFor}
@@ -103,7 +107,8 @@ const TripsModal = ({ isModalOpen, setIsModalOpen, item, multiDayTrips }) => {
           </div>
         </div>
       ) : null}
-    </>
+    </>,
+    document.body,
   );
 };
 

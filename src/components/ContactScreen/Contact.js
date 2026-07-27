@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Location from "./Location";
 import Reservation from "./Reservation";
 
@@ -109,7 +110,7 @@ const Contact = () => {
               <input type="checkbox" id="privacy" name="privacy" required />
               <label htmlFor="privacy">
                 Zapoznałem(-am) się z &nbsp;
-                <a href="/polityka-prywatnosci">Polityką Prywatności</a>
+                <Link to="/polityka-prywatnosci">Polityką Prywatności</Link>
                 &nbsp; i wyrażam zgodę na przetwarzanie moich danych osobowych w
                 celu udzielenia odpowiedzi na przesłane zapytanie.
               </label>

@@ -1,5 +1,5 @@
 //GOOGLEREVIEWS component pictures
-import userPawel from "../../assets/img/GoogleReviews/userPaweł.png";
+import userPawel from "../../assets/img/GoogleReviews/userPawel.png";
 import userMagdalena from "../../assets/img/GoogleReviews/userMagdalena.png";
 import userTomaszC from "../../assets/img/GoogleReviews/userTomaszC.png";
 import userJuliannaB from "../../assets/img/GoogleReviews/userJuliannaB.png";

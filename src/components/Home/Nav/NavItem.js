@@ -1,12 +1,11 @@
-import { useNavigate } from "react-router-dom";
-import { usePageContext } from "../../../context/pageContext";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const NavItem = ({ route, isMobile, text, type, icon }) => {
-  const { activePage } = usePageContext();
+
+const NavItem = ({ route, isMobile, text, type, icon = null }) => {
   const navigate = useNavigate();
 
-  //albo tak albo mozna location = useLocation()
-  // const is Active = location.pathname === route
+  const location = useLocation();
+  const isActive = location.pathname === route;
 
   const redirect = () => {
     navigate(route);
@@ -34,7 +33,7 @@ const NavItem = ({ route, isMobile, text, type, icon }) => {
           {type === "common" ? (
             <button
               onClick={redirect}
-              className={`nav-button ${activePage === route ? "active-nav-button" : ""}`}
+              className={`nav-button ${isActive ? "active-nav-button" : ""}`}
             >
               <div className="mobile-icon white">{icon}</div>
               <span className="white">{text}</span>
@@ -59,7 +58,7 @@ const NavItem = ({ route, isMobile, text, type, icon }) => {
           {type === "common" ? (
             <button
               onClick={redirect}
-              className={`nav-button ${activePage === route ? "active-nav-button" : ""}`}
+              className={`nav-button ${isActive ? "active-nav-button" : ""}`}
             >
               <span className="white">{text}</span>
             </button>

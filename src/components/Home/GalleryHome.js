@@ -4,6 +4,7 @@ import galleryPhoto14 from "../../assets/img/gallery/gallery-photo-14.png";
 import galleryPhoto1 from "../../assets/img/gallery/gallery-photo-1.png";
 import galleryPhoto9 from "../../assets/img/gallery/gallery-photo-9.png";
 import galleryPhoto25 from "../../assets/img/gallery/gallery-photo-25.png";
+import { Link } from "react-router-dom";
 
 const GalleryHome = () => {
   return (
@@ -63,10 +64,10 @@ const GalleryHome = () => {
             />
           </div>
         </div>
-        <a href="/galeria" className="gallery-home-button flex-row">
+        <Link to="/galeria" className="gallery-home-button flex-row">
           Zobacz więcej zdjęć
           <ion-icon name="arrow-forward-outline"></ion-icon>
-        </a>
+        </Link>
       </section>
     </>
   );

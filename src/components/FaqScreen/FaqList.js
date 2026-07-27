@@ -26,7 +26,7 @@ const FaqList = () => {
         </svg>
 
         {faqContentData.map((item, index) => (
-          <FaqBanner item={item} key={index} />
+          <FaqBanner item={item} key={item.id} />
         ))}
       </section>
     </>

@@ -246,12 +246,12 @@
 }
 
 .background-red {
-  background-color:#f6d7d7 ;
+  background-color: #f6d7d7;
   min-width: 9rem;
 }
 
 .background-yellow {
-  background-color:#f9f4c3;
+  background-color: #f9f4c3;
   min-width: 9rem;
 }
 
@@ -380,11 +380,8 @@
 
 ion-icon[name="close-outline"] {
   font-size: 3rem;
-  padding: 1rem;
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
   cursor: pointer;
+  margin-left: auto;
 }
 
 .modal-badge {

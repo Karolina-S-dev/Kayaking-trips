@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import googleLogo from "../../assets/icons/google-icon-logo-svgrepo-com.svg";
 import GoogleEmblaCarousel from "./GoogleEmblaCarousel";
 
@@ -48,10 +49,10 @@ const GoogleReviews = () => {
         </div>
         <GoogleEmblaCarousel />
 
-        <a href="/kontakt" className="reviews-home-button flex-row">
+        <Link to="/kontakt" className="reviews-home-button flex-row">
           Zarezerwuj swój spływ
           <ion-icon name="arrow-forward-outline"></ion-icon>
-        </a>
+        </Link>
       </section>
     </>
   );

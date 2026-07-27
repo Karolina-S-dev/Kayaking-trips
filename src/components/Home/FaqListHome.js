@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { faqHomeData } from "../../utils/HomeScreen/faqHomeUtils";
 import FaqCardHome from "./FaqCardHome";
 
@@ -21,10 +22,10 @@ const FaqListHome = () => {
           <FaqCardHome card={card} key={index} />
         ))}
 
-        <a href="/faq" className="faq-home-button flex-row">
+        <Link to="/faq" className="faq-home-button flex-row">
           Zobacz pełne FAQ
           <ion-icon name="arrow-forward-outline"></ion-icon>
-        </a>
+        </Link>
       </section>
     </>
   );

@@ -15,7 +15,7 @@ const PageProvider = ({ children }) => {
 const usePageContext = () => {
   const context = useContext(PageContext);
   if (!context) {
-    throw new Error("usePageContext must be used within TaskProvider");
+    throw new Error("usePageContext must be used within PageProvider");
   }
   return context;
 };

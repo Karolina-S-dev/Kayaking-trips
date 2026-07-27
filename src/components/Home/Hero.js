@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import kayakingMovie from "../../assets/movies/movie_kayaking.mp4";
 import Header from "./Header";
 
@@ -24,10 +25,10 @@ const Hero = () => {
         </p>
 
         <div className="hero-buttons flex-row">
-          <a href="/trasy-splywow" className="btn btn-primary">
+          <Link to="/trasy-splywow" className="btn btn-primary">
             <ion-icon name="newspaper-outline"></ion-icon>
             Zobacz ofertę spływów
-          </a>
+          </Link>
           <a href="tel:+48794003304" className="btn btn-secondary white">
             <ion-icon name="call"></ion-icon>
             Zadzwoń

@@ -12,10 +12,12 @@ const Header = () => {
 
   return (
     <>
-      <MobileNav isMobileNavOpen={isMobileNavOpen}/>
+      <MobileNav isMobileNavOpen={isMobileNavOpen} />
       <DesktopNav isMobileNavOpen={isMobileNavOpen} />
       <button onClick={handleMobileNavOpen} className="hamburger-button white">
-        <ion-icon name={isMobileNavOpen? "close-outline":"menu-outline"}></ion-icon>
+        <ion-icon
+          name={isMobileNavOpen ? "close-outline" : "menu-outline"}
+        ></ion-icon>
       </button>
     </>
   );

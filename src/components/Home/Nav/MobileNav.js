@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import companyLogo from "../../../assets/img/company-logo.png";
 import NavItem from "./NavItem";
 
@@ -13,13 +13,13 @@ const MobileNav = ({ isMobileNavOpen }) => {
           <div
             className={`header-section-mobile flex-col ${!isHome ? "header-subpage" : ""} `}
           >
-            <a href="/">
+            <Link to="/">
               <img
                 className="header-logo-mobile"
                 src={companyLogo}
                 alt="Company Logo"
               />
-            </a>
+            </Link>
             <nav>
               <ul className="nav-links-mobile flex-col">
                 <li>
