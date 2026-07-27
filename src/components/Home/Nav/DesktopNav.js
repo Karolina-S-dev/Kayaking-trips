@@ -2,10 +2,21 @@ import { Link, useLocation } from "react-router-dom";
 import companyLogo from "../../../assets/img/company-logo.png";
 import NavItem from "./NavItem";
 import { navUtils } from "../../../utils/HomeScreen/navUtils";
+import { motion } from "motion/react";
 
 const DesktopNav = ({ isMobileNavOpen }) => {
   const location = useLocation();
   const isHome = location.pathname === "/";
+
+  const navLinks = (
+    <ul className="nav-links flex-row">
+      {navUtils.map((util) => (
+        <li key={util.route}>
+          <NavItem util={util} isMobile={false} />
+        </li>
+      ))}
+    </ul>
+  );
 
   return (
     <>
@@ -20,15 +31,17 @@ const DesktopNav = ({ isMobileNavOpen }) => {
           />
         </Link>
 
-        <nav>
-          <ul className="nav-links flex-row">
-            {navUtils.map((util, index) => (
-              <li key={util.route}>
-                <NavItem util={util} isMobile={false} />
-              </li>
-            ))}
-          </ul>
-        </nav>
+        {isHome ? (
+          <motion.nav
+            initial={{ transform: "translateY(-100px)" }}
+            animate={{ transform: "translateY(0px)" }}
+            transition={{ duration: 0.8 }}
+          >
+            {navLinks}
+          </motion.nav>
+        ) : (
+          <nav>{navLinks}</nav>
+        )}
       </div>
     </>
   );

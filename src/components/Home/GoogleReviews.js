@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom";
 import googleLogo from "../../assets/icons/google-icon-logo-svgrepo-com.svg";
 import GoogleEmblaCarousel from "./GoogleEmblaCarousel";
+import { motion } from "motion/react";
 
 const GoogleReviews = () => {
   return (
     <>
-      <section className="reviews-home-section flex-col">
+      <motion.section
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1.5 }}
+        className="reviews-home-section flex-col"
+      >
         <p className="green reviews-home-label">Opinie klientów</p>
         <p className="reviews-home-title">Co mówią o nas uczestnicy?</p>
         <svg
@@ -53,7 +60,7 @@ const GoogleReviews = () => {
           Zarezerwuj swój spływ
           <ion-icon name="arrow-forward-outline"></ion-icon>
         </Link>
-      </section>
+      </motion.section>
     </>
   );
 };

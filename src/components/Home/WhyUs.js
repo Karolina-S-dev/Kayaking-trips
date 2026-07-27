@@ -1,11 +1,18 @@
 import { whyUsData } from "../../utils/HomeScreen/whyUsUtils";
 import canoe1person from "../../assets/icons/canoe1person.png";
 import canoe2people from "../../assets/icons/canoe2people.png";
+import { motion } from "motion/react";
 
 const WhyUs = () => {
   return (
     <>
-      <section className="why-us-section">
+      <motion.section
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1.5 }}
+        className="why-us-section"
+      >
         <div className="flex-row why-us-row">
           <div className="flex-col why-us-cards">
             <p className="green why-us-label">
@@ -45,7 +52,7 @@ const WhyUs = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

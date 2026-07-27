@@ -7,7 +7,7 @@ const TripsModal = ({ isModalOpen, setIsModalOpen, item, multiDayTrips }) => {
 
   return createPortal(
     <>
-      {isModalOpen ? (
+      {isModalOpen && (
         <div className="modal-overlay" onClick={handleCloseModal}>
           <div
             className={`trips-modal ${multiDayTrips ? "multiday-trips-modal" : ""}`}
@@ -106,7 +106,7 @@ const TripsModal = ({ isModalOpen, setIsModalOpen, item, multiDayTrips }) => {
             </div>
           </div>
         </div>
-      ) : null}
+      )}
     </>,
     document.body,
   );

@@ -1,10 +1,17 @@
 import { offerTrips } from "../../utils/HomeScreen/offerTripsUtils";
 import OfferCard from "./OfferCard";
+import { motion } from "motion/react";
 
 const OfferList = () => {
   return (
     <>
-      <section className="offer-section flex-col">
+      <motion.section
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1.5 }}
+        className="offer-section flex-col"
+      >
         <p className="green offer-label">Oferta</p>
         <p className="navy-blue offer-title">Nasze spływy</p>
         <svg
@@ -26,7 +33,7 @@ const OfferList = () => {
             <OfferCard trip={trip} key={index} />
           ))}
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

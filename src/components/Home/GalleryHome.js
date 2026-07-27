@@ -5,11 +5,18 @@ import galleryPhoto1 from "../../assets/img/gallery/gallery-photo-1.png";
 import galleryPhoto9 from "../../assets/img/gallery/gallery-photo-9.png";
 import galleryPhoto25 from "../../assets/img/gallery/gallery-photo-25.png";
 import { Link } from "react-router-dom";
+import { motion } from "motion/react";
 
 const GalleryHome = () => {
   return (
     <>
-      <section className="gallery-home-section flex-col">
+      <motion.section
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1.5 }}
+        className="gallery-home-section flex-col"
+      >
         <p className="green gallery-home-label">Galeria</p>
         <p className="dark-grey gallery-home-title">
           Kadry z naszych spływów, ognisk i najpiękniejszych zakątków Nidy
@@ -68,7 +75,7 @@ const GalleryHome = () => {
           Zobacz więcej zdjęć
           <ion-icon name="arrow-forward-outline"></ion-icon>
         </Link>
-      </section>
+      </motion.section>
     </>
   );
 };
