@@ -17,7 +17,7 @@ const TripCard = ({ item, multiDayTrips }) => {
               <ion-icon name="location-outline"></ion-icon>
               <p>{item.distance}</p>
             </div>
-            <div className="flex-row family-trips-card-info background-blue">
+            <div className={`flex-row family-trips-card-info background-blue ${multiDayTrips && "small-width"}`}>
               <ion-icon name="time-outline"></ion-icon>
               <p>{item.duration}</p>
             </div>
@@ -42,7 +42,7 @@ const TripCard = ({ item, multiDayTrips }) => {
           </button>
         ) : (
           <button className="family-trips-button-disabled flex-row mid-grey">
-            Skontaktuj się z nami, aby poznać szczegóły wyprawy.
+            Skontaktuj się z nami, aby poznać szczegóły
           </button>
         )}
       </div>

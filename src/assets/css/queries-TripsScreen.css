@@ -191,6 +191,22 @@
   .family-trips-section {
     padding: 3rem 4rem;
   }
+  .family-trips-card-name {
+    font-size: 2rem !important;
+  }
+
+  .family-trips-card-button {
+    font-size: 1.5rem;
+  }
+  .family-trips-button-disabled {
+    font-size: 1.35rem;
+  }
+  .family-trips-card-info p {
+    font-size: 1.4rem;
+  }
+  .family-trips-card {
+    padding: 2rem 0 !important;
+  }
 }
 
 /* mobile - phones */
@@ -224,21 +240,23 @@
     border-right: none;
     padding: 0.7rem 3.5rem;
     border-radius: 50%;
-    background-color: #eef;
+    background-color: #eeeceb;
   }
 
   .family-trips-card-name {
     margin-bottom: 1rem;
+    font-size: 2.2rem !important;
   }
 
   .family-trips-card-button {
-    margin-top: 1rem;
+    margin-top: 1.8rem;
   }
   .family-trips-button-disabled {
     margin-top: 1rem;
   }
   .family-trips-card-info p {
     font-weight: 600;
+    font-size: 1.5rem;
   }
 }
 

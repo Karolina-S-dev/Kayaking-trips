@@ -225,34 +225,40 @@
   border-radius: 20px;
   justify-content: center;
   width: fit-content;
-  background-color: #155c3b;
   margin-right: 1rem;
   font-weight: 550;
 }
 
 .background-grey {
-  background-color: #f4f0e2;
+  background-color: #e9e8e7;
   min-width: 11rem;
 }
 
 .background-blue {
-  background-color: #f4f0e2;
+  background-color: #e9e8e7;
   min-width: 12rem;
 }
 
+.small-width {
+  min-width: 7rem;
+}
+
 .background-green {
-  background-color: #e1f4e0;
+  background-color: #ddefd8;
   min-width: 10rem;
+  color: #356645;
 }
 
 .background-red {
-  background-color: #f6d7d7;
+  background-color: #efd7d3;
+  color: #7a3e37;
   min-width: 9rem;
 }
 
 .background-yellow {
-  background-color: #f9f4c3;
+  background: #f4e9bf;
   min-width: 9rem;
+  color: #7b6640;
 }
 
 .family-trips-card-info:last-child {
@@ -276,8 +282,8 @@
 }
 
 .family-trips-card-button {
-  width: 15rem;
-  align-items: flex-end;
+  width: fit-content;
+  height: fit-content;
   font-size: 1.35rem;
   transition: transform 0.4s ease;
   font-weight: 600;
@@ -286,6 +292,10 @@
   background-color: transparent;
   gap: 0.5rem;
   margin-left: auto;
+  margin-top: auto;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  padding-right: 8px;
 }
 
 .family-trips-card-button:hover {

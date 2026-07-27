@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import companyLogo from "../../../assets/img/company-logo.png";
 import NavItem from "./NavItem";
+import { navUtils } from "../../../utils/HomeScreen/navUtils";
 
 const DesktopNav = ({ isMobileNavOpen }) => {
   const location = useLocation();
@@ -21,55 +22,11 @@ const DesktopNav = ({ isMobileNavOpen }) => {
 
         <nav>
           <ul className="nav-links flex-row">
-            <li>
-              <NavItem
-                text={"Strona główna"}
-                route={"/"}
-                type={"common"}
-                isMobile={false}
-              />
-            </li>
-            <li>
-              <NavItem
-                text={"Trasy spływów"}
-                route={"/trasy-splywow"}
-                type={"common"}
-                isMobile={false}
-              />
-            </li>
-            <li>
-              <NavItem
-                text={"Galeria"}
-                route={"/galeria"}
-                type={"common"}
-                isMobile={false}
-              />
-            </li>
-            <li>
-              <NavItem
-                text={"FAQ"}
-                route={"/faq"}
-                type={"common"}
-                isMobile={false}
-              />
-            </li>
-            <li>
-              <NavItem
-                text={"PL | ENG"}
-                route={""}
-                type={"common"}
-                isMobile={false}
-              />
-            </li>
-
-            <li>
-              <NavItem
-                text={"Kontakt"}
-                route={"/kontakt"}
-                type={"contact"}
-                isMobile={false}
-              />
-            </li>
+            {navUtils.map((util, index) => (
+              <li key={util.route}>
+                <NavItem util={util} isMobile={false} />
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
