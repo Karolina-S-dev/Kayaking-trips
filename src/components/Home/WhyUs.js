@@ -9,7 +9,7 @@ const WhyUs = () => {
       <motion.section
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 1.5 }}
         className="why-us-section"
       >

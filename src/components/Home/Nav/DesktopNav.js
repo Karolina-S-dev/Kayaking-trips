@@ -33,8 +33,8 @@ const DesktopNav = ({ isMobileNavOpen }) => {
 
         {isHome ? (
           <motion.nav
-            initial={{ transform: "translateY(-100px)" }}
-            animate={{ transform: "translateY(0px)" }}
+            initial={{ y:-50 }}
+            animate={{ y:0 }}
             transition={{ duration: 0.8 }}
           >
             {navLinks}
