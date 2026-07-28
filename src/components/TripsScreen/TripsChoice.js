@@ -1,7 +1,5 @@
-import familyKayaking from "../../assets/img/family-kayaking.png";
-import oneDayKayaking from "../../assets/img/one-day-kayaking.png";
-import longKayaking from "../../assets/img/long-kayaking.png";
-import wislaKayaking from "../../assets/img/wisla-kayaking.png";
+import { tripcChoiceUtils } from "../../utils/TripsScreen/tripsChoiceUtils";
+import { motion } from "motion/react";
 
 const TripsChoice = () => {
   return (
@@ -29,46 +27,23 @@ const TripsChoice = () => {
         </svg>
 
         <div className="flex-row trips-choice-cards">
-          <a
-            href="/trasy-splywow/splywy-rodzinne"
-            className="trips-choice-card"
-          >
-            <img src={familyKayaking} alt="Spływ rodzinny" />
-            <div className="choice-card-text white">
-              <p className="choice-card-title ">Rodzinny</p>
-              <p className="choice-card-duration">2h - 4h</p>
-            </div>{" "}
-          </a>
-          <a
-            href="/trasy-splywow/splywy-jednodniowe"
-            className="trips-choice-card"
-          >
-            <img src={oneDayKayaking} alt="Spływ jednodniowy" />
-            <div className="choice-card-text white">
-              <p className="choice-card-title">Jednodniowy</p>
-              <p className="choice-card-duration">4h - 8h</p>
-            </div>
-          </a>
-          <a
-            href="/trasy-splywow/splywy-kilkudniowe"
-            className="trips-choice-card"
-          >
-            <img src={longKayaking} alt="Spływ 2-3 dniowy" />
-            <div className="choice-card-text white">
-              <p className="choice-card-title">Kilkudniowy</p>
-              <p className="choice-card-duration">2 - 3 dni</p>
-            </div>
-          </a>
-          <a
-            href="/trasy-splywow/splywy-na-zyczenie"
-            className="trips-choice-card"
-          >
-            <img src={wislaKayaking} alt="Spływ tygodniowy" />
-            <div className="choice-card-text white">
-              <p className="choice-card-title">Na życzenie</p>
-              <p className="choice-card-duration">do 7 dni</p>
-            </div>
-          </a>
+          {tripcChoiceUtils.map((choice, index) => (
+            <motion.a
+              href={choice.route}
+              key={index}
+              className="trips-choice-card"
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              <img src={choice.img} alt={choice.alt} />
+
+              <div className="choice-card-text white">
+                <p className="choice-card-title ">{choice.title}</p>
+                <p className="choice-card-duration">{choice.duration}</p>
+              </div>
+            </motion.a>
+          ))}
         </div>
       </section>
     </>

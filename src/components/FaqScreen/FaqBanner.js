@@ -7,7 +7,7 @@ const FaqBanner = ({ item }) => {
   return (
     <>
       <div
-        className={`flex-col faq-banner-and-content ${isFaqBannerOpen ? "faq-banner-and-content-open" : ""}`}
+       className={`flex-col faq-banner-and-content ${isFaqBannerOpen ? "faq-banner-and-content-open" : ""}`}
       >
         <div
           onClick={() => {
@@ -32,10 +32,11 @@ const FaqBanner = ({ item }) => {
           className={`flex-col faq-content ${isFaqBannerOpen ? "faq-content-open" : ""}`}
         >
           <div className="faq-content-inner">
-          {item.questions.map((question, index) => (
-            <FaqQuestion question={question} key={index} />
-          ))}
-        </div></div>
+            {item.questions.map((question, index) => (
+              <FaqQuestion question={question} key={index} />
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );

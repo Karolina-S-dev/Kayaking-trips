@@ -14,7 +14,7 @@ const GalleryHome = () => {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 1, ease: "easeOut"  }}
         className="gallery-home-section flex-col"
       >
         <p className="green gallery-home-label">Galeria</p>

@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import companyLogo from "../../../assets/img/company-logo.png";
 import NavItem from "./NavItem";
 import { navUtils } from "../../../utils/HomeScreen/navUtils";
+import { AnimatePresence, motion } from "motion/react";
 
 const MobileNav = ({ isMobileNavOpen }) => {
   const location = useLocation();
@@ -9,31 +10,37 @@ const MobileNav = ({ isMobileNavOpen }) => {
 
   return (
     <>
-      {isMobileNavOpen ? (
-        <div className="header-mobile-wrapper">
-          <div
-            className={`header-section-mobile flex-col ${!isHome ? "header-subpage" : ""} `}
-          >
-            <Link to="/">
-              <img
-                className="header-logo-mobile"
-                src={companyLogo}
-                alt="Company Logo"
-              />
-            </Link>
+      <AnimatePresence>
+        {isMobileNavOpen && (
+          <div className="header-mobile-wrapper">
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%"}}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              className={`header-section-mobile flex-col ${!isHome ? "header-subpage" : ""} `}
+            >
+              <Link to="/">
+                <img
+                  className="header-logo-mobile"
+                  src={companyLogo}
+                  alt="Company Logo"
+                />
+              </Link>
 
-            <nav>
-              <ul className="nav-links-mobile flex-col">
-                {navUtils.map((util, index) => (
-                  <li key={util.route}>
-                    <NavItem util={util} isMobile={true} />
-                  </li>
-                ))}
-              </ul>
-            </nav>
+              <nav>
+                <ul className="nav-links-mobile flex-col">
+                  {navUtils.map((util, index) => (
+                    <li key={util.route}>
+                      <NavItem util={util} isMobile={true} />
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </motion.div>
           </div>
-        </div>
-      ) : null}
+        )}
+      </AnimatePresence>
     </>
   );
 };

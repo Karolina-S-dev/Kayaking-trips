@@ -8,7 +8,7 @@ const AboutUs = () => {
         <motion.div
           initial={{ y: 50 }}
           animate={{ y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, ease: "easeOut"  }}
           className="about-us-text-col"
         >
           <p className="green about-us-label">O nas</p>

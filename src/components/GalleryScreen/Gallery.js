@@ -9,6 +9,7 @@ import "yet-another-react-lightbox/plugins/counter.css";
 import { Thumbnails, Zoom } from "yet-another-react-lightbox/plugins";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import { Link } from "react-router-dom";
+import { motion } from "motion/react";
 
 const Gallery = () => {
   const [open, setOpen] = useState(false);
@@ -16,7 +17,12 @@ const Gallery = () => {
 
   return (
     <>
-      <section className="gallery-section flex-col">
+      <motion.section
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="gallery-section flex-col"
+      >
         <p className="gallery-label green">GALERIA</p>
         <p className="gallery-title dark-grey">
           Zobacz piękno rzek, którymi pływamy i atmosferę naszych spływów
@@ -81,7 +87,7 @@ const Gallery = () => {
             WYŚLIJ ZDJĘCIA
           </Link>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

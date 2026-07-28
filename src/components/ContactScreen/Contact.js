@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Location from "./Location";
 import Reservation from "./Reservation";
+import { motion } from "motion/react";
 
 const Contact = () => {
   return (
@@ -44,7 +45,15 @@ const Contact = () => {
           </div>
 
           {/* ------ FORM ------ */}
-          <form className="form-contact-us-main flex-col box-shadow">
+          <motion.form
+            initial={{ opacity: 0, x: 10 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.6,
+              ease: "easeout",
+            }}
+            className="form-contact-us-main flex-col box-shadow"
+          >
             <div className="form-header flex-col">
               <ion-icon name="paper-plane-outline"></ion-icon>
               <p className="form-title">Napisz do nas</p>
@@ -119,7 +128,7 @@ const Contact = () => {
               <ion-icon name="paper-plane-outline"></ion-icon>
               Wyślij wiadomość
             </button>
-          </form>
+          </motion.form>
         </div>
       </main>
     </>
