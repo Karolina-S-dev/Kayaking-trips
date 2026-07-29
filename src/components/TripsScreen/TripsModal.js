@@ -1,10 +1,25 @@
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "motion/react";
+import { useEffect } from "react";
 
 const TripsModal = ({ isModalOpen, setIsModalOpen, item, multiDayTrips }) => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
+
+  // modal closure on Esc
+  useEffect(() => {
+    if (!isModalOpen) return;
+    const handleCloseEsc = (event) => {
+      if (event.key === "Escape") {
+        setIsModalOpen(false);
+      }
+    };
+    document.addEventListener("keydown", handleCloseEsc);
+    return () => {
+      document.removeEventListener("keydown", handleCloseEsc);
+    };
+  }, [isModalOpen]);
 
   return createPortal(
     <>

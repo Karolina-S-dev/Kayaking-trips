@@ -79,7 +79,7 @@
   background-color: #f0d11f;
   font-weight: 600;
   border-radius: 25px;
-  padding: 1rem 2.8rem !important;
+  padding: 0.95rem 2.8rem !important;
   gap: 0.8rem;
   font-size: 1.45rem !important;
 }
@@ -90,6 +90,10 @@
 
 .nav-button--contact ion-icon {
   font-size: 2.2rem;
+}
+
+.nav-button--contact span::after {
+  display: none;
 }
 
 .active-nav-button span {

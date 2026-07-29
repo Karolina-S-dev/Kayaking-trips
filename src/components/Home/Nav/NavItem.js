@@ -15,7 +15,7 @@ const NavItem = ({ isMobile, util }) => {
       {util.type === "contact" && (
         <button
           onClick={redirect}
-          className={`nav-button nav-button--contact navy-blue `}
+          className={`nav-button nav-button--contact navy-blue ${isActive && "active-contact-nav-button"} `}
         >
           <div>
             <ion-icon
