@@ -27,14 +27,22 @@ const navUtils = [
     isMobile: false,
     icon: <ion-icon name="help-circle-outline"></ion-icon>,
   },
+
+  { text: "Kontakt", route: "/kontakt", type: "contact", isMobile: false },
   {
-    text: "PL | ENG",
+    text: "PL",
     route: "",
-    type: "common",
+    type: "languagePl",
     isMobile: false,
     icon: <ion-icon name="globe-outline"></ion-icon>,
   },
-  { text: "Kontakt", route: "/kontakt", type: "contact", isMobile: false },
+  {
+    text: "ENG",
+    route: "",
+    type: "languageEng",
+    isMobile: false,
+    icon: <ion-icon name="globe-outline"></ion-icon>,
+  },
 ];
 
 export { navUtils };

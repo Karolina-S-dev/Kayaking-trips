@@ -37,7 +37,7 @@
 }
 
 .nav-button {
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 2rem;
   font-size: 1.4rem;
   display: inline-flex;
   justify-content: center;
@@ -81,7 +81,7 @@
   border-radius: 25px;
   padding: 1rem 2.8rem !important;
   gap: 0.8rem;
-  font-size: 1.5rem !important;
+  font-size: 1.45rem !important;
 }
 
 .nav-button--contact:hover {
@@ -109,6 +109,29 @@
   width: 100%;
   opacity: 1;
   transition: all 0.5s ease;
+}
+
+.language-pl {
+  margin: 1.5rem 0 1.5rem 3rem;
+  padding: 0 1rem 0 0;
+  border-right: 1px solid #fff;
+  transition: transform 0.2s ease;
+}
+
+.language-pl:hover,
+.language-eng:hover {
+  transform: scale(1.07);
+}
+
+.language-eng {
+  margin: 1.5rem 0 1.5rem 1rem;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.language-pl:hover span::after,
+.language-eng:hover span::after {
+  display: none !important;
 }
 
 /* --------------------------- */

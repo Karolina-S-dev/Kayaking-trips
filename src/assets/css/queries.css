@@ -140,7 +140,7 @@
     max-width: 10rem;
   }
 
-   .hero-content {
+  .hero-content {
     padding: 2rem 0 1rem 3rem;
   }
 
@@ -259,7 +259,7 @@
   }
 
   .header-section-mobile {
-    padding: 5rem;
+    padding: 4rem 5rem;
     justify-content: space-between;
     right: 0;
     top: 0;
@@ -301,17 +301,41 @@
     justify-content: flex-start;
     padding: 2rem 1.6rem;
   }
+  .nav-button span {
+    margin-bottom: 4px;
+  }
 
   .nav-button--contact {
     padding: 1.5rem 4rem;
     width: 100%;
     justify-content: center;
     font-size: 2.1rem !important;
-    margin-top: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
   }
   .contact-mobile-icon {
     font-size: 3rem !important;
   }
+
+  .language-pl,
+  .language-eng {
+    margin: 0;
+    padding: 0.8rem 1rem;
+    border-right: none;
+    transition: none;
+    border-bottom: none;
+    font-size: 1.9rem !important;
+    font-weight: 600;
+    opacity: 0.6 !important;
+  }
+
+  .language-pl:hover,
+  .language-eng:hover {
+    transform: none;
+  }
+
+ ion-icon[name="globe-outline"] {
+  font-size: 2.5rem !important};
 
   .header-logo-hidden {
     opacity: 0;
@@ -418,7 +442,7 @@
     flex: 0 0 calc(33% - 0.7rem);
     height: fit-content;
   }
-  
+
   .faq-home-section {
     padding: 3rem;
     max-width: 100%;

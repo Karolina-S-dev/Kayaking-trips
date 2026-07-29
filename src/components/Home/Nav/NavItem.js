@@ -37,6 +37,19 @@ const NavItem = ({ isMobile, util }) => {
           <span className="white">{util.text}</span>
         </button>
       )}
+
+      {util.type === "languagePl" && (
+        <button onClick={redirect} className="nav-button language-pl">
+          {isMobile && <div className="mobile-icon white">{util.icon}</div>}
+          <span className="white">{util.text}</span>
+        </button>
+      )}
+      {util.type === "languageEng" && (
+        <button onClick={redirect} className="nav-button language-eng">
+          {isMobile && <div className="mobile-icon white">{util.icon}</div>}
+          <span className="white">{util.text}</span>
+        </button>
+      )}
     </>
   );
 };

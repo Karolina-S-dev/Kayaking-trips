@@ -33,7 +33,7 @@ const FaqList = () => {
           </svg>
         </motion.div>
 
-        {faqContentData.map((item, index) => (
+        {faqContentData.map((item,index) => (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -42,8 +42,9 @@ const FaqList = () => {
               delay: index * 0.2,
               ease: "easeOut",
             }}
+            key={item.id}
           >
-            <FaqBanner item={item} key={item.id} />
+            <FaqBanner item={item} />
           </motion.div>
         ))}
       </section>
