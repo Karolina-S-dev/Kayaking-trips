@@ -67,7 +67,7 @@ const Gallery = () => {
               className={`gallery-content-img ${photo.className} `}
             >
               <img src={photo.img} alt={photo.alt} />
-              <ion-icon name="scan-outline"></ion-icon>
+              <ion-icon name="search"></ion-icon>
             </div>
           ))}
         </div>

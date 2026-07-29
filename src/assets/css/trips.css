@@ -808,8 +808,8 @@ ion-icon[name="compass-outline"] {
 
 .onrequest-button {
   padding: 1.5rem 2.6rem;
-  border-radius: 8px;
-  background-color: #1b4130;
+  border-radius: 15px;
+  background-color: #1f4d3a;
   letter-spacing: 0.5px;
   border: none;
   cursor: pointer;
@@ -823,8 +823,8 @@ ion-icon[name="compass-outline"] {
 }
 
 .onrequest-button:hover {
-  transform: translateY(-2px);
-  background-color: #22523c;
+  transform: scale(1.01);
+  background-color: #265b45;
 }
 
 .onrequest-cta-title {

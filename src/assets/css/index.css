@@ -664,7 +664,6 @@ ion-icon[name="time"] {
 .gallery-home-button {
   padding: 0.8rem 2.2rem;
   font-size: 1.6rem;
-  border: 1px solid #23a757;
   border-radius: 15px;
   background-color: #1f4d3a;
   width: fit-content;
@@ -725,7 +724,6 @@ ion-icon[name="time"] {
 .faq-home-button {
   padding: 0.8rem 2.2rem;
   font-size: 1.6rem;
-  border: 1px solid #23a757;
   border-radius: 15px;
   background-color: #1f4d3a;
   width: fit-content;

@@ -39,11 +39,11 @@
   cursor: pointer;
 }
 
-.gallery-content-img:hover ion-icon[name="scan-outline"] {
+.gallery-content-img:hover ion-icon[name="search"] {
   opacity: 1;
 }
 
-ion-icon[name="scan-outline"] {
+ion-icon[name="search"] {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
@@ -105,7 +105,7 @@ ion-icon[name="scan-outline"] {
 
 .share-button {
   padding: 1.1rem 2rem;
-  border-radius: 8px;
+  border-radius: 15px;
   background-color: #1b4130;
   letter-spacing: 0.5px;
   border: none;
@@ -116,6 +116,12 @@ ion-icon[name="scan-outline"] {
   margin-left: 2rem;
   text-align: center;
   align-items: center;
+  transition: transform 0.4s ease;
+}
+
+.share-button:hover {
+  transform: scale(1.01);
+  background-color: #265b45;
 }
 
 /* ----- YET ANOTHER REACT LIGHTBOX -----  */
