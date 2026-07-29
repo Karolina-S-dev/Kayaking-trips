@@ -4,7 +4,7 @@ import NavItem from "./NavItem";
 import { navUtils } from "../../../utils/HomeScreen/navUtils";
 import { AnimatePresence, motion } from "motion/react";
 
-const MobileNav = ({ isMobileNavOpen }) => {
+const MobileNav = ({ isMobileNavOpen, setIsMobileNavOpen }) => {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
@@ -12,13 +12,17 @@ const MobileNav = ({ isMobileNavOpen }) => {
     <>
       <AnimatePresence>
         {isMobileNavOpen && (
-          <div className="header-mobile-wrapper">
+          <div
+            className="header-mobile-wrapper"
+            onClick={() => setIsMobileNavOpen(false)}
+          >
             <motion.div
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
-              exit={{ x: "100%"}}
+              exit={{ x: "100%" }}
               transition={{ duration: 0.5, ease: "easeOut" }}
               className={`header-section-mobile flex-col ${!isHome ? "header-subpage" : ""} `}
+              onClick={(e) => e.stopPropagation()}
             >
               <Link to="/">
                 <img
