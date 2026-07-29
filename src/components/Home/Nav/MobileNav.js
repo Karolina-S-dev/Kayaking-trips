@@ -3,10 +3,20 @@ import companyLogo from "../../../assets/img/company-logo.png";
 import NavItem from "./NavItem";
 import { navUtils } from "../../../utils/HomeScreen/navUtils";
 import { AnimatePresence, motion } from "motion/react";
+import { useEffect } from "react";
 
 const MobileNav = ({ isMobileNavOpen, setIsMobileNavOpen }) => {
   const location = useLocation();
   const isHome = location.pathname === "/";
+
+
+  // body scroll blockade when mobile nav is open
+  useEffect(() => {
+    document.body.style.overflow = isMobileNavOpen ? "hidden" : "auto";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isMobileNavOpen]);
 
   return (
     <>

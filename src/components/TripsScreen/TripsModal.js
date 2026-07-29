@@ -21,6 +21,15 @@ const TripsModal = ({ isModalOpen, setIsModalOpen, item, multiDayTrips }) => {
     };
   }, [isModalOpen]);
 
+  // body scroll blockade when modal is open
+  useEffect(() => {
+    document.body.style.overflow = isModalOpen ? "hidden" : "auto";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isModalOpen]);
+
   return createPortal(
     <>
       <AnimatePresence>
