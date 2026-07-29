@@ -53,7 +53,8 @@ const Contact = () => {
           {/* ------ FORM ------ */}
           <motion.form
             initial={{ opacity: 0, scale: 0.99 }}
-            animate={{ opacity: 1, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{
               duration: 0.6,
               ease: "easeOut",
