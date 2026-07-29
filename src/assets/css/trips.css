@@ -303,8 +303,9 @@
 }
 
 .family-trips-card-button ion-icon {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   color: #f0d11f;
+  margin-bottom: 3px;
 }
 
 .family-trips-info {
@@ -526,7 +527,7 @@ ion-icon[name="compass-outline"] {
 
 .oneday-trips-section {
   margin: 0 auto;
-  padding: 5rem;
+  padding: 5rem 13rem;
 }
 
 .oneday-trips-title {
@@ -540,10 +541,10 @@ ion-icon[name="compass-outline"] {
 .oneday-trips-img {
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: calc(45% - 2.5rem);
+  flex-basis: calc(40% - 2.5rem);
   border-radius: 12px;
   overflow: hidden;
-  max-height: 63rem;
+  max-height: 58rem;
 }
 
 .oneday-trips-img img {
@@ -562,13 +563,13 @@ ion-icon[name="compass-outline"] {
   padding: 1rem;
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: calc(55% - 2.5rem);
+  flex-basis: calc(60% - 2.5rem);
+  max-height: 60rem;
 }
 
 .oneday-trips-cards {
   margin-top: 1rem;
   gap: 0;
-  height: 60rem;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-color: #f0d11f;

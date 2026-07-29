@@ -32,8 +32,8 @@ const TripsChoice = () => {
               href={choice.route}
               key={index}
               className="trips-choice-card"
-              initial={{ opacity: 0, y: 10, scale:0.99}}
-              whileInView={{ opacity: 1, y: 0, scale:1 }}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               <img src={choice.img} alt={choice.alt} />

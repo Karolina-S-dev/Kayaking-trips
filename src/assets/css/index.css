@@ -210,8 +210,8 @@
 }
 
 .btn-primary:hover {
-  background: #385c25;
-  transform: scale(1.02);
+  background-color: #f5df52;
+  transform: scale(1.015);
 }
 
 .btn-secondary {
@@ -963,8 +963,8 @@ ion-icon[name="time"] {
 }
 
 .reviews-home-button:hover {
-  transform: scale(1.01);
-  background-color: #edbc2b;
+  transform: scale(1.015);
+  background-color: #f5df52;
 }
 /* --------------------------- */
 /* ---------- FOOTER --------- */

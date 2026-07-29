@@ -3,11 +3,18 @@ import sobkowCastle from "../../assets/img/Sobkow-castle.png";
 import { familyTripsDesc } from "../../utils/TripsScreen/tripsScreenUtils__family";
 import TripCard from "./TripCard";
 import KayakingIconGreen from "../../assets/icons/kayaking-icon-green.png";
+import { motion } from "motion/react";
 
 const FamilyTrips = () => {
   return (
     <>
-      <section className="family-trips-section flex-col">
+      <motion.section
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.5 }}
+        className="family-trips-section flex-col"
+      >
         <p className="family-trips-label">Trasy spływów rodzinnych</p>
 
         <p className="family-trips-title dark-grey">
@@ -31,7 +38,7 @@ const FamilyTrips = () => {
         </svg>
         <div className="flex-row family-trips-row">
           <div className="family-trips-img box-shadow">
-            <img src={familyTrips} alt="Mapa tras spływów rodzinnych"  />
+            <img src={familyTrips} alt="Mapa tras spływów rodzinnych" />
           </div>
           <div className="flex-col routes-content">
             <div className="flex-row routes-header">
@@ -73,7 +80,7 @@ const FamilyTrips = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

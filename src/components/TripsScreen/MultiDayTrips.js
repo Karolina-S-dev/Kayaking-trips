@@ -1,11 +1,17 @@
 import longTrips from "../../assets/img/long-trips.jpeg";
 import { multiDayTripsDesc } from "../../utils/TripsScreen/tripsScreenUtils__multiday";
 import TripCard from "./TripCard";
+import { motion } from "motion/react";
 
 const MultiDayTrips = () => {
   return (
     <>
-      <section className="multiday-trips-section flex-col">
+      <motion.section 
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5 }}
+      className="multiday-trips-section flex-col">
         <p className="family-trips-label">Trasy spływów kilkudniowych</p>
 
         <p className="multiday-trips-title dark-grey">
@@ -49,7 +55,7 @@ const MultiDayTrips = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

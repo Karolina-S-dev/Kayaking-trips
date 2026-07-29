@@ -1,10 +1,17 @@
 import { oneDayTripsDesc } from "../../utils/TripsScreen/tripsScreenUtils__oneday";
 import oneDayTrips from "../../assets/img/onedaytrips.jpeg";
 import TripCard from "./TripCard";
+import { motion } from "motion/react";
 
 const OneDayTrips = () => {
   return (
-    <section className="oneday-trips-section flex-col">
+    <motion.section
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5 }}
+      className="oneday-trips-section flex-col"
+    >
       <p className="family-trips-label">Trasy spływów jednodniowych</p>
 
       <p className="oneday-trips-title dark-grey">
@@ -52,7 +59,7 @@ const OneDayTrips = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

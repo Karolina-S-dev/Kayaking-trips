@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
 import shallowRiver from "../../assets/img/shallow-river.jpg";
-
+import { motion } from "motion/react";
 
 const FaqNotice = () => {
   return (
     <>
-      <div className="faq-notice flex-row">
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="faq-notice flex-row"
+      >
         <div className="flex-col faq-notice-left">
           <p className="faq-notice-title white">Nie znalazłeś odpowiedzi?</p>
           <svg width="90" height="12" viewBox="0 0 70 10" className="wave ">
@@ -30,7 +35,7 @@ const FaqNotice = () => {
         <div className="faq-notice-photo">
           <img src={shallowRiver} alt="" />
         </div>
-         </div>
+      </motion.div>
     </>
   );
 };

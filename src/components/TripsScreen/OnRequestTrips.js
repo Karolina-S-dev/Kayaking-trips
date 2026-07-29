@@ -1,12 +1,19 @@
 import { Link } from "react-router-dom";
 import goldCanoe from "../../assets/icons/gold-canoe.png";
 import { onRequestTripsDesc } from "../../utils/TripsScreen/tripsScreenUtils_onrequest";
+import { motion } from "motion/react";
 
 const OnRequestTrips = () => {
   return (
     <>
       <section className="onrequest-hero flex-col">
-        <div className="flex-col onrequest-routes-content white">
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5 }}
+          className="flex-col onrequest-routes-content white"
+        >
           <p className="onrequest-trips-subtitle">Dłuższe wyprawy kajakowe</p>
           <svg
             width="90"
@@ -45,10 +52,16 @@ const OnRequestTrips = () => {
               telefonicznego.
             </p>
           </div>
-        </div>
+        </motion.div>
       </section>
 
-      <section className="onrequest-trips-section">
+      <motion.section
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.5 }}
+        className="onrequest-trips-section"
+      >
         <p className="onrequest-description-label dark-grey">
           Co organizujemy?
         </p>
@@ -89,7 +102,7 @@ const OnRequestTrips = () => {
             ZAPLANUJ SWOJĄ WYPRAWĘ
           </Link>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

@@ -7,7 +7,7 @@ const TripsHero = () => {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <p className="trips-hero-label white">Trasy spływów kajakowych</p>
           <p className="trips-hero-title white">

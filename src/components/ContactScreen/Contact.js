@@ -6,7 +6,13 @@ import { motion } from "motion/react";
 const Contact = () => {
   return (
     <>
-      <main className="contact-section">
+      <motion.section
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.5 }}
+        className="contact-section"
+      >
         <div className="flex-row contact-main-row">
           {/* ----- LEFT-COLUMN ----- */}
           <div className="flex-col contact-text-column">
@@ -46,10 +52,11 @@ const Contact = () => {
 
           {/* ------ FORM ------ */}
           <motion.form
-            initial={{ opacity: 0, scale: 0.98 }}
+            initial={{ opacity: 0, scale: 0.99 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               duration: 0.6,
+              ease: "easeOut",
             }}
             className="form-contact-us-main flex-col box-shadow"
           >
@@ -129,7 +136,7 @@ const Contact = () => {
             </button>
           </motion.form>
         </div>
-      </main>
+      </motion.section>
     </>
   );
 };
