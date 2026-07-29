@@ -46,11 +46,10 @@ const Contact = () => {
 
           {/* ------ FORM ------ */}
           <motion.form
-            initial={{ opacity: 0, x: 10 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, scale: 0.98 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{
               duration: 0.6,
-              ease: "easeout",
             }}
             className="form-contact-us-main flex-col box-shadow"
           >

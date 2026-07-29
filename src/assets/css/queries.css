@@ -333,7 +333,7 @@
   /*------------------------------------*/
 
   .hero-section {
-    min-height: 77rem;
+    min-height: 71em;
   }
 
   .hero-title-dancing-script {
@@ -341,7 +341,7 @@
   }
 
   .hero-content {
-    padding: 9rem 2rem;
+    padding: 5rem 2rem;
   }
   .hero-wave svg {
     height: 90px;
