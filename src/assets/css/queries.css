@@ -8,7 +8,7 @@
   }
 
   .nav-button--contact {
-    padding: 1rem 2.2rem;
+    padding: 0.95rem 2.2rem !important;
   }
 
   .about-us-section {
@@ -319,8 +319,9 @@
 
   .language-pl,
   .language-eng {
-    margin: 0;
-    padding: 0.8rem 1rem;
+    margin: 0 !important;
+    margin-left: 6px !important;
+    padding: 0.8rem 1rem !important;
     border-right: none;
     transition: none;
     border-bottom: none;
@@ -334,8 +335,9 @@
     transform: none;
   }
 
- ion-icon[name="globe-outline"] {
-  font-size: 2.5rem !important};
+  ion-icon[name="globe-outline"] {
+    font-size: 2.5rem !important;
+  }
 
   .header-logo-hidden {
     opacity: 0;

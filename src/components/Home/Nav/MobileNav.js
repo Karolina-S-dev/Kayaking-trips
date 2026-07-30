@@ -45,7 +45,7 @@ const MobileNav = ({ isMobileNavOpen, setIsMobileNavOpen }) => {
               <nav>
                 <ul className="nav-links-mobile flex-col">
                   {navUtils.map((util, index) => (
-                    <li key={util.route}>
+                    <li key={index}>
                       <NavItem util={util} isMobile={true} />
                     </li>
                   ))}

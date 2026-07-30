@@ -10,8 +10,8 @@ const DesktopNav = ({ isMobileNavOpen }) => {
 
   const navLinks = (
     <ul className="nav-links flex-row">
-      {navUtils.map((util) => (
-        <li key={util.route}>
+      {navUtils.map((util, index) => (
+        <li key={index}>
           <NavItem util={util} isMobile={false} />
         </li>
       ))}

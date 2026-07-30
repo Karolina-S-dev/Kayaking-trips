@@ -19,7 +19,7 @@ const TripsModal = ({ isModalOpen, setIsModalOpen, item, multiDayTrips }) => {
     return () => {
       document.removeEventListener("keydown", handleCloseEsc);
     };
-  }, [isModalOpen]);
+  }, [isModalOpen, setIsModalOpen]);
 
   // body scroll blockade when modal is open
   useEffect(() => {
