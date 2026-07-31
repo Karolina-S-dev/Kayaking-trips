@@ -10,6 +10,8 @@ The application was built with a reusable component architecture, making it easy
 
 **Project Status:** The frontend is functionally complete. The remaining work includes bilingual support (Polish / English), backend integration for the contact form and production deployment.
 
+**Live Demo:** https://kayaking-trips-eight.vercel.app/
+
 ## Preview
 
 ### Home Page
@@ -149,6 +151,15 @@ This project helped me strengthen my frontend development skills by:
 - Embla Carousel
 - Yet Another React Lightbox
 
+### Version Control
+
+- Git
+- GitHub
+
+### Deployment
+
+- Vercel
+
 ## React Concepts Applied
 
 - Functional Components
@@ -170,13 +181,6 @@ This project helped me strengthen my frontend development skills by:
 - Add Polish / English language switch
 - Integrate the contact form with a backend service
 - Deploy the production version
-
-## Performance
-
-The website was optimized for performance, accessibility, SEO and best practices.
-Google Lighthouse scores ranged from 89 to 96 across the website pages.
-
-![Lighthouse Report](./screenshots/LighthouseReport.png)
 
 ---
 
