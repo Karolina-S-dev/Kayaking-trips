@@ -48,7 +48,7 @@ const MultiDayTrips = () => {
               {multiDayTripsDesc.map((item, index) => {
                 return (
                   <div key={index}>
-                    <TripCard item={item} multiDayTrips={true} />
+                    <TripCard item={item} isMultiDayTrips={true} />
                   </div>
                 );
               })}

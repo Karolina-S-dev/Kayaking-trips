@@ -72,7 +72,7 @@ const OnRequestTrips = () => {
 
         <div className="flex-row onrequest-cards">
           {onRequestTripsDesc.map((item) => (
-            <div className="onrequest-card-wrapper">
+            <div className="onrequest-card-wrapper" key={item.id}>
               <div
                 key={item.id}
                 className={`onrequest-card flex-col ${item.className}`}

@@ -52,7 +52,7 @@ const OneDayTrips = () => {
             {oneDayTripsDesc.map((item, index) => {
               return (
                 <div key={index}>
-                  <TripCard item={item} multiDayTrips={false} />
+                  <TripCard item={item} isMultiDayTrips={false} />
                 </div>
               );
             })}

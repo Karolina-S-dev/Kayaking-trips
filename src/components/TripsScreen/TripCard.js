@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TripsModal from "./TripsModal";
 
-const TripCard = ({ item, multiDayTrips }) => {
+const TripCard = ({ item, isMultiDayTrips }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -13,11 +13,11 @@ const TripCard = ({ item, multiDayTrips }) => {
         <div className="flex-col family-trips-card-main-col flex-col">
           <p className="family-trips-card-name">{item.name}</p>
           <div className="flex-row family-card-specifics">
-            <div className="flex-row family-trips-card-info background-grey">
+            <div className="flex-row family-trips-card-info background-distance">
               <ion-icon name="location-outline"></ion-icon>
               <p>{item.distance}</p>
             </div>
-            <div className={`flex-row family-trips-card-info background-blue ${multiDayTrips && "small-width"}`}>
+            <div className={`flex-row family-trips-card-info background-duration ${isMultiDayTrips && "small-width"}`}>
               <ion-icon name="time-outline"></ion-icon>
               <p>{item.duration}</p>
             </div>
@@ -51,7 +51,7 @@ const TripCard = ({ item, multiDayTrips }) => {
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}
         item={item}
-        multiDayTrips={multiDayTrips}
+        isMultiDayTrips={isMultiDayTrips}
       />
     </>
   );

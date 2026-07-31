@@ -1,70 +1,185 @@
-# Getting Started with Create React App
+# Kayaking Trips Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive web application developed for a kayaking company offering a variety of canoe trips on the Nida River in Poland.
 
-## Available Scripts
+The project was created from scratch based on the client's business requirements. After gathering information during the initial consultation, I designed the website structure and user interface, then implemented the complete frontend using React.
 
-In the project directory, you can run:
+The application was built with a reusable component architecture, making it easy to manage content, add new routes and maintain the project as it grows.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Project Status:** The frontend is functionally complete. The remaining work includes bilingual support (Polish / English), backend integration for the contact form and production deployment.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Preview
 
-### `npm test`
+### Home Page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Home Page](./screenshots/HomePage.png)
 
-### `npm run build`
+### Routes Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Routes Page](./screenshots/RoutesPage.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### MultidayTrips Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![MultidayTrips Page](./screenshots/MultiDayTripsPage.png)
 
-### `npm run eject`
+### OnRequestTrips Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![OnRequestTrips Page](./screenshots/OnRequestTripsPage.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Trip Details
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Trip Details](./screenshots/TripDetails.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Gallery Page
 
-## Learn More
+![Gallery Page](./screenshots/GalleryPage.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Faq Page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Faq Page](./screenshots/FaqPage.png)
 
-### Code Splitting
+### Contact Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Contact Page](./screenshots/ContactPage.png)
 
-### Analyzing the Bundle Size
+### Mobile Nav
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Mobile Nav](./screenshots/MobileNav.png)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## My Responsibilities
 
-### Advanced Configuration
+I was responsible for the complete frontend implementation of the website, including:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Gathering business requirements during the initial client meeting
+- Designing the website layout and user interface
+- Planning the application architecture
+- Building reusable React components
+- Implementing client-side routing with React Router
+- Managing shared navigation state with Context API and a custom hook
+- Developing responsive layouts for desktop, tablet and mobile devices
+- Creating interactive UI elements, including galleries, modals and navigation
+- Creating smooth page and component animations using Motion
+- Styling the application using CSS
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Key Features
 
-### `npm run build` fails to minify
+- Responsive multi-page React application
+- Family, one-day, multi-day and custom trip presentations
+- Interactive kayaking route cards with detailed modal windows
+- Image gallery with Lightbox preview, zoom, thumbnails and image counter
+- Responsive Google Reviews carousel with navigation controls and pagination
+- Responsive desktop navigation and animated mobile menu with scroll locking
+- Contact form with frontend validation and required privacy consent
+- Smooth UI animations using Motion
+- Optimized images for improved loading performance
+- Privacy Policy page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Challenges & Solutions
+
+### Designing without a ready-made design
+
+The client provided business information, photos and descriptions, but no visual design. I planned the page structure and designed the entire frontend from scratch to create a modern and user-friendly experience.
+
+### Managing different route types
+
+Each kayaking route contains different information such as duration, distance, difficulty level, attractions, warnings and multi-day descriptions. I designed a reusable data structure and component architecture capable of rendering different route variants without duplicating code.
+
+### Building reusable React components
+
+Instead of creating separate components for each route, I built reusable components driven by data. This makes the application easier to maintain and allows new routes to be added with minimal code changes.
+
+### Creating a responsive user interface
+
+The interface was designed to work consistently across desktop, tablet and mobile devices, including dedicated mobile navigation and layouts optimized for different screen sizes.
+
+---
+
+## What I Learned
+
+This project helped me strengthen my frontend development skills by:
+
+- Translating business requirements into a complete React application
+- Designing a reusable and scalable component architecture
+- Managing application state with Context API
+- Working with React Router
+- Building reusable UI components driven by data
+- Organizing and structuring larger React projects
+- Improving responsive design techniques
+- Integrating third-party React libraries
+- Strengthening my debugging and problem-solving skills while working on a real client project
+
+---
+
+## Tech Stack
+
+### Frontend
+
+- React
+- JavaScript (ES6+)
+- CSS3
+
+### Styling & Responsive Design
+
+- Flexbox
+- CSS Grid
+- Media Queries
+
+### Routing
+
+- React Router
+
+### State Management
+
+- Context API
+
+### Animations
+
+- Motion
+
+### UI Components & Libraries
+
+- Embla Carousel
+- Yet Another React Lightbox
+
+## React Concepts Applied
+
+- Functional Components
+- useState
+- useEffect
+- Context API
+- Custom Context Hook
+- Props
+- Component Composition
+- Conditional Rendering
+- Dynamic Rendering with Array.map()
+- Client-side Routing
+- React Portals
+
+---
+
+## Future Improvements
+
+- Add Polish / English language switch
+- Integrate the contact form with a backend service
+- Deploy the production version
+
+## Performance
+
+The website was optimized for performance, accessibility, SEO and best practices.
+Google Lighthouse scores ranged from 89 to 96 across the website pages.
+
+![Lighthouse Report](./screenshots/LighthouseReport.png)
+
+---
+
+## Author
+
+Designed and developed by Karolina Szary

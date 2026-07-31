@@ -12,7 +12,10 @@ const Header = () => {
 
   return (
     <>
-      <MobileNav isMobileNavOpen={isMobileNavOpen} setIsMobileNavOpen={setIsMobileNavOpen} />
+      <MobileNav
+        isMobileNavOpen={isMobileNavOpen}
+        setIsMobileNavOpen={setIsMobileNavOpen}
+      />
       <DesktopNav isMobileNavOpen={isMobileNavOpen} />
       <button onClick={handleMobileNavOpen} className="hamburger-button white">
         <ion-icon

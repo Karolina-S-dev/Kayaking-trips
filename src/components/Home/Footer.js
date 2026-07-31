@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <section className="footer-section flex-row white">
+      <footer className="footer-section flex-row white">
         <div className="footer-col flex-col">
           <h2 className="footer-title">Gotowy na przygodę?</h2>
           <p className="footer-subtitle">
@@ -53,7 +53,7 @@ const Footer = () => {
             <ion-icon name="logo-facebook"></ion-icon>
           </a>
         </div>
-      </section>
+      </footer>
 
       <section className="footer-bottom">
         <p>
