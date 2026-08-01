@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import shallowRiver from "../../assets/img/shallow-river.jpg";
 import { motion } from "motion/react";
 
@@ -28,10 +27,10 @@ const FaqNotice = () => {
             wszystkie pytania.
           </p>
 
-          <Link to="/kontakt" className="faq-notice-button flex-row">
+          <a href="/kontakt" className="faq-notice-button flex-row">
             Skontaktuj się z nami
             <ion-icon name="arrow-forward-outline"></ion-icon>
-          </Link>
+          </a>
         </div>
         <div className="faq-notice-photo">
           <img src={shallowRiver} alt="" />

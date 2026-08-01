@@ -8,7 +8,6 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import { Thumbnails, Zoom } from "yet-another-react-lightbox/plugins";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 
 const Gallery = () => {
@@ -83,9 +82,9 @@ const Gallery = () => {
               </p>
             </div>
           </div>
-          <Link to="/kontakt" className="share-button white flex-row">
+          <a href="/kontakt" className="share-button white flex-row">
             WYŚLIJ ZDJĘCIA
-          </Link>
+          </a>
         </div>
       </motion.section>
     </>

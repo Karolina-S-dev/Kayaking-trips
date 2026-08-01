@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const Footer = () => {
   return (
     <>
@@ -59,7 +57,7 @@ const Footer = () => {
         <p>
           2026 © Copyright. Spływy Kajakowe u Jakuba.
           <span> | </span>
-          <Link to="/polityka-prywatnosci">Polityka prywatności</Link>
+          <a href="/polityka-prywatnosci">Polityka prywatności</a>
           <span> | </span>Designed & developed by&nbsp;
           <a href="https://www.linkedin.com/in/karolina-s-123bb238b/">
             Karolina Szary

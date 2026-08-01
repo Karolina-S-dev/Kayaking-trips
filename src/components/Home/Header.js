@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <>
+    <header >
       <MobileNav
         isMobileNavOpen={isMobileNavOpen}
         setIsMobileNavOpen={setIsMobileNavOpen}
@@ -22,7 +22,7 @@ const Header = () => {
           name={isMobileNavOpen ? "close-outline" : "menu-outline"}
         ></ion-icon>
       </button>
-    </>
+    </header>
   );
 };
 

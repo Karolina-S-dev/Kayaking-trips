@@ -1,9 +1,17 @@
-import { Link } from "react-router-dom";
 import Location from "./Location";
 import Reservation from "./Reservation";
 import { motion } from "motion/react";
+import { useEffect, useRef } from "react";
 
 const Contact = () => {
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, []);
+
   return (
     <>
       <motion.section
@@ -73,6 +81,7 @@ const Contact = () => {
               <div className="form-group">
                 <label htmlFor="name">Imię i nazwisko</label>
                 <input
+                  ref={inputRef}
                   type="text"
                   placeholder="Wpisz swoje imię i nazwisko"
                   id="name"
@@ -126,7 +135,7 @@ const Contact = () => {
               <input type="checkbox" id="privacy" name="privacy" required />
               <label htmlFor="privacy">
                 Zapoznałem(-am) się z &nbsp;
-                <Link to="/polityka-prywatnosci">Polityką Prywatności</Link>
+                <a href="/polityka-prywatnosci">Polityką Prywatności</a>
                 &nbsp; i wyrażam zgodę na przetwarzanie moich danych osobowych w
                 celu udzielenia odpowiedzi na przesłane zapytanie.
               </label>

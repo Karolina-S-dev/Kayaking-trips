@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import companyLogo from "../../../assets/img/company-logo.png";
 import NavItem from "./NavItem";
 import { navUtils } from "../../../utils/HomeScreen/navUtils";
@@ -8,7 +8,6 @@ import { useEffect } from "react";
 const MobileNav = ({ isMobileNavOpen, setIsMobileNavOpen }) => {
   const location = useLocation();
   const isHome = location.pathname === "/";
-
 
   // body scroll blockade when mobile nav is open
   useEffect(() => {
@@ -34,13 +33,13 @@ const MobileNav = ({ isMobileNavOpen, setIsMobileNavOpen }) => {
               className={`header-section-mobile flex-col ${!isHome ? "header-subpage" : ""} `}
               onClick={(e) => e.stopPropagation()}
             >
-              <Link to="/">
+              <a href="/">
                 <img
                   className="header-logo-mobile"
                   src={companyLogo}
                   alt="Company Logo"
                 />
-              </Link>
+              </a>
 
               <nav>
                 <ul className="nav-links-mobile flex-col">

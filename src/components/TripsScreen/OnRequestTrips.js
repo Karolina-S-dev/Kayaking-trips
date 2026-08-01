@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import goldCanoe from "../../assets/icons/gold-canoe.png";
 import { onRequestTripsDesc } from "../../utils/TripsScreen/tripsScreenUtils_onrequest";
 import { motion } from "motion/react";
@@ -98,9 +97,9 @@ const OnRequestTrips = () => {
             Dobieramy trasę, tempo, noclegi i logistykę tak, aby{" "}
             <strong> wszystko było dopasowane</strong> do Waszych oczekiwań.
           </p>
-          <Link to="/kontakt" className="onrequest-button white flex-row">
+          <a href="/kontakt" className="onrequest-button white flex-row">
             ZAPLANUJ SWOJĄ WYPRAWĘ
-          </Link>
+          </a>
         </div>
       </motion.section>
     </>

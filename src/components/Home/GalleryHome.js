@@ -4,7 +4,6 @@ import galleryPhoto14 from "../../assets/img/gallery/gallery-photo-14.png";
 import galleryPhoto1 from "../../assets/img/gallery/gallery-photo-1.png";
 import galleryPhoto9 from "../../assets/img/gallery/gallery-photo-9.png";
 import galleryPhoto25 from "../../assets/img/gallery/gallery-photo-25.png";
-import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 
 const GalleryHome = () => {
@@ -14,7 +13,7 @@ const GalleryHome = () => {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 1, ease: "easeOut"  }}
+        transition={{ duration: 1, ease: "easeOut" }}
         className="gallery-home-section flex-col"
       >
         <p className="green gallery-home-label">Galeria</p>
@@ -71,10 +70,10 @@ const GalleryHome = () => {
             />
           </div>
         </div>
-        <Link to="/galeria" className="gallery-home-button flex-row">
+        <a href="/galeria" className="gallery-home-button flex-row">
           Zobacz więcej zdjęć
           <ion-icon name="arrow-forward-outline"></ion-icon>
-        </Link>
+        </a>
       </motion.section>
     </>
   );

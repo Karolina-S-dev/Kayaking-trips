@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { faqHomeData } from "../../utils/HomeScreen/faqHomeUtils";
 import FaqCardHome from "./FaqCardHome";
 import { motion } from "motion/react";
@@ -10,7 +9,7 @@ const FaqListHome = () => {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 1, ease: "easeOut"  }}
+        transition={{ duration: 1, ease: "easeOut" }}
         className="faq-home-section flex-col"
       >
         <p className="green faq-home-label">FAQ</p>
@@ -34,10 +33,10 @@ const FaqListHome = () => {
           <FaqCardHome card={card} key={index} />
         ))}
 
-        <Link to="/faq" className="faq-home-button flex-row">
+        <a href="/faq" className="faq-home-button flex-row">
           Zobacz pełne FAQ
           <ion-icon name="arrow-forward-outline"></ion-icon>
-        </Link>
+        </a>
       </motion.section>
     </>
   );

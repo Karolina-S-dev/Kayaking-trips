@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import companyLogo from "../../../assets/img/company-logo.png";
 import NavItem from "./NavItem";
 import { navUtils } from "../../../utils/HomeScreen/navUtils";
@@ -23,13 +23,13 @@ const DesktopNav = ({ isMobileNavOpen }) => {
       <div
         className={`header-section flex-row ${!isHome ? "header-subpage" : ""}`}
       >
-        <Link to="/">
+        <a href="/">
           <img
             className={`header-logo ${isMobileNavOpen ? "header-logo-hidden" : ""}`}
             src={companyLogo}
             alt="Company Logo"
           />
-        </Link>
+        </a>
 
         {isHome ? (
           <motion.nav

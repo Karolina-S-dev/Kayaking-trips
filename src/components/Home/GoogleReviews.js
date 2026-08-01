@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import googleLogo from "../../assets/icons/google-icon-logo-svgrepo-com.svg";
 import GoogleEmblaCarousel from "./GoogleEmblaCarousel";
 import { motion } from "motion/react";
@@ -10,7 +9,7 @@ const GoogleReviews = () => {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 1, ease: "easeOut"  }}
+        transition={{ duration: 1, ease: "easeOut" }}
         className="reviews-home-section flex-col"
       >
         <p className="green reviews-home-label">Opinie klientów</p>
@@ -56,10 +55,10 @@ const GoogleReviews = () => {
         </div>
         <GoogleEmblaCarousel />
 
-        <Link to="/kontakt" className="reviews-home-button flex-row">
+        <a href="/kontakt" className="reviews-home-button flex-row">
           Zarezerwuj swój spływ
           <ion-icon name="arrow-forward-outline"></ion-icon>
-        </Link>
+        </a>
       </motion.section>
     </>
   );

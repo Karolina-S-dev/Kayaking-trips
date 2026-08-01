@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 
 const OfferCard = ({ trip }) => {
@@ -45,9 +44,9 @@ const OfferCard = ({ trip }) => {
           </div>
           <div className="flex-row card-footer">
             <p className="navy-blue offer-card-longness">{trip.longness}</p>
-            <Link to={trip.link} className="card-button white">
+            <a href={trip.link} className="card-button white">
               {trip.ctaText}
-            </Link>
+            </a>
           </div>
         </div>
       </motion.div>

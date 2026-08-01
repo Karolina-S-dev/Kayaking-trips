@@ -7,7 +7,7 @@ const ScrollToTop = () => {
   };
 
   return (
-    <button className="scroll-to-top" onClick={() => scrollToTop()}>
+    <button className="scroll-to-top" onClick={scrollToTop}>
       <ion-icon name="arrow-up-outline"></ion-icon>
     </button>
   );

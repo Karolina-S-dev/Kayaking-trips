@@ -6,6 +6,10 @@
 /* ---------- HEADER --------- */
 /* --------------------------- */
 
+header {
+  z-index: 999;
+}
+
 .header-section {
   padding: 0.5rem 5rem;
   justify-content: space-between;
