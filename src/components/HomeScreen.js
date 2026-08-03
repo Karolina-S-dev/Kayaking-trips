@@ -1,15 +1,14 @@
 import Hero from "./Home/Hero";
-import Footer from "./Home/Footer";
 import AboutUs from "./Home/AboutUs";
 import OfferList from "./Home/OfferList";
 import GalleryHome from "./Home/GalleryHome";
 import Features from "./Home/Features";
 import WhyUs from "./Home/WhyUs";
-import ScrollToTop from "./Home/ScrollToTop";
 import FaqListHome from "./Home/FaqListHome";
 import GoogleReviews from "./Home/GoogleReviews";
 import { usePageContext } from "../context/pageContext";
 import { useEffect } from "react";
+import ScreenWrapper from "./ScreenWrapper";
 
 const HomeScreen = () => {
   const { setActivePage } = usePageContext();
@@ -19,8 +18,7 @@ const HomeScreen = () => {
   }, [setActivePage]);
 
   return (
-    <>
-      <Hero />
+    <ScreenWrapper isHome>
       <AboutUs />
       <Features />
       <OfferList />
@@ -28,9 +26,7 @@ const HomeScreen = () => {
       <GalleryHome />
       <FaqListHome />
       <GoogleReviews />
-      <Footer />
-      <ScrollToTop />
-    </>
+    </ScreenWrapper>
   );
 };
 

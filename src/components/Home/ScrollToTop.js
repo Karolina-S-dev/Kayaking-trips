@@ -1,9 +1,8 @@
-const ScrollToTop = () => {
+const ScrollToTop = ({ headerRef }) => {
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    if (headerRef.current) {
+      headerRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (

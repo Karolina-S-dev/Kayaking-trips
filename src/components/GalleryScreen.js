@@ -4,9 +4,7 @@ import "../assets/css/queries-GalleryScreen.css";
 import { useEffect } from "react";
 import { usePageContext } from "../context/pageContext";
 import Gallery from "./GalleryScreen/Gallery";
-import Footer from "./Home/Footer";
-import Header from "./Home/Header";
-import ScrollToTop from "./Home/ScrollToTop";
+import ScreenWrapper from "./ScreenWrapper";
 
 const GalleryScreen = () => {
   const { setActivePage } = usePageContext();
@@ -16,12 +14,9 @@ const GalleryScreen = () => {
   }, [setActivePage]);
 
   return (
-    <>
-      <Header />
+    <ScreenWrapper>
       <Gallery />
-      <Footer />
-      <ScrollToTop />
-    </>
+    </ScreenWrapper>
   );
 };
 

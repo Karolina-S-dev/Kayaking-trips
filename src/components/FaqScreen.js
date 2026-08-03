@@ -5,9 +5,7 @@ import { useEffect } from "react";
 import { usePageContext } from "../context/pageContext";
 import FaqList from "./FaqScreen/FaqList";
 import FaqNotice from "./FaqScreen/FaqNotice";
-import Footer from "./Home/Footer";
-import Header from "./Home/Header";
-import ScrollToTop from "./Home/ScrollToTop";
+import ScreenWrapper from "./ScreenWrapper";
 
 const FaqScreen = () => {
   const { setActivePage } = usePageContext();
@@ -17,13 +15,10 @@ const FaqScreen = () => {
   }, [setActivePage]);
 
   return (
-    <>
-      <Header />
+    <ScreenWrapper>
       <FaqList />
       <FaqNotice />
-      <Footer />
-      <ScrollToTop />
-    </>
+    </ScreenWrapper>
   );
 };
 

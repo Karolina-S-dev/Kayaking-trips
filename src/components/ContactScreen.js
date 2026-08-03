@@ -1,18 +1,15 @@
 import "../assets/css/contact.css";
 import "../assets/css/queries.css";
 import "../assets/css/queries-ContactScreen.css";
-import Footer from "./Home/Footer";
-import Header from "./Home/Header";
 import Contact from "./ContactScreen/Contact";
-import ScrollToTop from "./Home/ScrollToTop";
+import ScreenWrapper from "./ScreenWrapper";
 
 const ContactScreen = () => {
   return (
     <>
-      <Header />
-      <Contact />
-      <Footer />
-      <ScrollToTop />
+      <ScreenWrapper>
+        <Contact />
+      </ScreenWrapper>
     </>
   );
 };

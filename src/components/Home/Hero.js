@@ -1,10 +1,10 @@
 import kayakingMovie from "../../assets/movies/movie_kayaking.mp4";
 import Header from "./Header";
 
-const Hero = () => {
+const Hero = ({headerRef}) => {
   return (
     <section className="hero-section flex-col white">
-      <Header />
+      <Header headerRef={headerRef}/>
       <video
         src={kayakingMovie}
         autoPlay

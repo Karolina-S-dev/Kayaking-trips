@@ -2,7 +2,7 @@ import MobileNav from "./Nav/MobileNav";
 import DesktopNav from "./Nav/DesktopNav";
 import { useState } from "react";
 
-const Header = () => {
+const Header = ({headerRef}) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   //mobile nav opening
@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header >
+    <header ref={headerRef}>
       <MobileNav
         isMobileNavOpen={isMobileNavOpen}
         setIsMobileNavOpen={setIsMobileNavOpen}
