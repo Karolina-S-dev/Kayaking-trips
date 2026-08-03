@@ -1,4 +1,3 @@
-import Hero from "./Home/Hero";
 import AboutUs from "./Home/AboutUs";
 import OfferList from "./Home/OfferList";
 import GalleryHome from "./Home/GalleryHome";
