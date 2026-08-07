@@ -25,7 +25,9 @@ const FaqQuestion = ({ question }) => {
           ></ion-icon>
         </div>
 
-        <p className={`faq-answer mid-grey ${isFaqAnswearOpen ? "faq-answer-open" : ""}`}>
+        <p
+          className={`faq-answer mid-grey ${isFaqAnswearOpen ? "faq-answer-open" : ""}`}
+        >
           {question.answer}
         </p>
       </div>
