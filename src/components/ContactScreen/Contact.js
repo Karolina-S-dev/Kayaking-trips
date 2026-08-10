@@ -1,14 +1,88 @@
 import Location from "./Location";
 import Reservation from "./Reservation";
 import { motion } from "motion/react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const inputRef = useRef(null);
+  const [isChecked, setIsChecked] = useState(false);
+  const [contactData, setContactData] = useState({
+    from_full_name: "",
+    from_email: "",
+    from_phone: "",
+    from_message: "",
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (contactData.from_full_name === "") {
+      toast.error("Aby wysłać wiadomość, musisz podać imię i nazwisko", {
+        position: "top-center",
+        className: "toast-error",
+      });
+      return;
+    }
+
+    if (contactData.from_email === "") {
+      toast.error("Aby wysłać wiadomość, musisz podać e-mail", {
+        position: "top-center",
+        className: "toast-error",
+      });
+      return;
+    }
+    if (contactData.from_phone === "") {
+      toast.error("Aby wysłać wiadomość, musisz podać numer telefonu", {
+        position: "top-center",
+        className: "toast-error",
+      });
+      return;
+    }
+    if (contactData.from_message === "") {
+      toast.error("Aby wysłać wiadomość, musisz napisać wiadomość", {
+        position: "top-center",
+        className: "toast-error",
+      });
+      return;
+    }
+
+    if (!isChecked) {
+      toast.error("Zaakceptuj politykę prywatności", {
+        position: "top-center",
+        className: "toast-error",
+      });
+      return;
+    }
+
+    console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
+
+    await emailjs.send(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      {
+        ...contactData,
+      },
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+    );
+
+    toast.success("Dziękujemy. Wiadomość została wysłana!", {
+      position: "top-center",
+      className: "toast-success",
+    });
+
+    setContactData({
+      from_full_name: "",
+      from_email: "",
+      from_phone: "",
+      from_message: "",
+    });
+    setIsChecked(false);
+  };
 
   useEffect(() => {
     if (inputRef.current) {
-      inputRef.current.focus();
+      inputRef.current.focus();      
     }
   }, []);
 
@@ -58,7 +132,7 @@ const Contact = () => {
             <Location />
           </div>
 
-          {/* ------ FORM ------ */}
+          {/* -------------------------- FORM ------------------------------ */}
           <motion.form
             initial={{ opacity: 0, scale: 0.99 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -68,6 +142,7 @@ const Contact = () => {
               ease: "easeOut",
             }}
             className="form-contact-us-main flex-col box-shadow"
+            onSubmit={handleSubmit}
           >
             <div className="form-header flex-col">
               <ion-icon name="paper-plane-outline"></ion-icon>
@@ -87,7 +162,13 @@ const Contact = () => {
                   id="name"
                   name="name"
                   autoComplete="name"
-                  required
+                  value={contactData.from_full_name}
+                  onChange={(event) => {
+                    setContactData((prev) => ({
+                      ...prev,
+                      from_full_name: event.target.value,
+                    }));
+                  }}
                 />
               </div>
             </div>
@@ -101,7 +182,13 @@ const Contact = () => {
                   id="email"
                   name="email"
                   autoComplete="email"
-                  required
+                  value={contactData.from_email}
+                  onChange={(event) => {
+                    setContactData((prev) => ({
+                      ...prev,
+                      from_email: event.target.value,
+                    }));
+                  }}
                 />
               </div>
             </div>
@@ -115,7 +202,13 @@ const Contact = () => {
                   id="phone"
                   name="phone"
                   autoComplete="tel"
-                  required
+                  value={contactData.from_phone}
+                  onChange={(event) => {
+                    setContactData((prev) => ({
+                      ...prev,
+                      from_phone: event.target.value,
+                    }));
+                  }}
                 />
               </div>
             </div>
@@ -127,12 +220,24 @@ const Contact = () => {
                   id="message"
                   placeholder="Napisz, w czym możemy Ci pomóc ..."
                   name="message"
-                  required
+                  value={contactData.from_message}
+                  onChange={(event) => {
+                    setContactData((prev) => ({
+                      ...prev,
+                      from_message: event.target.value,
+                    }));
+                  }}
                 ></textarea>
               </div>
             </div>
             <div className="form-checkbox flex-row">
-              <input type="checkbox" id="privacy" name="privacy" required />
+              <input
+                type="checkbox"
+                id="privacy"
+                name="privacy"
+                checked={isChecked}
+                onChange={(e) => setIsChecked(e.target.checked)}
+              />
               <label htmlFor="privacy">
                 Zapoznałem(-am) się z &nbsp;
                 <a href="/polityka-prywatnosci">Polityką Prywatności</a>

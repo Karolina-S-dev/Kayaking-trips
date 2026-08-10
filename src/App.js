@@ -10,33 +10,42 @@ import FamilyTripsScreen from "./components/TripsScreen/FamilyTripsScreen";
 import OneDayTripsScreen from "./components/TripsScreen/OneDayTripsScreen";
 import MultiDayTripsScreen from "./components/TripsScreen/MultiDayTripsScreen";
 import OnRequestTripsScreen from "./components/TripsScreen/OnRequestTripsScreen";
+import { Flip, ToastContainer } from "react-toastify";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomeScreen />} />
-      <Route path="/trasy-splywow" element={<TripsScreen />} />
-      <Route
-        path="/trasy-splywow/splywy-rodzinne"
-        element={<FamilyTripsScreen />}
+    <>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/trasy-splywow" element={<TripsScreen />} />
+        <Route
+          path="/trasy-splywow/splywy-rodzinne"
+          element={<FamilyTripsScreen />}
+        />
+        <Route
+          path="/trasy-splywow/splywy-jednodniowe"
+          element={<OneDayTripsScreen />}
+        />
+        <Route
+          path="/trasy-splywow/splywy-kilkudniowe"
+          element={<MultiDayTripsScreen />}
+        />
+        <Route
+          path="/trasy-splywow/splywy-na-zyczenie"
+          element={<OnRequestTripsScreen />}
+        />
+        <Route path="/galeria" element={<GalleryScreen />} />
+        <Route path="/faq" element={<FaqScreen />} />
+        <Route path="/kontakt" element={<ContactScreen />} />
+        <Route path="/polityka-prywatnosci" element={<PrivacyPolicy />} />
+      </Routes>
+      <ToastContainer
+        toastStyle={{
+          minHeight: "60px",
+        }}
+        transition={Flip}
       />
-      <Route
-        path="/trasy-splywow/splywy-jednodniowe"
-        element={<OneDayTripsScreen />}
-      />
-       <Route
-        path="/trasy-splywow/splywy-kilkudniowe"
-        element={<MultiDayTripsScreen />}
-      />
-      <Route
-        path="/trasy-splywow/splywy-na-zyczenie"
-        element={<OnRequestTripsScreen />}
-      />
-      <Route path="/galeria" element={<GalleryScreen />} />
-      <Route path="/faq" element={<FaqScreen />} />
-      <Route path="/kontakt" element={<ContactScreen />} />
-      <Route path="/polityka-prywatnosci" element={<PrivacyPolicy />} />
-    </Routes>
+    </>
   );
 }
 
