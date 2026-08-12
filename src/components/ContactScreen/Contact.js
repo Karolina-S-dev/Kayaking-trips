@@ -32,6 +32,20 @@ const Contact = () => {
       });
       return;
     }
+
+    //e-mail validation
+    const checkedEmail = contactData.from_email;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailValidation = emailRegex.test(checkedEmail);
+
+    if (!emailValidation) {
+      toast.error("Nieprawidłowy adres e-mail", {
+        position: "top-center",
+        className: "toast-error",
+      });
+      return;
+    }
+
     if (contactData.from_phone === "") {
       toast.error("Aby wysłać wiadomość, musisz podać numer telefonu", {
         position: "top-center",
@@ -39,6 +53,21 @@ const Contact = () => {
       });
       return;
     }
+
+    //phone number validation spaces, and dashes delete
+    const checkedNumber = contactData.from_phone.replace(/[\s-]/g, "");
+    const phoneRegex = /^\d{9}$/;
+    const phoneValidation = phoneRegex.test(checkedNumber);
+
+    console.log(phoneValidation);
+    if (!phoneValidation) {
+      toast.error("Numer telefonu powinien zawierać 9 cyfr", {
+        position: "top-center",
+        className: "toast-error",
+      });
+      return;
+    }
+
     if (contactData.from_message === "") {
       toast.error("Aby wysłać wiadomość, musisz napisać wiadomość", {
         position: "top-center",
@@ -82,7 +111,7 @@ const Contact = () => {
 
   useEffect(() => {
     if (inputRef.current) {
-      inputRef.current.focus();      
+      inputRef.current.focus();
     }
   }, []);
 
@@ -143,6 +172,7 @@ const Contact = () => {
             }}
             className="form-contact-us-main flex-col box-shadow"
             onSubmit={handleSubmit}
+            noValidate
           >
             <div className="form-header flex-col">
               <ion-icon name="paper-plane-outline"></ion-icon>

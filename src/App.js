@@ -44,6 +44,9 @@ function App() {
           minHeight: "60px",
         }}
         transition={Flip}
+        closeOnClick
+        newestOnTop
+        style ={{top:"90px"}}
       />
     </>
   );
