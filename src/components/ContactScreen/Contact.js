@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { reusableUpdateField } from "../../utils/reusableUpdateField";
 
 const Contact = () => {
   const inputRef = useRef(null);
@@ -55,9 +56,9 @@ const Contact = () => {
     }
 
     //phone number validation spaces, and dashes delete
-    const checkedNumber = contactData.from_phone.replace(/[\s-]/g, "");
+    const rawPhoneNumber = contactData.from_phone.replace(/[\s-]/g, "");
     const phoneRegex = /^\d{9}$/;
-    const phoneValidation = phoneRegex.test(checkedNumber);
+    const phoneValidation = phoneRegex.test(rawPhoneNumber);
 
     console.log(phoneValidation);
     if (!phoneValidation) {
@@ -91,6 +92,7 @@ const Contact = () => {
       process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
       {
         ...contactData,
+        from_phone: rawPhoneNumber,
       },
       process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
     );
@@ -114,6 +116,8 @@ const Contact = () => {
       inputRef.current.focus();
     }
   }, []);
+
+  const updateField = reusableUpdateField(setContactData);
 
   return (
     <>
@@ -190,15 +194,12 @@ const Contact = () => {
                   type="text"
                   placeholder="Wpisz swoje imię i nazwisko"
                   id="name"
-                  name="name"
+                  name="from_full_name"
                   autoComplete="name"
                   value={contactData.from_full_name}
-                  onChange={(event) => {
-                    setContactData((prev) => ({
-                      ...prev,
-                      from_full_name: event.target.value,
-                    }));
-                  }}
+                  onChange={(e) =>
+                    updateField("from_full_name", e.target.value)
+                  }
                 />
               </div>
             </div>
@@ -210,15 +211,10 @@ const Contact = () => {
                   type="email"
                   placeholder="Wpisz swój adres e-mail"
                   id="email"
-                  name="email"
+                  name="from_email"
                   autoComplete="email"
                   value={contactData.from_email}
-                  onChange={(event) => {
-                    setContactData((prev) => ({
-                      ...prev,
-                      from_email: event.target.value,
-                    }));
-                  }}
+                  onChange={(e) => updateField("from_email", e.target.value)}
                 />
               </div>
             </div>
@@ -230,15 +226,10 @@ const Contact = () => {
                   type="tel"
                   placeholder="Wpisz swój numer telefonu"
                   id="phone"
-                  name="phone"
+                  name="from_phone"
                   autoComplete="tel"
                   value={contactData.from_phone}
-                  onChange={(event) => {
-                    setContactData((prev) => ({
-                      ...prev,
-                      from_phone: event.target.value,
-                    }));
-                  }}
+                  onChange={(e) => updateField("from_phone", e.target.value)}
                 />
               </div>
             </div>
@@ -249,14 +240,9 @@ const Contact = () => {
                 <textarea
                   id="message"
                   placeholder="Napisz, w czym możemy Ci pomóc ..."
-                  name="message"
+                  name="from_message"
                   value={contactData.from_message}
-                  onChange={(event) => {
-                    setContactData((prev) => ({
-                      ...prev,
-                      from_message: event.target.value,
-                    }));
-                  }}
+                  onChange={(e) => updateField("from_message", e.target.value)}
                 ></textarea>
               </div>
             </div>
