@@ -1,5 +1,3 @@
-import { faqContentData } from "../FaqScreen/faqUtils";
-
 const faqHomeData = [
   {
     question: "faq.booking.question",
