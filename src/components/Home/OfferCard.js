@@ -1,6 +1,8 @@
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 const OfferCard = ({ trip }) => {
+  const { t } = useTranslation();
   return (
     <>
       <motion.div
@@ -16,36 +18,36 @@ const OfferCard = ({ trip }) => {
           {trip.additionalInfo && (
             <div className="additional-info white flex-row">
               <ion-icon name="star"></ion-icon>
-              <p>{trip.additionalInfo}</p>
+              <p>{t(trip.additionalInfo)}</p>
             </div>
           )}
         </div>
         <div className="offer-card-content flex-col">
-          <p className="offer-card-title navy-blue">{trip.title}</p>
+          <p className="offer-card-title navy-blue">{t(trip.title)}</p>
           <div className="content-and-icon flex-row">
             <ion-icon name="time"></ion-icon>
-            <p className="offer-card-duration navy-blue">{trip.duration}</p>
+            <p className="offer-card-duration navy-blue">{t(trip.duration)}</p>
           </div>
           <div className="content-and-icon flex-row">
             <ion-icon name="checkmark-circle-outline"></ion-icon>
-            <p className="dark-grey offer-card-desc">{trip.desc}</p>
+            <p className="dark-grey offer-card-desc">{t(trip.desc)}</p>
           </div>
           <div className="content-and-icon flex-row">
             <ion-icon name="checkmark-circle-outline"></ion-icon>
-            <p className="dark-grey offer-card-feature">{trip.feature}</p>
+            <p className="dark-grey offer-card-feature">{t(trip.feature)}</p>
           </div>
           <div className="content-and-icon flex-row">
             <ion-icon name="checkmark-circle-outline"></ion-icon>
-            <p className="dark-grey offer-card-feature">{trip.feature2}</p>
+            <p className="dark-grey offer-card-feature">{t(trip.feature2)}</p>
           </div>
           <div className="content-and-icon flex-row">
             <ion-icon name="checkmark-circle-outline"></ion-icon>
-            <p className="dark-grey offer-card-feature">{trip.feature3}</p>
+            <p className="dark-grey offer-card-feature">{t(trip.feature3)}</p>
           </div>
           <div className="flex-row card-footer">
             <p className="navy-blue offer-card-longness">{trip.longness}</p>
             <a href={trip.link} className="card-button white">
-              {trip.ctaText}
+              {t(trip.ctaText)}
             </a>
           </div>
         </div>

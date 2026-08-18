@@ -1,19 +1,22 @@
+import { useTranslation } from "react-i18next";
 import riverSunset from "../../assets/img/river-sunset.png";
 import { motion } from "motion/react";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section className="about-us-section flex-row">
         <motion.div
           initial={{ y: 50 }}
           animate={{ y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut"  }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           className="about-us-text-col"
         >
-          <p className="green about-us-label">O nas</p>
+          <p className="green about-us-label">{t("about.label")}</p>
           <p className="navy-blue about-us-title">
-            Pasja do natury <br />i aktywnego wypoczynku
+            {t("about.titleFirst")} <br />
+            {t("about.titleSecond")}
           </p>
           <svg width="85" height="12" viewBox="0 0 70 10" className="wave">
             <path
@@ -25,9 +28,7 @@ const AboutUs = () => {
             />
           </svg>
           <p className="about-us-description dark-grey">
-            Jesteśmy miłośnikami kajaków i przyrody. Od lat organizujemy spływy,
-            które łączą aktywny wypoczynek z bliskością natury. Dbamy o
-            bezpieczeństwo, komfort i dobrą atmosferę.
+            {t("about.description")}
           </p>
         </motion.div>
 

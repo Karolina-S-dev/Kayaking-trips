@@ -11,6 +11,7 @@ import OneDayTripsScreen from "./components/TripsScreen/OneDayTripsScreen";
 import MultiDayTripsScreen from "./components/TripsScreen/MultiDayTripsScreen";
 import OnRequestTripsScreen from "./components/TripsScreen/OnRequestTripsScreen";
 import { Flip, ToastContainer } from "react-toastify";
+import { useTranslation } from "react-i18next";
 
 function App() {
   return (
@@ -46,7 +47,7 @@ function App() {
         transition={Flip}
         closeOnClick
         newestOnTop
-        style ={{top:"90px"}}
+        style={{ top: "90px" }}
       />
     </>
   );

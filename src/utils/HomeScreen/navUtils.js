@@ -1,30 +1,35 @@
 const navUtils = [
   {
-    text: "Strona główna",
+    text: "navbar.home",
     route: "/",
     type: "common",
     icon: <ion-icon name="home-outline"></ion-icon>,
   },
   {
-    text: "Trasy spływów",
+    text: "navbar.routes",
     route: "/trasy-splywow",
     type: "common",
     icon: <ion-icon name="git-branch-outline"></ion-icon>,
   },
   {
-    text: "Galeria",
+    text: "navbar.gallery",
     route: "/galeria",
     type: "common",
     icon: <ion-icon name="image-outline"></ion-icon>,
   },
   {
-    text: "FAQ",
+    text: "navbar.faq",
     route: "/faq",
     type: "common",
     icon: <ion-icon name="help-circle-outline"></ion-icon>,
   },
 
-  { text: "Kontakt", route: "/kontakt", type: "contact", isMobile: false },
+  {
+    text: "navbar.contact",
+    route: "/kontakt",
+    type: "contact",
+    isMobile: false,
+  },
   {
     text: "PL",
     route: "",

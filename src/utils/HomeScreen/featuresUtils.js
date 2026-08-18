@@ -8,32 +8,32 @@ import fireIcon2 from "../../assets/icons/fire-icon2.png";
 const featuresData = [
   {
     id: 1,
-    title: "Bezpieczny sprzęt",
-    desc: "Regularnie kontrolowane kajaki oraz pełne wyposażenie ratunkowe.",
+    title: "features.safeEquipment.title",
+    desc: "features.safeEquipment.description",
     image: canoeIcon2,
   },
   {
     id: 2,
-    title: "Malownicze trasy",
-    desc: "Najpiękniejsze zakątki Doliny Nidy blisko natury i z dala od zgiełku.",
+    title: "features.scenicRoutes.title",
+    desc: "features.scenicRoutes.description",
     image: viewsIcon2,
   },
   {
     id: 3,
-    title: "Transport uczestników",
-    desc: "Zapewniamy wygodny transport na miejsce startu i po zakończeniu spływu.",
+    title: "features.transport.title",
+    desc: "features.transport.description",
     image: transportIcon2,
   },
   {
     id: 4,
-    title: "Dla każdego",
-    desc: "Spływy dla rodzin z dziećmi, par, grup znajomych, firm i szkół.",
+    title: "features.forEveryone.title",
+    desc: "features.forEveryone.description",
     image: peopleIcon2,
   },
   {
     id: 5,
-    title: "Organizacja ognisk",
-    desc: "Zadbamy o ognisko, kiełbaski i świetną atmosferę po zakończonej wyprawie.",
+    title: "features.bonfire.title",
+    desc: "features.bonfire.description",
     image: fireIcon2,
   },
 ];

@@ -1,10 +1,12 @@
+import { useTranslation } from "react-i18next";
 import kayakingMovie from "../../assets/movies/movie_kayaking.mp4";
 import Header from "./Header";
 
-const Hero = ({headerRef}) => {
+const Hero = ({ headerRef }) => {
+  const { t } = useTranslation();
   return (
     <section className="hero-section flex-col white">
-      <Header headerRef={headerRef}/>
+      <Header headerRef={headerRef} />
       <video
         src={kayakingMovie}
         autoPlay
@@ -15,22 +17,18 @@ const Hero = ({headerRef}) => {
         className="hero-video"
       ></video>
       <div className="hero-content flex-col">
-        <h1 className="hero-title-dancing-script">Przeżyj przygodę</h1>
-        <h1 className="hero-title">na rzece Nidzie</h1>
-        <p className="hero-description">
-          Organizujemy spływy kajakowe dla rodzin, grup znajomych, firm, szkół i
-          każdego, kto chce aktywnie spędzić czas na świeżym powietrzu. Natura,
-          relaks i niezapomniane wspomnienia!
-        </p>
+        <h1 className="hero-title-dancing-script">{t("hero.titleFirst")}</h1>
+        <h1 className="hero-title">{t("hero.titleSecond")}</h1>
+        <p className="hero-description">{t("hero.description")}</p>
 
         <div className="hero-buttons flex-row">
           <a href="/trasy-splywow" className="btn btn-primary">
             <ion-icon name="newspaper-outline"></ion-icon>
-            Zobacz ofertę spływów
+            {t("hero.offerButton")}
           </a>
           <a href="tel:+48794003304" className="btn btn-secondary white">
             <ion-icon name="call"></ion-icon>
-            Zadzwoń
+            {t("hero.callButton")}
           </a>
         </div>
       </div>

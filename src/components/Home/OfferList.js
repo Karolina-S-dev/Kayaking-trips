@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { offerTrips } from "../../utils/HomeScreen/offerTripsUtils";
 import OfferCard from "./OfferCard";
 import { motion } from "motion/react";
 
 const OfferList = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section className="offer-section flex-col">
@@ -10,11 +12,11 @@ const OfferList = () => {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 1, ease: "easeOut"  }}
+          transition={{ duration: 1, ease: "easeOut" }}
           className="flex-col"
         >
-          <p className="green offer-label">Oferta</p>
-          <p className="navy-blue offer-title">Nasze spływy</p>
+          <p className="green offer-label">{t("offer.label")}</p>
+          <p className="navy-blue offer-title">{t("offer.title")}</p>
 
           <svg
             width="85"

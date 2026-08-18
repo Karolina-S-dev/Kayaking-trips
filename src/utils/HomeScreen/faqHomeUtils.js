@@ -2,28 +2,28 @@ import { faqContentData } from "../FaqScreen/faqUtils";
 
 const faqHomeData = [
   {
-    question: faqContentData[0].questions[0].question,
-    answer: faqContentData[0].questions[0].answer,
+    question: "faq.booking.question",
+    answer: "faq.booking.answer",
     icon: <ion-icon name="calendar-outline"></ion-icon>,
   },
   {
-    question: faqContentData[0].questions[1].question,
-    answer: faqContentData[0].questions[1].answer,
+    question: "faq.deposit.question",
+    answer: "faq.deposit.answer",
     icon: <ion-icon name="card-outline"></ion-icon>,
   },
   {
-    question: faqContentData[2].questions[2].question,
-    answer: faqContentData[2].questions[2].answer,
+    question: "faq.beginners.question",
+    answer: "faq.beginners.answer",
     icon: <ion-icon name="people-outline"></ion-icon>,
   },
   {
-    question: faqContentData[1].questions[0].question,
-    answer: faqContentData[1].questions[0].answer,
+    question: "faq.instructions.question",
+    answer: "faq.instructions.answer",
     icon: <ion-icon name="accessibility-outline"></ion-icon>,
   },
   {
-    question: faqContentData[2].questions[0].question,
-    answer: faqContentData[2].questions[0].answer,
+    question: "faq.children.question",
+    answer: "faq.children.answer",
     icon: <ion-icon name="happy-outline"></ion-icon>,
   },
 ];

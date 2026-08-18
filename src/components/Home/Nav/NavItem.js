@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const NavItem = ({ isMobile, util }) => {
@@ -9,6 +10,8 @@ const NavItem = ({ isMobile, util }) => {
   const redirect = () => {
     navigate(util.route);
   };
+
+  const { t,i18n } = useTranslation();
 
   return (
     <>
@@ -23,7 +26,7 @@ const NavItem = ({ isMobile, util }) => {
               name="mail-outline"
             ></ion-icon>
           </div>
-          <span>{util.text}</span>
+          <span>{t(util.text)}</span>
         </button>
       )}
 
@@ -34,18 +37,24 @@ const NavItem = ({ isMobile, util }) => {
         >
           {isMobile && <div className="mobile-icon white">{util.icon}</div>}
 
-          <span className="white">{util.text}</span>
+          <span className="white">{t(util.text)}</span>
         </button>
       )}
 
       {util.type === "languagePl" && (
-        <button onClick={redirect} className="nav-button language-pl">
+        <button
+          onClick={() => i18n.changeLanguage("pl")}
+          className="nav-button language-pl"
+        >
           {isMobile && <div className="mobile-icon white">{util.icon}</div>}
           <span className="white">{util.text}</span>
         </button>
       )}
       {util.type === "languageEng" && (
-        <button onClick={redirect} className="nav-button language-eng">
+        <button
+          onClick={() => i18n.changeLanguage("en")}
+          className="nav-button language-eng"
+        >
           {isMobile && <div className="mobile-icon white">{util.icon}</div>}
           <span className="white">{util.text}</span>
         </button>

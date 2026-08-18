@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { faqHomeData } from "../../utils/HomeScreen/faqHomeUtils";
 import FaqCardHome from "./FaqCardHome";
 import { motion } from "motion/react";
 
 const FaqListHome = () => {
+  const { t } = useTranslation();
   return (
     <>
       <motion.section
@@ -13,7 +15,7 @@ const FaqListHome = () => {
         className="faq-home-section flex-col"
       >
         <p className="green faq-home-label">FAQ</p>
-        <p className="faq-home-title">Najczęściej zadawane pytania</p>
+        <p className="faq-home-title">{t("faq.title")}</p>
         <svg
           width="85"
           height="12"
@@ -34,7 +36,7 @@ const FaqListHome = () => {
         ))}
 
         <a href="/faq" className="faq-home-button flex-row">
-          Zobacz pełne FAQ
+          {t("faq.button")}
           <ion-icon name="arrow-forward-outline"></ion-icon>
         </a>
       </motion.section>

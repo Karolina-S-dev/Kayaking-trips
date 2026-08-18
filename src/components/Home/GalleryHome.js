@@ -5,8 +5,10 @@ import galleryPhoto1 from "../../assets/img/gallery/gallery-photo-1.png";
 import galleryPhoto9 from "../../assets/img/gallery/gallery-photo-9.png";
 import galleryPhoto25 from "../../assets/img/gallery/gallery-photo-25.png";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 const GalleryHome = () => {
+  const { t } = useTranslation();
   return (
     <>
       <motion.section
@@ -16,9 +18,9 @@ const GalleryHome = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="gallery-home-section flex-col"
       >
-        <p className="green gallery-home-label">Galeria</p>
+        <p className="green gallery-home-label">{t("gallery.title")}</p>
         <p className="dark-grey gallery-home-title">
-          Kadry z naszych spływów, ognisk i najpiękniejszych zakątków Nidy
+          {t("gallery.description")}
         </p>
         <svg
           width="85"
@@ -71,7 +73,7 @@ const GalleryHome = () => {
           </div>
         </div>
         <a href="/galeria" className="gallery-home-button flex-row">
-          Zobacz więcej zdjęć
+          {t("gallery.button")}
           <ion-icon name="arrow-forward-outline"></ion-icon>
         </a>
       </motion.section>

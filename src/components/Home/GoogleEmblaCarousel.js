@@ -2,8 +2,10 @@ import useEmblaCarousel from "embla-carousel-react";
 import googleLogo from "../../assets/icons/google-icon-logo-svgrepo-com.svg";
 import { googleReviews } from "../../utils/HomeScreen/googleReviewsUtils";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const GoogleEmblaCarousel = () => {
+  const { t } = useTranslation();
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true, //infinite effect
     align: "start",
@@ -48,7 +50,7 @@ const GoogleEmblaCarousel = () => {
                     <div className="flex-col">
                       <p className="review-username">{review.userName}</p>
                       <p className="review-userreviews mid-grey">
-                        {review.userReviews}
+                        {t(review.userReviews)}
                       </p>
                     </div>
                   </div>
@@ -60,9 +62,9 @@ const GoogleEmblaCarousel = () => {
                 </div>
                 <div className="flex-row card-stars-div">
                   <div className="card-star-rating">★★★★★</div>
-                  <p className="review-date">{review.date}</p>
+                  <p className="review-date">{t(review.date)}</p>
                 </div>
-                <p className="review-content">{review.content}</p>
+                <p className="review-content">{t(review.content)}</p>
               </div>
             ))}
           </div>

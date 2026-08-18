@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const FaqCardHome = ({ card }) => {
   const [isFaqCardHomeOpen, setIsFaqCardHomeOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -20,7 +22,7 @@ const FaqCardHome = ({ card }) => {
           <p
             className={`faq-home-card-title ${!isFaqCardHomeOpen ? "" : "open"}`}
           >
-            {card.question}
+            {t(card.question)}
           </p>
           <div
             className={
@@ -35,7 +37,7 @@ const FaqCardHome = ({ card }) => {
 
         {isFaqCardHomeOpen ? (
           <div className="faq-home-content">
-            <p className="faq-home-answer mid-grey ">{card.answer}</p>
+            <p className="faq-home-answer mid-grey ">{t(card.answer)}</p>
           </div>
         ) : null}
       </div>

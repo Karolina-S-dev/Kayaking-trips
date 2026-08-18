@@ -1,12 +1,13 @@
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <>
       <footer className="footer-section flex-row white">
         <div className="footer-col flex-col">
-          <h2 className="footer-title">Gotowy na przygodę?</h2>
-          <p className="footer-subtitle">
-            Skontaktuj się z nami i zarezerwuj swój termin!
-          </p>
+          <h2 className="footer-title">{t("footer.title")}</h2>
+          <p className="footer-subtitle">{t("footer.subtitle")}</p>
 
           <div className="flex-row footer-contact-groups">
             <div className="flex-row footer-group">
@@ -57,7 +58,7 @@ const Footer = () => {
         <p>
           2026 © Copyright. Spływy Kajakowe u Jakuba.
           <span> | </span>
-          <a href="/polityka-prywatnosci">Polityka prywatności</a>
+          <a href="/polityka-prywatnosci">{t("footer.privacyPolicy")}</a>
           <span> | </span>Designed & developed by&nbsp;
           <a href="https://www.linkedin.com/in/karolina-s-123bb238b/">
             Karolina Szary

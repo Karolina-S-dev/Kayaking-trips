@@ -1,7 +1,9 @@
 import { motion } from "motion/react";
 import { featuresData } from "../../utils/HomeScreen/featuresUtils";
+import { useTranslation } from "react-i18next";
 
 const Features = () => {
+  const { t } = useTranslation();
   return (
     <>
       <motion.div
@@ -14,8 +16,8 @@ const Features = () => {
         {featuresData.map((item) => (
           <div key={item.id} className="features-card flex-col">
             <img src={item.image} alt="Ikony" loading="lazy" />
-            <p className="features-card-title">{item.title}</p>
-            <p className="features-card-subtitle">{item.desc}</p>
+            <p className="features-card-title">{t(item.title)}</p>
+            <p className="features-card-subtitle">{t(item.desc)}</p>
           </div>
         ))}
       </motion.div>

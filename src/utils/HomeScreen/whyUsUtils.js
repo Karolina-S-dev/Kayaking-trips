@@ -9,24 +9,24 @@ const whyUsData = [
     id: 1,
     image: experienceIcon2,
     title: "10 +",
-    desc: "lat doświadczenia",
+    desc: "why-us.experience",
   },
   {
     id: 2,
     title: "4.9",
-    desc: "średnia opinii Google",
+    desc: "why-us.googleRating",
     image: googleIcon2,
   },
   {
     id: 3,
     title: "33",
-    desc: "nowoczesne kajaki",
+    desc: "why-us.kayaks",
     image: canoeIcon3,
   },
   {
     id: 4,
     title: "14",
-    desc: "pięknych tras",
+    desc: "why-us.routes",
     image: routesIcon2,
   },
 ];

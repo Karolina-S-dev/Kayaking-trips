@@ -2,8 +2,10 @@ import { whyUsData } from "../../utils/HomeScreen/whyUsUtils";
 import canoe1person from "../../assets/icons/canoe1person.png";
 import canoe2people from "../../assets/icons/canoe2people.png";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 const WhyUs = () => {
+  const {t} = useTranslation()
   return (
     <>
       <motion.section
@@ -16,20 +18,20 @@ const WhyUs = () => {
         <div className="flex-row why-us-row">
           <div className="flex-col why-us-cards">
             <p className="green why-us-label">
-              Dlaczego warto wybrać nasze spływy?
+              {t("why-us.title")}
             </p>
             <div className="why-us-cards-row flex-row">
               {whyUsData.map((data) => (
                 <div key={data.id} className="why-card flex-col">
                   <img src={data.image} alt="Ikony" loading="lazy" />
                   <p className="why-card-title navy-blue ">{data.title}</p>
-                  <p className="why-card-desc">{data.desc}</p>
+                  <p className="why-card-desc">{t(data.desc)}</p>
                 </div>
               ))}
             </div>
           </div>
           <div className="flex-col pricelist">
-            <p className="green why-us-label">Cennik</p>
+            <p className="green why-us-label">{t("pricelist.title")}</p>
             <div className="pricelist-content flex-row">
               <div className="flex-col pricelist-card">
                 <img
@@ -38,7 +40,7 @@ const WhyUs = () => {
                   loading="lazy"
                 />
                 <p className="why-card-title navy-blue ">120 zł</p>
-                <p className="why-card-desc">KAJAK DWUOSOBOWY</p>
+                <p className="why-card-desc">{t("pricelist.doubleKayak")}</p>
               </div>
               <div className="flex-col pricelist-card">
                 <img
@@ -47,7 +49,7 @@ const WhyUs = () => {
                   loading="lazy"
                 />
                 <p className="why-card-title navy-blue ">80 zł</p>
-                <p className="why-card-desc">KAJAK JEDNOOSOBOWY</p>
+                <p className="why-card-desc">{t("pricelist.singleKayak")}</p>
               </div>
             </div>
           </div>

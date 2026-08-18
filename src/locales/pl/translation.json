@@ -1,0 +1,202 @@
+{
+ "navbar": {
+    "home": "Strona główna",
+    "routes": "Trasy spływów",
+    "gallery": "Galeria",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+},
+
+"hero": {
+  "titleFirst": "Przeżyj przygodę",
+  "titleSecond": "na rzece Nidzie",
+  "description": "Organizujemy spływy kajakowe dla rodzin, grup znajomych, firm, szkół i każdego, kto chce aktywnie spędzić czas na świeżym powietrzu. Natura, relaks i niezapomniane wspomnienia!",
+  "offerButton": "Zobacz ofertę spływów",
+  "callButton": "Zadzwoń"
+},
+
+"about": {
+  "label": "O nas",
+  "titleFirst": "Pasja do natury",
+  "titleSecond": "i aktywnego wypoczynku",
+  "description": "Jesteśmy miłośnikami kajaków i przyrody. Od lat organizujemy spływy, które łączą aktywny wypoczynek z bliskością natury. Dbamy o bezpieczeństwo, komfort i dobrą atmosferę."
+},
+
+"features": {
+  "safeEquipment": {
+    "title": "Bezpieczny sprzęt",
+    "description": "Regularnie kontrolowane kajaki oraz pełne wyposażenie ratunkowe."
+  },
+  "scenicRoutes": {
+    "title": "Malownicze trasy",
+    "description": "Najpiękniejsze zakątki Doliny Nidy blisko natury i z dala od zgiełku."
+  },
+  "transport": {
+    "title": "Transport uczestników",
+    "description": "Zapewniamy wygodny transport na miejsce startu i po zakończeniu spływu."
+  },
+  "forEveryone": {
+    "title": "Dla każdego",
+    "description": "Spływy dla rodzin z dziećmi, par, grup znajomych, firm i szkół."
+  },
+  "bonfire": {
+    "title": "Organizacja ognisk",
+    "description": "Zadbamy o ognisko, kiełbaski i świetną atmosferę po zakończonej wyprawie."
+  }
+}, 
+"offer": {
+  "label": "Oferta",
+  "title": "Nasze spływy",
+  "family": {
+    "title": "Spływ rodzinny",
+    "duration": "Około 2h",
+    "description": "Idealny dla dzieci i osób, które pierwszy raz płyną kajakiem",
+    "featureOne": "Spokojny odcinek Nidy",
+    "featureTwo": "Bezpieczna trasa",
+    "featureThree": "Dla całych rodzin",
+    "distance": "5km",
+    "button": "Zobacz trasy"
+  },
+  "oneDay": {
+    "badge": "Najbardziej popularne",
+    "title": "Spływy jednodniowe",
+    "duration": "1 dzień",
+    "description": "Najpopularniejsza opcja dla rodzin, grup znajomych i firm",
+    "featureOne": "9 tras do wyboru",
+    "featureTwo": "Transport i sprzęt w cenie",
+    "featureThree": "Piękne widoki",
+    "distance": "11-30km",
+    "button": "Zobacz trasy"
+  },
+  "multiDay": {
+    "title": "Spływy kilkudniowe",
+    "duration": "2 - 3 dni",
+    "description": "Pełna przygoda dla osób chcących spędzić więcej czasu na wodzie",
+    "featureOne": "4 trasy do wyboru",
+    "featureTwo": "Kompleksowa organizacja",
+    "featureThree": "Piękne widoki",
+    "distance": "29-43km",
+    "button": "Zobacz trasy"
+  },
+  "custom": {
+    "title": "Spływ na życzenie",
+    "duration": "7 dni",
+    "description": "Organizujemy również dłuższe wyprawy kajakowe - spływ do rzeki Wisły",
+    "featureOne": "Trasa wielodniowa",
+    "featureTwo": "Możliwość spływu Wisłą",
+    "featureThree": "Piękne widoki",
+    "button": "Zobacz trasy"
+  }
+},
+"why-us": {
+  "title": "Dlaczego warto wybrać nasze spływy?",
+  "experience": "lat doświadczenia",
+  "googleRating": "średnia opinii Google",
+  "kayaks": "nowoczesne kajaki",
+  "routes": "pięknych tras"
+},
+"pricelist": {
+  "title": "Cennik",
+  "doubleKayak": "KAJAK DWUOSOBOWY",
+  "singleKayak": "KAJAK JEDNOOSOBOWY"
+},
+"gallery": {
+  "title": "Galeria",
+  "description": "Kadry z naszych spływów, ognisk i najpiękniejszych zakątków Nidy",
+  "button": "Zobacz więcej zdjęć"
+},
+
+
+"faq": {
+  "title": "Najczęściej zadawane pytania",
+  "booking": {
+    "question": "Jak zarezerwować spływ?",
+    "answer": "Rezerwacji możesz dokonać telefonicznie, przez formularz kontaktowy na stronie lub w wiadomości e-mail. Odpowiemy jak najszybciej, aby potwierdzić dostępność terminu i ustalić szczegóły spływu."
+  },
+  "deposit": {
+    "question": "Czy trzeba wpłacać zaliczkę?",
+    "answer": "W przypadku większych grup lub rezerwacji dokonywanych z dużym wyprzedzeniem możemy poprosić o wpłatę zaliczki. Szczegółowe informacje dotyczące płatności przekazujemy podczas potwierdzania rezerwacji."
+  },
+  "beginners": {
+    "question": "Czy osoby początkujące sobie poradzą?",
+    "answer": "Oczywiście. Wiele naszych tras ma spokojny nurt i jest odpowiednich dla osób, które po raz pierwszy wsiadają do kajaka. Przed startem przeprowadzamy również krótki instruktaż."
+  },
+  "instructions": {
+    "question": "Czy przed spływem odbywa się instruktaż?",
+    "answer": "Tak, przed rozpoczęciem spływu przeprowadzamy krótki instruktaż dotyczący techniki wiosłowania, zachowania na wodzie oraz podstawowych zasad bezpieczeństwa."
+  },
+  "children": {
+    "question": "Czy spływ jest odpowiedni dla dzieci?",
+    "answer": "Tak, wybrane trasy są odpowiednie dla rodzin z dziećmi. Przy rezerwacji warto podać wiek dzieci, abyśmy mogli zaproponować bezpieczną i komfortową trasę."
+  },
+  "button": "Zobacz pełne FAQ"
+},
+
+"googleReviews": {
+  "label": "Opinie klientów",
+  "title": "Co mówią o nas uczestnicy?",
+  "googleSummary": "Na podstawie 47 opinii w Google",
+  "googleButton": "Zobacz wszystkie opinie w Google",
+  "bookButton": "Zarezerwuj swój spływ",
+
+  "pawel": {
+    "meta": "Lokalny przewodnik · 841 opinii",
+    "date": "czerwiec 2026",
+    "text": "Świetny kontakt, wszystko ustalone telefonicznie bez problemu. Zaznacze, że masza grupa to prawie 40 osób. Logistyka transportu, początek-koniec trasy bardzo sprawna. Bardzo duży plus za opracowane i przygotowane dyplomy dla dzieci. Ale nie ma się co dziwić, Pan Jakub jest uśmiechniętym, otwartym człowiekiem, wychodzącym z różnymi propozycjami i dodatkowymi atrakcjami. Życzymy dalszego zaplanowanego rozwoju, jednocześnie nie zmieniając spontaniczności i luźnej ale konkretnej komunikacji z klientem."
+  },
+
+  "julianna": {
+    "meta": "3 opinie",
+    "date": "lipiec 2025",
+    "text": "To był traf w dziesiątkę!!! Super cena, kajaki, widoki, rzeka… natomiast najbardziej urzekło nas ciepło bijące od Pana Jakuba!!! Dawno nie spotkałam człowieka od którego emanuje tyle dobroci!!! Wykrzykniki są konieczne, było NIESAMOWICIE!!! Dziękuję jeszcze raz"
+  },
+
+  "basia": {
+    "meta": "Lokalny przewodnik · 112 opinii",
+    "date": "czerwiec 2026",
+    "text": "Super spływ i jego obsługa. Wszyscy zadowoleni."
+  },
+
+  "magdalena": {
+    "meta": "3 opinie",
+    "date": "czerwiec 2023",
+    "text": "Serdecznie polecam spływ u tego Pana, trasa ustalona w zależności od umiejętności. Nasza Żerniki - Mokrsko na ok. 4 h, była w sam raz dla rodzin z dziećmi. Z postojem po drodze na plaży na ognisko i kielbaski zrobiło się 5 h."
+  },
+
+  "tomasz": {
+    "meta": "Lokalny przewodnik · 397 opinii",
+    "date": "lipiec 2020",
+    "text": "Rewelacja. To jest pomysł na turystykę w tym pięknym rejonie. Obszar Natura 2000 przyciąga turystów. Można się na tym przykładzie nauczyć. Facet zaczynał z 4 kajakami, które kupił za grosze stare i zużyte. Dzisiaj ma ich 290 nowych i całą infrastrukturę rozwija w miarę możliwości. Organizacja bez zarzutów perfekcyjna. Spływ 1 kajaka 15 km to zaledwie 80 zł. Kraków 4x drożej. Po drodze zwiedzanie zamku rycerskiego - (mój konik) po 5zł. Powrót z przystani bezpłatny na parking. Nida najbardziej malownicza rzeka czysta i płytka (do 0,5m głębokości) nurt łagodny. Płyną kajakarze z dziećmi i psami. Polecam na gorące dni"
+  },
+
+  "agata": {
+    "meta": "11 opinii",
+    "date": "lipiec 2022",
+    "text": "Polecam serdecznie. 🙂 Konkurencyjne ceny, możliwość wybrania sobie trasy jest zdecydowanym plusem!😊😊 Poza tym świetna obsługa - Pan pomaga w doborze trasy w zależności od zaawansowania kajakarzy ;) tłumaczy jak należy się zachować podczas pływania. Wrócę na pewno 🔥"
+  },
+
+  "pawelLacheta": {
+    "meta": "Lokalny przewodnik · 81 opinii",
+    "date": "sierpień 2021",
+    "text": "Bardzo sprawna organizacja i bardzo dobry kontakt z Panem Jakubem. Kajaki w dobrym stanie, Nida - piękna rzeka. Ceny przystępne. Z czystym sumieniem polecam!"
+  },
+
+  "piotr": {
+    "meta": "Lokalny przewodnik · 36 opinii",
+    "date": "lipiec 2018",
+    "text": "Polecam gorąco. Indywidualne podejście do klienta. Wypożyczyłem jeden kajak na troszkę późniejsza godzinę a u konkurencji nie było to mozliwe."
+  },
+
+  "grzegorz": {
+    "meta": "Lokalny przewodnik · 395 opinii",
+    "date": "czerwiec 2020",
+    "text": "Radzę skorzystać. Pięknie spędzony czas z rodziną. Cena nie wygórowane. Jeśli korzystasz z Internetu łatwo tam trafisz. Spływ super."
+  }
+},
+"footer": {
+  "title": "Gotowy na przygodę?",
+  "subtitle": "Skontaktuj się z nami i zarezerwuj swój termin!",
+  "privacyPolicy": "Polityka prywatności"  
+}
+
+}

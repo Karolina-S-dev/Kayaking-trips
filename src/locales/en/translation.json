@@ -1,0 +1,199 @@
+{
+"navbar": {
+  "home": "Home",
+  "routes": "Kayaking Routes",
+  "gallery": "Gallery",
+  "faq": "FAQ",
+  "contact": "Contact"
+},
+
+"hero": {
+  "titleFirst": "Experience an adventure",
+  "titleSecond": "on the Nida River",
+  "description": "We organize kayaking trips for families, groups of friends, companies, schools, and anyone who wants to spend time actively outdoors. Nature, relaxation, and unforgettable memories!",
+  "offerButton": "See our kayaking trips",
+  "callButton": "Call us"
+},
+"about": {
+  "label": "About us",
+  "titleFirst": "A passion for nature",
+  "titleSecond": "and active leisure",
+  "description": "We are passionate about kayaking and nature. For years, we have been organizing trips that combine active leisure with being close to nature. We focus on safety, comfort, and a friendly atmosphere."
+},
+
+"features": {
+  "safeEquipment": {
+    "title": "Safe equipment",
+    "description": "Regularly inspected kayaks and full safety equipment."
+  },
+  "scenicRoutes": {
+    "title": "Scenic routes",
+    "description": "Discover the most beautiful parts of the Nida Valley, close to nature and away from the hustle and bustle."
+  },
+  "transport": {
+    "title": "Participant transport",
+    "description": "We provide convenient transport to the starting point and after the kayaking trip."
+  },
+  "forEveryone": {
+    "title": "For everyone",
+    "description": "Kayaking trips for families with children, couples, groups of friends, companies, and schools."
+  },
+  "bonfire": {
+    "title": "Bonfire organization",
+    "description": "We can arrange a bonfire, sausages, and a great atmosphere after your trip."
+  }
+}, 
+"offer": {
+  "label": "Offer",
+  "title": "Our kayaking trips",
+  "family": {
+    "title": "Family kayaking trip",
+    "duration": "About 2 hours",
+    "description": "Perfect for children and people kayaking for the first time",
+    "featureOne": "Calm section of the Nida River",
+    "featureTwo": "Safe route",
+    "featureThree": "Perfect for families",
+    "distance": "5km",
+    "button": "See routes"
+  },
+  "oneDay": {
+    "badge": "Most popular",
+    "title": "One-day kayaking trips",
+    "duration": "1 day",
+    "description": "The most popular option for families, groups of friends, and companies",
+    "featureOne": "9 routes to choose from",
+    "featureTwo": "Transport and equipment included",
+    "featureThree": "Beautiful views",
+    "distance": "11-30km",
+    "button": "See routes"
+  },
+  "multiDay": {
+    "title": "Multi-day kayaking trips",
+    "duration": "2 - 3 days",
+    "description": "A complete adventure for those who want to spend more time on the water",
+    "featureOne": "4 routes to choose from",
+    "featureTwo": "Comprehensive organization",
+    "featureThree": "Beautiful views",
+    "distance": "29-43km",
+    "button": "See routes"
+  },
+  "custom": {
+    "title": "Custom kayaking trip",
+    "duration": "7 days",
+    "description": "We also organize longer kayaking expeditions, including trips all the way to the Vistula River",
+    "featureOne": "Multi-day route",
+    "featureTwo": "Option to continue on the Vistula River",
+    "featureThree": "Beautiful views",
+    "button": "See routes"
+  }
+},
+"why-us": {
+  "title": "Why choose our kayaking trips?",
+  "experience": "years of experience",
+  "googleRating": "average Google rating",
+  "kayaks": "modern kayaks",
+  "routes": "beautiful routes"
+},
+"pricelist": {
+  "title": "Price list",
+  "doubleKayak": "DOUBLE KAYAK",
+  "singleKayak": "SINGLE KAYAK"
+},
+
+"gallery": {
+  "title": "Gallery",
+  "description": "Moments from our kayaking trips, bonfires, and the most beautiful corners of the Nida River",
+  "button": "See more photos"
+},
+"faq": {
+  "title": "Frequently asked questions",
+  "booking": {
+    "question": "How can I book a kayaking trip?",
+    "answer": "You can make a reservation by phone, through the contact form on our website, or by email. We will get back to you as soon as possible to confirm availability and arrange the details of the trip."
+  },
+  "deposit": {
+    "question": "Is a deposit required?",
+    "answer": "For larger groups or bookings made well in advance, we may ask for a deposit. Detailed payment information will be provided when we confirm your reservation."
+  },
+  "beginners": {
+    "question": "Are the trips suitable for beginners?",
+    "answer": "Of course. Many of our routes have a gentle current and are suitable for people kayaking for the first time. We also provide a short briefing before the trip."
+  },
+  "instructions": {
+    "question": "Is there a briefing before the trip?",
+    "answer": "Yes. Before the trip begins, we provide a short briefing on paddling technique, behavior on the water, and basic safety rules."
+  },
+  "children": {
+    "question": "Are the trips suitable for children?",
+    "answer": "Yes, selected routes are suitable for families with children. When booking, it is worth providing the children's ages so that we can recommend a safe and comfortable route."
+  },
+  "button": "See full FAQ"
+},
+"googleReviews": {
+  "label": "Customer reviews",
+  "title": "What do our guests say about us?",
+  "googleSummary": "Based on 47 Google reviews",
+  "googleButton": "See all reviews on Google",
+  "bookButton": "Book your kayaking trip",
+
+  "pawel": {
+    "meta": "Local Guide · 841 reviews",
+    "date": "June 2026",
+    "text": "Great communication, everything was arranged by phone without any problems. I should mention that our group consisted of almost 40 people. The transport logistics and organization of the start and finish were very efficient. A huge plus for the diplomas prepared for the children. But that comes as no surprise, as Mr. Jakub is a cheerful and open person who comes up with various ideas and additional attractions. We wish him continued growth while maintaining the same spontaneity and relaxed but clear communication with customers."
+  },
+
+  "julianna": {
+    "meta": "3 reviews",
+    "date": "July 2025",
+    "text": "It was absolutely perfect!!! Great price, kayaks, views and river… but what impressed us most was the warmth and kindness of Mr. Jakub!!! I haven't met someone radiating so much kindness in a long time!!! All these exclamation marks are necessary — it was AMAZING!!! Thank you once again."
+  },
+
+  "basia": {
+    "meta": "Local Guide · 112 reviews",
+    "date": "June 2026",
+    "text": "A great kayaking trip and excellent service. Everyone was happy."
+  },
+
+  "magdalena": {
+    "meta": "3 reviews",
+    "date": "June 2023",
+    "text": "I highly recommend kayaking with Mr. Jakub. The route was selected according to our experience level. Our Żerniki - Mokrsko route, which took around 4 hours, was perfect for families with children. With a stop at the beach for a bonfire and sausages, the whole trip took about 5 hours."
+  },
+
+  "tomasz": {
+    "meta": "Local Guide · 397 reviews",
+    "date": "July 2020",
+    "text": "Fantastic. This is a great idea for tourism in this beautiful region. The Natura 2000 area attracts visitors and this business is a great example to follow. He started with just four old, used kayaks bought very cheaply. Today he has 290 new ones and continues to develop the entire infrastructure whenever possible. The organization is flawless and professional. A 15 km trip costs only 80 zł per kayak. Kraków is four times more expensive. Along the way, you can also visit the knight's castle. Transport back from the marina to the parking area is free. The Nida is an extremely picturesque, clean and shallow river with a gentle current. Families with children and even dogs can enjoy the trip. Highly recommended for hot summer days."
+  },
+
+  "agata": {
+    "meta": "11 reviews",
+    "date": "July 2022",
+    "text": "Highly recommended. 🙂 Competitive prices and the possibility to choose your own route are definitely a big advantage! 😊😊 The service is also excellent — Mr. Jakub helps you choose a route depending on your kayaking experience and explains how to behave safely on the water. I will definitely come back! 🔥"
+  },
+
+  "pawelLacheta": {
+    "meta": "Local Guide · 81 reviews",
+    "date": "August 2021",
+    "text": "Very efficient organization and excellent communication with Mr. Jakub. The kayaks are in good condition and the Nida is a beautiful river. Prices are affordable. I can wholeheartedly recommend it!"
+  },
+
+  "piotr": {
+    "meta": "Local Guide · 36 reviews",
+    "date": "July 2018",
+    "text": "Highly recommended. A very individual approach to each customer. I rented a single kayak for a slightly later time, which wasn't possible with the competition."
+  },
+
+  "grzegorz": {
+    "meta": "Local Guide · 395 reviews",
+    "date": "June 2020",
+    "text": "Definitely worth trying. A wonderful time spent with the family. Reasonable prices and easy to find using online navigation. A great kayaking trip."
+  }
+},
+
+"footer": {
+  "title": "Ready for an adventure?",
+  "subtitle": "Contact us and book your date!",
+  "privacyPolicy": "Privacy Policy"
+}
+}
