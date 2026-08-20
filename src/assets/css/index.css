@@ -122,7 +122,6 @@ header {
 .language-pl {
   margin: 1.5rem 0 1.5rem 3rem !important;
   padding: 0 1rem 0 0 !important;
-  border-right: 1px solid #fff;
   transition: transform 0.2s ease;
 }
 

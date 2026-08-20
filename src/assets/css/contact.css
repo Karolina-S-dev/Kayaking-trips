@@ -384,3 +384,59 @@
   fill: #b84c4c;
 }
 
+/* ---------- PhoneInput ---------- */
+
+.react-tel-input .form-control {
+  width: 10rem !important;
+  height: 100% !important;
+  border: none !important;
+  padding-left: 5.5rem !important;
+  padding-right: 0rem !important;
+  border-bottom: 1px solid #e8e8e8 !important;
+  border-radius: 0px !important;
+}
+
+.react-tel-input {
+  width: 11rem !important;
+}
+
+.react-tel-input .country-list {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem !important;
+  overflow-x: hidden !important;
+}
+
+.react-tel-input .country-list .search-box {
+  font-family: "Poppins", sans-serif;
+  border-radius: 6px !important;
+  font-size: 1.4rem !important;
+  padding: 0.7rem !important;
+}
+
+.search {
+  display: flex;
+}
+
+.search-emoji {
+  display: flex;
+  align-items: center;
+}
+
+.react-tel-input .flag {
+  width: 23px !important;
+  height: 19px !important;
+}
+
+.react-tel-input .flag-dropdown {
+  border-radius: 0px !important;
+  border: none !important;
+  background-color: #fff !important;
+  border-bottom: 1px solid #e8e8e8 !important;
+}
+
+/* ---------- Language change flag ---------- */
+.emoji-flag {
+  width: 2.3rem !important;
+  height: 2rem !important;
+  margin-right: 0.6rem;
+}

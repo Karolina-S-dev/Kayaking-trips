@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
+import ReactCountryFlag from "react-country-flag";
 
 const NavItem = ({ isMobile, util }) => {
   const navigate = useNavigate();
@@ -47,6 +48,7 @@ const NavItem = ({ isMobile, util }) => {
           className="nav-button language-pl"
         >
           {isMobile && <div className="mobile-icon white">{util.icon}</div>}
+          <ReactCountryFlag countryCode="PL" svg className="emoji-flag"/>
           <span className="white">{util.text}</span>
         </button>
       )}
@@ -56,6 +58,7 @@ const NavItem = ({ isMobile, util }) => {
           className="nav-button language-eng"
         >
           {isMobile && <div className="mobile-icon white">{util.icon}</div>}
+          <ReactCountryFlag countryCode="GB" svg className="emoji-flag"/>
           <span className="white">{util.text}</span>
         </button>
       )}

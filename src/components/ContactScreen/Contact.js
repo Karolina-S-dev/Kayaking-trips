@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { reusableUpdateField } from "../../utils/reusableUpdateField";
+import InputPhone from "./InputPhone";
 
 const Contact = () => {
   const inputRef = useRef(null);
@@ -12,6 +13,7 @@ const Contact = () => {
   const [contactData, setContactData] = useState({
     from_full_name: "",
     from_email: "",
+    from_callingCodes: "",
     from_phone: "",
     from_message: "",
   });
@@ -218,21 +220,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="flex-row form-ion-row ">
-              <ion-icon name="call-outline"></ion-icon>
-              <div className="form-group">
-                <label htmlFor="phone">Numer telefonu</label>
-                <input
-                  type="tel"
-                  placeholder="Wpisz swój numer telefonu"
-                  id="phone"
-                  name="from_phone"
-                  autoComplete="tel"
-                  value={contactData.from_phone}
-                  onChange={(e) => updateField("from_phone", e.target.value)}
-                />
-              </div>
-            </div>
+            <InputPhone contactData={contactData} updateField={updateField} />
             <div className="flex-row form-ion-row">
               <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
               <div className="form-group">
