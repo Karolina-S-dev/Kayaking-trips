@@ -12,7 +12,7 @@ const NavItem = ({ isMobile, util }) => {
     navigate(util.route);
   };
 
-  const { t,i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -47,8 +47,7 @@ const NavItem = ({ isMobile, util }) => {
           onClick={() => i18n.changeLanguage("pl")}
           className="nav-button language-pl"
         >
-          {isMobile && <div className="mobile-icon white">{util.icon}</div>}
-          <ReactCountryFlag countryCode="PL" svg className="emoji-flag"/>
+          <ReactCountryFlag countryCode="PL" svg className="emoji-flag" />
           <span className="white">{util.text}</span>
         </button>
       )}
@@ -57,8 +56,7 @@ const NavItem = ({ isMobile, util }) => {
           onClick={() => i18n.changeLanguage("en")}
           className="nav-button language-eng"
         >
-          {isMobile && <div className="mobile-icon white">{util.icon}</div>}
-          <ReactCountryFlag countryCode="GB" svg className="emoji-flag"/>
+          <ReactCountryFlag countryCode="GB" svg className="emoji-flag" />
           <span className="white">{util.text}</span>
         </button>
       )}

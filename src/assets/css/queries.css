@@ -321,22 +321,17 @@
   .language-eng {
     margin: 0 !important;
     margin-left: 6px !important;
-    padding: 0.8rem 1rem !important;
+    padding: 1rem 1.6rem !important;
     border-right: none;
     transition: none;
     border-bottom: none;
     font-size: 1.9rem !important;
     font-weight: 600;
-    opacity: 0.6 !important;
   }
 
   .language-pl:hover,
   .language-eng:hover {
     transform: none;
-  }
-
-  ion-icon[name="globe-outline"] {
-    font-size: 2.5rem !important;
   }
 
   .header-logo-hidden {

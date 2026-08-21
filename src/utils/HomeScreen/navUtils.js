@@ -34,13 +34,11 @@ const navUtils = [
     text: "PL",
     route: "",
     type: "languagePl",
-    icon: <ion-icon name="globe-outline"></ion-icon>,
   },
   {
     text: "ENG",
     route: "",
     type: "languageEng",
-    icon: <ion-icon name="globe-outline"></ion-icon>,
   },
 ];
 
