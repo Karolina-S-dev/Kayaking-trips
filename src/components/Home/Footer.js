@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("home");
   return (
     <>
       <footer className="footer-section flex-row white">

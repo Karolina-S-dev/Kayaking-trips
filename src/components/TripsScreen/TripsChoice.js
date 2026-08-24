@@ -1,15 +1,15 @@
+import { useTranslation } from "react-i18next";
 import { tripcChoiceUtils } from "../../utils/TripsScreen/tripsChoiceUtils";
 import { motion } from "motion/react";
 
 const TripsChoice = () => {
+  const { t } = useTranslation("routes");
   return (
     <>
       <section className="trips-choice-section flex-col">
-        <p className="trips-choice-label green">Wybierz rodzaj spływu</p>
+        <p className="trips-choice-label green">{t("tripsHero.chooseRoute")}</p>
         <p className="trips-choice-title dark-grey">
-          Niezależnie od tego, czy szukasz krótkiej rodzinnej wycieczki, czy
-          kilkudniowej przygody na Nidzie, znajdziesz trasę dopasowaną do
-          swojego doświadczenia i czasu.
+         {t("tripsHero.description")}
         </p>
         <svg
           width="90"
@@ -39,8 +39,8 @@ const TripsChoice = () => {
               <img src={choice.img} alt={choice.alt} />
 
               <div className="choice-card-text white">
-                <p className="choice-card-title ">{choice.title}</p>
-                <p className="choice-card-duration">{choice.duration}</p>
+                <p className="choice-card-title ">{t(choice.title)}</p>
+                <p className="choice-card-duration">{t(choice.duration)}</p>
               </div>
             </motion.a>
           ))}

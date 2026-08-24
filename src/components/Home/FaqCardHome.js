@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 const FaqCardHome = ({ card }) => {
   const [isFaqCardHomeOpen, setIsFaqCardHomeOpen] = useState(false);
-  const { t } = useTranslation();
+  const { t } = useTranslation("home");
 
   return (
     <>

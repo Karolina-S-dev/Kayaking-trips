@@ -3,7 +3,7 @@ import riverSunset from "../../assets/img/river-sunset.png";
 import { motion } from "motion/react";
 
 const AboutUs = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("home");
   return (
     <>
       <section className="about-us-section flex-row">

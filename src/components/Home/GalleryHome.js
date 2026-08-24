@@ -8,7 +8,7 @@ import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 
 const GalleryHome = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("home");
   return (
     <>
       <motion.section

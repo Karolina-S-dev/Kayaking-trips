@@ -1,0 +1,29 @@
+{
+  "tripsHero": {
+    "title": "Trasy spływów kajakowych",
+    "subtitle": "Od rodzinnych tras po tygodniowe wyprawy",
+    "chooseRoute": "Wybierz rodzaj spływu",
+    "description": "Niezależnie od tego, czy szukasz krótkiej rodzinnej wycieczki, czy kilkudniowej przygody na Nidzie, znajdziesz trasę dopasowaną do swojego doświadczenia i czasu.",
+     "categories": {
+      "family": {
+        "type": "Rodzinny",
+        "duration": "2h - 4h"
+      },
+
+      "oneDay": {
+     "type": "Jednodniowy",
+        "duration": "4h - 8h"
+      },
+
+      "multiDay": {     
+        "type": "Kilkudniowy",
+        "duration": "2 - 3 dni"
+      },
+
+      "custom": {     
+        "type": "Na życzenie",
+        "duration": "do 7 dni"
+      }
+    }
+  }
+}

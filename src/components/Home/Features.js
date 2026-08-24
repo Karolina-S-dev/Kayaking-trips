@@ -3,7 +3,7 @@ import { featuresData } from "../../utils/HomeScreen/featuresUtils";
 import { useTranslation } from "react-i18next";
 
 const Features = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("home");
   return (
     <>
       <motion.div

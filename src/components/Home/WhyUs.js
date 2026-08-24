@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 
 const WhyUs = () => {
-  const {t} = useTranslation()
+  const {t} = useTranslation("home")
   return (
     <>
       <motion.section

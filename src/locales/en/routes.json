@@ -1,0 +1,29 @@
+{
+  "tripsHero": {
+    "title": "Kayaking routes",
+    "subtitle": "From family-friendly routes to week-long adventures",
+    "chooseRoute": "Choose your kayaking trip",
+    "description": "Whether you're looking for a short family trip or a multi-day adventure on the Nida River, you'll find a route suited to your experience and available time.",
+     "categories": {
+      "family": {        
+        "type": "Family",
+        "duration": "2h - 4h"
+      },
+
+      "oneDay": {    
+        "type": "One day",
+        "duration": "4h - 8h"
+      },
+
+      "multiDay": {        
+        "type": "Multi-day",
+        "duration": "2 - 3 days"
+      },
+
+      "custom": {       
+        "type": "On request",
+        "duration": "up to 7 days"
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@ import GoogleEmblaCarousel from "./GoogleEmblaCarousel";
 import { motion } from "motion/react";
 
 const GoogleReviews = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("home");
   return (
     <>
       <motion.section

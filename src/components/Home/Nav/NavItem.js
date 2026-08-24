@@ -12,7 +12,7 @@ const NavItem = ({ isMobile, util }) => {
     navigate(util.route);
   };
 
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation("home");
 
   return (
     <>

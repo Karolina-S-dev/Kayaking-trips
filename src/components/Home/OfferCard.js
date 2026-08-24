@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 
 const OfferCard = ({ trip }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("home");
   return (
     <>
       <motion.div

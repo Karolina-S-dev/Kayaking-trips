@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const GoogleEmblaCarousel = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("home");
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true, //infinite effect
     align: "start",

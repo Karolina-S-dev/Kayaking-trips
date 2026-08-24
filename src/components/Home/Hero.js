@@ -3,7 +3,7 @@ import kayakingMovie from "../../assets/movies/movie_kayaking.mp4";
 import Header from "./Header";
 
 const Hero = ({ headerRef }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("home");
   return (
     <section className="hero-section flex-col white">
       <Header headerRef={headerRef} />

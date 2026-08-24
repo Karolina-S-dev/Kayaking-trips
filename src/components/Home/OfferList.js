@@ -4,7 +4,7 @@ import OfferCard from "./OfferCard";
 import { motion } from "motion/react";
 
 const OfferList = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("home");
   return (
     <>
       <section className="offer-section flex-col">

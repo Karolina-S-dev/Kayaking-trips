@@ -4,7 +4,7 @@ import FaqCardHome from "./FaqCardHome";
 import { motion } from "motion/react";
 
 const FaqListHome = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("home");
   return (
     <>
       <motion.section
