@@ -26,7 +26,7 @@ const InputPhone = ({ contactData, updateField }) => {
 
   // // console.log(countries);
 
-  //LOCALIZATION
+  // user localization
   useEffect(() => {
     const fetchLocalization = async () => {
       const responseLocalization = await axios.get("https://ipapi.co/json/");
@@ -53,7 +53,7 @@ const InputPhone = ({ contactData, updateField }) => {
           <div className="flex-row">
             <PhoneInput
               regions={"europe"} // regions={['north-america', 'carribean']}
-              country={localization}
+              country={"localization"}
               enableSearch={true}
               name="from_callingCodes"
               value={contactData.from_callingCodes}
@@ -63,7 +63,7 @@ const InputPhone = ({ contactData, updateField }) => {
 
             <input
               type="tel"
-              placeholder="Wpisz swój numer telefonu"
+              placeholder="Wpisz numer telefonu"
               id="phone"
               name="from_phone"
               autoComplete="tel"

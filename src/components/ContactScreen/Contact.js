@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-import { reusableUpdateField } from "../../utils/reusableUpdateField";
+import { reusableUpdateField } from "../../utils/functions";
 import InputPhone from "./InputPhone";
 
 const Contact = () => {
@@ -194,7 +194,7 @@ const Contact = () => {
                 <input
                   ref={inputRef}
                   type="text"
-                  placeholder="Wpisz swoje imię i nazwisko"
+                  placeholder="Wpisz imię i nazwisko"
                   id="name"
                   name="from_full_name"
                   autoComplete="name"
@@ -211,7 +211,7 @@ const Contact = () => {
                 <label htmlFor="email">Adres e-mail</label>
                 <input
                   type="email"
-                  placeholder="Wpisz swój adres e-mail"
+                  placeholder="Wpisz adres e-mail"
                   id="email"
                   name="from_email"
                   autoComplete="email"

@@ -9,6 +9,14 @@
   .contact-text-column {
     flex-basis: calc(60% - 2rem);
   }
+
+  #phone {
+    padding: 0.8rem 0;
+  }
+
+  .form-contact-us-main {
+    padding: 2.5rem 3rem;
+  }
 }
 
 /* laptops and big tablets - 1024px - 1200px */
@@ -31,7 +39,7 @@
   }
 
   .contact-main-row {
-    flex-direction: column;    
+    flex-direction: column;
   }
 
   .form-contact-us-main {
@@ -45,6 +53,10 @@
 
   .reservation-cards {
     max-width: 100%;
+  }
+
+  .react-tel-input .form-control {
+    padding-left: 6rem !important;
   }
 }
 
