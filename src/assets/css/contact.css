@@ -441,3 +441,13 @@
   height: 2rem !important;
   margin-right: 0.6rem;
 }
+
+/* ------------------------------------------ */
+
+.form-error-message{
+color: #e04242;
+}
+
+.error-border{
+border-bottom: 1px solid #e5a8a8 !important;
+}
