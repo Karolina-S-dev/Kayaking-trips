@@ -1,7 +1,7 @@
 import Location from "./Location";
 import Reservation from "./Reservation";
 import { motion } from "motion/react";
-import { useEffect, useRef, useState } from "react";
+import { useMemo, useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { reusableUpdateField } from "../../utils/functions";
@@ -119,7 +119,9 @@ const Contact = () => {
     }
   }, []);
 
-  const updateField = reusableUpdateField(setContactData);
+
+  const updateField = useMemo(()=>reusableUpdateField(setContactData),[setContactData]) 
+ // const updateField = reusableUpdateField(setContactData);
 
   return (
     <>

@@ -38,9 +38,7 @@ const InputPhone = ({ contactData, updateField }) => {
       updateField("from_callingCodes", detectedCallingCode);
     };
     fetchLocalization();
-  }, []);
-
-  console.log(localization);
+  }, [updateField]);
 
   return (
     <>
@@ -53,7 +51,7 @@ const InputPhone = ({ contactData, updateField }) => {
           <div className="flex-row">
             <PhoneInput
               regions={"europe"} // regions={['north-america', 'carribean']}
-              country={"localization"}
+              country={localization}
               enableSearch={true}
               name="from_callingCodes"
               value={contactData.from_callingCodes}
