@@ -1,7 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-import { reusableUpdateField } from "../../utils/functions";
 import InputPhone from "./InputPhone";
 import { motion } from "motion/react";
 import { useForm } from "react-hook-form";
@@ -10,8 +9,11 @@ import { data } from "react-router-dom";
 const ContactForm = () => {
   const inputRef = useRef(null);
   // const [isChecked, setIsChecked] = useState(false);
-  const [contactData, setContactData] = useState({
-    from_callingCodes: "",
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
   });
 
   const {
@@ -19,56 +21,52 @@ const ContactForm = () => {
     handleSubmit,
     formState: { errors },
     setValue,
-    } = useForm({
+    control,
+    resetField,
+  } = useForm({
     defaultValues: {
       from_full_name: "",
       from_email: "",
-      from_callingCodes: "",
+      from_callingCodes: null,
       from_phone: "",
       from_message: "",
       from_privacy: false,
     },
   });
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
   //   //phone number validation spaces, and dashes delete
   //   const rawPhoneNumber = contactData.from_phone.replace(/[\s-]/g, "");
   //   const phoneRegex = /^\d{9}$/;
   //   const phoneValidation = phoneRegex.test(rawPhoneNumber);
 
-  //   await emailjs.send(
-  //     process.env.REACT_APP_EMAILJS_SERVICE_ID,
-  //     process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-  //     {
-  //       ...contactData,
-  //       from_phone: rawPhoneNumber,
-  //     },
-  //     process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
-  //   );
+  const submitFunction = async (data) => {
+    await emailjs.send(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      data,
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+    );
 
-  //   toast.success("Dziękujemy. Wiadomość została wysłana!", {
-  //     position: "top-center",
-  //     className: "toast-success",
-  //   });
+    resetField("from_full_name");
+    resetField("from_email");
+    resetField("from_phone");
+    resetField("from_message");
+    resetField("from_privacy");
 
-  //   setContactData({
-  //     from_full_name: "",
-  //     from_email: "",
-  //     from_phone: "",
-  //     from_message: "",
-  //   });
-  //   setIsChecked(false);
-  // };
+    toast.success("Dziękujemy. Wiadomość została wysłana!", {
+      position: "top-center",
+      className: "toast-success",
+    });
+  };
 
-  useEffect(() => {
-    if (inputRef.current) {
-      inputRef.current.focus();
-    }
-  }, []);
-
-  const updateField = reusableUpdateField(setContactData);
+  const errorFunction = (errors) => {
+    console.log(handleSubmit);
+    console.log(errors);
+    toast.error("Uzupełnij wymagane pola", {
+      position: "top-center",
+      className: "toast-error",
+    });
+  };
 
   return (
     <motion.form
@@ -80,22 +78,19 @@ const ContactForm = () => {
         ease: "easeOut",
       }}
       className="form-contact-us-main flex-col box-shadow"
-      // onSubmit={handleSubmit}
-
-
-      onSubmit={handleSubmit(
-        (data) => {
-          console.log(data);
-        },
-        (errors) => {
-          toast.error("Uzupełnij wymagane pola", {
-            position: "top-center",
-            className: "toast-success",
-          });
-        },
-      )}
-
-      
+      onSubmit={handleSubmit(submitFunction, errorFunction)}
+      // onSubmit={handleSubmit(
+      //   (data) => {
+      //     console.log(data);
+      //   },
+      //   (errors) => {
+      //     console.log(errors);
+      //     toast.error("Uzupełnij wymagane pola", {
+      //       position: "top-center",
+      //       className: "toast-error",
+      //     });
+      //   },
+      // )}
       noValidate
     >
       <div className="form-header flex-col">
@@ -149,14 +144,13 @@ const ContactForm = () => {
           <p className="form-error-message">{errors.from_email?.message}</p>
         </div>
       </div>
-      {/* ---------- InputPhone ---------- */}
+      {/* ---------------------- InputPhone --------------------- */}
       <InputPhone
-        contactData={contactData}
-        updateField={updateField}
         register={register}
         errors={errors}
         setValue={setValue}
         data={data}
+        control={control}
       />
       <div className="flex-row form-ion-row">
         <ion-icon name="chatbubble-ellipses-outline"></ion-icon>

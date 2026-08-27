@@ -3,7 +3,6 @@ import Location from "./Location";
 import Reservation from "./Reservation";
 import { motion } from "motion/react";
 
-
 const Contact = () => {
   return (
     <>
@@ -51,7 +50,7 @@ const Contact = () => {
             <Location />
           </div>
 
-          <ContactForm/>
+          <ContactForm />
         </div>
       </motion.section>
     </>

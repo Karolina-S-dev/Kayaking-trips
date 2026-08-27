@@ -1,9 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Controller } from "react-hook-form";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/high-res.css";
 
-const InputPhone = ({ contactData, updateField, register, errors, setValue }) => {
+const InputPhone = ({ register, errors, setValue, data, control }) => {
   const [localization, setLocalization] = useState(null);
 
   // user localization
@@ -15,14 +16,10 @@ const InputPhone = ({ contactData, updateField, register, errors, setValue }) =>
       const detectedCallingCode =
         responseLocalization.data.country_calling_code;
       setLocalization(detectedCountry);
-      updateField("from_callingCodes", detectedCallingCode);
-     
+      setValue("from_callingCodes", detectedCallingCode);
     };
     fetchLocalization();
-
-    }, []);
-
-  console.log(localization);
+  }, [setValue]);
 
   return (
     <>
@@ -30,17 +27,24 @@ const InputPhone = ({ contactData, updateField, register, errors, setValue }) =>
         <ion-icon name="call-outline"></ion-icon>
         <div className="form-group">
           <label htmlFor="phone">Numer telefonu</label>
+
           {/* React-Phone-Input-2 (biblioteka)*/}
           <div className="flex-row">
-            <PhoneInput
-              regions={"europe"} // regions={['north-america', 'carribean']}
-              country={"localization"}
-              enableSearch={true}
+            <Controller
               name="from_callingCodes"
-              value={contactData.from_callingCodes}
-              onChange={(phone) => updateField("from_callingCodes", phone)}
-              placeholder=""
+              control={control}
+              render={({ field }) => (
+                <PhoneInput
+                  regions={"europe"} // regions={['north-america', 'carribean']}
+                  country={localization}
+                  enableSearch={true}
+                  value={field.value}
+                  onChange={(phone) => field.onChange(`+${phone}`)}
+                  placeholder=""
+                />
+              )}
             />
+
             <input
               type="tel"
               placeholder="Wpisz numer telefonu"
@@ -53,7 +57,7 @@ const InputPhone = ({ contactData, updateField, register, errors, setValue }) =>
                 required: "To pole jest wymagane",
                 pattern: {
                   value: /^\d{9}$/,
-                  message: "Numer telefonu powinien zawierać 9 cyfr",
+                  message: "Numer telefonu musi zawierać 9 cyfr",
                 },
               })}
             />
